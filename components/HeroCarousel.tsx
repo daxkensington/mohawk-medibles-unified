@@ -9,14 +9,27 @@ import { SmokeEffect } from "@/components/SmokeEffect";
 
 /* ─── Ken Burns animation classes — each slide gets a unique motion ─── */
 const kenBurnsClasses = [
-  "animate-ken-burns-zoom-in",     // Slide 1: slow zoom in
-  "animate-ken-burns-pan-right",   // Slide 2: pan left to right
-  "animate-ken-burns-zoom-out",    // Slide 3: slow zoom out with drift
-  "animate-ken-burns-pan-left",    // Slide 4: pan right to left
+  "animate-ken-burns-pan-right",   // Slide 1 (Deal): pan right for urgency
+  "animate-ken-burns-zoom-in",     // Slide 2: slow zoom in
+  "animate-ken-burns-pan-right",   // Slide 3: pan left to right
+  "animate-ken-burns-zoom-out",    // Slide 4: slow zoom out with drift
+  "animate-ken-burns-pan-left",    // Slide 5: pan right to left
 ] as const;
 
 /* ─── E-E-A-T Optimized Slide Data ─── */
 const SLIDES = [
+  {
+    id: 0,
+    bg: "/assets/hero/hero-deals-ounces.png",
+    alt: "Mohawk Medibles $40 ounce deal — premium cannabis ounces starting at $40 or 3 for $100, while supplies last at Indigenous-owned dispensary on Tyendinaga Mohawk Territory",
+    badge: "🔥 WHILE SUPPLIES LAST",
+    headline: "$40 OUNCES",
+    highlight: "OR 3 FOR $100",
+    description:
+      "Unbeatable deals on premium ounces — $40 each or grab 3 for $100. Lab-tested, tax-free, shipped discreetly from Tyendinaga Mohawk Territory. These deals sell out FAST.",
+    cta: { label: "Shop Ounce Deals", href: "/shop?category=flower&sort=price-asc" },
+    ctaSecondary: { label: "All Deals", href: "/deals" },
+  },
   {
     id: 1,
     bg: "/assets/hero/hero-flower-premium.webp",
@@ -349,7 +362,7 @@ export function HeroCarousel() {
       {/* ═══ Slide Tab Navigation — "All" + category tabs ═══ */}
       <div className="absolute bottom-14 sm:bottom-16 left-1/2 -translate-x-1/2 z-30 flex items-center gap-1 bg-charcoal-deep/60 backdrop-blur-md rounded-full px-1.5 py-1 border border-white/10">
         {SLIDES.map((s, i) => {
-          const tabLabels = ["Flower", "Edibles", "Concentrates", "Heritage"];
+          const tabLabels = ["Deals", "Flower", "Edibles", "Concentrates", "Heritage"];
           return (
             <button
               key={i}
