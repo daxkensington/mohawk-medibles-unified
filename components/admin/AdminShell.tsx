@@ -11,7 +11,7 @@ import {
     Zap, Gift, Tag, Warehouse, ClipboardList,
     UserCog, Monitor, PieChart, CreditCard,
     ShoppingBag, Star, Beaker, ArrowLeftRight,
-    Globe, Heart, Clock, Mail,
+    Globe, Heart, Clock, Mail, Layers, Share2, Newspaper,
 } from "lucide-react";
 
 const NAV_SECTIONS = [
@@ -29,6 +29,7 @@ const NAV_SECTIONS = [
         { href: "/admin/flash-sales", label: "Flash Sales", icon: Zap },
         { href: "/admin/gift-cards", label: "Gift Cards", icon: Gift },
         { href: "/admin/brands", label: "Brands", icon: Tag },
+        { href: "/admin/categories", label: "Categories", icon: Layers },
     ]},
     { heading: "Point of Sale", items: [
         { href: "/admin/pos", label: "POS Terminal", icon: CreditCard },
@@ -47,7 +48,9 @@ const NAV_SECTIONS = [
         { href: "/admin/content", label: "Content", icon: BookOpen },
         { href: "/admin/agents", label: "Agents", icon: MessageSquare },
         { href: "/admin/reviews", label: "Reviews", icon: Star },
-        { href: "/admin/abandoned-carts", label: "Abandoned Carts", icon: Clock },
+        { href: "/admin/abandoned-carts", label: "Cart Recovery", icon: Clock },
+        { href: "/admin/referrals", label: "Referrals", icon: Share2 },
+        { href: "/admin/newsletter", label: "Newsletter", icon: Newspaper },
         { href: "/admin/email", label: "Email Logs", icon: Mail },
     ]},
     { heading: "Testing", items: [
