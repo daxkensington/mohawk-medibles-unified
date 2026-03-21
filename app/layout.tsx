@@ -226,7 +226,7 @@ export default async function RootLayout({
           // eslint-disable-next-line react/no-danger -- trusted server-side schema data
           dangerouslySetInnerHTML={{ __html: jsonLdGraph }}
         />
-        <StardustLoader />
+        {/* StardustLoader disabled — canvas animation blocks page render on some browsers */}
         <ThemeProvider>
           <LocaleProvider>
             <LocaleSEOHead />
