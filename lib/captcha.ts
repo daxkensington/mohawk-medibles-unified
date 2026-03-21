@@ -28,11 +28,13 @@ export async function verifyCaptcha(
 ): Promise<boolean> {
     const secret = process.env.TURNSTILE_SECRET_KEY;
 
-    // Skip CAPTCHA in development or if not configured
+    // In production, CAPTCHA must be configured — fail closed
     if (!secret) {
         if (process.env.NODE_ENV === "production") {
-            log.admin.warn("TURNSTILE_SECRET_KEY not configured — CAPTCHA bypass active");
+            log.admin.error("TURNSTILE_SECRET_KEY not configured — blocking request (fail-closed)");
+            return false;
         }
+        // Skip CAPTCHA only in development
         return true;
     }
 
@@ -57,9 +59,8 @@ export async function verifyCaptcha(
         log.admin.error("CAPTCHA verification failed", {
             error: err instanceof Error ? err.message : "Unknown",
         });
-        // On verification service failure, allow the request through
-        // to prevent blocking legitimate users
-        return true;
+        // Fail closed — do not allow unverified requests through
+        return false;
     }
 }
 

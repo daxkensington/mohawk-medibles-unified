@@ -10,11 +10,16 @@ import { hashPassword, verifyPassword, createSessionToken, generateToken } from 
 import { prisma } from "@/lib/db";
 import { sendPasswordReset, sendWelcomeEmail } from "@/lib/email";
 import { verifyCaptcha, getClientIp } from "@/lib/captcha";
+import { verifyCsrf } from "@/lib/csrf";
 import { log } from "@/lib/logger";
 
 export async function POST(req: NextRequest) {
     const limited = applyRateLimit(req, RATE_LIMITS.auth);
     if (limited) return limited;
+
+    // CSRF protection
+    const csrfError = verifyCsrf(req);
+    if (csrfError) return csrfError;
 
     try {
         const body = await req.json();

@@ -1,18 +1,22 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { getGMBIntegration } from "@/lib/gmb-integration";
+import { verifySessionToken } from "@/lib/auth";
 
 /**
  * POST /api/admin/sync-gmb
  * Admin endpoint to sync GMB data
  * Requires admin authentication
  */
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
   try {
-    // TODO: Add admin authentication check
-    // const session = await getServerSession(authOptions);
-    // if (!session?.user?.isAdmin) {
-    //   return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-    // }
+    // Verify admin authentication
+    const token =
+      request.cookies.get("mm-session")?.value ||
+      request.headers.get("Authorization")?.replace("Bearer ", "");
+    const session = token ? verifySessionToken(token) : null;
+    if (!session || !["ADMIN", "SUPER_ADMIN"].includes(session.role)) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
 
     const result = await getGMBIntegration().syncAllLocations();
 
@@ -38,8 +42,17 @@ export async function POST(request: Request) {
  * GET /api/admin/sync-gmb
  * Get GMB sync status
  */
-export async function GET(request: Request) {
+export async function GET(request: NextRequest) {
   try {
+    // Verify admin authentication
+    const token =
+      request.cookies.get("mm-session")?.value ||
+      request.headers.get("Authorization")?.replace("Bearer ", "");
+    const session = token ? verifySessionToken(token) : null;
+    if (!session || !["ADMIN", "SUPER_ADMIN"].includes(session.role)) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
     const { searchParams } = new URL(request.url);
     const action = searchParams.get("action");
 

@@ -5,6 +5,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/server/trpc/trpc";
 import { randomBytes } from "crypto";
+import { verifyCsrf } from "@/lib/csrf";
 
 // GET — List gift cards for authenticated user
 export async function GET(req: NextRequest) {
@@ -24,6 +25,10 @@ export async function GET(req: NextRequest) {
 
 // POST — Purchase a new gift card
 export async function POST(req: NextRequest) {
+  // CSRF protection
+  const csrfError = verifyCsrf(req);
+  if (csrfError) return csrfError;
+
   try {
     const body = await req.json();
     const {

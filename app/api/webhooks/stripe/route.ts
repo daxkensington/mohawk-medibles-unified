@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
     if (limited) return limited;
 
     const WEBHOOK_SECRET = getWebhookSecret();
-    if (!WEBHOOK_SECRET && process.env.NODE_ENV === "production") {
+    if (!WEBHOOK_SECRET) {
         log.stripe.error("STRIPE_WEBHOOK_SECRET is not configured");
         return NextResponse.json({ error: "Webhook not configured" }, { status: 503 });
     }

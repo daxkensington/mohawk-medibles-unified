@@ -31,6 +31,10 @@ const ENV_SCHEMA: EnvVar[] = [
     // Email
     { key: "RESEND_API_KEY", required: true, description: "Resend email API key" },
 
+    // Security — needed for CAPTCHA and cron auth
+    { key: "TURNSTILE_SECRET_KEY", required: true, description: "Cloudflare Turnstile CAPTCHA secret" },
+    { key: "CRON_SECRET", required: true, description: "Vercel Cron job auth secret" },
+
     // Optional — app works without these but with reduced functionality
     { key: "NEXT_PUBLIC_GA_MEASUREMENT_ID", required: false, description: "Google Analytics ID" },
     { key: "SENTRY_DSN", required: false, description: "Sentry error tracking DSN" },

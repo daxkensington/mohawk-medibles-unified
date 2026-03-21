@@ -8,6 +8,7 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
+import { timingSafeEqual } from "crypto";
 import { getAbandonedCarts, markReminderSent } from "@/lib/abandonedCart";
 import { sendAbandonedCartReminder } from "@/lib/email";
 import { log } from "@/lib/logger";
@@ -15,12 +16,18 @@ import { log } from "@/lib/logger";
 const SIX_HOURS = 6 * 60 * 60 * 1000;
 const TWENTY_FOUR_HOURS = 24 * 60 * 60 * 1000;
 
-export async function GET(req: NextRequest) {
-    // Verify cron secret
-    const authHeader = req.headers.get("authorization");
+function verifyCronAuth(authHeader: string | null): boolean {
     const cronSecret = process.env.CRON_SECRET;
+    if (!cronSecret) return false;
+    if (!authHeader) return false;
+    const token = authHeader.replace("Bearer ", "");
+    if (token.length !== cronSecret.length) return false;
+    return timingSafeEqual(Buffer.from(token), Buffer.from(cronSecret));
+}
 
-    if (cronSecret && authHeader !== `Bearer ${cronSecret}`) {
+export async function GET(req: NextRequest) {
+    // Verify cron secret (timing-safe)
+    if (!verifyCronAuth(req.headers.get("authorization"))) {
         return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 

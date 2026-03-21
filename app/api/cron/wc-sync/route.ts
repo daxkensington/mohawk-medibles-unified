@@ -1,14 +1,22 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { timingSafeEqual } from 'crypto';
 import { prisma } from '@/lib/db';
 import { fetchOrders, fetchCustomers, fetchAllProducts, type WCOrder } from '@/lib/wc-api';
+
+function verifyCronAuth(authHeader: string | null): boolean {
+  const cronSecret = process.env.CRON_SECRET;
+  if (!cronSecret) return false;
+  if (!authHeader) return false;
+  const token = authHeader.replace('Bearer ', '');
+  if (token.length !== cronSecret.length) return false;
+  return timingSafeEqual(Buffer.from(token), Buffer.from(cronSecret));
+}
 
 // GET /api/cron/wc-sync — Incremental sync (runs every 6 hours via Vercel Cron)
 // Only syncs records modified since last successful sync
 export async function GET(req: NextRequest) {
-  // Verify cron secret or auth
-  const authHeader = req.headers.get('authorization');
-  const cronSecret = process.env.CRON_SECRET;
-  if (cronSecret && authHeader !== `Bearer ${cronSecret}`) {
+  // Verify cron secret (timing-safe)
+  if (!verifyCronAuth(req.headers.get('authorization'))) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 

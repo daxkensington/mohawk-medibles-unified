@@ -5,6 +5,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/db';
 import { getCurrentTenant } from '@/lib/tenant';
+import { verifyCsrf } from '@/lib/csrf';
 
 const WC_STORE_URL = process.env.WC_STORE_URL || 'https://mohawkmedibles.ca';
 const WC_CONSUMER_KEY = process.env.WC_CONSUMER_KEY || '';
@@ -110,6 +111,10 @@ function getPaymentMethodTitle(method: string): string {
 // ─── POST Handler ────────────────────────────────────────────
 
 export async function POST(req: NextRequest) {
+  // CSRF protection
+  const csrfError = verifyCsrf(req);
+  if (csrfError) return csrfError;
+
   try {
     const tenant = await getCurrentTenant();
     const body: CheckoutRequest = await req.json();
@@ -142,7 +147,7 @@ export async function POST(req: NextRequest) {
           email: body.billing.email,
           name: `${body.billing.first_name} ${body.billing.last_name}`,
           phone: body.billing.phone || null,
-          passwordHash: 'niche-checkout-guest',
+          passwordHash: '', // Guest — no password until they register
           role: 'CUSTOMER',
         },
       });
@@ -226,9 +231,10 @@ export async function POST(req: NextRequest) {
       returnUrl: `${redirectUrl}/checkout/success?order=${wcOrder.id}&key=${wcOrder.order_key}`,
     });
   } catch (error) {
-    console.error('[WC Checkout]', error);
     const message = error instanceof Error ? error.message : 'Checkout failed';
-    return NextResponse.json({ error: message }, { status: 500 });
+    // Don't log full error object (may contain WC API credentials in headers)
+    console.error('[WC Checkout] Error:', message);
+    return NextResponse.json({ error: 'Checkout failed' }, { status: 500 });
   }
 }
 

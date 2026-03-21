@@ -5,11 +5,16 @@
 import { NextRequest, NextResponse } from "next/server";
 import { applyRateLimit, RATE_LIMITS } from "@/lib/rateLimit";
 import { verifyCaptcha, getClientIp } from "@/lib/captcha";
+import { verifyCsrf } from "@/lib/csrf";
 import { log } from "@/lib/logger";
 
 export async function POST(req: NextRequest) {
     const limited = applyRateLimit(req, RATE_LIMITS.api);
     if (limited) return limited;
+
+    // CSRF protection
+    const csrfError = verifyCsrf(req);
+    if (csrfError) return csrfError;
 
     try {
         const body = await req.json();

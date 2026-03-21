@@ -16,6 +16,7 @@
  */
 import { NextRequest, NextResponse } from "next/server";
 import { resolveTenantByHost } from "@/lib/tenant";
+import { setCsrfCookie } from "@/lib/csrf";
 
 // ─── Domain Routing Config ───────────────────────────────
 const DOMAINS = {
@@ -77,7 +78,7 @@ export function middleware(request: NextRequest) {
     // ── Resolve tenant from hostname ────────────────────────
     const tenant = resolveTenantByHost(host);
 
-    // Helper: inject tenant headers into any response
+    // Helper: inject tenant headers + CSRF cookie into any response
     function withTenantHeaders(response: NextResponse): NextResponse {
         response.headers.set("x-tenant-id", tenant.id);
         response.headers.set("x-tenant-slug", tenant.slug);
@@ -90,6 +91,10 @@ export function middleware(request: NextRequest) {
             sameSite: "lax",
             maxAge: 60 * 60 * 24, // 1 day
         });
+        // Set CSRF cookie if not already present (for page responses)
+        if (!pathname.startsWith("/api/") && !request.cookies.get("mm-csrf")) {
+            setCsrfCookie(response);
+        }
         return response;
     }
 
@@ -181,7 +186,9 @@ export function middleware(request: NextRequest) {
     }
 }
 
-// ─── Token Decoder ──────────────────────────────────────────
+// ─── Token Verifier (HMAC-SHA256 signature check) ───────────
+
+import { createHmac, timingSafeEqual } from "crypto";
 
 interface SessionPayload {
     sub: string; // user ID
@@ -192,12 +199,26 @@ interface SessionPayload {
 
 function decodeSessionToken(token: string): SessionPayload | null {
     try {
-        // JWT-style: base64url decode the payload (middle segment)
         const parts = token.split(".");
         if (parts.length !== 3) return null;
 
+        const [headerB64, payloadB64, signature] = parts;
+
+        // Verify HMAC-SHA256 signature
+        const secret = process.env.AUTH_SECRET;
+        if (secret) {
+            const expected = createHmac("sha256", secret)
+                .update(`${headerB64}.${payloadB64}`)
+                .digest("base64url");
+            const sigBuf = Buffer.from(signature, "base64url");
+            const expBuf = Buffer.from(expected, "base64url");
+            if (sigBuf.length !== expBuf.length || !timingSafeEqual(sigBuf, expBuf)) {
+                return null;
+            }
+        }
+
         const payload = JSON.parse(
-            Buffer.from(parts[1], "base64url").toString("utf-8")
+            Buffer.from(payloadB64, "base64url").toString("utf-8")
         );
 
         return {
@@ -227,22 +248,10 @@ function getRequiredRoles(pathname: string): string[] {
 }
 
 // ─── Security Headers ───────────────────────────────────────
+// Note: Primary security headers (HSTS, CSP, X-Frame-Options, etc.)
+// are set in next.config.ts headers(). Middleware only adds dynamic headers.
 
 function applySecurityHeaders(response: NextResponse): NextResponse {
-    // Prevent clickjacking
-    response.headers.set("X-Frame-Options", "DENY");
-    // Prevent MIME sniffing
-    response.headers.set("X-Content-Type-Options", "nosniff");
-    // XSS protection (legacy browsers)
-    response.headers.set("X-XSS-Protection", "1; mode=block");
-    // Referrer policy
-    response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
-    // Permissions policy
-    response.headers.set(
-        "Permissions-Policy",
-        "camera=(), microphone=(self), geolocation=(), payment=()"
-    );
-
     return response;
 }
 

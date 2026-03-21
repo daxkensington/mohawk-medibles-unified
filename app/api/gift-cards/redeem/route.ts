@@ -3,8 +3,13 @@
  */
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/server/trpc/trpc";
+import { verifyCsrf } from "@/lib/csrf";
 
 export async function POST(req: NextRequest) {
+  // CSRF protection
+  const csrfError = verifyCsrf(req);
+  if (csrfError) return csrfError;
+
   try {
     const body = await req.json();
     const { code, amount, orderId } = body;

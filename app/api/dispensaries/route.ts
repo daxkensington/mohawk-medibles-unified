@@ -1,7 +1,8 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { verifySessionToken } from "@/lib/auth";
 
-export async function GET(request: Request) {
+export async function GET(request: NextRequest) {
     try {
         const { searchParams } = new URL(request.url);
         
@@ -95,7 +96,7 @@ export async function GET(request: Request) {
             },
         });
     } catch (error) {
-        console.error("Error fetching dispensaries:", error);
+        console.error("Error fetching dispensaries:", error instanceof Error ? error.message : "Unknown");
         return NextResponse.json(
             { 
                 success: false, 
@@ -107,10 +108,19 @@ export async function GET(request: Request) {
 }
 
 // POST /api/dispensaries - Create new dispensary (admin only)
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
     try {
+        // Verify admin authentication
+        const token =
+            request.cookies.get("mm-session")?.value ||
+            request.headers.get("Authorization")?.replace("Bearer ", "");
+        const session = token ? verifySessionToken(token) : null;
+        if (!session || !["ADMIN", "SUPER_ADMIN"].includes(session.role)) {
+            return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+        }
+
         const body = await request.json();
-        
+
         // Validate required fields
         if (!body.name || !body.address || !body.city || !body.province) {
             return NextResponse.json(
@@ -130,10 +140,23 @@ export async function POST(request: Request) {
             + "-" 
             + body.city.toLowerCase().replace(/\s+/g, "-");
 
+        // Only allow specific fields (prevent mass assignment)
         const dispensary = await prisma.dispensary.create({
             data: {
-                ...body,
+                name: body.name,
                 slug,
+                address: body.address,
+                city: body.city,
+                province: body.province,
+                postalCode: body.postalCode,
+                phone: body.phone,
+                email: body.email,
+                website: body.website,
+                description: body.description,
+                isIndigenousOwned: body.isIndigenousOwned,
+                isLicensed: body.isLicensed,
+                latitude: body.latitude,
+                longitude: body.longitude,
             },
         });
 
@@ -142,7 +165,7 @@ export async function POST(request: Request) {
             data: dispensary,
         }, { status: 201 });
     } catch (error) {
-        console.error("Error creating dispensary:", error);
+        console.error("Error creating dispensary:", error instanceof Error ? error.message : "Unknown");
         return NextResponse.json(
             { 
                 success: false, 

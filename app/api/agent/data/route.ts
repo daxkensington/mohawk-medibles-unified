@@ -13,14 +13,21 @@ import { prisma } from "@/lib/db";
 import { getAllProducts } from "@/lib/products";
 import { log } from "@/lib/logger";
 
-const AGENT_SECRET = process.env.AGENT_API_SECRET || process.env.AUTH_SECRET || "";
+import { timingSafeEqual } from "crypto";
+
+function getAgentSecret(): string {
+    return process.env.AGENT_API_SECRET || "";
+}
 
 function verifyAgentAuth(req: NextRequest): boolean {
-    if (!AGENT_SECRET) return false; // Reject if no secret configured
+    const secret = getAgentSecret();
+    if (!secret) return false; // Reject if no secret configured
     const authHeader = req.headers.get("authorization");
     if (!authHeader) return false;
     const token = authHeader.replace("Bearer ", "");
-    return token === AGENT_SECRET;
+    if (token.length !== secret.length) return false;
+    // Timing-safe comparison to prevent timing attacks
+    return timingSafeEqual(Buffer.from(token), Buffer.from(secret));
 }
 
 export async function GET(req: NextRequest) {

@@ -8,23 +8,19 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
 import { applyRateLimit, RATE_LIMITS } from "@/lib/rateLimit";
+import { verifySessionToken } from "@/lib/auth";
+import { verifyCsrf } from "@/lib/csrf";
 import { cookies } from "next/headers";
 
-// ─── Session Decode ──────────────────────────────────────────
+// ─── Session Decode (with signature verification) ────────────
 async function getSessionUser(req: NextRequest) {
     const cookieStore = await cookies();
     const token = cookieStore.get("mm-session")?.value;
     if (!token) return null;
 
-    try {
-        // Decode JWT (same pattern as middleware)
-        const [, payloadB64] = token.split(".");
-        const payload = JSON.parse(Buffer.from(payloadB64, "base64url").toString());
-        if (!payload.userId || (payload.exp && payload.exp * 1000 < Date.now())) return null;
-        return { userId: payload.userId as string, email: payload.email as string, role: payload.role as string };
-    } catch {
-        return null;
-    }
+    const payload = verifySessionToken(token);
+    if (!payload) return null;
+    return { userId: payload.sub, email: payload.email, role: payload.role };
 }
 
 // ─── GET: Read operations ────────────────────────────────────
@@ -116,6 +112,10 @@ export async function GET(req: NextRequest) {
 
 // ─── POST: Write operations ──────────────────────────────────
 export async function POST(req: NextRequest) {
+    // CSRF protection
+    const csrfError = verifyCsrf(req);
+    if (csrfError) return csrfError;
+
     const session = await getSessionUser(req);
     if (!session) {
         return NextResponse.json({ error: "Not authenticated" }, { status: 401 });

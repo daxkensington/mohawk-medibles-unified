@@ -6,12 +6,21 @@
  * Flow: Find abandoned carts → check delay thresholds → send recovery emails
  */
 import { NextRequest, NextResponse } from "next/server";
+import { timingSafeEqual } from "crypto";
 import { prisma } from "@/server/trpc/trpc";
 
+function verifyCronAuth(authHeader: string | null): boolean {
+  const cronSecret = process.env.CRON_SECRET;
+  if (!cronSecret) return false;
+  if (!authHeader) return false;
+  const token = authHeader.replace("Bearer ", "");
+  if (token.length !== cronSecret.length) return false;
+  return timingSafeEqual(Buffer.from(token), Buffer.from(cronSecret));
+}
+
 export async function GET(req: NextRequest) {
-  // Verify cron secret
-  const authHeader = req.headers.get("authorization");
-  if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
+  // Verify cron secret (timing-safe)
+  if (!verifyCronAuth(req.headers.get("authorization"))) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 

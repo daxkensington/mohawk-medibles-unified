@@ -13,10 +13,13 @@ const globalForPrisma = globalThis as unknown as {
 };
 
 function createPrismaClient() {
+    if (!process.env.DATABASE_URL && process.env.NODE_ENV === "production") {
+        throw new Error("FATAL: DATABASE_URL environment variable is required in production");
+    }
     const pool = new pg.Pool({
         connectionString:
             process.env.DATABASE_URL ||
-            "postgresql://mohawk:password@localhost:5432/mohawkmedibles",
+            "postgresql://localhost:5432/mohawkmedibles_dev",
     });
     const adapter = new PrismaPg(pool);
     return new PrismaClient({

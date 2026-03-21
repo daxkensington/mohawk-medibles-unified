@@ -424,7 +424,8 @@ export default function CheckoutPage() {
                                 totalPrice={grandTotal.toFixed(2)}
                                 disabled={loading}
                                 onPaymentAuthorized={async (paymentData) => {
-                                    console.log("[Google Pay] Payment authorized:", paymentData);
+                                    // Payment data logged without sensitive details
+                                    console.log("[Google Pay] Payment authorized");
                                     setLoading(true);
                                     setError("");
 

@@ -4,6 +4,7 @@
  */
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/server/trpc/trpc";
+import { verifySessionToken } from "@/lib/auth";
 
 // GET — List active flash sales with products
 export async function GET() {
@@ -40,15 +41,19 @@ export async function GET() {
       count: flashSales.length,
     });
   } catch (error) {
-    console.error("[Flash Sales] Error:", error);
+    console.error("[Flash Sales] Error:", error instanceof Error ? error.message : "Unknown");
     return NextResponse.json({ error: "Failed to fetch flash sales" }, { status: 500 });
   }
 }
 
 // POST — Create flash sale (admin only)
 export async function POST(req: NextRequest) {
-  const userRole = req.headers.get("x-user-role");
-  if (!userRole || !["ADMIN", "SUPER_ADMIN"].includes(userRole)) {
+  // Verify admin auth directly (don't trust x-user-role header alone)
+  const token =
+    req.cookies.get("mm-session")?.value ||
+    req.headers.get("Authorization")?.replace("Bearer ", "");
+  const session = token ? verifySessionToken(token) : null;
+  if (!session || !["ADMIN", "SUPER_ADMIN"].includes(session.role)) {
     return NextResponse.json({ error: "Admin access required" }, { status: 403 });
   }
 
@@ -101,7 +106,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ flashSale }, { status: 201 });
   } catch (error) {
-    console.error("[Flash Sales] Create error:", error);
+    console.error("[Flash Sales] Create error:", error instanceof Error ? error.message : "Unknown");
     return NextResponse.json({ error: "Failed to create flash sale" }, { status: 500 });
   }
 }

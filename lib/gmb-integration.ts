@@ -5,6 +5,7 @@
 
 import { google } from 'googleapis';
 import { prisma } from './prisma';
+import { log } from './logger';
 
 const GMB_API_VERSION = 'v4';
 
@@ -88,7 +89,7 @@ export class GMBIntegration {
 
       return response.data.locations || [];
     } catch (error) {
-      console.error('Error fetching GMB locations:', error);
+      log.admin.error('Error fetching GMB locations:', error);
       throw error;
     }
   }
@@ -134,7 +135,7 @@ export class GMBIntegration {
       await this.syncPhotos(dispensary.id, gmbLocation.photos.photos);
     }
 
-    console.log(`✅ Synced: ${dispensaryData.name}`);
+    log.admin.info(`✅ Synced: ${dispensaryData.name}`);
   }
 
   /**
@@ -150,7 +151,7 @@ export class GMBIntegration {
         await this.syncLocationToDB(location);
         success++;
       } catch (error) {
-        console.error(`Failed to sync ${location.name}:`, error);
+        log.admin.error(`Failed to sync ${location.name}:`, error);
         failed++;
       }
     }
@@ -193,7 +194,7 @@ export class GMBIntegration {
       updateMask: 'locationName,primaryPhone,address,websiteUrl,profile.description',
     });
 
-    console.log(`✅ Updated GMB: ${dispensary.name}`);
+    log.admin.info(`✅ Updated GMB: ${dispensary.name}`);
   }
 
   /**
@@ -208,7 +209,7 @@ export class GMBIntegration {
 
       return response.data.reviews || [];
     } catch (error) {
-      console.error('Error fetching GMB reviews:', error);
+      log.admin.error('Error fetching GMB reviews:', error);
       return [];
     }
   }
@@ -257,7 +258,7 @@ export class GMBIntegration {
       },
     });
 
-    console.log(`✅ Synced ${reviews.length} reviews`);
+    log.admin.info(`✅ Synced ${reviews.length} reviews`);
   }
 
   /**
@@ -291,7 +292,7 @@ export class GMBIntegration {
 
       return response.data;
     } catch (error) {
-      console.error('Error fetching GMB insights:', error);
+      log.admin.error('Error fetching GMB insights:', error);
       throw error;
     }
   }
@@ -312,9 +313,9 @@ export class GMBIntegration {
         },
       });
 
-      console.log(`✅ Uploaded photo to GMB: ${category}`);
+      log.admin.info(`✅ Uploaded photo to GMB: ${category}`);
     } catch (error) {
-      console.error('Error uploading photo:', error);
+      log.admin.error('Error uploading photo:', error);
       throw error;
     }
   }
