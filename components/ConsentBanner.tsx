@@ -52,7 +52,7 @@ export default function ConsentBanner() {
                         <p className="text-sm text-foreground/80 dark:text-cream/80 leading-relaxed">
                             We use cookies to improve your experience and analyze site traffic.
                             Your data stays in Canada and is never sold.{" "}
-                            <a href="/privacy" className="text-secondary underline underline-offset-2 hover:text-secondary/80">
+                            <a href="/privacy" className="text-forest dark:text-lime underline underline-offset-2 hover:text-forest/80 dark:hover:text-lime/80 font-medium">
                                 Privacy Policy
                             </a>
                         </p>

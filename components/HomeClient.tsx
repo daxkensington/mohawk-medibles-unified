@@ -1,33 +1,28 @@
 "use client";
 
-// ─── Hero Carousel — .cc multi-slide with .ca photography ───
+import dynamic from "next/dynamic";
+
+// ─── Critical above-the-fold components (loaded immediately) ───
 import { HeroCarousel } from "@/components/HeroCarousel";
-
-// ─── Existing Vercel Components (kept) ───────────────────
-import { BentoGrid } from "@/components/BentoGrid";
-
-// ─── New Blended Components (.cc + .ca + Conversion Psychology) ───
-import { DealTicker } from "@/components/DealTicker";
-import { EffectFilter } from "@/components/EffectFilter";
-import { SocialProofStrip } from "@/components/SocialProofStrip";
-import { TrustPillars } from "@/components/TrustPillars";
-import { DealsSection } from "@/components/DealsSection";
-import { ReviewCarousel } from "@/components/ReviewCarousel";
-import { StickyMobileNav } from "@/components/StickyMobileNav";
-import { CategoryBrandShowcase } from "@/components/CategoryBrandShowcase";
-import { PageSmokeEffect } from "@/components/PageSmokeEffect";
-
-// ─── .cc Design Elements (Ian's preferred) ───
 import { BenefitsBar } from "@/components/BenefitsBar";
-import { MonthlyDeals } from "@/components/MonthlyDeals";
-import { HowItWorks } from "@/components/HowItWorks";
-import { CustomerTestimonials } from "@/components/CustomerTestimonials";
+import { DealTicker } from "@/components/DealTicker";
+import { SocialProofStrip } from "@/components/SocialProofStrip";
+
+// ─── Below-the-fold components (lazy-loaded) ───
+const BentoGrid = dynamic(() => import("@/components/BentoGrid").then(m => ({ default: m.BentoGrid })));
+const EffectFilter = dynamic(() => import("@/components/EffectFilter").then(m => ({ default: m.EffectFilter })));
+const TrustPillars = dynamic(() => import("@/components/TrustPillars").then(m => ({ default: m.TrustPillars })));
+const DealsSection = dynamic(() => import("@/components/DealsSection").then(m => ({ default: m.DealsSection })));
+const ReviewCarousel = dynamic(() => import("@/components/ReviewCarousel").then(m => ({ default: m.ReviewCarousel })));
+const StickyMobileNav = dynamic(() => import("@/components/StickyMobileNav").then(m => ({ default: m.StickyMobileNav })));
+const CategoryBrandShowcase = dynamic(() => import("@/components/CategoryBrandShowcase").then(m => ({ default: m.CategoryBrandShowcase })));
+const MonthlyDeals = dynamic(() => import("@/components/MonthlyDeals").then(m => ({ default: m.MonthlyDeals })));
+const HowItWorks = dynamic(() => import("@/components/HowItWorks").then(m => ({ default: m.HowItWorks })));
+const CustomerTestimonials = dynamic(() => import("@/components/CustomerTestimonials").then(m => ({ default: m.CustomerTestimonials })));
 
 export default function HomeClient() {
   return (
     <div className="min-h-screen flex flex-col relative">
-      {/* Page-level ambient smoke/haze — drifts behind all sections */}
-      <PageSmokeEffect />
 
       {/* ═══════════════════════════════════════════════════════════
           HERO CAROUSEL — .cc 4-slide rotating banners + .ca photography

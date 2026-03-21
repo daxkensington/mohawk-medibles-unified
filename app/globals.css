@@ -275,6 +275,15 @@ body {
   animation: float 8s ease-in-out infinite;
 }
 
+/* Hero carousel progress bar */
+@keyframes progress-fill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+.animate-progress {
+  animation: progress-fill linear forwards;
+}
+
 /* Glow pulse for badges/accents */
 @keyframes glow-pulse {
   0%, 100% { box-shadow: 0 0 5px rgba(200, 230, 62, 0.3); }

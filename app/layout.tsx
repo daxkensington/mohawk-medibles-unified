@@ -174,17 +174,15 @@ const jsonLdGraph = buildSchemaGraph(
 
 // ─── Components ─────────────────────────────────────────────
 
-import AgentChatWidget from "@/components/AgentChatWidget";
 import { CartProvider } from "@/hooks/useCart";
 import { WishlistProvider } from "@/hooks/useWishlist";
 import { Analytics } from "@/components/Analytics";
-import ConsentBanner from "@/components/ConsentBanner";
-import AgeGate from "@/components/AgeGate";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ThemeProvider from "@/components/ThemeProvider";
 import { LocaleProvider } from "@/components/LocaleProvider";
 import LocaleSEOHead from "@/components/LocaleSEOHead";
+import LazyWidgets from "@/components/LazyWidgets";
 
 export default async function RootLayout({
   children,
@@ -243,9 +241,7 @@ export default async function RootLayout({
                 {children}
               </main>
               <Footer />
-              <AgentChatWidget />
-              <AgeGate />
-              <ConsentBanner />
+              <LazyWidgets />
               </TenantProvider>
             </WishlistProvider>
             </CartProvider>
