@@ -7,12 +7,14 @@ import { posRouter } from "./routers/pos";
 import { inventoryRouter } from "./routers/inventory";
 import { reportingRouter } from "./routers/reporting";
 import { teamRouter } from "./routers/team";
+import { rewardsRouter } from "./routers/rewards";
 
 export const appRouter = router({
   pos: posRouter,
   inventory: inventoryRouter,
   reporting: reportingRouter,
   team: teamRouter,
+  rewards: rewardsRouter,
 });
 
 export type AppRouter = typeof appRouter;
