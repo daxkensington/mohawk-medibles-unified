@@ -78,7 +78,7 @@ export default function NewArrivals() {
                                         alt={p.altText || p.name}
                                         sizes="260px"
                                     />
-                                    <div className="absolute top-2 left-2 z-20 bg-lime-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                                    <div className="absolute top-2 left-2 z-20 bg-lime text-charcoal-deep text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
                                         New
                                     </div>
                                 </div>

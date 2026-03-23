@@ -117,7 +117,7 @@ export default function AgeGate() {
                 </div>
 
                 {/* Legal Note */}
-                <p className="mt-6 text-[10px] text-white/30 leading-relaxed">
+                <p className="mt-6 text-[10px] text-white/50 leading-relaxed">
                     This site is intended for adults of legal cannabis consumption age only.
                     Cannabis products are for use by individuals 19 years of age or older in
                     Canada. Please consume responsibly.

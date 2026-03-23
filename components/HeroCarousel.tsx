@@ -124,8 +124,8 @@ export function HeroCarousel() {
               loading={i === 0 ? "eager" : "lazy"}
               fetchPriority={i === 0 ? "high" : undefined}
               className="object-cover"
-              sizes="100vw"
-              quality={80}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+              quality={75}
               itemProp={i === current ? "image" : undefined}
             />
           </div>

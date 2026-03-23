@@ -234,12 +234,12 @@ export function CategoryBrandShowcase() {
                         </div>
                         <button
                             onClick={cycleBrandView}
-                            aria-label="Toggle brand view"
+                            aria-label={brandView === "carousel" ? "Show more brands" : brandView === "grid-3" ? "Show all brands" : "Show less brands"}
                             className="flex items-center gap-1 px-2.5 py-1 rounded-full border border-border hover:border-lime/40 hover:bg-lime/10 text-[11px] font-semibold text-muted-foreground hover:text-foreground transition-all"
                         >
-                            {brandView === "carousel" && <><span className="hidden sm:inline">More</span><ChevronDown className="w-3 h-3" /></>}
-                            {brandView === "grid-3" && <><span className="hidden sm:inline">All</span><ChevronDown className="w-3 h-3" /></>}
-                            {brandView === "grid-all" && <><span className="hidden sm:inline">Less</span><ChevronUp className="w-3 h-3" /></>}
+                            {brandView === "carousel" && <>More<ChevronDown className="w-3 h-3" /></>}
+                            {brandView === "grid-3" && <>All<ChevronDown className="w-3 h-3" /></>}
+                            {brandView === "grid-all" && <>Less<ChevronUp className="w-3 h-3" /></>}
                         </button>
                     </div>
 
