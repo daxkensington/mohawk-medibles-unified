@@ -15,6 +15,7 @@ import { Truck, Shield, FlaskRound, Gift } from "lucide-react";
 import { getAllProvinces, getPopularCities, getTotalCityCount, getAllCities } from "@/lib/seo/city-delivery-data";
 import { breadcrumbSchema } from "@/lib/seo/schemas";
 import DeliveryMapLoader from "@/components/DeliveryMapLoader";
+import PostalLookup from "@/components/PostalLookup";
 
 // ─── Metadata ────────────────────────────────────────────────────────
 
@@ -106,6 +107,9 @@ export default function DeliveryPage() {
                 territory in Canada. Fast, discreet delivery with full tracking and guaranteed
                 freshness.
               </p>
+              <div className="max-w-lg mx-auto">
+                <PostalLookup />
+              </div>
             </div>
           </section>
 

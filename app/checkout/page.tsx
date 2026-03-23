@@ -11,6 +11,8 @@ import {
     Bitcoin, Banknote,
 } from "lucide-react";
 import FreeShippingBar from "@/components/FreeShippingBar";
+import { CartUpsellNudge } from "@/components/CartUpsellNudge";
+import { DeliveryConfidence } from "@/components/DeliveryConfidence";
 import { trackBeginCheckout } from "@/lib/analytics";
 
 interface CouponResult {
@@ -344,8 +346,9 @@ export default function CheckoutPage() {
                 )}
 
                 {/* Free Shipping Progress */}
-                <div className="mb-6">
-                    <FreeShippingBar />
+                <div className="mb-6 space-y-4">
+                    <CartUpsellNudge subtotal={total} />
+                    <DeliveryConfidence />
                 </div>
 
                 <div className="grid lg:grid-cols-3 gap-8">
