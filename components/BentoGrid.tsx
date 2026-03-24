@@ -238,7 +238,7 @@ function ProductCard({ product, index, t }: { product: Product; index: number; t
                         </div>
                     )}
                     <div className="flex items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 pt-2">
-                        <span className="text-xl font-bold">${product.price.toFixed(2)}</span>
+                        <span className="text-xl font-bold">${(product.price ?? 0).toFixed(2)}</span>
                         <Link href={`/shop/${product.slug}`}>
                             <Button className="rounded-full bg-lime text-charcoal-deep hover:bg-lime-light font-bold text-xs px-4 py-2">{t("home.viewProduct")}</Button>
                         </Link>

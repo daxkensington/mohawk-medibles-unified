@@ -346,7 +346,7 @@ export default function SearchAutocomplete() {
                                     </div>
                                     {/* Price */}
                                     <div className="text-sm font-bold text-emerald-500 dark:text-emerald-400 whitespace-nowrap">
-                                        {product.price > 0 ? `$${product.price.toFixed(2)}` : "Quote"}
+                                        {(product.price ?? 0) > 0 ? `$${(product.price ?? 0).toFixed(2)}` : "Quote"}
                                     </div>
                                     {isActive && (
                                         <ArrowRight className="w-3.5 h-3.5 text-green-500/60 shrink-0" />

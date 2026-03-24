@@ -137,7 +137,7 @@ export function ComboSuggestions() {
         {freeShippingRemaining > 0 && (
           <span className="ml-auto text-xs text-amber-300/80 flex items-center gap-1">
             <Truck className="h-3 w-3" />
-            ${freeShippingRemaining.toFixed(2)} from free shipping
+            ${(freeShippingRemaining ?? 0).toFixed(2)} from free shipping
           </span>
         )}
       </div>
@@ -188,11 +188,11 @@ export function ComboSuggestions() {
                   </h4>
                   <div className="flex items-center gap-2 mt-1">
                     <span className="text-sm font-bold text-amber-400">
-                      ${displayPrice.toFixed(2)}
+                      ${(displayPrice ?? 0).toFixed(2)}
                     </span>
                     {product.salePrice && product.salePrice < product.price && (
                       <span className="text-xs text-zinc-500 line-through">
-                        ${product.price.toFixed(2)}
+                        ${(product.price ?? 0).toFixed(2)}
                       </span>
                     )}
                   </div>

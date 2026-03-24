@@ -70,7 +70,7 @@ export function GoogleReviewsBadge() {
       </svg>
       <StarRating rating={Math.round(data.averageRating)} size={12} />
       <span className="text-xs text-white/70 group-hover:text-white transition-colors">
-        {data.averageRating.toFixed(1)} ({data.totalReviews})
+        {(data.averageRating ?? 0).toFixed(1)} ({data.totalReviews})
       </span>
     </a>
   );
@@ -146,7 +146,7 @@ export default function GoogleReviewsWidget() {
           </div>
 
           <div className="flex items-center justify-center gap-2 mb-2">
-            <span className="text-4xl font-black text-amber-400">{data.averageRating.toFixed(1)}</span>
+            <span className="text-4xl font-black text-amber-400">{(data.averageRating ?? 0).toFixed(1)}</span>
             <StarRating rating={Math.round(data.averageRating)} size={24} />
           </div>
 

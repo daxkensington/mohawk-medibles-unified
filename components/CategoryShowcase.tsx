@@ -135,7 +135,7 @@ export function CategoryShowcase() {
 
                                     {/* Price badge */}
                                     <div className="absolute top-2 right-2 px-1.5 py-0.5 rounded-full bg-lime/15 backdrop-blur-sm text-[9px] font-bold text-lime border border-lime/20">
-                                        From ${product.price.toFixed(0)}
+                                        From ${(product.price ?? 0).toFixed(0)}
                                     </div>
                                 </Link>
                             </motion.div>

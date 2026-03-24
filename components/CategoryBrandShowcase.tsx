@@ -208,7 +208,7 @@ export function CategoryBrandShowcase() {
                                     </div>
                                 </div>
                                 <div className="absolute top-2 right-2 px-1.5 py-0.5 rounded-full bg-lime/20 backdrop-blur-sm text-[8px] font-bold text-lime-light border border-lime/30">
-                                    From ${product.price.toFixed(0)}
+                                    From ${(product.price ?? 0).toFixed(0)}
                                 </div>
                             </Link>
                         ))}

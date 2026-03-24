@@ -111,7 +111,7 @@ export default function GiftTierProgress({ cartTotal, compact = false }: GiftTie
         <div className="flex items-center gap-2 p-2 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/30 mb-3">
           <ChevronRight className="h-4 w-4 text-amber-600 dark:text-amber-400 flex-shrink-0" />
           <p className="text-xs text-amber-800 dark:text-amber-200">
-            Add <span className="font-bold">${next.remaining.toFixed(2)}</span> more to unlock{" "}
+            Add <span className="font-bold">${(next.remaining ?? 0).toFixed(2)}</span> more to unlock{" "}
             <span className="font-bold">{next.tier.giftName}</span>!
           </p>
         </div>

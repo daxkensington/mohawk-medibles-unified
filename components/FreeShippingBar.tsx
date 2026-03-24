@@ -24,7 +24,7 @@ export default function FreeShippingBar() {
                     </span>
                 ) : (
                     <span className="text-sm text-foreground/70 dark:text-cream/70">
-                        Add <span className="font-bold text-foreground dark:text-white">${remaining.toFixed(2)}</span> more for free shipping
+                        Add <span className="font-bold text-foreground dark:text-white">${(remaining ?? 0).toFixed(2)}</span> more for free shipping
                     </span>
                 )}
             </div>
@@ -39,7 +39,7 @@ export default function FreeShippingBar() {
                 />
             </div>
             <div className="flex justify-between mt-1">
-                <span className="text-[10px] text-muted-foreground/60">${total.toFixed(2)}</span>
+                <span className="text-[10px] text-muted-foreground/60">${(total ?? 0).toFixed(2)}</span>
                 <span className="text-[10px] text-muted-foreground/60">${FREE_SHIPPING_THRESHOLD}</span>
             </div>
         </div>

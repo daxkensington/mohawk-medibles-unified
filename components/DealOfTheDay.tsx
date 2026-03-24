@@ -106,7 +106,7 @@ export default function DealOfTheDay() {
 
                 {/* Savings badge */}
                 <div className="absolute top-4 left-4 bg-red-500 text-white px-4 py-1.5 rounded-full text-sm font-bold shadow-lg">
-                  Save ${savings.toFixed(2)}
+                  Save ${(savings ?? 0).toFixed(2)}
                 </div>
 
                 {/* Deal of the Day badge */}
@@ -138,10 +138,10 @@ export default function DealOfTheDay() {
                 {/* Pricing */}
                 <div className="flex items-baseline gap-3 mb-6">
                   <span className="text-4xl md:text-5xl font-black text-forest dark:text-lime">
-                    ${deal.dealPrice.toFixed(2)}
+                    ${(deal.dealPrice ?? 0).toFixed(2)}
                   </span>
                   <span className="text-xl text-muted-foreground line-through">
-                    ${deal.originalPrice.toFixed(2)}
+                    ${(deal.originalPrice ?? 0).toFixed(2)}
                   </span>
                   <span className="text-sm font-bold text-red-500 bg-red-500/10 px-2 py-0.5 rounded-full">
                     -{deal.savingsPercent}%

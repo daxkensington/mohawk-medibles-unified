@@ -77,7 +77,7 @@ export default function TerritoryGrownSection() {
                   {getShortName(product)}
                 </h3>
                 <p className="text-sm font-bold text-forest dark:text-lime mt-1">
-                  ${product.price.toFixed(2)}
+                  ${(product.price ?? 0).toFixed(2)}
                 </p>
               </div>
             </Link>

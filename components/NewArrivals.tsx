@@ -103,7 +103,7 @@ export default function NewArrivals() {
                                 )}
                                 <div className="flex items-center justify-between">
                                     <span className="font-bold text-forest dark:text-cream">
-                                        ${p.price.toFixed(2)}
+                                        ${(p.price ?? 0).toFixed(2)}
                                     </span>
                                     <Button
                                         size="sm"
