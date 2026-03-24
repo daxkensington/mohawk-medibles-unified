@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { trpc } from "@/lib/trpc";
 import { Trophy, Clock, ArrowRight, Flame } from "lucide-react";
 import Link from "next/link";
 
@@ -40,12 +39,18 @@ function CountdownUnit({ value, label }: { value: number; label: string }) {
 }
 
 export default function ContestBanner() {
-  const { data: contests } = trpc.contest.getActive.useQuery(undefined, {
-    refetchInterval: 60000,
-  });
+  const [contest, setContest] = useState<any>(null);
 
-  // Pick the first active contest
-  const contest = contests?.[0];
+  useEffect(() => {
+    fetch("/api/trpc/contest.getActive?input={}")
+      .then((r) => r.json())
+      .then((res) => {
+        const data = res?.result?.data;
+        if (Array.isArray(data) && data.length > 0) setContest(data[0]);
+      })
+      .catch(() => {});
+  }, []);
+
   if (!contest) return null;
 
   return <ContestBannerInner contest={contest} />;

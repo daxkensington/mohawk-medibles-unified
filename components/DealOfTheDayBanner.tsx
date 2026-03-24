@@ -3,8 +3,6 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { Flame, X } from "lucide-react";
-import { trpc } from "@/lib/trpc";
-
 interface TimeLeft {
   hours: number;
   minutes: number;
@@ -35,10 +33,17 @@ export default function DealOfTheDayBanner() {
     expired: true,
   });
 
-  const { data: deal } = trpc.dailyDeals.getFeatured.useQuery(undefined, {
-    retry: false,
-    refetchInterval: 60000,
-  });
+  const [deal, setDeal] = useState<any>(null);
+
+  useEffect(() => {
+    fetch("/api/trpc/dailyDeals.getFeatured?input={}")
+      .then((r) => r.json())
+      .then((res) => {
+        const data = res?.result?.data;
+        if (data) setDeal(data);
+      })
+      .catch(() => {});
+  }, []);
 
   const tick = useCallback(() => {
     if (deal?.endDate) {

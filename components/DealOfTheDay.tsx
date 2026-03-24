@@ -6,17 +6,21 @@ import Image from "next/image";
 import { Flame, ShoppingCart, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CountdownTimer from "@/components/CountdownTimer";
-import { trpc } from "@/lib/trpc";
 import { useCart } from "@/hooks/useCart";
 
+interface DealData {
+  title: string;
+  description?: string;
+  productSlug: string;
+  dealPrice: number;
+  originalPrice: number;
+  savingsPercent: number;
+  endDate: string;
+}
+
 export default function DealOfTheDay() {
-  const { data: deal, isLoading } = trpc.dailyDeals.getFeatured.useQuery(
-    undefined,
-    {
-      retry: false,
-      refetchInterval: 60000, // refetch every minute
-    }
-  );
+  const [deal, setDeal] = useState<DealData | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   const [product, setProduct] = useState<{
     name: string;
@@ -26,6 +30,18 @@ export default function DealOfTheDay() {
   } | null>(null);
 
   const { addItem } = useCart();
+
+  // Fetch the featured deal via API (no tRPC dependency)
+  useEffect(() => {
+    fetch("/api/trpc/dailyDeals.getFeatured?input={}")
+      .then((r) => r.json())
+      .then((res) => {
+        const data = res?.result?.data;
+        if (data) setDeal(data);
+      })
+      .catch(() => {})
+      .finally(() => setIsLoading(false));
+  }, []);
 
   // Fetch the product data for the deal
   useEffect(() => {
