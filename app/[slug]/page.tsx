@@ -40,19 +40,19 @@ const LEGACY_TO_NEW_DELIVERY: Record<string, string> = {
 
 // Province-specific meta descriptions for delivery pages
 const PROVINCE_META: Record<string, string> = {
-    "ontario-delivery": "Buy cannabis online in Ontario with fast Xpresspost delivery. 344+ lab-tested products from Mohawk Medibles — flower, edibles, concentrates, vapes. Same-day processing, discreet shipping to Toronto, Ottawa, Hamilton & all ON cities.",
-    "alberta-delivery": "Order premium cannabis online in Alberta. Mohawk Medibles ships 344+ lab-tested products — flower, edibles, vapes — via Xpresspost to Calgary, Edmonton & all AB locations. Empire Standard™ quality.",
-    "british-columbia-delivery": "Cannabis delivery to British Columbia from Mohawk Medibles. 344+ lab-tested products shipped via Xpresspost to Vancouver, Victoria & all BC cities. Indigenous-owned, Empire Standard™ quality.",
-    "quebec-delivery": "Livraison de cannabis au Québec. Mohawk Medibles ships 344+ premium lab-tested products to Montreal, Quebec City & all QC locations via Canada Post Xpresspost.",
-    "manitoba-delivery": "Cannabis delivery to Manitoba. Mohawk Medibles ships 344+ lab-tested flower, edibles & concentrates to Winnipeg, Brandon & all MB locations. Fast Xpresspost, discreet packaging.",
-    "saskatchewan-delivery": "Buy cannabis online in Saskatchewan. Mohawk Medibles delivers 344+ lab-tested products to Regina, Saskatoon & all SK locations via Xpresspost. Empire Standard™ quality.",
-    "nova-scotia-delivery": "Cannabis delivery to Nova Scotia. 344+ premium lab-tested products shipped to Halifax, Cape Breton & all NS locations. Mohawk Medibles — Indigenous-owned, Xpresspost shipping.",
-    "new-brunswick-delivery": "Order cannabis online in New Brunswick. Mohawk Medibles ships 344+ lab-tested products to Moncton, Saint John, Fredericton & all NB cities via Canada Post Xpresspost.",
-    "new-foundland-labrador-delivery": "Cannabis delivery to Newfoundland & Labrador. 344+ lab-tested products shipped to St. John's, Corner Brook & all NL locations. Fast Xpresspost from Mohawk Medibles.",
-    "prince-edward-island-delivery": "Buy cannabis online in Prince Edward Island. Mohawk Medibles delivers 344+ lab-tested products to Charlottetown & all PEI locations. Empire Standard™ quality, Xpresspost shipping.",
-    "northwest-territories-delivery": "Cannabis delivery to the Northwest Territories. Mohawk Medibles ships 344+ lab-tested products to Yellowknife & all NWT communities via Canada Post Xpresspost.",
-    "nunavut-delivery": "Order cannabis online in Nunavut. Mohawk Medibles delivers 344+ lab-tested products to Iqaluit & all NU communities. Canada-wide Xpresspost shipping, discreet packaging.",
-    "yukon-delivery": "Cannabis delivery to Yukon. 344+ premium lab-tested products shipped to Whitehorse & all YT communities via Xpresspost. Mohawk Medibles — Indigenous-owned dispensary.",
+    "ontario-delivery": "Buy cannabis online in Ontario with fast Xpresspost delivery. 360+ lab-tested products from Mohawk Medibles — flower, edibles, concentrates, vapes. Same-day processing, discreet shipping to Toronto, Ottawa, Hamilton & all ON cities.",
+    "alberta-delivery": "Order premium cannabis online in Alberta. Mohawk Medibles ships 360+ lab-tested products — flower, edibles, vapes — via Xpresspost to Calgary, Edmonton & all AB locations. Empire Standard™ quality.",
+    "british-columbia-delivery": "Cannabis delivery to British Columbia from Mohawk Medibles. 360+ lab-tested products shipped via Xpresspost to Vancouver, Victoria & all BC cities. Indigenous-owned, Empire Standard™ quality.",
+    "quebec-delivery": "Livraison de cannabis au Québec. Mohawk Medibles ships 360+ premium lab-tested products to Montreal, Quebec City & all QC locations via Canada Post Xpresspost.",
+    "manitoba-delivery": "Cannabis delivery to Manitoba. Mohawk Medibles ships 360+ lab-tested flower, edibles & concentrates to Winnipeg, Brandon & all MB locations. Fast Xpresspost, discreet packaging.",
+    "saskatchewan-delivery": "Buy cannabis online in Saskatchewan. Mohawk Medibles delivers 360+ lab-tested products to Regina, Saskatoon & all SK locations via Xpresspost. Empire Standard™ quality.",
+    "nova-scotia-delivery": "Cannabis delivery to Nova Scotia. 360+ premium lab-tested products shipped to Halifax, Cape Breton & all NS locations. Mohawk Medibles — Indigenous-owned, Xpresspost shipping.",
+    "new-brunswick-delivery": "Order cannabis online in New Brunswick. Mohawk Medibles ships 360+ lab-tested products to Moncton, Saint John, Fredericton & all NB cities via Canada Post Xpresspost.",
+    "new-foundland-labrador-delivery": "Cannabis delivery to Newfoundland & Labrador. 360+ lab-tested products shipped to St. John's, Corner Brook & all NL locations. Fast Xpresspost from Mohawk Medibles.",
+    "prince-edward-island-delivery": "Buy cannabis online in Prince Edward Island. Mohawk Medibles delivers 360+ lab-tested products to Charlottetown & all PEI locations. Empire Standard™ quality, Xpresspost shipping.",
+    "northwest-territories-delivery": "Cannabis delivery to the Northwest Territories. Mohawk Medibles ships 360+ lab-tested products to Yellowknife & all NWT communities via Canada Post Xpresspost.",
+    "nunavut-delivery": "Order cannabis online in Nunavut. Mohawk Medibles delivers 360+ lab-tested products to Iqaluit & all NU communities. Canada-wide Xpresspost shipping, discreet packaging.",
+    "yukon-delivery": "Cannabis delivery to Yukon. 360+ premium lab-tested products shipped to Whitehorse & all YT communities via Xpresspost. Mohawk Medibles — Indigenous-owned dispensary.",
 };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -268,7 +268,7 @@ export default async function DynamicPage({ params }: PageProps) {
                 {/* Trust Stats - GEO Strategy */}
                 <section className="mt-32 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
                     <div className="glass p-8 rounded-3xl border border-white/5">
-                        <div className="text-5xl font-bold text-white bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent mb-2">344+</div>
+                        <div className="text-5xl font-bold text-white bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent mb-2">360+</div>
                         <div className="text-[10px] uppercase tracking-[0.3em] text-cream/50">Premium Products</div>
                     </div>
                     <div className="glass p-8 rounded-3xl border border-white/5">

@@ -32,7 +32,7 @@ const moh: DictionarySchema = {
     hero: {
         badge: "Onkwehón:we raotirihwá:ke · Tsí Ia:iak Niionkwetá:ke",
         headline: "Ón:kwe Kahionhátie, Tsi Niionkwarihó:ten Teiakotáhsawen",
-        subheadline: "344+ teieiéstahkhwa. Oié:ri, kanatarowanénhtha, tsi niió:re — Canada akwékon.",
+        subheadline: "360+ teieiéstahkhwa. Oié:ri, kanatarowanénhtha, tsi niió:re — Canada akwékon.",
         shopNow: "Atenniónni nonwá",
         learnMore: "Sewatahonhsí:iohst",
     },
@@ -72,7 +72,7 @@ const moh: DictionarySchema = {
         alsoDelivering: "Shé:kon tó:ka nikaniatarà:ke",
         deliveryFaq: "Otién:na — Iesá:wis",
         labTested: "Teieiéstahkhwa",
-        products339: "344+ kahionhátie",
+        products339: "360+ kahionhátie",
         open: "Tewathón:ni 9–22",
         fastDiscreet: "Ó:nen ok tánon ionkwaterihwahkhwáhson",
         empireStandard: "Akwékon tehotiienáweron ne Empire Standard™",
@@ -94,9 +94,9 @@ const moh: DictionarySchema = {
     // ─── Kaná:takon — Homepage sections ────────────────────
     home: {
         shopByCategory: "Atenniónni Nikaniatará:ke",
-        categorySubtitle: "344+ teieiéstahkhwa kahionhátie",
+        categorySubtitle: "360+ teieiéstahkhwa kahionhátie",
         viewAllProducts: "Satká:tho akwékon",
-        productsCount: "344+ Kahionhátie",
+        productsCount: "360+ Kahionhátie",
 
         whatLookingFor: "Nahò:ten iesá:iere?",
         shopByFeeling: "Atenniónni tsi naiesá:iere",
@@ -202,7 +202,7 @@ const moh: DictionarySchema = {
         faqQ12: "Kén teieiéstahkhwa ne kahionhátie?",  // "Are products lab-tested?"
         faqA12: "Hen. Akwékon tehotiienáweron Empire Standard™. THC/CBD teieiéstahkhwa, iáh teiokwáhson, tánon tiotkon kashatste.",
         faqQ13: "Nahò:ten nikaniatará:ke sewatennión:ni?",  // "What categories do you carry?"
-        faqA13: "344+ kahionhátie — oié:ri, kanatarowanénhtha, tsi niiokwáhson, vapes, tánon ó:ia. Á:se tiotkon ionterihwakweniéhstha.",
+        faqA13: "360+ kahionhátie — oié:ri, kanatarowanénhtha, tsi niiokwáhson, vapes, tánon ó:ia. Á:se tiotkon ionterihwakweniéhstha.",
         faqQ14: "Kén tehiatá:ti ne THC niiokwáhson?",  // "Do THC percentages vary?"
         faqA14: "Hen, nó:nen tsi niió:re tehiatá:ti. THC/CBD tsi iehiatáhrhon — teieiéstahkhwa satká:tho tóka iesá:iere.",
         faqQ15: "Oh ní:ioht tsi ionkerihwá:ienhs ne kahionhátie?",  // "How should I store products?"
@@ -339,7 +339,7 @@ const moh: DictionarySchema = {
         milestone2022: "10,000+ iehatíhstha akwékon niiohwentsiá:ke",
         milestone2023: "Empire Standard™ ioianérehst á:se teionkwatáhsawen",
         milestone2024: "MedAgent AI iethinihsnién:ni á:se",
-        milestone2025: "344+ kahionhátie 15 nikaniatará:ke",
+        milestone2025: "360+ kahionhátie 15 nikaniatará:ke",
         // Quality Promise
         qualityLabel: "Empire Standard™",
         qualityHeadline: "Ioianérehst Iáh Teionkwaté:nion.",  // "Quality Without Compromise"
@@ -354,7 +354,7 @@ const moh: DictionarySchema = {
         qualityDiscreetDetail: "Iáh teiotsiá:ton",
         // CTA
         readyToShop: "Kén satennión:ni?",                // "Ready to shop?"
-        readyToShopDesc: "344+ ioianérehst kahionhátie. Onwá iesá:wis, Canada akwékon, tiotkon iáh tekaiénthos.",
+        readyToShopDesc: "360+ ioianérehst kahionhátie. Onwá iesá:wis, Canada akwékon, tiotkon iáh tekaiénthos.",
         browseCollection: "Satká:tho Kahionhátie",
         contactUs: "Iesanónhianion",
     },
@@ -414,7 +414,7 @@ const moh: DictionarySchema = {
         subtitle: "Mohawk Medibles sewatiénni — ionkwaterihwahkhwáhson, tánon ó:nen ok. Áhsen tsi niiohá:ke ne ioianérehst, teieiéstahkhwa kahionhátie iesá:wis.",
         // Step 1
         step1Title: "Satká:tho tánon Satié:ren",         // "Browse & Select"
-        step1Desc: "Satká:tho ne atenniónhstha tánon 344+ kahionhátie. Sá:ier ne nikaniatará:ke, kashatste, ohwistá:ke, tóka ó:ia. Oié:ri, kanatarowanénhtha, tsi niiokwáhson, vapes, hash, CBD, tánon ó:ia.",
+        step1Desc: "Satká:tho ne atenniónhstha tánon 360+ kahionhátie. Sá:ier ne nikaniatará:ke, kashatste, ohwistá:ke, tóka ó:ia. Oié:ri, kanatarowanénhtha, tsi niiokwáhson, vapes, hash, CBD, tánon ó:ia.",
         step1Bullet1: "Nikaniatará:ke: oié:ri, kanatarowanénhtha, tsi niiokwáhson, vapes, hash, CBD, tánon ó:ia",
         step1Bullet2: "Satié:ren THC/CBD, ohwistá:ke, tánon ionterihwaienstáhkhwa",
         step1Bullet3: "Satká:tho tsi nahó:ten tánon teieiéstahkhwa",
@@ -465,7 +465,7 @@ const moh: DictionarySchema = {
         contactSupport: "Iesanónhianion",
         // CTA
         readyToOrder: "Kén Sewatiénni?",                // "Ready to Order?"
-        readyToOrderDesc: "344+ teieiéstahkhwa kahionhátie — atenniónni nonwá.",
+        readyToOrderDesc: "360+ teieiéstahkhwa kahionhátie — atenniónni nonwá.",
         startShopping: "Atenniónni Nonwá",               // "Start Shopping"
     },
 
@@ -677,7 +677,7 @@ const moh: DictionarySchema = {
         staffPicks: "Ionkhiia:ráhstha",                   // "Staff Picks" — "our selections"
         bestSellers: "Ioianeréhston Atennión:ni",          // "Best Sellers"
         // CTA
-        browseAllProducts: "Satká:tho Akwékon 344+ Kahionhátie",
+        browseAllProducts: "Satká:tho Akwékon 360+ Kahionhátie",
         browseAllDesc: "Satká:tho akwékon ne ioianérehst kahionhátie, akwékon Empire Standard™.",
         exploreFullShop: "Satká:tho Akwékon Atenniónhstha",  // "Explore Full Shop"
     },
@@ -685,9 +685,9 @@ const moh: DictionarySchema = {
     // ─── SEO Meta (Kanyen'kéha page titles & descriptions) ──
     seo: {
         siteTitle: "Mohawk Medibles | Onkwehón:we Kahionhátie — Tsí Ia:iak Niionkwetá:ke",
-        siteDescription: "Onkwehón:we kahionhátie atenniónhstha Tsí Ia:iak Niionkwetá:ke. 344+ teieiéstahkhwa: oié:ri, kanatarowanénhtha, tsi niió:re. Empire Standard™. Canada akwékon.",
+        siteDescription: "Onkwehón:we kahionhátie atenniónhstha Tsí Ia:iak Niionkwetá:ke. 360+ teieiéstahkhwa: oié:ri, kanatarowanénhtha, tsi niió:re. Empire Standard™. Canada akwékon.",
         shopTitle: "Atenniónni Kahionhátie | Mohawk Medibles",
-        shopDescription: "Satká:tho 344+ teieiéstahkhwa kahionhátie. Oié:ri, kanatarowanénhtha, tsi niió:re — Empire Standard™. Canada akwékon iesá:wis.",
+        shopDescription: "Satká:tho 360+ teieiéstahkhwa kahionhátie. Oié:ri, kanatarowanénhtha, tsi niió:re — Empire Standard™. Canada akwékon iesá:wis.",
         dealsTitle: "Ioterihwakweniéhstha Kahionhátie | Mohawk Medibles",
         dealsDescription: "Ohwistánohon ne ioianérehst kahionhátie. Iáh tekaiénthos $199, tewahwátsire. Onkwehón:we, teieiéstahkhwa.",
         aboutTitle: "Oh Nahò:ten Mohawk Medibles | Onkwehón:we Kahionhátie",

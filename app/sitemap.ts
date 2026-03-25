@@ -145,7 +145,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         },
     ];
 
-    // ─── Product Pages (344 products) with images ───────────
+    // ─── Product Pages (360+ products) with images ───────────
     const productPages: MetadataRoute.Sitemap = PRODUCTS.map((product) => ({
         url: `${BASE_URL}${product.path}`,
         lastModified: now,

@@ -115,7 +115,7 @@ const FAQ_ITEMS = [
     {
         question: "How does Mohawk Medibles exercise Indigenous cannabis sovereignty?",
         answer:
-            "Mohawk Medibles exercises Indigenous cannabis sovereignty by operating as an Indigenous-owned and operated cannabis dispensary from Six Nations territory. The dispensary maintains rigorous quality standards through its Empire Standard quality program, which includes third-party lab testing for potency and contaminants, terpene profiling, and strict product curation. Mohawk Medibles serves customers across all 13 Canadian provinces and territories with over 344 premium products, provides employment and economic opportunities within the Mohawk community, and reinvests revenue into community development. The business represents a practical example of how Indigenous self-governance and economic sovereignty can operate successfully within the cannabis sector.",
+            "Mohawk Medibles exercises Indigenous cannabis sovereignty by operating as an Indigenous-owned and operated cannabis dispensary from Six Nations territory. The dispensary maintains rigorous quality standards through its Empire Standard quality program, which includes third-party lab testing for potency and contaminants, terpene profiling, and strict product curation. Mohawk Medibles serves customers across all 13 Canadian provinces and territories with over 360 premium products, provides employment and economic opportunities within the Mohawk community, and reinvests revenue into community development. The business represents a practical example of how Indigenous self-governance and economic sovereignty can operate successfully within the cannabis sector.",
     },
     {
         question: "Why should Canadians support Indigenous-owned cannabis businesses?",
@@ -448,7 +448,7 @@ export default function IndigenousCannabisRightsPage() {
                             </Link>{" "}
                             was founded in 2019 on Mohawk territory as a community-focused cannabis operation. What began
                             as a small local dispensary has grown into one of Canada&apos;s most trusted Indigenous-owned
-                            online dispensaries, serving customers in all 13 provinces and territories with over 344
+                            online dispensaries, serving customers in all 13 provinces and territories with over 360
                             premium, lab-tested products.
                         </p>
                         <p>
@@ -707,7 +707,7 @@ export default function IndigenousCannabisRightsPage() {
                             potency and contaminants, terpene profiling for every strain, and rigorous product curation
                             across{" "}
                             <Link href="/shop" className="text-forest dark:text-lime hover:underline font-semibold">
-                                344+ products
+                                360+ products
                             </Link>
                             . With free shipping on orders over $199,{" "}
                             <Link href="/delivery" className="text-forest dark:text-lime hover:underline font-semibold">
@@ -752,7 +752,7 @@ export default function IndigenousCannabisRightsPage() {
                     </h2>
                     <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8">
                         Every purchase from an Indigenous-owned dispensary is an act of reconciliation. Shop Mohawk
-                        Medibles for 344+ premium, lab-tested cannabis products shipped free across Canada on orders
+                        Medibles for 360+ premium, lab-tested cannabis products shipped free across Canada on orders
                         over $199. Indigenous-owned. Community-powered. Quality-guaranteed.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -786,7 +786,7 @@ export default function IndigenousCannabisRightsPage() {
                             </h3>
                             <p className="text-sm text-muted-foreground">
                                 Learn about Mohawk Medibles &mdash; Canada&apos;s trusted Indigenous-owned online dispensary
-                                with 344+ premium products.
+                                with 360+ premium products.
                             </p>
                         </Link>
                         <Link

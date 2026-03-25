@@ -43,7 +43,7 @@ const DEALS = [
     badge: "BEST SELLER",
     gradient: "from-[#1a3a0e]/90 to-[#0f2a0b]/80",
     span: "md:col-span-2 md:row-span-2",
-    image: "https://mohawkmedibles.ca/wp-content/uploads/2025/09/Goat-with-logo.png",
+    image: "/assets/cards/monthly-ounces.webp",
     alt: "$40 ounce deal — premium cannabis flower, 3 for $100",
   },
   {
@@ -54,7 +54,7 @@ const DEALS = [
     badge: "50% OFF",
     gradient: "from-[#1e1e2e]/90 to-[#151520]/80",
     span: "",
-    image: "https://mohawkmedibles.ca/wp-content/uploads/2025/11/Rainbow-Pieces-get-wrecked-on-the-rainbow-with-logo.png",
+    image: "/assets/cards/monthly-gummies.webp",
     alt: "1000mg Rainbow Pieces gummies deal — 50% off",
   },
   {
@@ -65,7 +65,7 @@ const DEALS = [
     badge: "HOT DEAL",
     gradient: "from-[#2a1e34]/90 to-[#1a1525]/80",
     span: "",
-    image: "https://mohawkmedibles.ca/wp-content/uploads/2025/07/Zillionaire-Shatter-Photoroom.png",
+    image: "/assets/hero/hero-concentrates-hash.webp",
     alt: "Zillionaire shatter deal — $10 per gram",
   },
 ];

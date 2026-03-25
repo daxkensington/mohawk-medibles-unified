@@ -159,7 +159,7 @@ export default async function Image() {
                         }}
                     >
                         <span style={{ fontSize: "18px", fontWeight: 700, color: "#FFFFFF" }}>
-                            344+ Premium Products
+                            360+ Premium Products
                         </span>
                     </div>
 

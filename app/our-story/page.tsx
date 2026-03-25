@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
     title: "Our Story — Indigenous-Owned Cannabis Since 2019",
     description:
-        "The story behind Mohawk Medibles — an Indigenous-owned cannabis dispensary rooted in Six Nations heritage. From community roots to serving all of Canada with 344+ lab-tested products meeting the Empire Standard.",
+        "The story behind Mohawk Medibles — an Indigenous-owned cannabis dispensary rooted in Six Nations heritage. From community roots to serving all of Canada with 360+ lab-tested products meeting the Empire Standard.",
     keywords: [
         "mohawk medibles story",
         "indigenous cannabis dispensary",
@@ -76,7 +76,7 @@ export default function OurStoryPage() {
                         </p>
                         <p>
                             What began as a local dispensary serving our neighbours has grown into a trusted
-                            name across Canada, with over 25,000 customers and 344+ products in our catalogue.
+                            name across Canada, with over 25,000 customers and 360+ products in our catalogue.
                             But no matter how far we reach, our roots remain firmly planted in Six Nations soil.
                         </p>
                     </div>
@@ -211,7 +211,7 @@ export default function OurStoryPage() {
                         Ready to Experience the Difference?
                     </h2>
                     <p className="text-muted-foreground mb-8 max-w-md mx-auto">
-                        Browse our full catalogue of 344+ lab-tested products. Free shipping on orders over $199.
+                        Browse our full catalogue of 360+ lab-tested products. Free shipping on orders over $199.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <Link

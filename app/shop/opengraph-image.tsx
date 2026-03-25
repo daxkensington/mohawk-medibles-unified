@@ -7,7 +7,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Shop 344+ Premium Cannabis Products";
+export const alt = "Shop 360+ Premium Cannabis Products";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -95,7 +95,7 @@ export default async function Image() {
                             letterSpacing: "-0.02em",
                         }}
                     >
-                        Shop 344+ Products
+                        Shop 360+ Products
                     </span>
                     <span
                         style={{

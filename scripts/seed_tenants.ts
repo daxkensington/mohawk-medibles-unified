@@ -28,7 +28,7 @@ async function main() {
       tagFilter: [],
       regionFilter: [],
       seoTitle: 'Mohawk Medibles | Premium Indigenous Cannabis — Six Nations',
-      seoDescription: 'Indigenous-owned premium cannabis dispensary on Six Nations territory. 344+ lab-tested products. Ships Canada-wide.',
+      seoDescription: 'Indigenous-owned premium cannabis dispensary on Six Nations territory. 360+ lab-tested products. Ships Canada-wide.',
       seoKeywords: ['mohawk medibles', 'indigenous cannabis', 'six nations dispensary', 'buy weed online canada'],
       paymentMethods: [],
       etransferInstructions: 'Send your Interac e-Transfer to the email in your order confirmation. Use your order number as the payment reference. Your order will be processed once payment is received.',

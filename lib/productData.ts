@@ -1,6 +1,6 @@
 // =============================================================
 // Mohawk Medibles — Complete Product Registry (WC Synced + SEO)
-// Total Products: 344
+// Total Products: 363
 // Last synced: 2026-02-26 via WC Store API
 // =============================================================
 

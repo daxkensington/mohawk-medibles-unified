@@ -77,7 +77,7 @@ const DEFAULT_TENANT: TenantConfig = {
   priceMax: null,
 
   seoTitle: 'Mohawk Medibles | Premium Indigenous Cannabis — Six Nations',
-  seoDescription: 'Indigenous-owned premium cannabis dispensary on Six Nations territory. 344+ lab-tested products. Ships Canada-wide.',
+  seoDescription: 'Indigenous-owned premium cannabis dispensary on Six Nations territory. 360+ lab-tested products. Ships Canada-wide.',
   seoKeywords: ['mohawk medibles', 'indigenous cannabis', 'six nations dispensary'],
   ogImage: '/og-image.png',
 

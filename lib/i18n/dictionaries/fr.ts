@@ -27,7 +27,7 @@ const fr: DictionarySchema = {
     hero: {
         badge: "Propriété autochtone · Territoire des Six Nations",
         headline: "Cannabis de qualité supérieure, enraciné dans le patrimoine",
-        subheadline: "Plus de 344 produits testés en laboratoire conformes au Empire Standard™. Fleurs, comestibles, concentrés et plus — livrés partout au Canada.",
+        subheadline: "Plus de 360 produits testés en laboratoire conformes au Empire Standard™. Fleurs, comestibles, concentrés et plus — livrés partout au Canada.",
         shopNow: "Magasiner maintenant",
         learnMore: "En savoir plus",
     },
@@ -67,7 +67,7 @@ const fr: DictionarySchema = {
         alsoDelivering: "Nous livrons également à",
         deliveryFaq: "FAQ sur la livraison",
         labTested: "Testé en laboratoire",
-        products339: "Plus de 344 produits",
+        products339: "Plus de 360 produits",
         open: "Ouvert de 9 h à 22 h",
         fastDiscreet: "Livraison rapide et discrète à votre porte",
         empireStandard: "Chaque produit respecte le Empire Standard™",
@@ -90,9 +90,9 @@ const fr: DictionarySchema = {
     home: {
         // Vitrine de catégories
         shopByCategory: "Magasiner par catégorie",
-        categorySubtitle: "Plus de 344 produits testés en laboratoire dans nos collections",
+        categorySubtitle: "Plus de 360 produits testés en laboratoire dans nos collections",
         viewAllProducts: "Voir tout",
-        productsCount: "Plus de 344 produits",
+        productsCount: "Plus de 360 produits",
 
         // Filtre par effet
         whatLookingFor: "Que recherchez-vous?",
@@ -204,7 +204,7 @@ const fr: DictionarySchema = {
         faqQ12: "Vos produits sont-ils testés en laboratoire?",
         faqA12: "Oui. Tous les produits respectent nos normes de qualité Empire Standard™. Nous travaillons avec des laboratoires certifiés pour vérifier la teneur en THC/CBD, détecter les contaminants et assurer une puissance constante d'un lot à l'autre.",
         faqQ13: "Quelles catégories de produits offrez-vous?",
-        faqA13: "Nous offrons plus de 344 produits dans cinq catégories : Fleurs de qualité supérieure, Comestibles artisanaux, Concentrés purs, Vapoteuses haut de gamme et Accessoires. Notre catalogue est mis à jour régulièrement avec de nouvelles arrivées.",
+        faqA13: "Nous offrons plus de 360 produits dans cinq catégories : Fleurs de qualité supérieure, Comestibles artisanaux, Concentrés purs, Vapoteuses haut de gamme et Accessoires. Notre catalogue est mis à jour régulièrement avec de nouvelles arrivées.",
         faqQ14: "Les pourcentages de THC varient-ils entre les lots?",
         faqA14: "Oui, de légères variations naturelles entre les lots sont normales. Les pourcentages de THC/CBD affichés sur les pages de produits représentent la plage pour le lot le plus récent. Les résultats de laboratoire sont disponibles sur demande.",
         faqQ15: "Comment devrais-je entreposer mes produits?",
@@ -341,7 +341,7 @@ const fr: DictionarySchema = {
         milestone2022: "Plus de 10 000 clients satisfaits dans toutes les provinces",
         milestone2023: "Introduction du programme de qualité Empire Standard™",
         milestone2024: "Lancement du soutien client alimenté par l'IA MedAgent",
-        milestone2025: "Plus de 344 produits sélectionnés dans 15 catégories",
+        milestone2025: "Plus de 360 produits sélectionnés dans 15 catégories",
         // Promesse de qualité
         qualityLabel: "Le Empire Standard™",
         qualityHeadline: "Qualité sans compromis.",
@@ -356,7 +356,7 @@ const fr: DictionarySchema = {
         qualityDiscreetDetail: "Emballage anti-odeurs",
         // Appel à l'action
         readyToShop: "Prêt à magasiner?",
-        readyToShopDesc: "Parcourez plus de 344 produits de cannabis de qualité supérieure. Traitement le jour même, expédition partout au Canada, toujours sans taxe.",
+        readyToShopDesc: "Parcourez plus de 360 produits de cannabis de qualité supérieure. Traitement le jour même, expédition partout au Canada, toujours sans taxe.",
         browseCollection: "Parcourir la collection",
         contactUs: "Nous contacter",
     },
@@ -416,7 +416,7 @@ const fr: DictionarySchema = {
         subtitle: "Commander du cannabis chez Mohawk Medibles est simple, sécuritaire et rapide. Suivez notre processus facile en 3 étapes pour recevoir des produits de qualité supérieure, testés en laboratoire, livrés à votre porte.",
         // Étape 1
         step1Title: "Parcourir et sélectionner",
-        step1Desc: "Visitez notre boutique et explorez notre vaste collection de produits. Utilisez nos filtres intelligents pour rechercher par catégorie, puissance, type de produit ou prix. Choisissez parmi plus de 344 produits de cannabis testés en laboratoire, incluant fleurs, comestibles, concentrés, vapoteuses, haschich, CBD, champignons et accessoires.",
+        step1Desc: "Visitez notre boutique et explorez notre vaste collection de produits. Utilisez nos filtres intelligents pour rechercher par catégorie, puissance, type de produit ou prix. Choisissez parmi plus de 360 produits de cannabis testés en laboratoire, incluant fleurs, comestibles, concentrés, vapoteuses, haschich, CBD, champignons et accessoires.",
         step1Bullet1: "Parcourez par catégorie : Fleurs, Comestibles, Concentrés, Vapoteuses, Haschich, CBD et plus",
         step1Bullet2: "Filtrez par teneur en THC/CBD, prix, marque et évaluations des clients",
         step1Bullet3: "Lisez les descriptions détaillées des produits et les résultats de laboratoire",
@@ -467,7 +467,7 @@ const fr: DictionarySchema = {
         contactSupport: "Contacter le soutien",
         // Appel à l'action
         readyToOrder: "Prêt à commander?",
-        readyToOrderDesc: "Parcourez plus de 344 produits de cannabis testés en laboratoire et commencez vos achats dès maintenant.",
+        readyToOrderDesc: "Parcourez plus de 360 produits de cannabis testés en laboratoire et commencez vos achats dès maintenant.",
         startShopping: "Commencer à magasiner",
     },
 
@@ -679,7 +679,7 @@ const fr: DictionarySchema = {
         staffPicks: "Coups de cœur de l'équipe",
         bestSellers: "Meilleurs vendeurs",
         // Appel à l'action
-        browseAllProducts: "Parcourir les 344+ produits",
+        browseAllProducts: "Parcourir les 360+ produits",
         browseAllDesc: "Découvrez notre sélection complète de produits de cannabis de qualité supérieure, tous conformes au Empire Standard™.",
         exploreFullShop: "Explorer la boutique complète",
     },
@@ -687,9 +687,9 @@ const fr: DictionarySchema = {
     // ─── SEO Meta (titres & descriptions par page pour le référencement) ──
     seo: {
         siteTitle: "Mohawk Medibles | Cannabis autochtone de qualité supérieure — Six Nations",
-        siteDescription: "Dispensaire de cannabis autochtone sur le territoire des Six Nations. Plus de 344 produits testés en laboratoire : fleurs, comestibles, concentrés, vapoteuses. Qualité Empire Standard™. Livraison partout au Canada.",
+        siteDescription: "Dispensaire de cannabis autochtone sur le territoire des Six Nations. Plus de 360 produits testés en laboratoire : fleurs, comestibles, concentrés, vapoteuses. Qualité Empire Standard™. Livraison partout au Canada.",
         shopTitle: "Acheter du cannabis en ligne | Mohawk Medibles",
-        shopDescription: "Parcourez plus de 344 produits de cannabis testés en laboratoire. Fleurs, comestibles, concentrés, vapoteuses et plus. Qualité Empire Standard™. Livraison rapide partout au Canada.",
+        shopDescription: "Parcourez plus de 360 produits de cannabis testés en laboratoire. Fleurs, comestibles, concentrés, vapoteuses et plus. Qualité Empire Standard™. Livraison rapide partout au Canada.",
         dealsTitle: "Promotions et rabais cannabis | Mohawk Medibles",
         dealsDescription: "Économisez sur du cannabis de qualité. Livraison gratuite dès 199 $, comestibles à mélanger, offres en vrac. Qualité autochtone, testée en laboratoire.",
         aboutTitle: "À propos de Mohawk Medibles | Patrimoine cannabis autochtone",

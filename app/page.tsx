@@ -9,7 +9,7 @@ import HomeClient from "@/components/HomeClient";
 export const metadata: Metadata = {
     title: "Mohawk Medibles — Premium Indigenous Cannabis Dispensary | Buy Weed Online Canada",
     description:
-        "Shop 344+ lab-tested cannabis products: flower, edibles, concentrates, vapes, pre-rolls & more. Indigenous-owned dispensary on Six Nations territory. Free shipping over $199 Canada-wide. Empire Standard™ quality.",
+        "Shop 360+ lab-tested cannabis products: flower, edibles, concentrates, vapes, pre-rolls & more. Indigenous-owned dispensary on Six Nations territory. Free shipping over $199 Canada-wide. Empire Standard™ quality.",
     keywords: [
         "buy weed online canada",
         "online dispensary canada",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Mohawk Medibles — Premium Cannabis | Buy Weed Online Canada",
         description:
-            "344+ lab-tested cannabis products. Flower, edibles, concentrates, vapes & more. Indigenous-owned. Free shipping over $199.",
+            "360+ lab-tested cannabis products. Flower, edibles, concentrates, vapes & more. Indigenous-owned. Free shipping over $199.",
         url: "https://mohawkmedibles.ca",
         siteName: "Mohawk Medibles",
         type: "website",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Mohawk Medibles — Buy Premium Cannabis Online Canada",
         description:
-            "Indigenous-owned dispensary. 344+ lab-tested products. Free shipping over $199 Canada-wide.",
+            "Indigenous-owned dispensary. 360+ lab-tested products. Free shipping over $199 Canada-wide.",
         images: ["/og-image.png"],
     },
     alternates: {
@@ -67,7 +67,7 @@ const homepageSchema = {
     "@id": "https://mohawkmedibles.ca/#webpage",
     name: "Mohawk Medibles — Premium Indigenous Cannabis Dispensary",
     description:
-        "Shop 344+ lab-tested cannabis products from an Indigenous-owned dispensary on Six Nations territory. Free shipping over $199 Canada-wide.",
+        "Shop 360+ lab-tested cannabis products from an Indigenous-owned dispensary on Six Nations territory. Free shipping over $199 Canada-wide.",
     url: "https://mohawkmedibles.ca",
     isPartOf: { "@id": "https://mohawkmedibles.ca/#website" },
     about: { "@id": "https://mohawkmedibles.ca/#organization" },

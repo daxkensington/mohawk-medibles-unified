@@ -77,9 +77,9 @@ const CATEGORY_SEO: Record<string, { title: string; description: string }> = {
 };
 
 const DEFAULT_SEO = {
-    title: "Shop Premium Cannabis Products | 344+ Items",
+    title: "Shop Premium Cannabis Products | 360+ Items",
     description:
-        "Browse 344+ premium cannabis products at Mohawk Medibles. Lab-tested flower, edibles, concentrates, vapes, and accessories. Indigenous-owned, Empire Standard\u2122 quality. Ships Canada-wide via Xpresspost.",
+        "Browse 360+ premium cannabis products at Mohawk Medibles. Lab-tested flower, edibles, concentrates, vapes, and accessories. Indigenous-owned, Empire Standard\u2122 quality. Ships Canada-wide via Xpresspost.",
 };
 
 // ─── generateMetadata (reads searchParams for category filtering) ──

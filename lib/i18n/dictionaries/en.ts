@@ -24,7 +24,7 @@ const en = {
     hero: {
         badge: "Indigenous Owned · Six Nations Territory",
         headline: "Premium Cannabis, Rooted in Heritage",
-        subheadline: "344+ lab-tested products meeting the Empire Standard™. Flower, edibles, concentrates, and more — delivered Canada-wide.",
+        subheadline: "360+ lab-tested products meeting the Empire Standard™. Flower, edibles, concentrates, and more — delivered Canada-wide.",
         shopNow: "Shop Now",
         learnMore: "Learn More",
     },
@@ -64,7 +64,7 @@ const en = {
         alsoDelivering: "Also Delivering To",
         deliveryFaq: "Delivery FAQ",
         labTested: "Lab Tested",
-        products339: "344+ Products",
+        products339: "360+ Products",
         open: "Open 9AM–10PM",
         fastDiscreet: "Fast, discreet delivery right to your door",
         empireStandard: "Every product meets the Empire Standard™",
@@ -87,9 +87,9 @@ const en = {
     home: {
         // Category Showcase
         shopByCategory: "Shop by Category",
-        categorySubtitle: "344+ lab-tested products across our collections",
+        categorySubtitle: "360+ lab-tested products across our collections",
         viewAllProducts: "View All",
-        productsCount: "344+ Products",
+        productsCount: "360+ Products",
 
         // Effect Filter
         whatLookingFor: "What are you looking for?",
@@ -201,7 +201,7 @@ const en = {
         faqQ12: "Are your products lab-tested?",
         faqA12: "Yes. All products meet our Empire Standard\u2122 quality benchmarks. We work with certified labs to verify THC/CBD content, check for contaminants, and ensure consistent potency across batches.",
         faqQ13: "What product categories do you carry?",
-        faqA13: "We carry 344+ products across five categories: Premium Flower, Artisan Edibles, Pure Concentrates, Elite Vapes, and Accessories. Our catalogue is updated regularly with new arrivals.",
+        faqA13: "We carry 360+ products across five categories: Premium Flower, Artisan Edibles, Pure Concentrates, Elite Vapes, and Accessories. Our catalogue is updated regularly with new arrivals.",
         faqQ14: "Do THC percentages vary between batches?",
         faqA14: "Yes, slight natural variation between batches is normal. The THC/CBD percentages listed on product pages represent the range for the most recent batch. Lab results are available upon request.",
         faqQ15: "How should I store my products?",
@@ -338,7 +338,7 @@ const en = {
         milestone2022: "Reached 10,000+ satisfied customers across all provinces",
         milestone2023: "Introduced the Empire Standard\u2122 quality program",
         milestone2024: "Launched MedAgent AI-powered customer support",
-        milestone2025: "344+ curated products across 15 categories",
+        milestone2025: "360+ curated products across 15 categories",
         // Quality Promise
         qualityLabel: "The Empire Standard\u2122",
         qualityHeadline: "Quality Without Compromise.",
@@ -353,7 +353,7 @@ const en = {
         qualityDiscreetDetail: "Smell-proof packaging",
         // CTA
         readyToShop: "Ready to Shop?",
-        readyToShopDesc: "Browse 344+ premium cannabis products. Same-day processing, Canada-wide shipping, always tax-free.",
+        readyToShopDesc: "Browse 360+ premium cannabis products. Same-day processing, Canada-wide shipping, always tax-free.",
         browseCollection: "Browse Collection",
         contactUs: "Contact Us",
     },
@@ -413,7 +413,7 @@ const en = {
         subtitle: "Ordering cannabis from Mohawk Medibles is simple, secure, and fast. Follow our easy 3-step process to get premium, lab-tested products delivered to your door.",
         // Step 1
         step1Title: "Browse & Select",
-        step1Desc: "Visit our shop and explore our extensive collection of products. Use our smart filters to search by category, potency, product type, or price. Choose from 344+ lab-tested cannabis products including flower, edibles, concentrates, vapes, hash, CBD, mushrooms, and accessories.",
+        step1Desc: "Visit our shop and explore our extensive collection of products. Use our smart filters to search by category, potency, product type, or price. Choose from 360+ lab-tested cannabis products including flower, edibles, concentrates, vapes, hash, CBD, mushrooms, and accessories.",
         step1Bullet1: "Browse by category: Flower, Edibles, Concentrates, Vapes, Hash, CBD, and more",
         step1Bullet2: "Filter by THC/CBD content, price, brand, and customer ratings",
         step1Bullet3: "Read detailed product descriptions and lab test results",
@@ -464,7 +464,7 @@ const en = {
         contactSupport: "Contact Support",
         // CTA
         readyToOrder: "Ready to Order?",
-        readyToOrderDesc: "Browse 344+ lab-tested cannabis products and start shopping now.",
+        readyToOrderDesc: "Browse 360+ lab-tested cannabis products and start shopping now.",
         startShopping: "Start Shopping",
     },
 
@@ -676,7 +676,7 @@ const en = {
         staffPicks: "Staff Picks",
         bestSellers: "Best Sellers",
         // CTA
-        browseAllProducts: "Browse All 344+ Products",
+        browseAllProducts: "Browse All 360+ Products",
         browseAllDesc: "Discover our complete selection of premium cannabis products, all meeting the Empire Standard\u2122.",
         exploreFullShop: "Explore Full Shop",
     },
@@ -684,9 +684,9 @@ const en = {
     // ─── SEO Meta (per-page titles & descriptions for locale) ──
     seo: {
         siteTitle: "Mohawk Medibles | Premium Indigenous Cannabis — Six Nations",
-        siteDescription: "Indigenous-owned premium cannabis dispensary on Six Nations territory. 344+ lab-tested products: flower, edibles, concentrates, vapes. Empire Standard™ quality. Ships Canada-wide.",
+        siteDescription: "Indigenous-owned premium cannabis dispensary on Six Nations territory. 360+ lab-tested products: flower, edibles, concentrates, vapes. Empire Standard™ quality. Ships Canada-wide.",
         shopTitle: "Shop Premium Cannabis Online | Mohawk Medibles",
-        shopDescription: "Browse 344+ lab-tested cannabis products. Flower, edibles, concentrates, vapes & more. Empire Standard™ quality. Fast Canada-wide delivery.",
+        shopDescription: "Browse 360+ lab-tested cannabis products. Flower, edibles, concentrates, vapes & more. Empire Standard™ quality. Fast Canada-wide delivery.",
         dealsTitle: "Cannabis Deals & Promotions | Mohawk Medibles",
         dealsDescription: "Save on premium cannabis. Free shipping over $199, mix & match edibles, bulk flower deals. Indigenous-owned, lab-tested quality.",
         aboutTitle: "About Mohawk Medibles | Indigenous Cannabis Heritage",

@@ -28,15 +28,15 @@ export function HowItWorks() {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16">
-      <h2 className="text-3xl font-heading font-bold text-center mb-10">
+    <section className="max-w-7xl mx-auto px-4 py-16 bg-background">
+      <h2 className="text-3xl font-heading font-bold text-center mb-10 text-foreground dark:text-cream">
         How It Works
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {steps.map((item) => (
           <div
             key={item.step}
-            className="relative text-center overflow-hidden rounded-2xl border border-[var(--border)]"
+            className="relative text-center overflow-hidden rounded-2xl border border-border shadow-lg dark:shadow-black/40 dark:border-white/10 transition-colors"
           >
             <div className="relative h-36 w-full">
               <Image
@@ -46,17 +46,17 @@ export function HowItWorks() {
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--card)]" />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-card" />
             </div>
-            <div className="absolute top-32 left-1/2 -translate-x-1/2 w-8 h-8 bg-[var(--lime)] text-black text-xs font-black flex items-center justify-center rounded-full z-10">
+            <div className="absolute top-32 left-1/2 -translate-x-1/2 w-10 h-10 bg-lime text-black text-xs font-black flex items-center justify-center rounded-full z-10 shadow-md dark:shadow-lime/30 ring-2 ring-background">
               {item.step}
             </div>
-            <div className="p-6 pt-4 bg-[var(--card)]">
+            <div className="p-6 pt-4 bg-card">
               <div className="flex justify-center mb-4 mt-2">{item.icon}</div>
-              <h3 className="font-heading font-bold text-white text-lg mb-2">
+              <h3 className="font-heading font-bold text-lg mb-2 text-card-foreground dark:text-white">
                 {item.title}
               </h3>
-              <p className="text-sm text-[var(--muted-foreground)]">
+              <p className="text-sm text-muted-foreground dark:text-white/70">
                 {item.desc}
               </p>
             </div>

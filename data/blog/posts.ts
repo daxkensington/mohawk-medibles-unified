@@ -223,7 +223,7 @@ All edible products ship Canada-wide via Canada Post Xpresspost with discreet pa
     {
         slug: "indica-vs-sativa-vs-hybrid-guide",
         title: "Indica vs Sativa vs Hybrid: What's the Real Difference in 2026?",
-        metaDescription: "Indica vs Sativa vs Hybrid explained by experts. Learn why terpene profiles matter more than strain type, plus top picks from Mohawk Medibles' 344+ product catalog.",
+        metaDescription: "Indica vs Sativa vs Hybrid explained by experts. Learn why terpene profiles matter more than strain type, plus top picks from Mohawk Medibles' 360+ product catalog.",
         excerpt: "The indica/sativa debate is evolving. Modern cannabis science shows that terpene and cannabinoid profiles matter more than strain classification. Here's what you actually need to know.",
         category: "Cannabis Science",
         image: "/assets/products/amnesia-haze-5g.jpg",
@@ -587,7 +587,7 @@ A well-stocked dispensary should offer:
 - CBD and wellness products
 - Accessories
 
-Mohawk Medibles carries 344+ verified products across all major categories.
+Mohawk Medibles carries 360+ verified products across all major categories.
 
 ### 3. Transparent Pricing
 Watch out for hidden fees. The price you see should be close to what you pay. Look for:
@@ -667,7 +667,7 @@ Mohawk Medibles operates from Six Nations of the Grand River territory, rooted i
 
 ## Ready to Shop?
 
-Browse our full catalog of 344+ premium, lab-tested cannabis products at mohawkmedibles.co/shop. Every order ships Canada-wide with same-day processing and full tracking.`,
+Browse our full catalog of 360+ premium, lab-tested cannabis products at mohawkmedibles.co/shop. Every order ships Canada-wide with same-day processing and full tracking.`,
     },
 ];
 

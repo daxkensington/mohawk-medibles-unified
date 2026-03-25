@@ -135,7 +135,7 @@ export default function GiftCardsPage() {
                         Gift Cards
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                        Give the gift of premium, lab-tested cannabis. Delivered by email, redeemable on 344+
+                        Give the gift of premium, lab-tested cannabis. Delivered by email, redeemable on 360+
                         products. The perfect gift for any occasion.
                     </p>
                 </div>
@@ -377,7 +377,7 @@ export default function GiftCardsPage() {
                         Mohawk Medibles gift cards are the perfect way to share premium, lab-tested cannabis
                         with friends and family. Choose from preset amounts of $25, $50, $100, $150, or $200
                         &mdash; or set a custom amount up to $500. Each gift card is delivered instantly via
-                        email with a unique redemption code. Redeemable on our full catalogue of 344+ products
+                        email with a unique redemption code. Redeemable on our full catalogue of 360+ products
                         including flower, edibles, concentrates, vapes, and more. As an Indigenous-owned
                         dispensary from Six Nations territory, every gift card supports community economic
                         sovereignty.

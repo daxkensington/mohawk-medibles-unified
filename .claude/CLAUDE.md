@@ -1,7 +1,7 @@
 # Mohawk Medibles SEO — Project Directives
 
 ## Mission
-Indigenous-owned cannabis dispensary. $3.17M annual revenue. 344 products. 25,918 customers. Dominate Canadian cannabis SEO.
+Indigenous-owned cannabis dispensary. $3.17M annual revenue. 360+ products. 25,918 customers. Dominate Canadian cannabis SEO.
 
 ## Stack
 - Next.js 16 + React 19 + Tailwind 4 + Prisma + Neon Postgres

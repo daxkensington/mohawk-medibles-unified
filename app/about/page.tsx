@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     ],
     openGraph: {
         title: "About Mohawk Medibles — Indigenous-Owned Cannabis Since 2019",
-        description: "Indigenous-owned cannabis dispensary serving Canada with 344+ premium, lab-tested products from Six Nations territory.",
+        description: "Indigenous-owned cannabis dispensary serving Canada with 360+ premium, lab-tested products from Six Nations territory.",
         url: "https://mohawkmedibles.ca/about",
         type: "website",
         images: ["/og-image.png"],
@@ -55,7 +55,7 @@ const aboutSchema = {
         foundingDate: "2019",
         foundingLocation: "Six Nations of the Grand River, Ontario, Canada",
         description:
-            "Indigenous-owned premium cannabis dispensary serving Canada with 344+ lab-tested products meeting the Empire Standard™.",
+            "Indigenous-owned premium cannabis dispensary serving Canada with 360+ lab-tested products meeting the Empire Standard™.",
         ethicsPolicy: "https://mohawkmedibles.ca/privacy",
     },
     mainEntity: { "@id": "https://mohawkmedibles.ca/#organization" },

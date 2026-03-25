@@ -60,7 +60,7 @@ export default function AboutClientContent() {
     ];
 
     const STATS = [
-        { value: "344+", label: t("about.statProducts") },
+        { value: "360+", label: t("about.statProducts") },
         { value: "47K+", label: t("about.statCustomers") },
         { value: "6+", label: t("about.statYears") },
         { value: "13", label: t("about.statProvinces") },

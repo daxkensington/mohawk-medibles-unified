@@ -43,7 +43,7 @@ const PAGE_URL = "https://mohawkmedibles.ca/buy-weed-online-canada";
 export const metadata: Metadata = {
     title: "Buy Weed Online Canada — Free Shipping Over $199",
     description:
-        "Buy weed online in Canada from Mohawk Medibles. 344+ lab-tested products, free shipping over $199, discreet delivery. Shop now!",
+        "Buy weed online in Canada from Mohawk Medibles. 360+ lab-tested products, free shipping over $199, discreet delivery. Shop now!",
     keywords: [
         "buy weed online canada",
         "order cannabis online",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Buy Weed Online Canada — Free Shipping Over $199",
         description:
-            "Canada's trusted online dispensary. 344+ lab-tested products, AAAA flower, edibles, concentrates & more. Free shipping over $199. Indigenous-owned since 2019.",
+            "Canada's trusted online dispensary. 360+ lab-tested products, AAAA flower, edibles, concentrates & more. Free shipping over $199. Indigenous-owned since 2019.",
         url: PAGE_URL,
         type: "website",
         images: ["/og-image.png"],
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Buy Weed Online Canada",
         description:
-            "344+ lab-tested cannabis products. Free shipping over $199. Indigenous-owned. Shop Canada's most trusted online dispensary.",
+            "360+ lab-tested cannabis products. Free shipping over $199. Indigenous-owned. Shop Canada's most trusted online dispensary.",
     },
     alternates: {
         canonical: PAGE_URL,
@@ -113,7 +113,7 @@ const FAQ_ITEMS = [
     {
         question: "What is the best online dispensary in Canada?",
         answer:
-            "Mohawk Medibles is consistently rated one of the best online dispensaries in Canada. We are Indigenous-owned and have been operating since 2019, offering 344+ lab-tested products across flower, edibles, concentrates, vapes, hash, pre-rolls, CBD, and mushrooms. Our Empire Standard\u2122 quality program ensures every product meets rigorous potency, terpene, and contaminant testing standards. With free shipping over $199, tax-free pricing, and over 25,000 satisfied customers across all 13 provinces and territories, we deliver the quality, selection, and value that Canadian cannabis buyers trust.",
+            "Mohawk Medibles is consistently rated one of the best online dispensaries in Canada. We are Indigenous-owned and have been operating since 2019, offering 360+ lab-tested products across flower, edibles, concentrates, vapes, hash, pre-rolls, CBD, and mushrooms. Our Empire Standard\u2122 quality program ensures every product meets rigorous potency, terpene, and contaminant testing standards. With free shipping over $199, tax-free pricing, and over 25,000 satisfied customers across all 13 provinces and territories, we deliver the quality, selection, and value that Canadian cannabis buyers trust.",
     },
     {
         question: "Do you offer free shipping on online weed orders?",
@@ -143,7 +143,7 @@ const FAQ_ITEMS = [
     {
         question: "What makes Mohawk Medibles different from other online dispensaries?",
         answer:
-            "Mohawk Medibles stands apart in several key ways: We are authentically Indigenous-owned and operated since 2019, not a corporate brand. Our Empire Standard\u2122 quality program ensures every product is lab-tested for potency, terpenes, and contaminants. We offer tax-free pricing that is more affordable than government dispensaries. We carry 344+ products across 8 categories. We offer free shipping over $199. A portion of every purchase supports Indigenous community programs. And we have maintained a 4.8-star rating across 2,847 verified reviews from over 25,000 customers.",
+            "Mohawk Medibles stands apart in several key ways: We are authentically Indigenous-owned and operated since 2019, not a corporate brand. Our Empire Standard\u2122 quality program ensures every product is lab-tested for potency, terpenes, and contaminants. We offer tax-free pricing that is more affordable than government dispensaries. We carry 360+ products across 8 categories. We offer free shipping over $199. A portion of every purchase supports Indigenous community programs. And we have maintained a 4.8-star rating across 2,847 verified reviews from over 25,000 customers.",
     },
     {
         question: "Is buying weed online legal in Canada?",
@@ -228,7 +228,7 @@ const PROVINCES = [
 ];
 
 const TRUST_STATS = [
-    { value: "344+", label: "Lab-Tested Products" },
+    { value: "360+", label: "Lab-Tested Products" },
     { value: "25K+", label: "Happy Customers" },
     { value: "4.8\u2605", label: "Average Rating" },
     { value: "2,847", label: "Verified Reviews" },
@@ -244,7 +244,7 @@ function buildPageSchema(): string {
         "@id": `${PAGE_URL}/#webpage`,
         name: "Buy Weed Online Canada",
         description:
-            "Buy weed online in Canada from Mohawk Medibles. 344+ lab-tested products, free shipping over $199, discreet delivery to all 13 provinces.",
+            "Buy weed online in Canada from Mohawk Medibles. 360+ lab-tested products, free shipping over $199, discreet delivery to all 13 provinces.",
         url: PAGE_URL,
         isPartOf: { "@id": "https://mohawkmedibles.ca/#website" },
         about: { "@id": "https://mohawkmedibles.ca/#organization" },
@@ -324,7 +324,7 @@ export default function BuyWeedOnlineCanadaPage() {
                         <p className="hero-description text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed mb-8">
                             <strong className="text-foreground">Mohawk Medibles</strong> is Canada&apos;s most trusted
                             Indigenous-owned <strong className="text-foreground">online cannabis dispensary</strong>.
-                            Browse <strong className="text-foreground">344+ lab-tested products</strong> — from AAAA
+                            Browse <strong className="text-foreground">360+ lab-tested products</strong> — from AAAA
                             flower and potent edibles to premium concentrates, vapes, and more. Enjoy{" "}
                             <strong className="text-foreground">free shipping on orders over $199</strong>, tax-free
                             pricing, and discreet delivery to every province and territory in Canada.
@@ -438,7 +438,7 @@ export default function BuyWeedOnlineCanadaPage() {
                     <div className="text-center mb-14">
                         <span className="text-forest dark:text-lime text-xs font-bold tracking-[0.2em] uppercase">Shop by Category</span>
                         <h2 className="text-3xl md:text-4xl font-black tracking-tight font-display mt-3 text-foreground">
-                            344+ Premium Cannabis Products to{" "}
+                            360+ Premium Cannabis Products to{" "}
                             <span className="text-forest dark:text-lime">Order Online</span>
                         </h2>
                         <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
@@ -479,7 +479,7 @@ export default function BuyWeedOnlineCanadaPage() {
                             href="/shop"
                             className="inline-flex items-center justify-center gap-2 bg-lime text-charcoal-deep px-8 py-4 rounded-full font-bold text-lg hover:bg-lime-light transition-colors"
                         >
-                            Browse All 344+ Products <ArrowRight className="w-5 h-5" />
+                            Browse All 360+ Products <ArrowRight className="w-5 h-5" />
                         </Link>
                     </div>
                 </div>
@@ -506,7 +506,7 @@ export default function BuyWeedOnlineCanadaPage() {
                                 icon: ShoppingCart,
                                 title: "Browse & Add to Cart",
                                 description:
-                                    "Explore our curated selection of 344+ cannabis products. Use category filters, search by strain name, or browse our deals page for the best prices. Add your favourites to your cart — there is no account required to start shopping.",
+                                    "Explore our curated selection of 360+ cannabis products. Use category filters, search by strain name, or browse our deals page for the best prices. Add your favourites to your cart — there is no account required to start shopping.",
                             },
                             {
                                 step: "02",
@@ -724,7 +724,7 @@ export default function BuyWeedOnlineCanadaPage() {
                         </h3>
                         <p>
                             Physical dispensaries are limited by shelf space. An <strong className="text-foreground">online dispensary</strong>{" "}
-                            like Mohawk Medibles carries over 344 products across eight categories — far more than any storefront
+                            like Mohawk Medibles carries over 360 products across eight categories — far more than any storefront
                             can offer. From <Link href="/shop?category=flower" className="text-forest dark:text-lime font-semibold hover:underline">AAAA craft flower</Link>{" "}
                             and <Link href="/shop?category=edibles" className="text-forest dark:text-lime font-semibold hover:underline">precisely-dosed edibles</Link>{" "}
                             to <Link href="/shop?category=concentrates" className="text-forest dark:text-lime font-semibold hover:underline">potent concentrates</Link>{" "}

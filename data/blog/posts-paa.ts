@@ -162,7 +162,7 @@ Reputable dispensaries like Mohawk Medibles provide full tracking on every order
 
 Mohawk Medibles has been serving Canadians from Six Nations territory since 2019. Here is what we offer:
 
-- **344+ lab-tested products** across flower, edibles, concentrates, vapes, and CBD
+- **360+ lab-tested products** across flower, edibles, concentrates, vapes, and CBD
 - **Free shipping on orders over $199** — flat $15 rate under $199
 - **Same-day processing** on orders placed before 2 PM EST
 - **Canada-wide delivery** via Canada Post Xpresspost (1-3 business days)
@@ -331,7 +331,7 @@ This usually happens when:
 
 ## Order Now, Receive Fast
 
-Mohawk Medibles ships 344+ premium cannabis products Canada-wide with same-day processing and full tracking. [Place your order now](/shop) and get your products delivered in as little as 1 business day.
+Mohawk Medibles ships 360+ premium cannabis products Canada-wide with same-day processing and full tracking. [Place your order now](/shop) and get your products delivered in as little as 1 business day.
 
 For questions about delivery to your specific location, [contact our team](/contact) — we have shipped to every province and territory in Canada.`,
     },
@@ -886,7 +886,7 @@ Every product is assessed across 12 quality indicators:
 - Contaminant screening (pesticides, heavy metals, microbials)
 - Consistent grading you can trust batch after batch
 
-### 344+ Verified Products
+### 360+ Verified Products
 Our catalog spans every major category:
 - Flower (AA through AAAA, indica/sativa/hybrid)
 - Hash (40+ varieties including Afghan, La Mousse, 24K Full Melt)
@@ -1490,7 +1490,7 @@ Legally, yes. Practically, use your judgment. The packaging is discreet, but rec
 Ready to place your first online cannabis order? Here is the quick version:
 
 1. **Visit** [mohawkmedibles.co/shop](/shop)
-2. **Browse** our 344+ lab-tested products
+2. **Browse** our 360+ lab-tested products
 3. **Add to cart** — orders over $199 ship free
 4. **Checkout** — secure payment via credit card, e-Transfer, or crypto
 5. **Track** your order via Canada Post Xpresspost
@@ -1830,7 +1830,7 @@ The community's approach to cannabis is rooted in self-governance:
 Mohawk Medibles has operated from Six Nations territory since 2019. In that time, we have:
 
 - **Served 25,000+ customers** across every Canadian province and territory
-- **Maintained 344+ products** with Empire Standard quality testing
+- **Maintained 360+ products** with Empire Standard quality testing
 - **Employed community members** in every aspect of operations
 - **Supported community programs** through reinvestment of revenue
 - **Demonstrated viability** — proving that Indigenous cannabis operations can be professionally run, customer-focused, and economically sustainable

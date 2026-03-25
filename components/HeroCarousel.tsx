@@ -63,7 +63,7 @@ const SLIDES = [
     headline: "MOHAWK TERRITORY",
     highlight: "TYENDINAGA \u2022 EST. 2019",
     description:
-      "Proudly Indigenous-owned & operated on Tyendinaga Mohawk Territory since 2019. 344+ lab-tested products shipped discreetly Canada-wide. Tax-free. Free shipping over $199.",
+      "Proudly Indigenous-owned & operated on Tyendinaga Mohawk Territory since 2019. 360+ lab-tested products shipped discreetly Canada-wide. Tax-free. Free shipping over $199.",
     cta: { label: "Shop All Products", href: "/shop" },
     ctaSecondary: { label: "Our Story", href: "/about" },
   },

@@ -35,7 +35,7 @@ const PAGE_URL = "https://mohawkmedibles.ca/indigenous-cannabis-dispensary-canad
 export const metadata: Metadata = {
     title: "Indigenous Cannabis Dispensary Canada — Tyendinaga Mohawk Territory",
     description:
-        "Canada's trusted Indigenous-owned online cannabis dispensary. Shop 344+ premium products with free shipping over $199. Proudly serving all 13 provinces from Tyendinaga Mohawk Territory since 2019.",
+        "Canada's trusted Indigenous-owned online cannabis dispensary. Shop 360+ premium products with free shipping over $199. Proudly serving all 13 provinces from Tyendinaga Mohawk Territory since 2019.",
     keywords: [
         "Indigenous cannabis dispensary",
         "Indigenous owned dispensary Canada",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Indigenous Cannabis Dispensary Canada",
         description:
-            "Canada's trusted Indigenous-owned online cannabis dispensary. 344+ premium products, free shipping over $199, proudly serving from Tyendinaga Mohawk Territory since 2019.",
+            "Canada's trusted Indigenous-owned online cannabis dispensary. 360+ premium products, free shipping over $199, proudly serving from Tyendinaga Mohawk Territory since 2019.",
         url: PAGE_URL,
         type: "article",
         images: ["/og-image.png"],
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Indigenous Cannabis Dispensary Canada",
         description:
-            "Canada's trusted Indigenous-owned online cannabis dispensary. 344+ products from Tyendinaga Mohawk Territory.",
+            "Canada's trusted Indigenous-owned online cannabis dispensary. 360+ products from Tyendinaga Mohawk Territory.",
     },
     alternates: {
         canonical: PAGE_URL,
@@ -85,7 +85,7 @@ const FAQ_ITEMS = [
     {
         question: "What is an Indigenous cannabis dispensary?",
         answer:
-            "An Indigenous cannabis dispensary is a cannabis retail business owned and operated by Indigenous peoples, typically located on or connected to First Nations, Métis, or Inuit territories. These dispensaries operate under the inherent sovereignty of Indigenous nations and their right to self-governance and economic self-determination. Mohawk Medibles is an Indigenous-owned cannabis dispensary operating from Tyendinaga Mohawk Territory, serving customers across all 13 Canadian provinces and territories with 344+ premium, lab-tested cannabis products.",
+            "An Indigenous cannabis dispensary is a cannabis retail business owned and operated by Indigenous peoples, typically located on or connected to First Nations, Métis, or Inuit territories. These dispensaries operate under the inherent sovereignty of Indigenous nations and their right to self-governance and economic self-determination. Mohawk Medibles is an Indigenous-owned cannabis dispensary operating from Tyendinaga Mohawk Territory, serving customers across all 13 Canadian provinces and territories with 360+ premium, lab-tested cannabis products.",
     },
     {
         question: "Is it legal to buy from an Indigenous dispensary in Canada?",
@@ -100,7 +100,7 @@ const FAQ_ITEMS = [
     {
         question: "What products does Mohawk Medibles carry?",
         answer:
-            "Mohawk Medibles carries over 344 premium cannabis products across seven main categories: Flower (including AAAA, AAA+, and craft strains), Edibles (gummies, chocolates, baked goods, and beverages), Concentrates (shatter, live resin, diamonds, and distillate), Vapes (cartridges and disposable pens), Hash (traditional and premium pressed), Pre-Rolls (singles, multi-packs, and infused), and CBD products (oils, tinctures, capsules, and topicals). Every product meets our Empire Standard\u2122 quality requirements, including third-party lab testing for potency, terpene profiling, and contaminant screening.",
+            "Mohawk Medibles carries over 360 premium cannabis products across seven main categories: Flower (including AAAA, AAA+, and craft strains), Edibles (gummies, chocolates, baked goods, and beverages), Concentrates (shatter, live resin, diamonds, and distillate), Vapes (cartridges and disposable pens), Hash (traditional and premium pressed), Pre-Rolls (singles, multi-packs, and infused), and CBD products (oils, tinctures, capsules, and topicals). Every product meets our Empire Standard\u2122 quality requirements, including third-party lab testing for potency, terpene profiling, and contaminant screening.",
     },
     {
         question: "How does buying from Indigenous dispensaries support communities?",
@@ -227,7 +227,7 @@ function buildPageSchema(): string {
             title: "Indigenous Cannabis Dispensary Canada",
             slug: "../indigenous-cannabis-dispensary-canada",
             description:
-                "Canada's trusted Indigenous-owned online cannabis dispensary. Shop 344+ premium products with free shipping over $199 from Tyendinaga Mohawk Territory.",
+                "Canada's trusted Indigenous-owned online cannabis dispensary. Shop 360+ premium products with free shipping over $199 from Tyendinaga Mohawk Territory.",
             datePublished: "2026-03-11",
             dateModified: "2026-03-11",
             image: "https://mohawkmedibles.ca/og-image.png",
@@ -309,7 +309,7 @@ export default function IndigenousCannabisDispensaryPage() {
                     <p className="text-lg md:text-xl text-foreground/70 dark:text-white/70 max-w-2xl leading-relaxed mb-8">
                         Mohawk Medibles is an <strong className="text-foreground/90 dark:text-white/90">Indigenous-owned online cannabis dispensary</strong> proudly
                         operating from Tyendinaga Mohawk Territory. Since 2019, we&apos;ve served over 47,000 Canadians
-                        with 344+ premium, lab-tested products backed by the{" "}
+                        with 360+ premium, lab-tested products backed by the{" "}
                         <strong className="text-foreground/90 dark:text-white/90">Empire Standard&trade;</strong> quality program.
                         Free shipping on orders over $199. Tax-free. Always.
                     </p>
@@ -336,7 +336,7 @@ export default function IndigenousCannabisDispensaryPage() {
                 <div className="max-w-5xl mx-auto px-6">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {[
-                            { value: "344+", label: "Premium Products" },
+                            { value: "360+", label: "Premium Products" },
                             { value: "47K+", label: "Canadians Served" },
                             { value: "6+", label: "Years Trusted" },
                             { value: "13", label: "Provinces & Territories" },
@@ -396,7 +396,7 @@ export default function IndigenousCannabisDispensaryPage() {
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
                                 From our facility at <strong>45 Dundas Street, Deseronto</strong>, we curate, quality-test,
-                                and ship over 344 premium cannabis products to every corner of Canada. Every product meets
+                                and ship over 360 premium cannabis products to every corner of Canada. Every product meets
                                 our <Link href="/about" className="text-forest dark:text-lime font-semibold hover:underline">Empire Standard&trade;</Link> —
                                 a rigorous four-point quality check covering potency verification,
                                 terpene profiling, contaminant screening, and visual inspection.
@@ -587,7 +587,7 @@ export default function IndigenousCannabisDispensaryPage() {
                     <div className="text-center mb-14">
                         <span className="text-forest dark:text-lime text-xs font-bold tracking-[0.2em] uppercase">Shop Our Collection</span>
                         <h2 className="text-3xl md:text-4xl font-black tracking-tight font-display mt-3 text-foreground">
-                            344+ Premium Cannabis Products
+                            360+ Premium Cannabis Products
                         </h2>
                         <p className="text-muted-foreground mt-4 max-w-2xl mx-auto text-lg">
                             From AAAA craft flower to precisely-dosed edibles, every product in our collection meets the
@@ -629,7 +629,7 @@ export default function IndigenousCannabisDispensaryPage() {
                                 <ArrowRight className="w-6 h-6 text-forest dark:text-lime group-hover:translate-x-1 transition-transform" />
                             </div>
                             <h3 className="text-lg font-bold text-foreground font-heading">View All Products</h3>
-                            <p className="text-xs text-muted-foreground">Browse our full collection of 344+ items</p>
+                            <p className="text-xs text-muted-foreground">Browse our full collection of 360+ items</p>
                         </Link>
                     </div>
                 </div>
@@ -794,7 +794,7 @@ export default function IndigenousCannabisDispensaryPage() {
                         <span className="text-lime">Shop Premium Cannabis.</span>
                     </h2>
                     <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed mb-10">
-                        Browse 344+ lab-tested, Empire Standard&trade; cannabis products from Canada&apos;s
+                        Browse 360+ lab-tested, Empire Standard&trade; cannabis products from Canada&apos;s
                         trusted Indigenous-owned dispensary. Tax-free pricing. Free shipping over $199.
                         Same-day processing. Discreet delivery to all 13 provinces and territories.
                     </p>

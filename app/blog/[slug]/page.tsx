@@ -261,7 +261,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                         {/* CTA */}
                         <div className="mt-12 glass-card rounded-2xl p-8 border border-secondary/20 text-center">
                             <h3 className="text-xl font-bold text-foreground mb-2">Ready to explore?</h3>
-                            <p className="text-muted-foreground mb-6">Browse 344+ premium, lab-tested cannabis products.</p>
+                            <p className="text-muted-foreground mb-6">Browse 360+ premium, lab-tested cannabis products.</p>
                             <Link
                                 href="/shop"
                                 className="inline-flex items-center gap-2 bg-secondary text-white font-bold px-8 py-3 rounded-full hover:bg-secondary/80 transition-colors"

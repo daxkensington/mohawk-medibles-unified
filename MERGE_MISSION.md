@@ -6,7 +6,7 @@ Instead, MERGE IN the best features from Ian's two repos.
 
 ## WHAT THIS CODEBASE ALREADY HAS (DON'T REBUILD)
 - Next.js 16 + Prisma + Neon PostgreSQL (mature schema)
-- WooCommerce sync engine (25,918 customers, 40,771 orders, 344 products)
+- WooCommerce sync engine (25,918 customers, 40,771 orders, 360+ products)
 - MedAgent AI assistant (lib/sage/ — 3-tier Gemini routing, personas, memory, voice, behavioral)
 - Multi-tenant system (middleware.ts + lib/tenant.ts + TenantProvider)
 - SEO infrastructure (schema markup, meta, structured data)

@@ -168,7 +168,7 @@ export function BentoGrid() {
                             href="/shop"
                             className="group flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-forest dark:bg-lime text-white dark:text-charcoal font-bold text-sm hover:opacity-90 transition-opacity"
                         >
-                            Browse All 344+ Products
+                            Browse All 360+ Products
                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </Link>
                     </div>

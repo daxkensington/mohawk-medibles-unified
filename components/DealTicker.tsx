@@ -5,7 +5,7 @@ const DEALS = [
   { emoji: "🚚", text: "FREE SHIPPING ON ORDERS $199+" },
   { emoji: "⚡", text: "SAME DAY DELIVERY AVAILABLE" },
   { emoji: "💳", text: "INTERAC • VISA/MC • BITCOIN" },
-  { emoji: "🧪", text: "344+ LAB-TESTED PRODUCTS" },
+  { emoji: "🧪", text: "360+ LAB-TESTED PRODUCTS" },
   { emoji: "💰", text: "TAX-FREE ALWAYS" },
   { emoji: "📦", text: "DISCREET, SMELL-PROOF PACKAGING" },
   { emoji: "🏔️", text: "INDIGENOUS OWNED & OPERATED" },

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Cannabis Deals & Promotions",
         description:
-            "Save on 344+ premium cannabis products. Daily deals with countdown timers, free shipping over $199, bulk discounts, and more.",
+            "Save on 360+ premium cannabis products. Daily deals with countdown timers, free shipping over $199, bulk discounts, and more.",
         url: "https://mohawkmedibles.ca/deals",
         type: "website",
         images: ["/og-image.png"],
@@ -199,7 +199,7 @@ export default async function DealsPage() {
             <section className="container mx-auto px-6 text-center">
                 <div className="glass-card p-12 rounded-2xl border border-secondary/20 backdrop-blur-md max-w-2xl mx-auto">
                     <h2 className="text-3xl font-bold text-foreground mb-4 uppercase">
-                        Browse All 344+ Products
+                        Browse All 360+ Products
                     </h2>
                     <p className="text-muted-foreground mb-8 text-lg">
                         Discover our complete selection of premium cannabis products, all meeting the Empire Standard&trade;.

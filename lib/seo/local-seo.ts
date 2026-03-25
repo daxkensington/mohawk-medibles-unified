@@ -237,7 +237,7 @@ export function serviceAreaSchema(area: ServiceArea) {
 export function localLandingPageMetadata(area: ServiceArea) {
     return {
         title: `Cannabis Delivery ${area.city} | Mohawk Medibles`,
-        description: `Premium indigenous cannabis delivered to ${area.city}, ${area.province}. ${area.deliveryTime} delivery. 344+ lab-tested products. Empire Standard™ quality.`,
+        description: `Premium indigenous cannabis delivered to ${area.city}, ${area.province}. ${area.deliveryTime} delivery. 360+ lab-tested products. Empire Standard™ quality.`,
         keywords: area.keywords,
         openGraph: {
             title: `Cannabis Delivery ${area.city} | Mohawk Medibles`,

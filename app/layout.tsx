@@ -31,7 +31,7 @@ const sora = Sora({
 // Fallback values used when tenant fields are null
 const FALLBACK_TITLE = "Mohawk Medibles | Premium Indigenous Cannabis — Six Nations";
 const FALLBACK_DESCRIPTION =
-  "Indigenous-owned premium cannabis dispensary on Six Nations territory. 344+ lab-tested products: flower, edibles, concentrates, vapes. Empire Standard™ quality. Ships Canada-wide.";
+  "Indigenous-owned premium cannabis dispensary on Six Nations territory. 360+ lab-tested products: flower, edibles, concentrates, vapes. Empire Standard™ quality. Ships Canada-wide.";
 const FALLBACK_DOMAIN = "https://mohawkmedibles.ca";
 
 export async function generateMetadata(): Promise<Metadata> {

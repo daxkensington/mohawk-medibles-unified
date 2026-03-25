@@ -9,7 +9,7 @@ const FAQ_ITEMS = [
     { question: "How long does shipping take?", answer: "Local delivery: Same day or next day. Ontario: 1-3 business days. Quebec/Maritimes: 2-4 business days. Western Canada: 3-5 business days. Northern Canada: 5-10 business days." },
     { question: "Is the packaging discreet?", answer: "Absolutely. All orders ship in plain, unbranded boxes with no indication of contents. The return address shows a generic business name. Products are vacuum-sealed for freshness and odour control." },
     { question: "Are your products lab-tested?", answer: "Yes. All products meet our Empire Standard\u2122 quality benchmarks. We work with certified labs to verify THC/CBD content, check for contaminants, and ensure consistent potency across batches." },
-    { question: "What product categories do you carry?", answer: "We carry 344+ products across Flower, Edibles, Concentrates, Vapes, Hash, CBD, Mushrooms, and Accessories. Our catalogue is updated regularly with new arrivals." },
+    { question: "What product categories do you carry?", answer: "We carry 360+ products across Flower, Edibles, Concentrates, Vapes, Hash, CBD, Mushrooms, and Accessories. Our catalogue is updated regularly with new arrivals." },
     { question: "What is your return policy?", answer: "Due to the nature of cannabis products, returns are accepted only for damaged, defective, or incorrectly shipped items. Report issues within 48 hours of delivery with photos." },
     { question: "How is my data protected?", answer: "All data is encrypted in transit (TLS) and at rest. Payment processing is handled by PayGo Billing (PCI-DSS compliant). We never store full credit card numbers." },
 ];

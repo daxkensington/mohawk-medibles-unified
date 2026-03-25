@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Gift Cards — Give the Gift of Premium Cannabis",
     description:
-        "Buy Mohawk Medibles gift cards. Choose from $25 to $200 or set a custom amount. Send to friends and family via email. Redeemable on 344+ premium cannabis products. Indigenous-owned dispensary.",
+        "Buy Mohawk Medibles gift cards. Choose from $25 to $200 or set a custom amount. Send to friends and family via email. Redeemable on 360+ premium cannabis products. Indigenous-owned dispensary.",
     keywords: [
         "cannabis gift card canada",
         "weed gift card",

@@ -176,7 +176,7 @@ export async function sendWelcomeEmail(to: string, name: string) {
         <div style="background:#f5f5dc;padding:16px;border-radius:8px;margin:20px 0;">
             <p style="margin:0;font-weight:bold;color:#2D5016;">What makes us different:</p>
             <ul style="color:#4a5c40;font-size:14px;">
-                <li>344+ lab-tested products meeting the Empire Standard™</li>
+                <li>360+ lab-tested products meeting the Empire Standard™</li>
                 <li>Indigenous-owned, Six Nations of the Grand River Territory</li>
                 <li>Discreet Canada-wide shipping via Xpresspost</li>
                 <li>Dedicated customer support</li>

@@ -13,7 +13,6 @@ import { CategoryBrandShowcase } from "@/components/CategoryBrandShowcase";
 import { BenefitsBar } from "@/components/BenefitsBar";
 import { MonthlyDeals } from "@/components/MonthlyDeals";
 import { HowItWorks } from "@/components/HowItWorks";
-import { CustomerTestimonials } from "@/components/CustomerTestimonials";
 import NewArrivals from "@/components/NewArrivals";
 import GoogleReviewsWidget from "@/components/GoogleReviewsWidget";
 import ContestBanner from "@/components/ContestBanner";
@@ -42,7 +41,6 @@ export default function HomeClient() {
       <SafeSection name="BentoGrid"><BentoGrid /></SafeSection>
       <SafeSection name="TrustPillars"><TrustPillars /></SafeSection>
       <SafeSection name="HowItWorks"><HowItWorks /></SafeSection>
-      <SafeSection name="CustomerTestimonials"><CustomerTestimonials /></SafeSection>
       <SafeSection name="GoogleReviewsWidget"><GoogleReviewsWidget /></SafeSection>
       <SafeSection name="StorePromo"><StorePromo /></SafeSection>
       <SafeSection name="ReviewCarousel"><ReviewCarousel /></SafeSection>
