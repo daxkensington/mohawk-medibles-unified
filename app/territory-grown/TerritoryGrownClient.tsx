@@ -180,6 +180,7 @@ export default function TerritoryGrownClient() {
               </Link>
             </div>
           ) : (
+            <>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {visibleProducts.map((product) => (
                 <div key={product.id} className="group bg-white dark:bg-card rounded-xl border border-amber-200/50 dark:border-amber-800/20 overflow-hidden hover:shadow-lg transition-all duration-300">
@@ -254,6 +255,7 @@ export default function TerritoryGrownClient() {
                 Showing all {territoryProducts.length} products
               </p>
             )}
+            </>
           )}
         </div>
       </section>

@@ -182,7 +182,7 @@ export const reportingRouter = router({
         data: {
           ...rest,
           createdBy: ctx.userId,
-          ...(layoutConfig ? { layoutConfig: layoutConfig as unknown as Record<string, unknown> } : {}),
+          ...(layoutConfig ? { layoutConfig: layoutConfig as any } : {}),
         },
       });
     }),
