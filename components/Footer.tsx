@@ -178,14 +178,14 @@ export default function Footer() {
                             </div>
                         ) : (
                             <div className="flex flex-col items-center md:items-end gap-2">
-                                <div className="flex gap-3">
+                                <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
                                     <input
                                         type="email"
                                         value={email}
                                         onChange={(e) => { setEmail(e.target.value); if (status === "error") setStatus("idle"); }}
                                         onKeyDown={(e) => e.key === "Enter" && handleSubscribe()}
                                         placeholder="Join the Empire... (Email)"
-                                        className="bg-white/5 border border-white/10 focus:border-lime/50 rounded-full px-6 py-3 text-sm text-white w-64 focus:outline-none focus:ring-2 focus:ring-lime/20 transition-all duration-300 placeholder:text-cream/30 hover:border-white/20"
+                                        className="bg-white/5 border border-white/10 focus:border-lime/50 rounded-full px-6 py-3 text-sm text-white w-full sm:w-64 focus:outline-none focus:ring-2 focus:ring-lime/20 transition-all duration-300 placeholder:text-cream/30 hover:border-white/20"
                                     />
                                     <Button
                                         variant="brand"
