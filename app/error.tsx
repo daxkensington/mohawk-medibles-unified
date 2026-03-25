@@ -21,6 +21,9 @@ export default function Error({
                 <p className="text-muted-foreground">
                     An unexpected error occurred. Please try again or contact support if the problem persists.
                 </p>
+                <pre className="text-left text-xs text-red-400 bg-black/50 p-4 rounded overflow-auto max-h-40">
+                    {error.message}{"\n"}{error.stack}
+                </pre>
                 {error.digest && (
                     <p className="text-xs text-muted-foreground font-mono">
                         Error ID: {error.digest}
