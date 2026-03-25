@@ -4,7 +4,7 @@
  */
 import { z } from "zod";
 import { router, adminProcedure } from "../trpc";
-import { sendReviewRequestEmail } from "~/lib/email";
+import { sendReviewRequestEmail } from "@/lib/email";
 
 export const reviewRequestsRouter = router({
   // ─── Settings ──────────────────────────────────────────

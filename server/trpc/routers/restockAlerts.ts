@@ -4,7 +4,7 @@
  */
 import { z } from "zod";
 import { router, adminProcedure } from "../trpc";
-import { sendEmail } from "~/lib/email";
+import { sendEmail } from "@/lib/email";
 
 export const restockAlertsRouter = router({
   // ─── Stats ─────────────────────────────────────────────
