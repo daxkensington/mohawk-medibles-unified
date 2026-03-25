@@ -9,6 +9,17 @@
  */
 
 import { PRODUCTS, type Product } from "@/lib/productData";
+import { getAllProducts } from "@/lib/products";
+
+// Use DB products when available, fall back to hardcoded
+async function getProductList(): Promise<Product[]> {
+    try {
+        const dbProducts = await getAllProducts();
+        return dbProducts.length > 0 ? dbProducts as unknown as Product[] : PRODUCTS;
+    } catch {
+        return PRODUCTS;
+    }
+}
 
 // ─── Category API ────────────────────────────────────────────
 

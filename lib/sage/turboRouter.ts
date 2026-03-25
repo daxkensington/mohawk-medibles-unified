@@ -651,6 +651,30 @@ export function turboRoute(message: string, sessionId?: string): TurboResponse {
         }
     }
 
+    // ── Order tracking (instant DB lookup) ──────────────────
+    const orderTrackMatch = trimmed.match(/\b(?:track|where(?:'s| is)?|status (?:of )?(?:my )?|check (?:on )?(?:my )?)(?:order|package)?\s*#?\s*(MM-?\d{4,6}|\d{4,6})\b/i);
+    if (orderTrackMatch) {
+        const orderRef = orderTrackMatch[1].toUpperCase();
+        const orderNumber = orderRef.startsWith("MM") ? orderRef : `MM-${orderRef}`;
+        return {
+            handled: true,
+            text: `Looking up order **${orderNumber}**... 🔍\n\nYou can check your full order status anytime at [Track Order](/track-order?orderNumber=${orderNumber}).`,
+            actions: [{ type: "NAVIGATE", payload: `/track-order?orderNumber=${orderNumber}` }],
+            model: "turbo",
+        };
+    }
+
+    // Generic order tracking intent (no order number)
+    if (/\b(track|where|status).*(order|package|shipment|delivery)\b/i.test(trimmed) ||
+        /\bmy order\b/i.test(trimmed)) {
+        return {
+            handled: true,
+            text: "I can help you track your order! 📦\n\nPlease share your **order number** (e.g., MM-12345) and I'll look it up right away.\n\nOr visit [Track Order](/track-order) to check your status.",
+            actions: [{ type: "NAVIGATE", payload: "/track-order" }],
+            model: "turbo",
+        };
+    }
+
     // ── Not a turbo intent → pass to LLM ───────────────────
     return { handled: false };
 }
