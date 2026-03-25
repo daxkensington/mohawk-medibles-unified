@@ -1,37 +1,37 @@
 /**
  * SMS Library — Mohawk Medibles
- * Uses Twilio SDK for sending SMS notifications.
- * Gracefully degrades if Twilio credentials are not configured.
+ * Uses Amazon SNS for sending SMS notifications.
+ * Gracefully degrades if AWS credentials are not configured.
  */
 import { formatPhone } from "./phoneValidation";
 
-// Lazy-load Twilio client to avoid import errors if not installed
-let twilioClient: any = null;
+// Lazy-load SNS client
+let snsClient: any = null;
 
-function getTwilioClient() {
-  if (twilioClient) return twilioClient;
+function getSNSClient() {
+  if (snsClient) return snsClient;
 
-  const accountSid = process.env.TWILIO_ACCOUNT_SID;
-  const authToken = process.env.TWILIO_AUTH_TOKEN;
+  const accessKeyId = process.env.AWS_ACCESS_KEY_ID;
+  const secretAccessKey = process.env.AWS_SECRET_ACCESS_KEY;
+  const region = process.env.AWS_REGION || "us-east-1";
 
-  if (!accountSid || !authToken) {
-    console.warn("[SMS] Twilio credentials not configured — SMS will be skipped");
+  if (!accessKeyId || !secretAccessKey) {
+    console.warn("[SMS] AWS credentials not configured — SMS will be skipped");
     return null;
   }
 
   try {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const twilio = require("twilio");
-    twilioClient = twilio(accountSid, authToken);
-    return twilioClient;
+    const { SNSClient } = require("@aws-sdk/client-sns");
+    snsClient = new SNSClient({
+      region,
+      credentials: { accessKeyId, secretAccessKey },
+    });
+    return snsClient;
   } catch (err) {
-    console.error("[SMS] Failed to initialize Twilio client:", err);
+    console.error("[SMS] Failed to initialize AWS SNS client:", err);
     return null;
   }
-}
-
-function getFromNumber(): string {
-  return process.env.TWILIO_PHONE_NUMBER || "";
 }
 
 export interface SmsResult {
@@ -41,15 +41,14 @@ export interface SmsResult {
 }
 
 /**
- * Send a single SMS message.
+ * Send a single SMS message via Amazon SNS.
  */
 export async function sendSMS(to: string, body: string): Promise<SmsResult> {
-  const client = getTwilioClient();
-  const from = getFromNumber();
+  const client = getSNSClient();
 
-  if (!client || !from) {
-    console.warn("[SMS] Twilio not configured — skipping SMS to", to);
-    return { success: false, error: "Twilio not configured" };
+  if (!client) {
+    console.warn("[SMS] AWS SNS not configured — skipping SMS to", to);
+    return { success: false, error: "AWS SNS not configured" };
   }
 
   const formattedTo = formatPhone(to);
@@ -58,13 +57,25 @@ export async function sendSMS(to: string, body: string): Promise<SmsResult> {
   }
 
   try {
-    const message = await client.messages.create({
-      body,
-      from,
-      to: formattedTo,
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { PublishCommand } = require("@aws-sdk/client-sns");
+    const command = new PublishCommand({
+      PhoneNumber: formattedTo,
+      Message: body,
+      MessageAttributes: {
+        "AWS.SNS.SMS.SMSType": {
+          DataType: "String",
+          StringValue: "Transactional",
+        },
+        "AWS.SNS.SMS.SenderID": {
+          DataType: "String",
+          StringValue: "Medibles",
+        },
+      },
     });
 
-    return { success: true, messageId: message.sid };
+    const result = await client.send(command);
+    return { success: true, messageId: result.MessageId };
   } catch (err: any) {
     console.error("[SMS] Send failed:", err?.message || err);
     return { success: false, error: err?.message || "SMS send failed" };
@@ -80,7 +91,7 @@ export async function sendOrderConfirmationSMS(
   total: number | string
 ): Promise<SmsResult> {
   const formattedTotal = typeof total === "number" ? total.toFixed(2) : total;
-  const body = `Your Mohawk Medibles order #${orderNumber} ($${formattedTotal}) has been received! Track at mohawkmedibles.co/track-order`;
+  const body = `Your Mohawk Medibles order #${orderNumber} ($${formattedTotal}) has been received! Track at mohawkmedibles.ca/track-order`;
   return sendSMS(phone, body);
 }
 
