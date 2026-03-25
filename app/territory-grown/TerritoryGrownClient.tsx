@@ -14,13 +14,26 @@ import { Button } from "@/components/ui/button";
 import { decodeHtmlEntities } from "@/lib/utils";
 
 export default function TerritoryGrownClient() {
+  const BATCH_SIZE = 12;
   const { addItem, items } = useCart();
   const [addedIds, setAddedIds] = useState<Set<number>>(new Set());
+  const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
 
   const territoryProducts = useMemo(
     () => PRODUCTS.filter((p) => isTerritoryGrown(p)),
     []
   );
+
+  const visibleProducts = useMemo(
+    () => territoryProducts.slice(0, visibleCount),
+    [territoryProducts, visibleCount]
+  );
+
+  const hasMore = visibleCount < territoryProducts.length;
+
+  function handleLoadMore() {
+    setVisibleCount((prev) => Math.min(prev + BATCH_SIZE, territoryProducts.length));
+  }
 
   function handleAddToCart(product: (typeof PRODUCTS)[0]) {
     addItem({
@@ -168,7 +181,7 @@ export default function TerritoryGrownClient() {
             </div>
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {territoryProducts.map((product) => (
+              {visibleProducts.map((product) => (
                 <div key={product.id} className="group bg-white dark:bg-card rounded-xl border border-amber-200/50 dark:border-amber-800/20 overflow-hidden hover:shadow-lg transition-all duration-300">
                   <Link href={`/shop/${product.slug}`}>
                     <ProductImage
@@ -221,6 +234,26 @@ export default function TerritoryGrownClient() {
                 </div>
               ))}
             </div>
+
+            {hasMore && (
+              <div className="flex flex-col items-center mt-10 gap-2">
+                <Button
+                  onClick={handleLoadMore}
+                  className="bg-amber-700 hover:bg-amber-800 text-white px-8 py-3 rounded-full font-bold text-sm tracking-wide"
+                >
+                  Load More Products
+                </Button>
+                <p className="text-xs text-muted-foreground">
+                  Showing {visibleProducts.length} of {territoryProducts.length} products
+                </p>
+              </div>
+            )}
+
+            {!hasMore && territoryProducts.length > BATCH_SIZE && (
+              <p className="text-center text-xs text-muted-foreground mt-8">
+                Showing all {territoryProducts.length} products
+              </p>
+            )}
           )}
         </div>
       </section>

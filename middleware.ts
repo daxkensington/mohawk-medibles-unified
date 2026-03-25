@@ -49,6 +49,7 @@ const PUBLIC_PATHS = [
 ];
 
 export async function middleware(request: NextRequest) {
+  try {
     const { pathname } = request.nextUrl;
 
     // ── Resolve domain context ───────────────────────────────
@@ -200,6 +201,11 @@ export async function middleware(request: NextRequest) {
         }
         return NextResponse.redirect(new URL("/login", request.url));
     }
+  } catch {
+    // Safety net: if anything in middleware throws unexpectedly,
+    // pass through to Next.js routing so 404s aren't turned into 500s
+    return NextResponse.next();
+  }
 }
 
 // ─── Token Verifier (Edge-compatible, Web Crypto API) ───────

@@ -83,7 +83,7 @@ export const smsRouter = router({
       })
     )
     .query(async ({ ctx, input }) => {
-      const where: any = {};
+      const where: Record<string, string> = {};
       if (input.status) where.status = input.status;
       if (input.type) where.type = input.type;
 
@@ -98,7 +98,7 @@ export const smsRouter = router({
       ]);
 
       return {
-        logs: logs.map((log: any) => ({
+        logs: logs.map((log) => ({
           ...log,
           phone: maskPhone(log.phone),
         })),
@@ -194,7 +194,7 @@ export const smsRouter = router({
         process.env.TWILIO_AUTH_TOKEN &&
         process.env.TWILIO_PHONE_NUMBER
       ),
-      recentLogs: recentLogs.map((log: any) => ({
+      recentLogs: recentLogs.map((log) => ({
         ...log,
         phone: maskPhone(log.phone),
       })),

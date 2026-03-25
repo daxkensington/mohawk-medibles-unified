@@ -4,6 +4,7 @@
  */
 import { z } from "zod";
 import { router, adminProcedure } from "../trpc";
+import { sendEmail } from "~/lib/email";
 
 export const restockAlertsRouter = router({
   // ─── Stats ─────────────────────────────────────────────
@@ -39,7 +40,7 @@ export const restockAlertsRouter = router({
       })
     )
     .query(async ({ ctx, input }) => {
-      const where: any = {};
+      const where: Record<string, unknown> = {};
       if (input.status !== "all") where.status = input.status;
       if (input.severity !== "all") where.severity = input.severity;
       if (input.search) {
@@ -321,8 +322,75 @@ export const restockAlertsRouter = router({
       return { sent: false, alertCount: 0 };
     }
 
-    // TODO: Send email via Resend with alert summary
-    console.log(`[Restock Digest] Would send digest with ${activeAlerts.length} alerts`);
+    // Build and send restock digest email via Resend
+    const adminEmail = process.env.ADMIN_EMAIL || "admin@mohawkmedibles.ca";
+
+    const criticalAlerts = activeAlerts.filter((a) => a.severity === "critical");
+    const warningAlerts = activeAlerts.filter((a) => a.severity === "warning");
+
+    const alertRows = activeAlerts
+      .map(
+        (a) =>
+          `<tr>
+            <td style="padding:8px;border-bottom:1px solid #e5e5e5;">${a.productName}</td>
+            <td style="padding:8px;border-bottom:1px solid #e5e5e5;text-align:center;">${a.currentStock}</td>
+            <td style="padding:8px;border-bottom:1px solid #e5e5e5;text-align:center;">${a.threshold}</td>
+            <td style="padding:8px;border-bottom:1px solid #e5e5e5;text-align:center;">
+              <span style="background:${a.severity === "critical" ? "#dc2626" : "#f59e0b"};color:white;padding:2px 8px;border-radius:4px;font-size:12px;">${a.severity}</span>
+            </td>
+          </tr>`
+      )
+      .join("");
+
+    const html = `
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="margin:0;padding:0;font-family:system-ui,-apple-system,sans-serif;background-color:#f5f5f5;">
+  <div style="max-width:600px;margin:20px auto;background:white;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+    <div style="background-color:#2D5016;padding:24px;text-align:center;">
+      <h1 style="color:white;font-size:24px;margin:0;">Restock Alerts Digest</h1>
+      <p style="color:#a0bba5;font-size:14px;margin:4px 0 0;">Mohawk Medibles Inventory</p>
+    </div>
+    <div style="padding:32px;color:#333;">
+      <p><strong>${activeAlerts.length}</strong> product${activeAlerts.length === 1 ? "" : "s"} need${activeAlerts.length === 1 ? "s" : ""} restocking:</p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        ${criticalAlerts.length > 0 ? `<li style="color:#dc2626;font-weight:bold;margin-bottom:4px;">Critical: ${criticalAlerts.length}</li>` : ""}
+        ${warningAlerts.length > 0 ? `<li style="color:#f59e0b;font-weight:bold;margin-bottom:4px;">Warning: ${warningAlerts.length}</li>` : ""}
+      </ul>
+      <table style="width:100%;border-collapse:collapse;">
+        <thead>
+          <tr style="border-bottom:2px solid #e5e5e5;">
+            <th style="padding:8px;text-align:left;">Product</th>
+            <th style="padding:8px;text-align:center;">Stock</th>
+            <th style="padding:8px;text-align:center;">Threshold</th>
+            <th style="padding:8px;text-align:center;">Severity</th>
+          </tr>
+        </thead>
+        <tbody>${alertRows}</tbody>
+      </table>
+      <div style="margin-top:24px;">
+        <a href="https://mohawkmedibles.ca/admin/inventory/restock" style="display:inline-block;background:#2D5016;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold;">View in Dashboard</a>
+      </div>
+    </div>
+    <div style="background-color:#f5f5dc;padding:16px;text-align:center;font-size:12px;color:#4a5c40;">
+      <p style="margin:0;">Mohawk Medibles Admin — Inventory Management</p>
+    </div>
+  </div>
+</body>
+</html>`;
+
+    try {
+      await sendEmail({
+        to: adminEmail,
+        subject: `Restock Alert: ${activeAlerts.length} product${activeAlerts.length === 1 ? "" : "s"} low on stock`,
+        html,
+      });
+      console.log(`[Restock Digest] Sent digest with ${activeAlerts.length} alerts to ${adminEmail}`);
+    } catch (emailErr) {
+      // Email failure should not break the flow
+      console.error("[Restock Digest] Email send failed:", emailErr);
+    }
 
     return { sent: true, alertCount: activeAlerts.length };
   }),

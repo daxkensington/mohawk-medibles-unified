@@ -50,7 +50,7 @@ export const priceMatchRouter = router({
     )
     .query(async ({ ctx, input }) => {
       const { status = "ALL", page = 1, limit = 20 } = input ?? {};
-      const where = status === "ALL" ? {} : { status: status as any };
+      const where = status === "ALL" ? {} : { status };
 
       const [requests, total] = await Promise.all([
         ctx.prisma.priceMatchRequest.findMany({

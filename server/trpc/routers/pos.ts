@@ -3,7 +3,7 @@
  * Ported from command center: server/routers/pos/posRouter.ts
  */
 import { z } from "zod";
-import { router, adminProcedure, protectedProcedure } from "../trpc";
+import { router, adminProcedure } from "../trpc";
 
 export const posRouter = router({
   // ─── Transactions ───────────────────────────────────────

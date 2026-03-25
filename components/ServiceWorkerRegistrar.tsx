@@ -14,10 +14,14 @@ export default function ServiceWorkerRegistrar() {
         navigator.serviceWorker
             .register("/sw.js", { scope: "/" })
             .then((reg) => {
-                console.log("[SW] Registered:", reg.scope);
+                if (process.env.NODE_ENV === 'development') {
+                    console.log("[SW] Registered:", reg.scope);
+                }
             })
             .catch((err) => {
-                console.warn("[SW] Registration failed:", err.message);
+                if (process.env.NODE_ENV === 'development') {
+                    console.warn("[SW] Registration failed:", err.message);
+                }
             });
     }, []);
 

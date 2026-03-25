@@ -55,6 +55,8 @@ const PROVINCE_META: Record<string, string> = {
     "yukon-delivery": "Cannabis delivery to Yukon. 360+ premium lab-tested products shipped to Whitehorse & all YT communities via Xpresspost. Mohawk Medibles — Indigenous-owned dispensary.",
 };
 
+export const dynamicParams = true;
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     const { slug } = await params;
     const page = pagesData.find((p: { slug: string; title: string }) => p.slug === slug);
@@ -127,12 +129,17 @@ export default async function DynamicPage({ params }: PageProps) {
         f.category === "shipping" || f.category === "quality" || f.category === "general"
     ).slice(0, 4);
 
-    // Get featured products for the display
-    const allProducts = await getAllProducts();
-    const featuredProducts = allProducts.filter(p => p.featured).slice(0, 4);
-    if (featuredProducts.length === 0) {
-        // Fallback if no featured products
-        featuredProducts.push(...allProducts.slice(0, 4));
+    // Get featured products — wrap in try/catch so DB errors don't cause 500
+    let featuredProducts: Awaited<ReturnType<typeof getAllProducts>> = [];
+    try {
+        const allProducts = await getAllProducts();
+        featuredProducts = allProducts.filter(p => p.featured).slice(0, 4);
+        if (featuredProducts.length === 0) {
+            featuredProducts = allProducts.slice(0, 4);
+        }
+    } catch {
+        // DB unavailable — render page without products rather than crashing
+        featuredProducts = [];
     }
 
     // JSON-LD schemas — trusted static content from our own data files, not user input

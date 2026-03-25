@@ -62,7 +62,7 @@ export function TrustPillars() {
               className="relative overflow-hidden text-center p-6 rounded-2xl border border-border/50 hover:border-lime/30 hover:shadow-[0_0_30px_rgba(200,230,62,0.08)] transition-all duration-300 group"
             >
               <div className="absolute inset-0">
-                <Image src={pillar.image} alt="" fill className="object-cover opacity-15 dark:opacity-10 group-hover:opacity-20 dark:group-hover:opacity-15 transition-opacity duration-500 group-hover:scale-110" sizes="(max-width: 768px) 50vw, 25vw" />
+                <Image src={pillar.image} alt="" fill aria-hidden="true" className="object-cover opacity-15 dark:opacity-10 group-hover:opacity-20 dark:group-hover:opacity-15 transition-opacity duration-500 group-hover:scale-110" sizes="(max-width: 768px) 50vw, 25vw" />
               </div>
               <div className="relative z-10">
                 <div className="text-4xl mb-3 group-hover:scale-110 transition-transform" aria-hidden="true">{pillar.icon}</div>

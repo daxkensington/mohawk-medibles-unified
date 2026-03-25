@@ -4,6 +4,7 @@
  */
 import { z } from "zod";
 import { router, adminProcedure } from "../trpc";
+import { sendReviewRequestEmail } from "~/lib/email";
 
 export const reviewRequestsRouter = router({
   // ─── Settings ──────────────────────────────────────────
@@ -155,10 +156,27 @@ export const reviewRequestsRouter = router({
             },
           });
 
-          // TODO: Send email via Resend
-          console.log(
-            `[Review Request] Would send to ${order.user.email} for ${item.name}`
-          );
+          // Send review request email via Resend
+          try {
+            const product = await ctx.prisma.product.findUnique({
+              where: { id: item.productId },
+              select: { slug: true },
+            });
+            const productSlug = product?.slug || item.productId.toString();
+
+            await sendReviewRequestEmail(order.user.email!, {
+              customerName: order.user.name || "Valued Customer",
+              productName: item.name,
+              productSlug,
+              orderNumber: order.orderNumber || order.id.toString(),
+            });
+            console.log(
+              `[Review Request] Sent to ${order.user.email} for ${item.name}`
+            );
+          } catch (emailErr) {
+            // Email failure should not break the flow
+            console.error("[Review Request] Email send failed:", emailErr);
+          }
           sent++;
         } catch (err) {
           errors++;
