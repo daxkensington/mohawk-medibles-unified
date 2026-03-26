@@ -5,10 +5,11 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useCart } from "@/hooks/useCart";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import {
     ShoppingCart, ChevronRight, Minus, Plus,
     Beaker, Shield, Truck, Star, ChevronDown, Send, CheckCircle,
-    Link as LinkIcon, Share2, Sparkles,
+    Link as LinkIcon, Share2, Sparkles, MessageCircle,
 } from "lucide-react";
 import type { Product } from "@/lib/productData";
 import { getShortName } from "@/lib/productData";
@@ -68,6 +69,7 @@ export default function ProductDetailClient({ product, related, shortName, faqs,
     const [qty, setQty] = useState(1);
     const [activeTab, setActiveTab] = useState<"details" | "specs" | "reviews" | "faq">("details");
     const [added, setAdded] = useState(false);
+    const [activeImage, setActiveImage] = useState(0);
     const [selectedTier, setSelectedTier] = useState<BulkPricingTier | null>(null);
 
     // Reviews state
@@ -221,27 +223,48 @@ export default function ProductDetailClient({ product, related, shortName, faqs,
                 <div className="grid lg:grid-cols-2 gap-12 mb-16">
 
                     <div className="relative">
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                        >
-                            <ProductImage
-                                src={product.image}
-                                alt={product.altText || product.name}
-                                sizes="(max-width: 1024px) 100vw, 50vw"
-                                priority
-                                variant="hero"
+                        <div className="flex gap-3">
+                            {/* Vertical thumbnails */}
+                            {product.images && product.images.length > 1 && (
+                                <div className="hidden sm:flex flex-col gap-2 w-16 flex-shrink-0">
+                                    {product.images.slice(0, 4).map((img, i) => (
+                                        <button
+                                            key={i}
+                                            onClick={() => setActiveImage(i)}
+                                            className={`w-16 h-16 rounded-lg overflow-hidden border-2 transition-colors ${
+                                                activeImage === i ? "border-primary" : "border-border hover:border-primary/50"
+                                            }`}
+                                        >
+                                            <Image
+                                                src={img}
+                                                alt={`${product.name} view ${i + 1}`}
+                                                width={64}
+                                                height={64}
+                                                className="w-full h-full object-cover"
+                                            />
+                                        </button>
+                                    ))}
+                                </div>
+                            )}
+                            {/* Main image with zoom */}
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.95 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                className="flex-1 relative overflow-hidden rounded-xl"
                             >
-                                {/* Type badge */}
-                                <div className="absolute top-4 left-4 bg-white/90 dark:bg-card/90 backdrop-blur px-3 py-1.5 rounded-lg text-sm font-medium text-forest shadow-sm z-20">
-                                    {product.specs.type}
-                                </div>
-                                {/* Category badge */}
-                                <div className="absolute bottom-4 left-4 bg-forest/90 text-white backdrop-blur px-3 py-1.5 rounded-lg text-xs font-medium z-20">
-                                    {product.category}
-                                </div>
-                            </ProductImage>
-                        </motion.div>
+                                <ProductImage
+                                    src={product.images?.[activeImage] || product.image}
+                                    alt={product.altText || product.name}
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
+                                    priority
+                                    variant="hero"
+                                >
+                                    <div className="absolute top-4 left-4 bg-card/90 backdrop-blur px-3 py-1.5 rounded-lg text-sm font-medium text-primary shadow-sm z-20">
+                                        {product.category} • {product.specs.type}
+                                    </div>
+                                </ProductImage>
+                            </motion.div>
+                        </div>
                     </div>
 
                     {/* Right — Product Details */}
@@ -314,27 +337,42 @@ export default function ProductDetailClient({ product, related, shortName, faqs,
                             onTierSelect={handleTierSelect}
                         />
 
-                        {/* THC / CBD / Weight badges */}
-                        <div className="flex flex-wrap gap-3 mb-6">
-                            {product.specs.thc && product.specs.thc !== "TBD" && (
-                                <div className="px-4 py-2 rounded-xl bg-forest/10 dark:bg-leaf/20 border border-forest/20">
-                                    <div className="text-[10px] uppercase tracking-wider text-muted-foreground">THC</div>
-                                    <div className="font-bold text-forest dark:text-leaf text-lg">{product.specs.thc}</div>
-                                </div>
-                            )}
-                            {product.specs.cbd && product.specs.cbd !== "TBD" && (
-                                <div className="px-4 py-2 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
-                                    <div className="text-[10px] uppercase tracking-wider text-muted-foreground">CBD</div>
-                                    <div className="font-bold text-blue-700 dark:text-blue-400 text-lg">{product.specs.cbd}</div>
-                                </div>
-                            )}
-                            {product.specs.weight && product.specs.weight !== "TBD" && (
-                                <div className="px-4 py-2 rounded-xl bg-muted border border-border">
-                                    <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Weight</div>
-                                    <div className="font-bold text-lg">{product.specs.weight}</div>
-                                </div>
-                            )}
-                        </div>
+                        {/* THC / CBD Visual Bars */}
+                        {(product.specs.thc || product.specs.cbd) && product.specs.thc !== "TBD" && (
+                            <div className="flex gap-6 mb-6">
+                                {product.specs.thc && product.specs.thc !== "TBD" && (
+                                    <div className="flex-1">
+                                        <div className="text-xs text-muted-foreground mb-1">THC</div>
+                                        <div className="h-2 bg-muted rounded-full overflow-hidden">
+                                            <div
+                                                className="h-full bg-gradient-to-r from-lime to-lime-dark rounded-full transition-all duration-500"
+                                                style={{ width: `${Math.min(parseFloat(product.specs.thc) || 0, 100)}%` }}
+                                            />
+                                        </div>
+                                        <div className="text-sm font-bold text-primary mt-1">{product.specs.thc}</div>
+                                    </div>
+                                )}
+                                {product.specs.cbd && product.specs.cbd !== "TBD" && (
+                                    <div className="flex-1">
+                                        <div className="text-xs text-muted-foreground mb-1">CBD</div>
+                                        <div className="h-2 bg-muted rounded-full overflow-hidden">
+                                            <div
+                                                className="h-full bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transition-all duration-500"
+                                                style={{ width: `${Math.min(parseFloat(product.specs.cbd) || 0, 100)}%` }}
+                                            />
+                                        </div>
+                                        <div className="text-sm font-bold text-blue-500 mt-1">{product.specs.cbd}</div>
+                                    </div>
+                                )}
+                            </div>
+                        )}
+                        {/* Weight badge */}
+                        {product.specs.weight && product.specs.weight !== "TBD" && (
+                            <div className="inline-flex px-3 py-1.5 rounded-lg bg-muted border border-border text-sm mb-4">
+                                <span className="text-muted-foreground mr-1.5">Weight:</span>
+                                <span className="font-bold">{product.specs.weight}</span>
+                            </div>
+                        )}
 
                         {/* Terpene Profile */}
                         {product.specs.terpenes.length > 0 && (
@@ -346,6 +384,23 @@ export default function ProductDetailClient({ product, related, shortName, faqs,
                                     {product.specs.terpenes.map((t) => (
                                         <span key={t} className={`px-3 py-1 rounded-full text-xs font-medium border ${getTerpeneColor(t)}`}>
                                             {t}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+
+                        {/* Effects */}
+                        {product.effects && product.effects.length > 0 && (
+                            <div className="mb-6">
+                                <div className="text-sm font-semibold text-foreground mb-2">Effects</div>
+                                <div className="flex flex-wrap gap-2">
+                                    {product.effects.map((effect) => (
+                                        <span
+                                            key={effect}
+                                            className="px-3 py-1.5 rounded-full text-xs font-medium bg-card border border-border text-muted-foreground"
+                                        >
+                                            {effect}
                                         </span>
                                     ))}
                                 </div>
@@ -446,16 +501,19 @@ export default function ProductDetailClient({ product, related, shortName, faqs,
                             </button>
                         </div>
 
-                        {/* Trust Badges */}
-                        <div className="grid grid-cols-3 gap-3 mb-6">
-                            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                                <Shield className="h-4 w-4 text-forest" /> Lab Tested
+                        {/* Trust Badges — Ian's Style */}
+                        <div className="flex gap-4 py-4 border-t border-border mb-6">
+                            <div className="flex-1 text-center">
+                                <Truck className="h-5 w-5 mx-auto mb-1 text-primary" />
+                                <div className="text-[10px] text-muted-foreground leading-tight">Free Ship $199+</div>
                             </div>
-                            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                                <Truck className="h-4 w-4 text-forest" /> Ships Canada-Wide
+                            <div className="flex-1 text-center">
+                                <Shield className="h-5 w-5 mx-auto mb-1 text-primary" />
+                                <div className="text-[10px] text-muted-foreground leading-tight">Quality Guaranteed</div>
                             </div>
-                            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                                <Star className="h-4 w-4 text-forest" /> Empire Standard™
+                            <div className="flex-1 text-center">
+                                <MessageCircle className="h-5 w-5 mx-auto mb-1 text-primary" />
+                                <div className="text-[10px] text-muted-foreground leading-tight">Expert Support</div>
                             </div>
                         </div>
 
