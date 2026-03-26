@@ -20,6 +20,7 @@ export const metadata: Metadata = {
         description:
             "Help center for orders, shipping, payments, and product questions. Reach us by email, phone, or in person.",
         url: "https://mohawkmedibles.ca/support",
+        images: ["/og-image.png"],
     },
     alternates: { canonical: "https://mohawkmedibles.ca/support" },
 };

@@ -31,6 +31,7 @@ export const metadata: Metadata = {
             "Frequently asked questions about ordering cannabis online, shipping across Canada, lab testing, and our Empire Standard\u2122 quality guarantee.",
         url: "https://mohawkmedibles.ca/faq",
         type: "website",
+        images: ["/og-image.png"],
     },
     alternates: {
         canonical: "https://mohawkmedibles.ca/faq",

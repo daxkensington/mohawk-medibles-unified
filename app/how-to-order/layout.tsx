@@ -11,6 +11,7 @@ export const metadata: Metadata = {
             "Easy ordering guide: Browse products, checkout securely, receive fast delivery. Multiple payment options and Canada-wide shipping.",
         url: "https://mohawkmedibles.ca/how-to-order",
         type: "website",
+        images: ["/og-image.png"],
     },
     alternates: {
         canonical: "https://mohawkmedibles.ca/how-to-order",

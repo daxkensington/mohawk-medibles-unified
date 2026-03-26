@@ -16,6 +16,7 @@ export const metadata: Metadata = {
         description:
             "Verified reviews from thousands of satisfied Canadian customers. Premium cannabis, fast shipping, Indigenous-owned.",
         url: "https://mohawkmedibles.ca/reviews",
+        images: ["/og-image.png"],
     },
     alternates: { canonical: "https://mohawkmedibles.ca/reviews" },
 };
