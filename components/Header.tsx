@@ -22,7 +22,7 @@ export default function Header() {
     // On home hero (transparent bg), always use light text regardless of theme
     const onHeroTransparent = isHome && !isScrolled;
     const { t } = useLocale();
-    const { items } = useCart();
+    const { items, openCart } = useCart();
     const cartCount = items.reduce((sum, item) => sum + item.quantity, 0);
     const { count: wishlistCount } = useWishlist();
 
@@ -177,7 +177,7 @@ export default function Header() {
                         )}
                     </Link>
 
-                    <Link href="/checkout" className="relative" aria-label={`Shopping cart${cartCount > 0 ? `, ${cartCount} items` : ""}`}>
+                    <button onClick={openCart} className="relative" aria-label={`Shopping cart${cartCount > 0 ? `, ${cartCount} items` : ""}`}>
                         <Button variant="brand" size="sm" aria-label="Shopping cart" className="rounded-full flex items-center gap-2 px-4 shadow-lg glow-lime">
                             <ShoppingCart className="h-4 w-4" />
                             <span className="hidden md:inline text-[10px] font-bold tracking-widest uppercase">Cart</span>
@@ -187,7 +187,7 @@ export default function Header() {
                                 {cartCount > 99 ? "99+" : cartCount}
                             </span>
                         )}
-                    </Link>
+                    </button>
 
                     <button
                         className={`lg:hidden ${onHeroTransparent ? "text-white" : "text-charcoal-deep dark:text-white"}`}

@@ -185,6 +185,7 @@ import LocaleSEOHead from "@/components/LocaleSEOHead";
 import LazyWidgets from "@/components/LazyWidgets";
 import { CompareProvider } from "@/hooks/useCompare";
 import CompareBar from "@/components/CompareBar";
+import CartDrawer from "@/components/CartDrawer";
 import HappyHourBanner from "@/components/HappyHourBanner";
 import { TRPCProvider } from "@/components/TRPCProvider";
 
@@ -247,6 +248,7 @@ export default async function RootLayout({
               <main id="main-content">
                 {children}
               </main>
+              <CartDrawer />
               <Footer />
               <CompareBar />
               <LazyWidgets />

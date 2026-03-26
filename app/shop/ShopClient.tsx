@@ -110,7 +110,7 @@ export default function ShopClient() {
     const [sortOpen, setSortOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
     const [visibleCount, setVisibleCount] = useState(PRODUCTS_PER_PAGE);
-    const { addItem, items, total } = useCart();
+    const { addItem, items, total, openCart } = useCart();
     const [addedIds, setAddedIds] = useState<Set<number>>(new Set());
     const [reviewStats, setReviewStats] = useState<Record<number, { avg: number; count: number }>>({});
     const [personalizedRecs, setPersonalizedRecs] = useState<any[]>([]);
@@ -251,7 +251,8 @@ export default function ShopClient() {
                 return next;
             });
         }, 1500);
-    }, [addItem]);
+        openCart();
+    }, [addItem, openCart]);
 
     // ── Reset visible count on filter/search change ──────────
     const handleCategoryChange = (cat: string) => {
