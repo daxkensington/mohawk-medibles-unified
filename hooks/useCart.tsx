@@ -28,11 +28,16 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
     // Persist cart to local storage (Simple mock for now)
     useEffect(() => {
-        const saved = localStorage.getItem("mohawk-cart");
-        if (saved) {
-            const parsed: CartItem[] = JSON.parse(saved);
-            // Decode any HTML entities left over from old cached names
-            setItems(parsed.map(item => ({ ...item, name: decodeHtmlEntities(item.name) })));
+        try {
+            const saved = localStorage.getItem("mohawk-cart");
+            if (saved) {
+                const parsed: CartItem[] = JSON.parse(saved);
+                // Decode any HTML entities left over from old cached names
+                setItems(parsed.map(item => ({ ...item, name: decodeHtmlEntities(item.name) })));
+            }
+        } catch {
+            // Corrupted data, reset
+            localStorage.removeItem("mohawk-cart");
         }
     }, []);
 

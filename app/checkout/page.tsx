@@ -463,6 +463,7 @@ export default function CheckoutPage() {
                                         type="text"
                                         value={billing.first_name}
                                         onChange={(e) => setBilling({ ...billing, first_name: e.target.value })}
+                                        autoComplete="given-name"
                                         className="w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-muted focus:ring-2 focus:ring-forest/30 outline-none transition"
                                         required
                                     />
@@ -473,6 +474,7 @@ export default function CheckoutPage() {
                                         type="text"
                                         value={billing.last_name}
                                         onChange={(e) => setBilling({ ...billing, last_name: e.target.value })}
+                                        autoComplete="family-name"
                                         className="w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-muted focus:ring-2 focus:ring-forest/30 outline-none transition"
                                         required
                                     />
@@ -483,6 +485,7 @@ export default function CheckoutPage() {
                                         type="email"
                                         value={billing.email}
                                         onChange={(e) => setBilling({ ...billing, email: e.target.value })}
+                                        autoComplete="email"
                                         className="w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-muted focus:ring-2 focus:ring-forest/30 outline-none transition"
                                         required
                                     />
@@ -493,6 +496,7 @@ export default function CheckoutPage() {
                                         type="tel"
                                         value={billing.phone}
                                         onChange={(e) => setBilling({ ...billing, phone: e.target.value })}
+                                        autoComplete="tel"
                                         className="w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-muted focus:ring-2 focus:ring-forest/30 outline-none transition"
                                     />
                                 </div>
@@ -504,6 +508,7 @@ export default function CheckoutPage() {
                                                 type="text"
                                                 value={billing.address_1}
                                                 onChange={(e) => setBilling({ ...billing, address_1: e.target.value })}
+                                                autoComplete="street-address"
                                                 className="w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-muted focus:ring-2 focus:ring-forest/30 outline-none transition"
                                                 placeholder="Street address"
                                                 required
@@ -525,6 +530,7 @@ export default function CheckoutPage() {
                                                 type="text"
                                                 value={billing.city}
                                                 onChange={(e) => setBilling({ ...billing, city: e.target.value })}
+                                                autoComplete="address-level2"
                                                 className="w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-muted focus:ring-2 focus:ring-forest/30 outline-none transition"
                                                 required
                                             />
@@ -534,6 +540,7 @@ export default function CheckoutPage() {
                                             <select
                                                 value={billing.state}
                                                 onChange={(e) => setBilling({ ...billing, state: e.target.value })}
+                                                autoComplete="address-level1"
                                                 className="w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-muted focus:ring-2 focus:ring-forest/30 outline-none transition"
                                             >
                                                 <option value="AB">Alberta</option>
@@ -557,6 +564,7 @@ export default function CheckoutPage() {
                                                 type="text"
                                                 value={billing.postcode}
                                                 onChange={(e) => setBilling({ ...billing, postcode: e.target.value.toUpperCase() })}
+                                                autoComplete="postal-code"
                                                 className="w-full px-3 py-2.5 text-sm rounded-lg border border-border bg-muted focus:ring-2 focus:ring-forest/30 outline-none transition uppercase"
                                                 placeholder="A1A 1A1"
                                                 required

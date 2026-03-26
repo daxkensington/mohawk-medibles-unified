@@ -766,20 +766,12 @@ export default function ShopClient() {
                                                     <Sparkles className="h-3 w-3" /> Featured
                                                 </div>
                                             )}
-                                            {/* Stock urgency badges */}
-                                            {product.specs.type.toLowerCase().includes("sale") ? (
+                                            {/* Sale badge */}
+                                            {product.specs.type.toLowerCase().includes("sale") && (
                                                 <div className="absolute bottom-3 right-3 bg-red-500/90 backdrop-blur px-2 py-1 rounded text-xs font-bold text-white z-20 animate-pulse">
                                                     SALE
                                                 </div>
-                                            ) : product.id % 5 === 0 ? (
-                                                <div className="absolute bottom-3 right-3 bg-amber-500/90 backdrop-blur px-2 py-1 rounded text-xs font-bold text-white z-20">
-                                                    Selling Fast
-                                                </div>
-                                            ) : product.id % 7 === 0 ? (
-                                                <div className="absolute bottom-3 right-3 bg-red-600/90 backdrop-blur px-2 py-1 rounded text-xs font-bold text-white z-20">
-                                                    Low Stock
-                                                </div>
-                                            ) : null}
+                                            )}
                                         </ProductImage>
                                     </Link>
                                     <div className="p-4">

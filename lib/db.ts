@@ -21,6 +21,7 @@ function createPrismaClient() {
     const pool = new pg.Pool({
         connectionString:
             dbUrl || "postgresql://localhost:5432/mohawkmedibles_dev",
+        max: 5,
     });
     const adapter = new PrismaPg(pool);
     return new PrismaClient({
