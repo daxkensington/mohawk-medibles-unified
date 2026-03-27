@@ -3,6 +3,7 @@
 import { trpc } from "@/lib/trpc";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Gift, Star, Trophy, Zap, Copy, Share2, ArrowRight,
   ShoppingCart, Camera, UserPlus, Cake, Sparkles,
@@ -100,7 +101,15 @@ export default function RewardsPage() {
     <div className="min-h-screen bg-[var(--background)] text-white">
       {/* Hero */}
       <section className="relative bg-gradient-to-b from-[#1a1a22] to-[var(--background)] py-24 md:py-32 px-4 overflow-hidden">
+        <Image
+          src="/assets/pages/rewards-hero.jpg"
+          alt=""
+          fill
+          priority
+          className="object-cover opacity-15"
+        />
         {/* Background effects */}
+        <div className="absolute inset-0 bg-gradient-to-b from-charcoal-deep/80 to-charcoal-deep/95" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(132,204,22,0.1),transparent_60%)]" />
         <div className="absolute top-10 left-1/4 w-[500px] h-[500px] bg-lime-500/5 rounded-full blur-[150px]" />
         <div className="absolute bottom-0 right-1/3 w-[400px] h-[400px] bg-green-500/5 rounded-full blur-[120px]" />

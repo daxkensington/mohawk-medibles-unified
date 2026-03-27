@@ -6,6 +6,7 @@ import {
   AlertCircle, Percent, BadgeCheck, Scale, Package,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function PriceMatchClient() {
@@ -59,6 +60,14 @@ export default function PriceMatchClient() {
     <div className="min-h-screen bg-background">
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-emerald-900 via-forest to-emerald-950 text-white py-20 md:py-28">
+        <Image
+          src="/assets/pages/price-match-hero.jpg"
+          alt=""
+          fill
+          priority
+          className="object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-charcoal-deep/80 to-charcoal-deep/95" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(34,197,94,0.15),_transparent_60%)]" />
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">

@@ -4,6 +4,7 @@
  */
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Star, ShieldCheck, Truck, ThumbsUp, Quote } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -227,8 +228,16 @@ export default function ReviewsPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
             />
             {/* Hero */}
-            <section className="py-16 md:py-24">
-                <div className="max-w-5xl mx-auto px-4 text-center">
+            <section className="relative py-16 md:py-24 overflow-hidden">
+                <Image
+                    src="/assets/pages/reviews-hero.jpg"
+                    alt=""
+                    fill
+                    className="object-cover opacity-20"
+                    priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-charcoal-deep/80 to-charcoal-deep/95" />
+                <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4 font-serif text-foreground">
                         What Our Customers Say
                     </h1>

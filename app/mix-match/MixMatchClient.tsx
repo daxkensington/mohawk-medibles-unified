@@ -169,8 +169,16 @@ export default function MixMatchClient() {
     return (
         <div className="min-h-screen pt-32 pb-20 page-glass text-foreground">
             {/* Hero */}
-            <section className="container mx-auto px-6 mb-12">
-                <div className="text-center max-w-3xl mx-auto">
+            <section className="relative overflow-hidden container mx-auto px-6 mb-12">
+                <Image
+                    src="/assets/pages/mix-match-hero.jpg"
+                    alt=""
+                    fill
+                    priority
+                    className="object-cover opacity-20"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-charcoal-deep/80 to-charcoal-deep/95" />
+                <div className="relative z-10 text-center max-w-3xl mx-auto">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-sm font-semibold mb-6">
                         <Sparkles className="w-4 h-4" />
                         Custom Ounces

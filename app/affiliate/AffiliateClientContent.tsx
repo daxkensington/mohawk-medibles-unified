@@ -2,6 +2,7 @@
 
 import { trpc } from "@/lib/trpc";
 import { useState } from "react";
+import Image from "next/image";
 import {
   DollarSign, Users, MousePointerClick, TrendingUp, Copy, Check,
   Send, Clock, Gift, Headphones, Zap, ArrowRight, Loader2,
@@ -105,6 +106,14 @@ function AffiliateLanding({ isLoggedIn }: { isLoggedIn: boolean }) {
     <div className="min-h-screen bg-[var(--background)]">
       {/* Hero */}
       <section className="relative bg-gradient-to-b from-[#1a1a22] to-[var(--background)] py-28 md:py-36 px-4 overflow-hidden">
+        {/* Hero background image */}
+        <Image
+            src="/assets/pages/affiliate-hero.jpg"
+            alt=""
+            fill
+            className="object-cover opacity-20"
+            priority
+        />
         {/* Background effects */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(245,158,11,0.12),transparent_60%)]" />
         <div className="absolute top-20 left-1/4 w-[500px] h-[500px] bg-amber-500/5 rounded-full blur-[150px]" />

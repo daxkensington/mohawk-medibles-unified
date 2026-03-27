@@ -15,6 +15,7 @@ import { INTENTS, filterByIntent, type ShoppingIntent } from "@/lib/intentMappin
 import { useProducts, type ProductLite } from "@/hooks/useProducts";
 import { decodeHtmlEntities } from "@/lib/utils";
 import { getLowestPricePerGram } from "@/lib/bulkPricing";
+import Image from "next/image";
 import ProductImage from "@/components/ProductImage";
 import { useCart } from "@/hooks/useCart";
 import FreeShippingBar from "@/components/FreeShippingBar";
@@ -285,8 +286,23 @@ export default function ShopClient() {
 
     return (
         <div className="min-h-screen page-glass pt-20">
+            {/* Hero Banner */}
+            <div className="relative h-[300px] overflow-hidden">
+                <Image
+                    src="/assets/pages/shop-hero.jpg"
+                    alt=""
+                    fill
+                    className="object-cover opacity-20"
+                    priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-charcoal-deep/80 to-charcoal-deep/95" />
+                <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+                    <h1 className="text-4xl md:text-5xl font-bold text-cream mb-3">Browse the Collection</h1>
+                    <p className="text-muted-foreground text-lg max-w-2xl">Premium cannabis products, lab-tested and delivered Canada-wide</p>
+                </div>
+            </div>
+
             <div className="container mx-auto px-6 py-12">
-                <h1 className="text-4xl font-bold text-forest dark:text-cream mb-6">Full Collection</h1>
 
                 {/* ── Intent / Mood Pill Bar ── */}
                 <IntentPillBar activeIntent={activeIntent} onIntentChange={(intent) => { setActiveIntent(intent); setVisibleCount(PRODUCTS_PER_PAGE); }} />

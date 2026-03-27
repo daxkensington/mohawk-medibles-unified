@@ -6,6 +6,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
     MessageSquare, Mail, Phone, MapPin, Clock, Truck,
     CreditCard, ShieldCheck, Package, ChevronDown, Search,
@@ -129,8 +130,16 @@ export default function SupportPage() {
             </div>
 
             {/* Hero */}
-            <section className="relative z-10 pt-28 pb-16 md:pb-20">
-                <div className="max-w-4xl mx-auto px-4 text-center">
+            <section className="relative z-10 pt-28 pb-16 md:pb-20 overflow-hidden">
+                <Image
+                    src="/assets/pages/support-hero.jpg"
+                    alt=""
+                    fill
+                    className="object-cover opacity-15"
+                    priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-charcoal-deep/80 to-charcoal-deep/95" />
+                <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
                     {/* Badge */}
                     <div className="inline-flex items-center gap-2 bg-forest/10 dark:bg-lime/10 rounded-full px-5 py-2 mb-6">
                         <HeadphonesIcon className="h-4 w-4 text-forest dark:text-lime" />

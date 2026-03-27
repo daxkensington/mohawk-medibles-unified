@@ -97,11 +97,12 @@ export default function ContactClientContent() {
                 {/* Background layers */}
                 <div className="absolute inset-0">
                     <Image
-                        src="/assets/hero/abstract-haze.webp"
+                        src="/assets/pages/contact-hero.jpg"
                         alt=""
                         fill
-                        className="object-cover opacity-30"
+                        className="object-cover opacity-25"
                         sizes="100vw"
+                        priority
                         aria-hidden="true"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/80 to-white dark:from-charcoal-deep/70 dark:via-charcoal-deep/90 dark:to-charcoal-deep" />

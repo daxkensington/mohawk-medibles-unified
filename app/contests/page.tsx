@@ -7,6 +7,7 @@ import {
   Zap, Sparkles, Crown, PartyPopper, Timer, Award, Target, Ticket,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 function useCountdown(endDate: string | Date) {
   const [timeLeft, setTimeLeft] = useState("");
@@ -277,12 +278,19 @@ export default function ContestsPage() {
     <div className="min-h-screen bg-[#0a0a0f]">
       {/* Hero */}
       <section className="relative py-24 md:py-32 px-4 overflow-hidden">
+        <Image
+          src="/assets/pages/contests-hero.jpg"
+          alt=""
+          fill
+          priority
+          className="object-cover opacity-20"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-amber-900/20 via-[#0a0a0f] to-transparent" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-amber-500/8 rounded-full blur-[150px]" />
         <div className="absolute top-10 left-1/4 w-96 h-96 bg-orange-500/5 rounded-full blur-[100px]" />
         <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-red-500/5 rounded-full blur-[100px]" />
 
-        <div className="relative max-w-4xl mx-auto text-center">
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 rounded-full px-5 py-2 mb-6">
             <Flame className="w-5 h-5 text-amber-400" />
             <span className="text-amber-300 text-sm font-bold uppercase tracking-widest">Contests & Giveaways</span>

@@ -58,6 +58,14 @@ export default async function DealsPage() {
         <div className="min-h-screen pt-32 pb-20 page-glass text-foreground">
             {/* Hero Section — Fire-themed */}
             <section className="relative container mx-auto px-6 mb-20 overflow-hidden">
+                {/* Hero background image */}
+                <Image
+                    src="/assets/pages/deals-hero.jpg"
+                    alt=""
+                    fill
+                    className="object-cover opacity-15 mix-blend-overlay"
+                    priority
+                />
                 {/* Animated fire glow blobs */}
                 <div className="absolute -top-20 left-1/4 w-[500px] h-[500px] bg-orange-500/10 dark:bg-orange-500/5 rounded-full blur-[150px] animate-float pointer-events-none" />
                 <div className="absolute -top-10 right-1/4 w-[400px] h-[400px] bg-red-500/8 dark:bg-red-500/4 rounded-full blur-[120px] animate-float pointer-events-none" style={{ animationDelay: "-3s" }} />

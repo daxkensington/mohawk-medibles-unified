@@ -12,6 +12,7 @@
  */
 
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { breadcrumbSchema, faqSchema } from "@/lib/seo/schemas";
@@ -285,7 +286,16 @@ export default function CannabisLawsHubPage() {
           </nav>
 
           {/* Hero Section */}
-          <section className="mb-16">
+          <section className="relative mb-16 overflow-hidden rounded-2xl py-12 px-8">
+            <Image
+              src="/assets/pages/cannabis-laws-hero.jpg"
+              alt=""
+              fill
+              priority
+              className="object-cover opacity-15"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-charcoal-deep/80 to-charcoal-deep/95" />
+            <div className="relative z-10">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter uppercase text-foreground mb-6">
               Cannabis Laws in Canada — Province by Province Guide
             </h1>
@@ -307,6 +317,7 @@ export default function CannabisLawsHubPage() {
               provinces and territories so you know exactly what is legal where
               you live.
             </p>
+            </div>
           </section>
 
           {/* Quick Stats Bar */}

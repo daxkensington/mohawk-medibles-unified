@@ -10,6 +10,7 @@
 
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Truck, Shield, FlaskRound, Gift } from "lucide-react";
 import { getAllProvinces, getPopularCities, getTotalCityCount, getAllCities } from "@/lib/seo/city-delivery-data";
@@ -94,8 +95,16 @@ export default function DeliveryPage() {
       <main className="min-h-screen pt-32 pb-20 page-glass text-foreground">
         <div className="container mx-auto px-6">
           {/* ── Hero Section ──────────────────────────────────────── */}
-          <section className="mb-20">
-            <div className="max-w-4xl mx-auto text-center">
+          <section className="relative mb-20 overflow-hidden rounded-3xl">
+            <Image
+                src="/assets/pages/delivery-hero.jpg"
+                alt=""
+                fill
+                className="object-cover opacity-20"
+                priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-charcoal-deep/80 to-charcoal-deep/95" />
+            <div className="relative z-10 max-w-4xl mx-auto text-center py-16">
               <p className="text-[10px] font-bold tracking-widest uppercase text-forest dark:text-lime mb-4">
                 Nationwide Delivery
               </p>

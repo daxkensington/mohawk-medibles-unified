@@ -89,11 +89,11 @@ export default function LocationsClient() {
                 {/* Background image with gradient overlays */}
                 <div className="absolute inset-0">
                     <Image
-                        src="/assets/hero/hero-flower-premium.webp"
+                        src="/assets/pages/locations-hero.jpg"
                         alt="Mohawk Medibles store — premium cannabis dispensary"
                         fill
                         priority
-                        className="object-cover"
+                        className="object-cover opacity-30"
                         sizes="100vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-charcoal-deep via-charcoal-deep/50 to-transparent" />

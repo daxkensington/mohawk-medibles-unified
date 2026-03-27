@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { trpc } from "@/lib/trpc";
+import Image from "next/image";
 import {
   Building2, TrendingUp, Truck, UserCheck, Crown,
   Send, CheckCircle, Clock, XCircle, Package,
@@ -406,6 +407,14 @@ export default function WholesaleClient() {
     <div className="min-h-screen bg-[#0a0a0f]">
       {/* Hero */}
       <section className="relative overflow-hidden">
+        {/* Hero background image */}
+        <Image
+            src="/assets/pages/wholesale-hero.jpg"
+            alt=""
+            fill
+            className="object-cover opacity-15"
+            priority
+        />
         {/* Background effects */}
         <div className="absolute inset-0 bg-gradient-to-br from-green-900/30 via-[#0a0a0f] to-emerald-900/20" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-green-500/8 rounded-full blur-[120px]" />
