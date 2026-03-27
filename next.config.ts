@@ -132,6 +132,12 @@ const nextConfig: NextConfig = {
   // ─── Redirects (old WordPress page paths → new paths) ──
   async redirects() {
     return [
+      // ── Removed pages ──
+      { source: "/our-story", destination: "/about", permanent: true },
+      { source: "/our-story/", destination: "/about", permanent: true },
+      { source: "/territory-grown", destination: "/shop", permanent: true },
+      { source: "/territory-grown/", destination: "/shop", permanent: true },
+
       // ── Static page aliases from WordPress ──
       { source: "/about-us", destination: "/about", permanent: true },
       { source: "/about-us/", destination: "/about", permanent: true },
