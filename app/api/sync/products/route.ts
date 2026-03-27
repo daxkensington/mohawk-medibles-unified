@@ -56,8 +56,13 @@ export async function POST(req: NextRequest) {
       try {
         const category = wcProduct.categories?.[0]?.name || 'Uncategorized';
         const subcategory = wcProduct.categories?.[1]?.name || null;
-        const priceRaw = wcProduct.prices?.price || '0';
-        const price = parseFloat(priceRaw) / 100; // Store API returns cents
+        // Store API returns cents. Variable products may have price=0 with a price_range.
+        let priceRaw = wcProduct.prices?.price || '0';
+        // If base price is 0 but there's a price range, use the minimum variation price
+        if (priceRaw === '0' && wcProduct.prices?.price_range?.min_amount) {
+          priceRaw = wcProduct.prices.price_range.min_amount;
+        }
+        const price = parseFloat(priceRaw) / 100;
         const salePrice = wcProduct.prices?.sale_price
           ? parseFloat(wcProduct.prices.sale_price) / 100
           : null;
@@ -133,6 +138,19 @@ export async function POST(req: NextRequest) {
       }
     }
 
+    // ── Orphan cleanup: mark products removed from WooCommerce ──
+    const syncedWcIds = products
+      .filter((p) => !isExcludedProduct(p))
+      .map((p) => p.id);
+
+    const orphaned = await prisma.product.updateMany({
+      where: {
+        wcId: { not: null, notIn: syncedWcIds },
+        status: { not: 'DISCONTINUED' },
+      },
+      data: { status: 'DISCONTINUED' },
+    });
+
     await prisma.syncLog.update({
       where: { id: syncLog.id },
       data: {
@@ -149,6 +167,7 @@ export async function POST(req: NextRequest) {
       synced: successCount,
       skipped: skippedCount,
       failed: failCount,
+      orphansDiscontinued: orphaned.count,
     });
   } catch (err: any) {
     await prisma.syncLog.update({
