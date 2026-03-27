@@ -89,7 +89,7 @@ export default function LocationsClient() {
                 {/* Background image with gradient overlays */}
                 <div className="absolute inset-0">
                     <Image
-                        src="/assets/pages/locations-hero.jpg"
+                        src="/assets/store/storefront.jpg"
                         alt="Mohawk Medibles store — premium cannabis dispensary"
                         fill
                         priority

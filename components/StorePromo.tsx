@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, Clock, Phone, ArrowRight, Store, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -14,19 +15,20 @@ export default function StorePromo() {
                     <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-leaf/10 dark:bg-forest/10 rounded-full blur-[60px]" />
 
                     <div className="grid md:grid-cols-2 gap-0">
-                        {/* Map embed */}
-                        <div className="h-64 md:h-full min-h-[320px] relative group">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2862.5!2d-77.0833!3d44.2167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDEzJzAwLjAiTiA3N8KwMDUnMDAuMCJX!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca"
-                                width="100%"
-                                height="100%"
-                                style={{ border: 0 }}
-                                allowFullScreen
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
-                                title="Mohawk Medibles Store Location"
-                                className="absolute inset-0 transition-opacity duration-300"
+                        {/* Real store photo */}
+                        <div className="h-64 md:h-full min-h-[320px] relative group overflow-hidden">
+                            <Image
+                                src="/assets/store/storefront.jpg"
+                                alt="Mohawk Medibles dispensary storefront at 45 Dundas St, Deseronto"
+                                fill
+                                className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                            <div className="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs text-white font-bold flex items-center gap-1.5">
+                                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                                Open Now — 8AM-10PM
+                            </div>
                             {/* Gradient fade into info panel */}
                             <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[var(--card)] to-transparent hidden md:block pointer-events-none" />
                         </div>

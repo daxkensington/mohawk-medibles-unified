@@ -111,8 +111,8 @@ export default function AboutClientContent() {
                 {/* Layered background */}
                 <div className="absolute inset-0">
                     <Image
-                        src="/assets/hero/hero-territory-heritage.webp"
-                        alt="Tyendinaga Mohawk Territory — home of Mohawk Medibles"
+                        src="/assets/store/storefront.jpg"
+                        alt="Mohawk Medibles dispensary at 45 Dundas St, Deseronto"
                         fill
                         priority
                         className="object-cover"
