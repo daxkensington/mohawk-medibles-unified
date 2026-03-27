@@ -533,7 +533,7 @@ function ExpenseForm({ initialData, onSubmit, onCancel, loading }: {
     amount: number;
     date: string;
     recurring: boolean;
-    recurringFrequency?: string | null;
+    recurringFrequency?: "weekly" | "monthly" | "yearly" | null;
     vendor?: string | null;
     notes?: string | null;
   }) => void;
@@ -562,7 +562,7 @@ function ExpenseForm({ initialData, onSubmit, onCancel, loading }: {
       amount: parseFloat(amount),
       date,
       recurring,
-      recurringFrequency: recurring ? recurringFreq || null : null,
+      recurringFrequency: recurring && recurringFreq ? recurringFreq as "weekly" | "monthly" | "yearly" : null,
       vendor: vendor || null,
       notes: notes || null,
     });
