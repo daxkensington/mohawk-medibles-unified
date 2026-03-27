@@ -7,7 +7,7 @@ import {
   Gift, Star, Trophy, Zap, Copy, Share2, ArrowRight,
   ShoppingCart, Camera, UserPlus, Cake, Sparkles,
   Crown, Target, Gem, Flame, ChevronRight, Tag,
-  Percent, Package, Heart,
+  Percent, Package, Heart, Users,
 } from "lucide-react";
 
 const TIER_DATA = [
