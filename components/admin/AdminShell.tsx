@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
     Package, Users, ShoppingCart, BarChart3, Settings, LogOut,
-    Search, Bell, ChevronDown, TrendingUp, Truck,
+    Search, Bell, ChevronDown, TrendingUp, Truck, DollarSign,
     ChevronLeft, ChevronRight, Percent,
     LayoutDashboard, Megaphone, BookOpen, MessageSquare,
     Zap, Gift, Tag, Warehouse, ClipboardList,
@@ -37,6 +37,7 @@ const NAV_SECTIONS = [
         { href: "/admin/flash-sales", label: "Flash Sales", icon: Zap },
         { href: "/admin/daily-deals", label: "Daily Deals", icon: Clock },
         { href: "/admin/gift-cards", label: "Gift Cards", icon: Gift },
+        { href: "/admin/pricing", label: "Pricing", icon: DollarSign },
         { href: "/admin/brands", label: "Brands", icon: Tag },
         { href: "/admin/categories", label: "Categories", icon: Layers },
         { href: "/admin/wholesale", label: "Wholesale B2B", icon: Building2 },

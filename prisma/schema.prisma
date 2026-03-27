@@ -167,6 +167,8 @@ model Product {
     longDescription String?
     featured        Boolean   @default(false)
     grade           String?   // Quality grade: AA, AAA, AAA+, AAAA, Craft (null for non-flower)
+    costPrice       Float?    // Wholesale purchase cost (per unit as purchased)
+    costUnit        String?   // Unit of purchase: "lb", "oz", "g", "unit", "kg"
     status          ProductStatus @default(ACTIVE)
     createdAt       DateTime  @default(now())
     updatedAt       DateTime  @updatedAt
