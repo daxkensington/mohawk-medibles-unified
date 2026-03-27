@@ -138,7 +138,7 @@ function AffiliateLanding({ isLoggedIn }: { isLoggedIn: boolean }) {
               href="#how-it-works"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white/5 border border-white/10 text-white font-bold text-sm uppercase tracking-wider rounded-xl hover:bg-white/10 transition-colors"
             >
-              Learn More
+              How It Works
             </a>
           </div>
         </div>

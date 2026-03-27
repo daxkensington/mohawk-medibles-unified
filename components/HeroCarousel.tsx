@@ -5,6 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
+/* ─── Tiny base64 blur placeholder for LCP hero image (10x6px) ─── */
+const HERO_BLUR_DATA_URL =
+  "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoKAAYAAkA4JZQCdAEO/hepgAD++OP/orxj/X/kP5H9L6bfxv4N/r/3N+Cv6H/If/D/EP8p/Yv7l/sHsA/ov9g/2D/if2r/8A=";
+
 /* ─── Slide Data ─── */
 const SLIDES = [
   {
@@ -123,8 +127,10 @@ export function HeroCarousel() {
               loading={i === 0 ? "eager" : "lazy"}
               fetchPriority={i === 0 ? "high" : undefined}
               className="object-cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+              sizes="100vw"
               quality={75}
+              placeholder={i === 0 ? "blur" : undefined}
+              blurDataURL={i === 0 ? HERO_BLUR_DATA_URL : undefined}
               itemProp={i === current ? "image" : undefined}
             />
           </div>
@@ -234,12 +240,12 @@ export function HeroCarousel() {
       </div>
 
       {/* Dot indicators */}
-      <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 z-30 flex items-center gap-1.5">
+      <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 z-30 flex items-center gap-0.5">
         {SLIDES.map((_, i) => (
           <button
             key={i}
             onClick={() => { goTo(i); resetTimer(); }}
-            className="py-3 px-0.5 cursor-pointer group"
+            className="min-w-[24px] min-h-[24px] py-3 px-1.5 cursor-pointer group flex items-center justify-center"
             aria-label={`Go to slide ${i + 1}`}
           >
             <span className={`block h-[3px] rounded-full transition-all duration-500 ease-out ${

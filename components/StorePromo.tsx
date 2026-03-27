@@ -91,9 +91,9 @@ export default function StorePromo() {
                             </div>
 
                             <div className="flex flex-wrap gap-3">
-                                <Link href="/locations">
+                                <Link href="/locations" aria-label="Learn more about our store locations in Tyendinaga Mohawk Territory">
                                     <Button variant="brand" className="gap-2 rounded-full px-6 shadow-lg shadow-forest/10 dark:shadow-lime/10 hover:shadow-xl hover:shadow-forest/20 dark:hover:shadow-lime/20 transition-all duration-300 hover:scale-[1.02]">
-                                        Learn More <ArrowRight className="h-4 w-4" />
+                                        Visit Our Locations <ArrowRight className="h-4 w-4" />
                                     </Button>
                                 </Link>
                                 <a
