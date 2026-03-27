@@ -366,8 +366,8 @@ export default function ContactClientContent() {
                                         <MapPin className="w-4 h-4 text-forest dark:text-lime" />
                                     </div>
                                     <div>
-                                        <p className="text-sm font-medium text-foreground">1738 York Road</p>
-                                        <p className="text-xs text-muted-foreground">Tyendinaga Mohawk Territory, ON K0K 3A0</p>
+                                        <p className="text-sm font-medium text-foreground">45 Dundas St</p>
+                                        <p className="text-xs text-muted-foreground">Deseronto, ON K0K 1X0</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-3">
@@ -376,12 +376,12 @@ export default function ContactClientContent() {
                                     </div>
                                     <div>
                                         <p className="text-sm font-medium text-foreground">Open Daily</p>
-                                        <p className="text-xs text-muted-foreground">9:00 AM - 9:00 PM, 7 days a week</p>
+                                        <p className="text-xs text-muted-foreground">8:00 AM - 10:00 PM, 7 days a week</p>
                                     </div>
                                 </div>
                             </div>
                             <a
-                                href="https://www.google.com/maps/dir/?api=1&destination=1738+York+Road+Tyendinaga+Mohawk+Territory+ON+K0K+3A0"
+                                href="https://www.google.com/maps/dir/?api=1&destination=45+Dundas+St+Deseronto+ON+K0K+1X0"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="mt-5 w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-forest/10 dark:bg-lime/10 text-forest dark:text-lime font-medium text-sm hover:bg-forest/15 dark:hover:bg-lime/15 transition-colors"

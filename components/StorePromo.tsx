@@ -58,7 +58,7 @@ export default function StorePromo() {
                                     </div>
                                     <div className="pt-1.5">
                                         <span className="text-foreground font-medium">
-                                            1738 York Road, Tyendinaga Mohawk Territory, ON K0K 3A0
+                                            45 Dundas St, Deseronto, ON K0K 1X0
                                         </span>
                                     </div>
                                 </div>
@@ -67,7 +67,7 @@ export default function StorePromo() {
                                         <Clock className="h-4 w-4 text-forest dark:text-lime" />
                                     </div>
                                     <div>
-                                        <span className="text-foreground font-medium">Open Daily: 9AM - 9PM</span>
+                                        <span className="text-foreground font-medium">Open Daily: 8AM - 10PM</span>
                                         <span className="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-500/10 text-green-500 text-[10px] font-bold">
                                             <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
                                             OPEN NOW
@@ -78,8 +78,8 @@ export default function StorePromo() {
                                     <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-forest/5 dark:bg-white/5 group-hover/item:bg-forest/10 dark:group-hover/item:bg-lime/10 transition-colors duration-300 shrink-0">
                                         <Phone className="h-4 w-4 text-forest dark:text-lime" />
                                     </div>
-                                    <a href="tel:+16133961738" className="text-foreground font-medium hover:text-forest dark:hover:text-lime transition-colors duration-200">
-                                        (613) 396-1738
+                                    <a href="tel:+16133966728" className="text-foreground font-medium hover:text-forest dark:hover:text-lime transition-colors duration-200">
+                                        (613) 396-6728
                                     </a>
                                 </div>
                             </div>
@@ -97,7 +97,7 @@ export default function StorePromo() {
                                     </Button>
                                 </Link>
                                 <a
-                                    href="https://www.google.com/maps/dir/?api=1&destination=1738+York+Road+Tyendinaga+Mohawk+Territory+ON+K0K+3A0"
+                                    href="https://www.google.com/maps/dir/?api=1&destination=45+Dundas+St+Deseronto+ON+K0K+1X0"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >

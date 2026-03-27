@@ -14,10 +14,10 @@ interface ClickAndCollectProps {
 
 const STORE_INFO = {
     name: "Mohawk Medibles",
-    address: "1738 York Road, Tyendinaga Mohawk Territory, ON K0K 3A0",
-    phone: "(613) 396-1738",
-    hours: "Mon-Sun 9AM-9PM",
-    googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=1738+York+Road+Tyendinaga+Mohawk+Territory+ON+K0K+3A0",
+    address: "45 Dundas St, Deseronto, ON K0K 1X0",
+    phone: "(613) 396-6728",
+    hours: "Daily 8AM-10PM",
+    googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=45+Dundas+St+Deseronto+ON+K0K+1X0",
 };
 
 // Generate pickup time slots (30-min intervals from 9AM to 8:30PM)

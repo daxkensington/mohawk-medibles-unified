@@ -189,7 +189,7 @@ SHIPPING TIERS (all prices CAD):
 CONTACT:
 - Email: support@mohawkmedibles.ca
 - Phone: (613) 396-6728
-- Hours: Mon-Sat 9am-9pm ET, Sun 10am-6pm ET
+- Hours: Daily 8am-10pm ET
 
 ACCEPTED PAYMENT METHODS:
 - Credit cards: Visa, Mastercard, Amex

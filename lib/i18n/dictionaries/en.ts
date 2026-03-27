@@ -65,7 +65,7 @@ const en = {
         deliveryFaq: "Delivery FAQ",
         labTested: "Lab Tested",
         products339: "360+ Products",
-        open: "Open 9AM–10PM",
+        open: "Open 8AM–10PM",
         fastDiscreet: "Fast, discreet delivery right to your door",
         empireStandard: "Every product meets the Empire Standard™",
         wideSelection: "Flower, edibles, concentrates, vapes & more",

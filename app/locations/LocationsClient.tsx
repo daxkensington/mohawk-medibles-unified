@@ -12,19 +12,19 @@ import {
 
 const STORE = {
     name: "Mohawk Medibles",
-    address: "1738 York Road, Tyendinaga Mohawk Territory, ON K0K 3A0",
-    phone: "(613) 396-1738",
-    phoneTel: "+16133961738",
+    address: "45 Dundas St, Deseronto, ON K0K 1X0",
+    phone: "(613) 396-6728",
+    phoneTel: "+16133966728",
     hours: [
-        { day: "Monday", time: "9:00 AM - 9:00 PM" },
-        { day: "Tuesday", time: "9:00 AM - 9:00 PM" },
-        { day: "Wednesday", time: "9:00 AM - 9:00 PM" },
-        { day: "Thursday", time: "9:00 AM - 9:00 PM" },
-        { day: "Friday", time: "9:00 AM - 9:00 PM" },
-        { day: "Saturday", time: "9:00 AM - 9:00 PM" },
-        { day: "Sunday", time: "9:00 AM - 9:00 PM" },
+        { day: "Monday", time: "8:00 AM - 10:00 PM" },
+        { day: "Tuesday", time: "8:00 AM - 10:00 PM" },
+        { day: "Wednesday", time: "8:00 AM - 10:00 PM" },
+        { day: "Thursday", time: "8:00 AM - 10:00 PM" },
+        { day: "Friday", time: "8:00 AM - 10:00 PM" },
+        { day: "Saturday", time: "8:00 AM - 10:00 PM" },
+        { day: "Sunday", time: "8:00 AM - 10:00 PM" },
     ],
-    googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=1738+York+Road+Tyendinaga+Mohawk+Territory+ON+K0K+3A0",
+    googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=45+Dundas+St+Deseronto+ON+K0K+1X0",
     embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2862.5!2d-77.0833!3d44.2167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDEzJzAwLjAiTiA3N8KwMDUnMDAuMCJX!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca",
 };
 
@@ -62,10 +62,10 @@ const WHAT_TO_EXPECT = [
 ];
 
 const LANDMARKS = [
-    "Located on York Road (Highway 2) in Tyendinaga Mohawk Territory",
+    "Located on Dundas St in Deseronto, Tyendinaga Mohawk Territory",
     "Between Belleville and Napanee, just off the 401",
     "10 minutes east of Belleville, 15 minutes west of Napanee",
-    "Look for the Mohawk Medibles sign on the south side of York Road",
+    "Look for the Mohawk Medibles sign on Dundas St",
 ];
 
 const DELIVERY_AREAS = [
@@ -153,7 +153,7 @@ export default function LocationsClient() {
                             </div>
                             <div className="flex items-center gap-2">
                                 <MapPin className="w-4 h-4 text-lime" />
-                                <span>1738 York Road, Tyendinaga</span>
+                                <span>45 Dundas St, Deseronto</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <Car className="w-4 h-4 text-lime" />

@@ -195,12 +195,12 @@ export async function listServices(carrierId: string) {
 export const MOHAWK_MEDIBLES_ADDRESS: ShipStationAddress = {
     name: "Mohawk Medibles",
     company_name: "Mohawk Medibles",
-    address_line1: "1738 York Road",
-    city_locality: "Tyendinaga",
+    address_line1: "45 Dundas St",
+    city_locality: "Deseronto",
     state_province: "ON",
-    postal_code: "K0K 3A0",
+    postal_code: "K0K 1X0",
     country_code: "CA",
-    phone: "6133961738",
+    phone: "6133966728",
 };
 
 // ─── Full Pipeline ──────────────────────────────────────────

@@ -170,7 +170,7 @@ export default function SupportPage() {
                         {[
                             { icon: Zap, label: "Avg. response: 2 hours" },
                             { icon: CheckCircle, label: "98% satisfaction rate" },
-                            { icon: Clock, label: "Mon-Sat 9am-9pm EST" },
+                            { icon: Clock, label: "Daily 8am-10pm EST" },
                         ].map((signal) => (
                             <div key={signal.label} className="flex items-center gap-2">
                                 <signal.icon className="h-4 w-4 text-forest dark:text-lime" />

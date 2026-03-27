@@ -4,7 +4,7 @@ import LocationsClient from "./LocationsClient";
 export const metadata: Metadata = {
     title: "Visit Us — Tyendinaga Mohawk Territory",
     description:
-        "Visit Mohawk Medibles at 1738 York Road, Tyendinaga Mohawk Territory, ON. Open daily 9AM-9PM. Order online for in-store pickup or browse our full selection in person.",
+        "Visit Mohawk Medibles at 45 Dundas St, Deseronto, ON. Open daily 8AM-10PM. Order online for in-store pickup or browse our full selection in person.",
     openGraph: {
         title: "Visit Mohawk Medibles — Tyendinaga Mohawk Territory",
         description:
