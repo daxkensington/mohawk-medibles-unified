@@ -227,6 +227,8 @@ const nextConfig: NextConfig = {
   // ─── Bundle Optimization ──────────────────────────────
   experimental: {
     optimizePackageImports: ["lucide-react", "framer-motion"],
+    optimizeCss: true,
+    scrollRestoration: true,
   },
 };
 

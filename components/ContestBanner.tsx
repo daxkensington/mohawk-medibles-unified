@@ -83,7 +83,7 @@ function ContestBannerInner({ contest }: { contest: any }) {
           {/* Prize image */}
           {contest.prizeImage && (
             <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden flex-shrink-0 shadow-xl shadow-amber-500/20">
-              <img src={contest.prizeImage} alt={contest.prize} className="w-full h-full object-cover" />
+              <img src={contest.prizeImage} alt={contest.prize} className="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
           )}
 

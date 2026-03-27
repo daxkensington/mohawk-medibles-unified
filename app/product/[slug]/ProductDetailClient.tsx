@@ -11,7 +11,7 @@ import {
     Link as LinkIcon, Share2, Sparkles,
 } from "lucide-react";
 import type { Product } from "@/lib/productData";
-import { getShortName } from "@/lib/productData";
+import { getShortName } from "@/lib/productUtils";
 import ProductImage from "@/components/ProductImage";
 import { trackProductView, trackServerEvent } from "@/lib/sage/behavioral";
 import { trackViewItem, trackAddToCart } from "@/lib/analytics";

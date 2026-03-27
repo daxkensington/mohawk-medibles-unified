@@ -79,8 +79,12 @@ const INTERVAL = 6000;
 export function HeroCarousel() {
   const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [hydrated, setHydrated] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const touchStart = useRef(0);
+
+  // Defer non-first slides until after hydration to reduce initial paint work (Speed Index)
+  useEffect(() => { setHydrated(true); }, []);
 
   const next = useCallback(() => setCurrent((p) => (p + 1) % SLIDES.length), []);
   const prev = useCallback(() => setCurrent((p) => (p - 1 + SLIDES.length) % SLIDES.length), []);
@@ -112,30 +116,34 @@ export function HeroCarousel() {
       itemScope
       itemType="https://schema.org/ImageGallery"
     >
-      {/* ═══ Background Images — all preloaded, CSS opacity crossfade ═══ */}
-      {SLIDES.map((s, i) => (
-        <div
-          key={s.id}
-          className={`absolute inset-0 z-0 transition-opacity duration-[1400ms] ease-in-out ${i === current ? "opacity-100" : "opacity-0"}`}
-        >
-          <div className={`absolute inset-[-8%] transition-transform duration-[8000ms] ease-out ${i === current ? "scale-105" : "scale-100"}`}>
-            <Image
-              src={s.bg}
-              alt={s.alt}
-              fill
-              priority={i === 0}
-              loading={i === 0 ? "eager" : "lazy"}
-              fetchPriority={i === 0 ? "high" : undefined}
-              className="object-cover"
-              sizes="100vw"
-              quality={75}
-              placeholder={i === 0 ? "blur" : undefined}
-              blurDataURL={i === 0 ? HERO_BLUR_DATA_URL : undefined}
-              itemProp={i === current ? "image" : undefined}
-            />
+      {/* ═══ Background Images — first slide immediate, rest deferred until hydrated ═══ */}
+      {SLIDES.map((s, i) => {
+        // Skip rendering non-first slides until hydrated to reduce initial paint work
+        if (i !== 0 && !hydrated) return null;
+        return (
+          <div
+            key={s.id}
+            className={`absolute inset-0 z-0 transition-opacity duration-[1400ms] ease-in-out ${i === current ? "opacity-100" : "opacity-0"}`}
+          >
+            <div className={`absolute inset-[-8%] transition-transform duration-[8000ms] ease-out ${i === current ? "scale-105" : "scale-100"}`}>
+              <Image
+                src={s.bg}
+                alt={s.alt}
+                fill
+                priority={i === 0}
+                loading={i === 0 ? "eager" : "lazy"}
+                fetchPriority={i === 0 ? "high" : undefined}
+                className="object-cover"
+                sizes="100vw"
+                quality={i === 0 ? 75 : 65}
+                placeholder={i === 0 ? "blur" : undefined}
+                blurDataURL={i === 0 ? HERO_BLUR_DATA_URL : undefined}
+                itemProp={i === current ? "image" : undefined}
+              />
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
 
       {/* Dark gradient overlays — cinematic vignette */}
       <div className="absolute inset-0 bg-gradient-to-r from-charcoal-deep/95 via-charcoal/65 to-charcoal/30 z-10" />

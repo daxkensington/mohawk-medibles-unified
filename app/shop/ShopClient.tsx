@@ -9,8 +9,10 @@ import {
     Check, ArrowUpDown, X, MessageCircle, Star,
     Cloud, Zap, Leaf, Moon, Heart,
 } from "lucide-react";
-import { PRODUCTS, getAllCategories, getShortName, type Product } from "@/lib/productData";
+import type { Product } from "@/lib/productData";
+import { getShortName } from "@/lib/productUtils";
 import { INTENTS, filterByIntent, type ShoppingIntent } from "@/lib/intentMapping";
+import { useProducts, type ProductLite } from "@/hooks/useProducts";
 import { decodeHtmlEntities } from "@/lib/utils";
 import { getLowestPricePerGram } from "@/lib/bulkPricing";
 import ProductImage from "@/components/ProductImage";
@@ -30,7 +32,6 @@ import { isTerritoryGrown } from "@/lib/territoryGrown";
 import TerritoryGrownBadge from "@/components/TerritoryGrownBadge";
 import PriceMatchBadge from "@/components/PriceMatchBadge";
 
-const CATEGORIES = ["All", ...getAllCategories()];
 const PRODUCTS_PER_PAGE = 24;
 
 type SortOption = "featured" | "price-asc" | "price-desc" | "name-asc" | "name-desc" | "newest";
@@ -99,6 +100,12 @@ function IntentPillBar({
 }
 
 export default function ShopClient() {
+    const { products: PRODUCTS, loading: productsLoading } = useProducts();
+    const CATEGORIES = useMemo(() => {
+        const cats = new Set(PRODUCTS.map((p) => p.category));
+        return ["All", ...Array.from(cats).sort()];
+    }, [PRODUCTS]);
+
     const searchParams = useSearchParams();
     const categoryParam = searchParams.get("category");
     const searchParam = searchParams.get("search");
@@ -155,7 +162,7 @@ export default function ShopClient() {
 
     // ── Filter → Search → Sort pipeline ──────────────────────
     const processedProducts = useMemo(() => {
-        let result: Product[] = PRODUCTS;
+        let result = PRODUCTS as any[];
 
         // Intent/mood filter
         if (activeIntent !== "all") {
@@ -195,7 +202,7 @@ export default function ShopClient() {
                 p.name.toLowerCase().includes(q) ||
                 p.category.toLowerCase().includes(q) ||
                 p.shortDescription.toLowerCase().includes(q) ||
-                p.specs.terpenes.some(t => t.toLowerCase().includes(q)) ||
+                p.specs.terpenes.some((t: string) => t.toLowerCase().includes(q)) ||
                 p.specs.type.toLowerCase().includes(q)
             );
         }
@@ -807,7 +814,7 @@ export default function ShopClient() {
                                         {/* Terpene chips */}
                                         {product.specs.terpenes.length > 0 && (
                                             <div className="flex gap-1 flex-wrap mb-3">
-                                                {product.specs.terpenes.slice(0, 2).map((t) => (
+                                                {product.specs.terpenes.slice(0, 2).map((t: string) => (
                                                     <span key={t} className="px-1.5 py-0.5 rounded-full bg-green-50 dark:bg-green-900/30 text-[10px] text-green-700 dark:text-green-300 border border-green-200 dark:border-green-700">
                                                         {t}
                                                     </span>

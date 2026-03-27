@@ -7,13 +7,15 @@ import {
     Package, X, Check, ShoppingCart, Leaf, ArrowRight,
     Sparkles, ChevronDown, Search,
 } from "lucide-react";
-import { PRODUCTS, type Product } from "@/lib/productData";
+import { useProducts, type ProductLite } from "@/hooks/useProducts";
 import {
     BUNDLE_CONFIGS, type BundleConfig, type BundleSelection,
     calculateBundlePrice, validateBundle, isEligibleProduct,
     generateBundleCartId, generateBundleName,
 } from "@/lib/mixAndMatch";
 import { useCart } from "@/hooks/useCart";
+
+type Product = ProductLite;
 
 // ─── Helpers ────────────────────────────────────────────────
 
@@ -39,16 +41,19 @@ function getStrainBadgeColor(type: string): string {
     }
 }
 
-// ─── Eligible flower products ───────────────────────────────
-
-const FLOWER_PRODUCTS = PRODUCTS.filter((p) => isEligibleProduct(p.category)).sort(
-    (a, b) => a.name.localeCompare(b.name)
-);
-
 // ─── Component ──────────────────────────────────────────────
 
 export default function MixMatchClient() {
     const { addItem } = useCart();
+    const { products: allProducts, loading: productsLoading } = useProducts();
+
+    // ─── Eligible flower products ───────────────────────────────
+    const FLOWER_PRODUCTS = useMemo(
+        () => allProducts.filter((p) => isEligibleProduct(p.category)).sort(
+            (a, b) => a.name.localeCompare(b.name)
+        ),
+        [allProducts]
+    );
 
     // State
     const [selectedBundle, setSelectedBundle] = useState<BundleConfig | null>(null);

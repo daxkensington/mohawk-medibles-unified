@@ -2,20 +2,24 @@
 
 import { motion } from "framer-motion";
 import { Leaf } from "lucide-react";
-import { getFeaturedProducts, getShortName, PRODUCTS } from "@/lib/productData";
+import { useProducts } from "@/hooks/useProducts";
+import { getShortName } from "@/lib/productUtils";
 
 export function TechSpecs() {
-    // Pick the first featured product, fall back to first product in catalog
-    const featured = getFeaturedProducts();
-    const hero = featured[0] ?? PRODUCTS[0];
+    const { products, loading } = useProducts({ featured: true, limit: 1, include: ["lineage", "eeatNarrative"] });
 
-    // Guard: if the catalog is somehow empty, render nothing
+    // Fall back to first product if no featured
+    const { products: fallback } = useProducts({ limit: 1, include: ["lineage", "eeatNarrative"] });
+
+    const hero = products[0] ?? fallback[0];
+
+    // Guard: if the catalog is somehow empty or loading, render nothing
     if (!hero || !hero.specs) return null;
 
     const specs = [
         { label: "THC", value: hero.specs.thc, desc: `${hero.specs.type} Potency` },
         { label: "Terpenes", value: hero.specs.terpenes?.slice(0, 2).join(" · ") || "N/A", desc: "Dominant Profile" },
-        { label: "Lineage", value: hero.specs.type, desc: hero.specs.lineage },
+        { label: "Lineage", value: hero.specs.type, desc: hero.specs.lineage || "" },
         { label: "Weight", value: hero.specs.weight, desc: "Per Unit" },
     ];
 

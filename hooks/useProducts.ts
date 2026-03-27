@@ -17,9 +17,11 @@ export interface ProductLite {
     type: string;
     weight: string;
     terpenes: string[];
+    lineage?: string;
   } | null;
   effects: string[];
   shortDescription: string;
+  eeatNarrative?: string;
 }
 
 // In-memory cache keyed by query string
@@ -30,12 +32,16 @@ export function useProducts(params?: {
   limit?: number;
   featured?: boolean;
   slugs?: string[];
+  territory?: boolean;
+  include?: string[]; // extra fields: "lineage", "eeatNarrative"
 }) {
   const qs = new URLSearchParams();
   if (params?.category) qs.set("category", params.category);
   if (params?.limit) qs.set("limit", String(params.limit));
   if (params?.featured) qs.set("featured", "true");
   if (params?.slugs?.length) qs.set("slugs", params.slugs.join(","));
+  if (params?.territory) qs.set("territory", "true");
+  if (params?.include?.length) qs.set("include", params.include.join(","));
   const key = qs.toString();
 
   const [products, setProducts] = useState<ProductLite[]>(cache[key] || []);

@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { Leaf, ArrowRight } from "lucide-react";
-import { PRODUCTS, getShortName } from "@/lib/productData";
-import { isTerritoryGrown } from "@/lib/territoryGrown";
+import { getShortName } from "@/lib/productUtils";
+import { useProducts } from "@/hooks/useProducts";
 import ProductImage from "@/components/ProductImage";
 import { useCart } from "@/hooks/useCart";
 import { Button } from "@/components/ui/button";
@@ -11,8 +11,8 @@ import { Button } from "@/components/ui/button";
 export default function TerritoryGrownSection() {
   const { addItem } = useCart();
 
-  // Get territory-grown products, limit to 6
-  const territoryProducts = PRODUCTS.filter((p) => isTerritoryGrown(p)).slice(0, 6);
+  // Fetch territory-grown products from server (no full product catalog in bundle)
+  const { products: territoryProducts, loading } = useProducts({ territory: true, limit: 6 });
 
   // Don't render if no qualifying products
   if (territoryProducts.length === 0) return null;

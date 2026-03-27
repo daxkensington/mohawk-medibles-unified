@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { PRODUCTS } from "@/lib/productData";
+import { PRODUCTS, getAllCategories, getCategoryRepresentativeProducts } from "@/lib/productData";
+import { isTerritoryGrown } from "@/lib/territoryGrown";
 
 // Cache for 5 minutes
 export const revalidate = 300;
@@ -10,6 +11,42 @@ export async function GET(req: NextRequest) {
   const limit = parseInt(searchParams.get("limit") || "0");
   const featured = searchParams.get("featured");
   const slugs = searchParams.get("slugs"); // comma-separated
+  const territory = searchParams.get("territory"); // territory-grown filter
+  const include = searchParams.get("include"); // comma-separated extra fields
+
+  // Special endpoint: return categories list
+  if (include === "categories") {
+    return NextResponse.json({ categories: getAllCategories() }, {
+      headers: {
+        "Cache-Control": "public, s-maxage=300, stale-while-revalidate=600",
+      },
+    });
+  }
+
+  // Special endpoint: return category showcase data
+  if (include === "categoryShowcase") {
+    const cats = searchParams.get("cats")?.split(",") || [];
+    const showcaseData = getCategoryRepresentativeProducts(cats);
+    const lite = showcaseData.map(({ category: cat, product: p, count }) => ({
+      category: cat,
+      count,
+      product: {
+        id: p.id,
+        slug: p.slug,
+        name: p.name,
+        price: p.price,
+        image: p.image,
+        altText: p.altText,
+      },
+    }));
+    return NextResponse.json(lite, {
+      headers: {
+        "Cache-Control": "public, s-maxage=300, stale-while-revalidate=600",
+      },
+    });
+  }
+
+  const includeSet = new Set((include || "").split(",").filter(Boolean));
 
   let products = PRODUCTS.filter(p => p.price > 0);
 
@@ -24,6 +61,9 @@ export async function GET(req: NextRequest) {
   if (slugs) {
     const slugList = slugs.split(",");
     products = products.filter((p) => slugList.includes(p.slug));
+  }
+  if (territory === "true") {
+    products = products.filter((p) => isTerritoryGrown(p));
   }
   if (limit > 0) {
     products = products.slice(0, limit);
@@ -47,10 +87,12 @@ export async function GET(req: NextRequest) {
           type: p.specs.type,
           weight: p.specs.weight,
           terpenes: p.specs.terpenes,
+          ...(includeSet.has("lineage") ? { lineage: p.specs.lineage } : {}),
         }
       : null,
     effects: p.effects,
     shortDescription: p.shortDescription?.substring(0, 150),
+    ...(includeSet.has("eeatNarrative") ? { eeatNarrative: p.eeatNarrative } : {}),
   }));
 
   return NextResponse.json(lite, {

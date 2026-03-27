@@ -1,10 +1,9 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
-import { getCategoryRepresentativeProducts } from "@/lib/productData";
 import ProductImage from "@/components/ProductImage";
 import { useLocale } from "@/components/LocaleProvider";
 
@@ -45,10 +44,34 @@ const CATEGORY_GRADIENT: Record<string, string> = {
     Hash: "from-orange-600/30",
 };
 
+interface ShowcaseItem {
+    category: string;
+    count: number;
+    product: { id: number; slug: string; name: string; price: number; image: string; altText: string };
+}
+
+// Cache the fetch result
+let showcaseCache: ShowcaseItem[] | null = null;
+
 export function CategoryShowcase() {
     const { t } = useLocale();
-    const showcaseData = getCategoryRepresentativeProducts(SHOWCASE_CATEGORIES);
+    const [showcaseData, setShowcaseData] = useState<ShowcaseItem[]>(showcaseCache || []);
     const scrollRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        if (showcaseCache) {
+            setShowcaseData(showcaseCache);
+            return;
+        }
+        const cats = SHOWCASE_CATEGORIES.join(",");
+        fetch(`/api/products?include=categoryShowcase&cats=${cats}`)
+            .then((r) => r.json())
+            .then((data: ShowcaseItem[]) => {
+                showcaseCache = data;
+                setShowcaseData(data);
+            })
+            .catch(() => {});
+    }, []);
 
     if (showcaseData.length === 0) return null;
 

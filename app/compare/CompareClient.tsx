@@ -16,7 +16,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/hooks/useCart";
 import { useCompare } from "@/hooks/useCompare";
-import { PRODUCTS, type Product } from "@/lib/productData";
+import { useProducts, type ProductLite } from "@/hooks/useProducts";
 import { decodeHtmlEntities } from "@/lib/utils";
 
 export default function CompareClient() {
@@ -43,14 +43,19 @@ export default function CompareClient() {
     return storedSlugs;
   }, [searchParams, storedSlugs]);
 
-  // Look up products from static data
+  // Fetch only the products we need by slug
+  const { products: fetchedProducts } = useProducts(
+    activeSlugs.length > 0 ? { slugs: activeSlugs } : undefined
+  );
+
+  // Look up products, maintaining order of activeSlugs
   const compareProducts = useMemo(() => {
     return activeSlugs
-      .map((slug) => PRODUCTS.find((p) => p.slug === slug))
-      .filter((p): p is Product => p !== undefined);
-  }, [activeSlugs]);
+      .map((slug) => fetchedProducts.find((p) => p.slug === slug))
+      .filter((p): p is ProductLite => p !== undefined);
+  }, [activeSlugs, fetchedProducts]);
 
-  const handleAddToCart = (product: Product) => {
+  const handleAddToCart = (product: ProductLite) => {
     addItem({
       id: String(product.id),
       name: product.name,
@@ -103,7 +108,7 @@ export default function CompareClient() {
     }
   };
 
-  const getStockStatus = (product: Product) => {
+  const getStockStatus = (product: ProductLite) => {
     // Use price as proxy - $0 means out of stock
     return product.price > 0;
   };
@@ -119,7 +124,7 @@ export default function CompareClient() {
   // Spec rows for comparison table
   const specRows: {
     label: string;
-    render: (p: Product) => React.ReactNode;
+    render: (p: ProductLite) => React.ReactNode;
   }[] = [
     {
       label: "Price",
@@ -132,8 +137,8 @@ export default function CompareClient() {
     {
       label: "THC",
       render: (p) =>
-        p.specs.thc && p.specs.thc !== "TBD" ? (
-          <span className="font-semibold text-foreground">{p.specs.thc}</span>
+        p.specs?.thc && p.specs?.thc !== "TBD" ? (
+          <span className="font-semibold text-foreground">{p.specs?.thc}</span>
         ) : (
           <span className="text-muted-foreground">&mdash;</span>
         ),
@@ -141,8 +146,8 @@ export default function CompareClient() {
     {
       label: "CBD",
       render: (p) =>
-        p.specs.cbd && p.specs.cbd !== "TBD" ? (
-          <span className="font-semibold text-foreground">{p.specs.cbd}</span>
+        p.specs?.cbd && p.specs?.cbd !== "TBD" ? (
+          <span className="font-semibold text-foreground">{p.specs?.cbd}</span>
         ) : (
           <span className="text-muted-foreground">&mdash;</span>
         ),
@@ -150,13 +155,13 @@ export default function CompareClient() {
     {
       label: "Strain Type",
       render: (p) =>
-        p.specs.type ? (
+        p.specs?.type ? (
           <span
             className={`inline-block px-2.5 py-1 rounded-full text-xs font-bold ${getStrainColor(
-              p.specs.type
+              p.specs?.type
             )}`}
           >
-            {p.specs.type}
+            {p.specs?.type}
           </span>
         ) : (
           <span className="text-muted-foreground">&mdash;</span>
@@ -165,8 +170,8 @@ export default function CompareClient() {
     {
       label: "Weight",
       render: (p) =>
-        p.specs.weight && p.specs.weight !== "TBD" ? (
-          <span className="text-foreground">{p.specs.weight}</span>
+        p.specs?.weight && p.specs?.weight !== "TBD" ? (
+          <span className="text-foreground">{p.specs?.weight}</span>
         ) : (
           <span className="text-muted-foreground">&mdash;</span>
         ),
@@ -174,9 +179,9 @@ export default function CompareClient() {
     {
       label: "Terpenes",
       render: (p) =>
-        p.specs.terpenes.length > 0 ? (
+        (p.specs?.terpenes?.length ?? 0) > 0 ? (
           <div className="flex flex-wrap gap-1 justify-center">
-            {p.specs.terpenes.map((t) => (
+            {p.specs?.terpenes?.map((t) => (
               <span
                 key={t}
                 className="px-2 py-0.5 rounded-full bg-green-900/30 text-green-300 text-[10px] font-medium"
@@ -421,13 +426,13 @@ export default function CompareClient() {
                     >
                       <X className="h-4 w-4" />
                     </button>
-                    {p.specs.type && (
+                    {p.specs?.type && (
                       <span
                         className={`absolute top-3 left-3 px-2.5 py-1 rounded-full text-xs font-bold ${getStrainColor(
-                          p.specs.type
+                          p.specs?.type
                         )} backdrop-blur`}
                       >
-                        {p.specs.type}
+                        {p.specs?.type}
                       </span>
                     )}
                   </div>
@@ -445,29 +450,29 @@ export default function CompareClient() {
                     </div>
 
                     <div className="grid grid-cols-2 gap-3 text-sm">
-                      {p.specs.thc && p.specs.thc !== "TBD" && (
+                      {p.specs?.thc && p.specs?.thc !== "TBD" && (
                         <div>
                           <span className="text-muted-foreground">THC: </span>
                           <span className="font-semibold text-foreground">
-                            {p.specs.thc}
+                            {p.specs?.thc}
                           </span>
                         </div>
                       )}
-                      {p.specs.cbd && p.specs.cbd !== "TBD" && (
+                      {p.specs?.cbd && p.specs?.cbd !== "TBD" && (
                         <div>
                           <span className="text-muted-foreground">CBD: </span>
                           <span className="font-semibold text-foreground">
-                            {p.specs.cbd}
+                            {p.specs?.cbd}
                           </span>
                         </div>
                       )}
-                      {p.specs.weight && p.specs.weight !== "TBD" && (
+                      {p.specs?.weight && p.specs?.weight !== "TBD" && (
                         <div>
                           <span className="text-muted-foreground">
                             Weight:{" "}
                           </span>
                           <span className="font-semibold text-foreground">
-                            {p.specs.weight}
+                            {p.specs?.weight}
                           </span>
                         </div>
                       )}
@@ -479,9 +484,9 @@ export default function CompareClient() {
                       </div>
                     </div>
 
-                    {p.specs.terpenes.length > 0 && (
+                    {(p.specs?.terpenes?.length ?? 0) > 0 && (
                       <div className="flex flex-wrap gap-1">
-                        {p.specs.terpenes.map((t) => (
+                        {p.specs?.terpenes?.map((t) => (
                           <span
                             key={t}
                             className="px-2 py-0.5 rounded-full bg-green-900/30 text-green-300 text-[10px] font-medium"

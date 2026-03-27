@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { X, ArrowRight, Trash2 } from "lucide-react";
 import { useCompare } from "@/hooks/useCompare";
-import { PRODUCTS } from "@/lib/productData";
+import { useProducts } from "@/hooks/useProducts";
 import { Button } from "@/components/ui/button";
 
 export default function CompareBar() {
@@ -16,11 +16,16 @@ export default function CompareBar() {
     setMounted(true);
   }, []);
 
+  // Fetch only the products we need by slug
+  const { products: fetchedProducts } = useProducts(
+    slugs.length > 0 ? { slugs } : undefined
+  );
+
   if (!mounted || count === 0) return null;
 
-  // Look up product info from the static product list for thumbnails
+  // Look up product info from fetched list for thumbnails
   const compareProducts = slugs
-    .map((slug) => PRODUCTS.find((p) => p.slug === slug))
+    .map((slug) => fetchedProducts.find((p) => p.slug === slug))
     .filter(Boolean);
 
   return (

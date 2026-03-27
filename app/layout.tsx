@@ -204,6 +204,9 @@ export default async function RootLayout({
         {/* DNS prefetch for CDN image domains */}
         <link rel="dns-prefetch" href="//mohawkmedibles.ca" />
         <link rel="dns-prefetch" href="//i0.wp.com" />
+        {/* Preconnect to Vercel Analytics */}
+        <link rel="preconnect" href="https://vitals.vercel-insights.com" />
+        <link rel="dns-prefetch" href="//vitals.vercel-insights.com" />
         {/* Preload LCP hero image for faster paint */}
         <link rel="preload" as="image" type="image/webp" href="/assets/hero/hero-deals-ounces.webp" fetchPriority="high" />
         {/* LLM Discovery */}
