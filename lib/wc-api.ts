@@ -81,6 +81,7 @@ export interface WCStoreProduct {
     regular_price: string;
     sale_price: string;
     currency_code: string;
+    price_range?: { min_amount: string; max_amount: string } | null;
   };
   images: Array<{ id: number; src: string; name: string; alt: string }>;
   categories: Array<{ id: number; name: string; slug: string }>;
