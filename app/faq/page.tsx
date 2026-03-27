@@ -4,9 +4,9 @@
  */
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { ChevronDown, Search, MessageSquare } from "lucide-react";
+import { ChevronDown, Search, MessageSquare, ShoppingCart, Truck, FlaskConical, RotateCcw, UserCircle, Sparkles, Mail, ArrowRight } from "lucide-react";
 import { useLocale } from "@/components/LocaleProvider";
 
 interface FaqItem {
@@ -19,32 +19,55 @@ interface FaqSection {
     items: FaqItem[];
 }
 
+const SECTION_ICONS: Record<string, typeof ShoppingCart> = {
+    "0": ShoppingCart,
+    "1": Truck,
+    "2": FlaskConical,
+    "3": RotateCcw,
+    "4": UserCircle,
+};
+
 function FaqAccordion({ item }: { item: FaqItem }) {
     const [open, setOpen] = useState(false);
+    const contentRef = useRef<HTMLDivElement>(null);
+    const [height, setHeight] = useState(0);
+
+    useEffect(() => {
+        if (contentRef.current) {
+            setHeight(contentRef.current.scrollHeight);
+        }
+    }, [open, item.a]);
+
     return (
-        <div className="border-b border-border last:border-b-0">
+        <div className="border-b border-border/50 last:border-b-0">
             <button
                 onClick={() => setOpen(!open)}
-                className="w-full flex items-center justify-between py-4 text-left group"
+                className="w-full flex items-center justify-between py-5 text-left group"
             >
-                <span className="text-sm font-medium text-foreground group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors pr-4">
+                <span className={`text-sm font-semibold pr-4 transition-colors duration-200 ${open ? "text-forest dark:text-lime" : "text-foreground group-hover:text-green-600 dark:group-hover:text-green-400"}`}>
                     {item.q}
                 </span>
-                <ChevronDown
-                    className={`h-4 w-4 text-muted-foreground/60 flex-shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
-                />
+                <div className={`h-7 w-7 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${open ? "bg-forest/10 dark:bg-lime/10 rotate-180" : "bg-muted/50 group-hover:bg-forest/10 dark:group-hover:bg-lime/10"}`}>
+                    <ChevronDown
+                        className={`h-4 w-4 transition-colors duration-200 ${open ? "text-forest dark:text-lime" : "text-muted-foreground/60"}`}
+                    />
+                </div>
             </button>
-            {open && (
-                <div className="pb-4 text-sm text-muted-foreground leading-relaxed pr-8">
+            <div
+                className="overflow-hidden transition-all duration-300 ease-in-out"
+                style={{ maxHeight: open ? `${height}px` : "0px", opacity: open ? 1 : 0 }}
+            >
+                <div ref={contentRef} className="pb-5 text-sm text-muted-foreground leading-relaxed pr-8">
                     {item.a}
                 </div>
-            )}
+            </div>
         </div>
     );
 }
 
 export default function FaqPage() {
     const [search, setSearch] = useState("");
+    const [activeCategory, setActiveCategory] = useState<number | null>(null);
     const { t } = useLocale();
 
     const FAQ_DATA: FaqSection[] = [
@@ -96,14 +119,16 @@ export default function FaqPage() {
         },
     ];
 
-    const filteredSections = FAQ_DATA.map((section) => ({
+    const filteredSections = FAQ_DATA.map((section, idx) => ({
         ...section,
         items: section.items.filter(
             (item) =>
                 item.q.toLowerCase().includes(search.toLowerCase()) ||
                 item.a.toLowerCase().includes(search.toLowerCase())
         ),
-    })).filter((section) => section.items.length > 0);
+        originalIndex: idx,
+    })).filter((section) => section.items.length > 0)
+      .filter((section) => activeCategory === null || section.originalIndex === activeCategory);
 
     return (
         <div className="relative min-h-screen bg-background">
@@ -114,27 +139,55 @@ export default function FaqPage() {
                 <div className="absolute bottom-1/3 left-0 w-[300px] h-[300px] bg-forest/[0.05] dark:bg-lime/[0.03] rounded-full blur-[100px] -translate-x-1/4" />
             </div>
 
-            {/* Header */}
-            <section className="relative z-10 pt-24 pb-8">
-                <div className="max-w-3xl mx-auto px-6">
-                    <p className="text-sm uppercase tracking-widest text-green-600 dark:text-green-400 font-bold mb-4">{t("faq.badge")}</p>
-                    <h1 className="text-4xl font-bold text-foreground mb-3">
+            {/* Hero Header */}
+            <section className="relative z-10 pt-28 pb-10">
+                <div className="max-w-4xl mx-auto px-6 text-center">
+                    {/* Badge */}
+                    <div className="inline-flex items-center gap-2 bg-forest/10 dark:bg-lime/10 rounded-full px-5 py-2 mb-6">
+                        <Sparkles className="h-4 w-4 text-forest dark:text-lime" />
+                        <span className="text-sm font-bold text-forest dark:text-lime uppercase tracking-wider">{t("faq.badge")}</span>
+                    </div>
+
+                    <h1 className="text-4xl md:text-6xl font-black text-foreground mb-4 tracking-tight">
                         {t("faq.title")}
                     </h1>
-                    <p className="text-muted-foreground mb-8">
+                    <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
                         {t("faq.subtitle")}
                     </p>
 
-                    {/* Search */}
-                    <div className="relative">
-                        <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground/60" />
+                    {/* Search — larger, more prominent */}
+                    <div className="relative max-w-xl mx-auto mb-10">
+                        <Search className="absolute left-5 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground/60" />
                         <input
                             type="text"
                             placeholder={t("faq.searchPlaceholder")}
                             value={search}
                             onChange={(e) => setSearch(e.target.value)}
-                            className="w-full pl-12 pr-4 py-3.5 rounded-xl border border-border bg-card focus:ring-2 focus:ring-forest/30 outline-none transition text-foreground"
+                            className="w-full pl-14 pr-4 py-4 rounded-full bg-card text-foreground placeholder:text-muted-foreground/50 text-sm focus:outline-none focus:ring-2 focus:ring-forest/40 dark:focus:ring-lime/40 shadow-xl shadow-black/5 transition-shadow"
                         />
+                    </div>
+
+                    {/* Category Tabs */}
+                    <div className="flex flex-wrap justify-center gap-2">
+                        <button
+                            onClick={() => setActiveCategory(null)}
+                            className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${activeCategory === null ? "bg-forest text-white dark:bg-lime dark:text-charcoal-deep shadow-lg" : "bg-card text-muted-foreground hover:bg-muted/80 shadow"}`}
+                        >
+                            All Topics
+                        </button>
+                        {FAQ_DATA.map((section, idx) => {
+                            const Icon = SECTION_ICONS[String(idx)] || ShoppingCart;
+                            return (
+                                <button
+                                    key={section.title}
+                                    onClick={() => setActiveCategory(activeCategory === idx ? null : idx)}
+                                    className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${activeCategory === idx ? "bg-forest text-white dark:bg-lime dark:text-charcoal-deep shadow-lg" : "bg-card text-muted-foreground hover:bg-muted/80 shadow"}`}
+                                >
+                                    <Icon className="h-3.5 w-3.5" />
+                                    {section.title}
+                                </button>
+                            );
+                        })}
                     </div>
                 </div>
             </section>
@@ -156,38 +209,57 @@ export default function FaqPage() {
                             </p>
                         </div>
                     ) : (
-                        filteredSections.map((section) => (
-                            <div key={section.title}>
-                                <h2 className="text-lg font-bold text-foreground mb-3">{section.title}</h2>
-                                <div className="bg-card border border-border rounded-xl px-6">
-                                    {section.items.map((item) => (
-                                        <FaqAccordion key={item.q} item={item} />
-                                    ))}
+                        filteredSections.map((section) => {
+                            const Icon = SECTION_ICONS[String(section.originalIndex)] || ShoppingCart;
+                            return (
+                                <div key={section.title}>
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="h-9 w-9 rounded-xl bg-forest/10 dark:bg-lime/10 flex items-center justify-center">
+                                            <Icon className="h-4.5 w-4.5 text-forest dark:text-lime" />
+                                        </div>
+                                        <h2 className="text-lg font-bold text-foreground">{section.title}</h2>
+                                        <span className="text-xs text-muted-foreground bg-muted/50 px-2.5 py-0.5 rounded-full">{section.items.length} questions</span>
+                                    </div>
+                                    <div className="bg-card rounded-2xl px-6 shadow-lg shadow-black/[0.03] dark:shadow-black/20 hover:shadow-xl transition-shadow duration-300">
+                                        {section.items.map((item) => (
+                                            <FaqAccordion key={item.q} item={item} />
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
-                        ))
+                            );
+                        })
                     )}
 
-                    {/* Still Need Help */}
-                    <div className="bg-forest/5 dark:bg-green-900/20 border border-forest/10 dark:border-green-800/30 rounded-xl p-8 text-center">
-                        <MessageSquare className="h-10 w-10 text-forest dark:text-leaf mx-auto mb-4" />
-                        <h3 className="text-lg font-bold text-foreground mb-2">{t("faq.stillHaveQuestions")}</h3>
-                        <p className="text-sm text-muted-foreground mb-4">
-                            {t("faq.stillHaveQuestionsDesc")}
-                        </p>
-                        <div className="flex justify-center gap-3">
-                            <Link
-                                href="/contact"
-                                className="inline-block bg-forest text-white px-5 py-2.5 rounded-lg text-sm font-bold hover:bg-forest/90 transition-colors"
-                            >
-                                {t("faq.contactUs")}
-                            </Link>
-                            <a
-                                href="mailto:info@mohawkmedibles.ca"
-                                className="inline-block border border-forest text-forest dark:text-leaf dark:border-leaf px-5 py-2.5 rounded-lg text-sm font-bold hover:bg-forest/5 transition-colors"
-                            >
-                                {t("faq.emailSupport")}
-                            </a>
+                    {/* Still Need Help — Premium CTA */}
+                    <div className="relative overflow-hidden rounded-3xl p-10 md:p-12 text-center shadow-2xl shadow-black/10 dark:shadow-black/30">
+                        {/* Gradient BG */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-forest via-forest/95 to-emerald-800 dark:from-charcoal-deep dark:via-charcoal-deep dark:to-forest/40" />
+                        <div className="absolute inset-0 opacity-10 animate-gradient-shift" style={{ backgroundImage: "linear-gradient(45deg, transparent, rgba(200,230,62,0.3), transparent)", backgroundSize: "200% 200%" }} />
+
+                        <div className="relative z-10">
+                            <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-white/10 backdrop-blur-sm mx-auto mb-5">
+                                <MessageSquare className="h-8 w-8 text-white" />
+                            </div>
+                            <h3 className="text-2xl font-black text-white mb-3">{t("faq.stillHaveQuestions")}</h3>
+                            <p className="text-white/70 mb-8 max-w-md mx-auto">
+                                {t("faq.stillHaveQuestionsDesc")}
+                            </p>
+                            <div className="flex flex-col sm:flex-row justify-center gap-4">
+                                <Link
+                                    href="/contact"
+                                    className="inline-flex items-center justify-center gap-2 bg-white text-forest px-6 py-3 rounded-full text-sm font-bold hover:bg-white/90 transition-all hover:scale-105 shadow-lg"
+                                >
+                                    {t("faq.contactUs")}
+                                    <ArrowRight className="h-4 w-4" />
+                                </Link>
+                                <a
+                                    href="mailto:info@mohawkmedibles.ca"
+                                    className="inline-flex items-center justify-center gap-2 border border-white/30 text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-white/10 transition-all"
+                                >
+                                    <Mail className="h-4 w-4" />
+                                    {t("faq.emailSupport")}
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

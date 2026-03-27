@@ -9,7 +9,7 @@ import Image from "next/image";
 import {
     ShoppingCart, Trash2, Plus, Minus, CreditCard,
     Shield, Truck, ArrowLeft, Loader2, Tag, X, CheckCircle, User, LogIn,
-    Bitcoin, Banknote,
+    Bitcoin, Banknote, Lock, ShieldCheck, BadgeCheck, MapPin,
 } from "lucide-react";
 import FreeShippingBar from "@/components/FreeShippingBar";
 import { CartUpsellNudge } from "@/components/CartUpsellNudge";
@@ -44,6 +44,14 @@ const PAYMENT_METHODS: { id: PaymentMethod; title: string; description: string; 
         description: "Send money via e-Transfer — auto-deposit enabled",
         icon: <Banknote className="h-5 w-5" />,
     },
+];
+
+/* ─── Progress Steps ──────────────────────────────────────── */
+const CHECKOUT_STEPS = [
+    { label: "Cart", done: true },
+    { label: "Shipping", done: true },
+    { label: "Payment", done: false, active: true },
+    { label: "Confirm", done: false },
 ];
 
 export default function CheckoutPage() {
@@ -310,13 +318,68 @@ export default function CheckoutPage() {
     }
 
     return (
-        <div className="min-h-screen bg-background pt-20">
+        <div className="min-h-screen bg-gradient-to-b from-background via-background to-forest/[0.02] pt-20">
             <div className="container mx-auto px-4 sm:px-6 py-8 max-w-5xl">
-                <Link href="/shop" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-forest mb-8">
+                <Link href="/shop" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-forest mb-6">
                     <ArrowLeft className="h-4 w-4" /> Continue Shopping
                 </Link>
 
-                <div className="flex items-center justify-between mb-8">
+                {/* ─── Trust Badges Bar ──────────────────────────────── */}
+                <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="grid grid-cols-3 gap-3 mb-8"
+                >
+                    <div className="flex flex-col items-center gap-1.5 p-3 rounded-xl bg-green-50/80 dark:bg-green-900/10">
+                        <div className="p-2 rounded-full bg-green-100 dark:bg-green-900/30">
+                            <ShieldCheck className="h-5 w-5 text-green-600 dark:text-green-400" />
+                        </div>
+                        <span className="text-xs font-semibold text-green-700 dark:text-green-400 text-center">Secure Checkout</span>
+                    </div>
+                    <div className="flex flex-col items-center gap-1.5 p-3 rounded-xl bg-blue-50/80 dark:bg-blue-900/10">
+                        <div className="p-2 rounded-full bg-blue-100 dark:bg-blue-900/30">
+                            <Lock className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                        </div>
+                        <span className="text-xs font-semibold text-blue-700 dark:text-blue-400 text-center">256-bit Encrypted</span>
+                    </div>
+                    <div className="flex flex-col items-center gap-1.5 p-3 rounded-xl bg-amber-50/80 dark:bg-amber-900/10">
+                        <div className="p-2 rounded-full bg-amber-100 dark:bg-amber-900/30">
+                            <BadgeCheck className="h-5 w-5 text-amber-600 dark:text-amber-400" />
+                        </div>
+                        <span className="text-xs font-semibold text-amber-700 dark:text-amber-400 text-center">Money-Back Guarantee</span>
+                    </div>
+                </motion.div>
+
+                {/* ─── Progress Indicator ─────────────────────────────── */}
+                <div className="mb-8">
+                    <div className="flex items-center justify-between max-w-md mx-auto">
+                        {CHECKOUT_STEPS.map((step, i) => (
+                            <div key={step.label} className="flex items-center gap-0 flex-1 last:flex-none">
+                                <div className="flex flex-col items-center gap-1">
+                                    <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all ${
+                                        step.done
+                                            ? "bg-forest text-white dark:bg-leaf dark:text-black"
+                                            : step.active
+                                                ? "bg-forest/20 text-forest ring-2 ring-forest dark:bg-leaf/20 dark:text-leaf dark:ring-leaf"
+                                                : "bg-muted text-muted-foreground"
+                                    }`}>
+                                        {step.done ? <CheckCircle className="h-4 w-4" /> : i + 1}
+                                    </div>
+                                    <span className={`text-[10px] font-medium ${
+                                        step.done || step.active ? "text-forest dark:text-leaf" : "text-muted-foreground"
+                                    }`}>{step.label}</span>
+                                </div>
+                                {i < CHECKOUT_STEPS.length - 1 && (
+                                    <div className={`flex-1 h-0.5 mx-1 mt-[-16px] rounded-full ${
+                                        step.done ? "bg-forest dark:bg-leaf" : "bg-muted"
+                                    }`} />
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="flex items-center justify-between mb-6">
                     <h1 className="text-3xl font-bold text-forest dark:text-cream">Checkout</h1>
                     <button
                         onClick={() => {
@@ -377,7 +440,7 @@ export default function CheckoutPage() {
                                     initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: 20 }}
-                                    className="bg-white dark:bg-card rounded-xl border border-border p-4 flex items-center gap-4"
+                                    className="bg-white dark:bg-card rounded-xl shadow-sm hover:shadow-md transition-shadow p-4 flex items-center gap-4"
                                 >
                                     <div className="w-20 h-20 bg-forest/5 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
                                         {item.image ? (
@@ -442,8 +505,11 @@ export default function CheckoutPage() {
                         </div>
 
                         {/* Delivery Method */}
-                        <div className="bg-white dark:bg-card rounded-xl border border-border p-6">
-                            <h2 className="text-xl font-bold text-forest dark:text-cream mb-4">Delivery Method</h2>
+                        <div className="bg-white dark:bg-card rounded-xl shadow-sm p-6">
+                            <h2 className="text-xl font-bold text-forest dark:text-cream mb-4 flex items-center gap-2">
+                                <Truck className="h-5 w-5 text-forest/60 dark:text-leaf/60" />
+                                Delivery Method
+                            </h2>
                             <ClickAndCollect
                                 onMethodChange={setDeliveryMethod}
                                 onPickupTimeChange={setPickupTime}
@@ -452,8 +518,9 @@ export default function CheckoutPage() {
                         </div>
 
                         {/* Billing Information */}
-                        <div className="bg-white dark:bg-card rounded-xl border border-border p-6">
-                            <h2 className="text-xl font-bold text-forest dark:text-cream mb-4">
+                        <div className="bg-white dark:bg-card rounded-xl shadow-sm p-6">
+                            <h2 className="text-xl font-bold text-forest dark:text-cream mb-4 flex items-center gap-2">
+                                <User className="h-5 w-5 text-forest/60 dark:text-leaf/60" />
                                 {isPickup ? "Contact Information" : "Billing Information"}
                             </h2>
                             <div className="grid sm:grid-cols-2 gap-4">
@@ -579,15 +646,18 @@ export default function CheckoutPage() {
                         </div>
 
                         {/* Payment Method Selection */}
-                        <div className="bg-white dark:bg-card rounded-xl border border-border p-6">
-                            <h2 className="text-xl font-bold text-forest dark:text-cream mb-4">Payment Method</h2>
+                        <div className="bg-white dark:bg-card rounded-xl shadow-sm p-6">
+                            <h2 className="text-xl font-bold text-forest dark:text-cream mb-4 flex items-center gap-2">
+                                <CreditCard className="h-5 w-5 text-forest/60 dark:text-leaf/60" />
+                                Payment Method
+                            </h2>
                             <div className="space-y-3">
                                 {PAYMENT_METHODS.map((method) => (
                                     <label
                                         key={method.id}
                                         className={`flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all ${
                                             selectedPayment === method.id
-                                                ? "border-forest bg-forest/5 dark:border-leaf dark:bg-leaf/10"
+                                                ? "border-forest bg-forest/5 dark:border-leaf dark:bg-leaf/10 shadow-sm"
                                                 : "border-border hover:border-forest/30 dark:hover:border-leaf/30"
                                         }`}
                                     >
@@ -599,7 +669,7 @@ export default function CheckoutPage() {
                                             onChange={() => setSelectedPayment(method.id)}
                                             className="sr-only"
                                         />
-                                        <div className={`p-2 rounded-lg ${
+                                        <div className={`p-2.5 rounded-lg ${
                                             selectedPayment === method.id
                                                 ? "bg-forest text-white dark:bg-leaf"
                                                 : "bg-muted text-muted-foreground"
@@ -622,13 +692,34 @@ export default function CheckoutPage() {
                                     </label>
                                 ))}
                             </div>
+
+                            {/* Security messaging under payment */}
+                            <div className="mt-4 flex items-center gap-2 text-xs text-muted-foreground bg-muted/50 p-3 rounded-lg">
+                                <Lock className="h-3.5 w-3.5 text-forest/60 dark:text-leaf/60 flex-shrink-0" />
+                                <span>256-bit SSL encrypted. Your payment data is processed securely and never stored on our servers.</span>
+                            </div>
                         </div>
                     </div>
 
                     {/* Order Summary */}
                     <div className="lg:col-span-1">
-                        <div className="bg-white dark:bg-card rounded-xl border border-border p-6 sticky top-24">
-                            <h2 className="text-xl font-bold text-forest dark:text-cream mb-6">Order Summary</h2>
+                        <div className="bg-white dark:bg-card rounded-2xl shadow-lg p-6 sticky top-24 ring-1 ring-border/50">
+                            <h2 className="text-xl font-bold text-forest dark:text-cream mb-6 flex items-center gap-2">
+                                <ShoppingCart className="h-5 w-5 text-forest/60 dark:text-leaf/60" />
+                                Order Summary
+                            </h2>
+
+                            {/* Compact item list in summary */}
+                            <div className="space-y-2 mb-4 pb-4 border-b border-border">
+                                {items.map((item) => (
+                                    <div key={item.id} className="flex justify-between items-center text-sm">
+                                        <span className="text-muted-foreground truncate mr-2">
+                                            {item.name} <span className="text-xs">x{item.quantity}</span>
+                                        </span>
+                                        <span className="font-medium whitespace-nowrap">${(item.price * item.quantity).toFixed(2)}</span>
+                                    </div>
+                                ))}
+                            </div>
 
                             <div className="space-y-3 mb-6">
                                 <div className="flex justify-between text-sm">
@@ -664,9 +755,9 @@ export default function CheckoutPage() {
                                     <span className="text-muted-foreground">Tax (Tax-Free)</span>
                                     <span className="font-medium">$0.00</span>
                                 </div>
-                                <div className="border-t border-border pt-3 flex justify-between">
-                                    <span className="font-bold text-lg">Total</span>
-                                    <span className="font-bold text-lg text-forest dark:text-leaf">${grandTotal.toFixed(2)} CAD</span>
+                                <div className="border-t border-border pt-4 flex justify-between">
+                                    <span className="font-bold text-xl">Total</span>
+                                    <span className="font-bold text-xl text-forest dark:text-leaf">${grandTotal.toFixed(2)} CAD</span>
                                 </div>
                             </div>
 
@@ -731,10 +822,11 @@ export default function CheckoutPage() {
                                 </div>
                             )}
 
+                            {/* Place Order — Large green CTA */}
                             <Button
                                 variant="brand"
                                 size="lg"
-                                className="w-full gap-2 text-base"
+                                className="w-full gap-2 text-base font-bold py-4 bg-green-600 hover:bg-green-700 dark:bg-green-600 dark:hover:bg-green-700 text-white shadow-lg shadow-green-600/20 hover:shadow-green-600/30 transition-all"
                                 onClick={handleCheckout}
                                 disabled={loading}
                             >
@@ -744,9 +836,7 @@ export default function CheckoutPage() {
                                     </>
                                 ) : (
                                     <>
-                                        {selectedPayment === "credit_card" && <CreditCard className="h-5 w-5" />}
-                                        {false /* crypto disabled for now */ && <Bitcoin className="h-5 w-5" />}
-                                        {selectedPayment === "etransfer" && <Banknote className="h-5 w-5" />}
+                                        <Lock className="h-4 w-4" />
                                         {selectedPayment === "etransfer"
                                             ? `Place Order — $${grandTotal.toFixed(2)} CAD`
                                             : `Pay $${grandTotal.toFixed(2)} CAD`
@@ -756,12 +846,18 @@ export default function CheckoutPage() {
                             </Button>
 
                             {/* Trust Signals */}
-                            <div className="mt-6 space-y-2">
+                            <div className="mt-6 space-y-2.5 pt-4 border-t border-border">
                                 <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                                    <Shield className="h-3.5 w-3.5 text-forest" /> Secured by PayGo + SSL encryption
+                                    <Shield className="h-3.5 w-3.5 text-green-600" /> Secured by PayGo + SSL encryption
                                 </div>
                                 <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                                    <Truck className="h-3.5 w-3.5 text-forest" /> Discreet Canada Post Xpresspost
+                                    <Truck className="h-3.5 w-3.5 text-green-600" /> Discreet Canada Post Xpresspost
+                                </div>
+                                <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                                    <MapPin className="h-3.5 w-3.5 text-green-600" /> Your data stays in Canada
+                                </div>
+                                <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                                    <Lock className="h-3.5 w-3.5 text-green-600" /> 256-bit SSL encrypted connection
                                 </div>
                             </div>
                         </div>
