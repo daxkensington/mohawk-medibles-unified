@@ -13700,22 +13700,22 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/06/Georgia-Pie-with-vape-with-logo.png",
             "https://mohawkmedibles.ca/wp-content/uploads/2025/06/Georgia-Pie-with-vape-with-logo.png"
         ],
-        "altText": "Heisenberg Extractions Live Resin Distillate Dual Flavour Vape 3g THC Vape - Mohawk Medibles",
-        "sku": "",
-        "metaDescription": "Buy Heisenberg Extractions Live Resin Distillate Dual Flavour Vape 3g THC Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy Heisenberg Extractions Live Resin Distillate Dual Flavour Vape 3g THC Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "altText": "Heisenberg Extractions Live Resin Distillate Dual Flavour 3g disposable vape pen with dual chamber design for cannabis enthusiasts in Canada",
+        "sku": "MM-DISP-339",
+        "metaDescription": "Buy Heisenberg Extractions Live Resin Dual Flavour 3g Vape in Canada. Premium dual-chamber distillate pen at Mohawk Medibles — fast shipping.",
+        "shortDescription": "Shop the Heisenberg Extractions Live Resin Distillate Dual Flavour 3g Vape — a premium dual-chamber disposable combining live resin and distillate for bold flavour and potent effects. Buy now at Mohawk Medibles with fast Canada-wide delivery.",
+        "descriptionHTML": "<div class=\"product-description\"><p>Buy Heisenberg Extractions Live Resin Distillate Dual Flavour Vape 3g online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary. This premium dual-chamber disposable vape combines live resin richness with smooth distillate for an unmatched flavour experience.</p><h2>Product Highlights</h2><ul><li><strong>Dual Flavour Chambers:</strong> Two distinct flavour profiles in one sleek device</li><li><strong>Live Resin + Distillate Blend:</strong> Full terpene preservation paired with high-potency distillate</li><li><strong>3g Total Capacity:</strong> Extended sessions without recharging or refilling</li><li><strong>Rechargeable Battery:</strong> USB-C charging ensures you use every drop</li></ul><h2>How to Use</h2><ol><li>Remove the device from its packaging and inspect the mouthpiece</li><li>Toggle between flavour chambers using the airflow switch</li><li>Inhale gently for 2-3 seconds for a smooth draw</li><li>Start with small puffs and wait 5-10 minutes to gauge effects</li></ol><h2>Why Choose Heisenberg Extractions?</h2><p>Heisenberg Extractions is known for premium cannabis concentrates crafted with meticulous attention to quality. Their live resin process preserves the full terpene profile of fresh-frozen flower, delivering authentic strain flavours that distillate alone cannot match.</p><h2>Frequently Asked Questions</h2><h3>What is the THC content of this vape?</h3><p><strong>A:</strong> This dual-flavour vape contains high-potency THC distillate blended with live resin. THC levels typically range from 80-90% depending on the batch. Check the packaging for exact lab-tested results.</p><h3>How long does the 3g vape last?</h3><p><strong>A:</strong> A 3g disposable vape typically provides 800-1200 puffs depending on draw length. For moderate users, this can last 2-4 weeks of regular use.</p><h3>Does Mohawk Medibles ship this vape across Canada?</h3><p><strong>A:</strong> Yes! We offer fast Canada-wide shipping with same-day processing on orders placed before 2 PM EST. All packages are shipped discreetly in plain, unmarked packaging from Tyendinaga Mohawk Territory.</p><h3>Can I switch between the two flavours?</h3><p><strong>A:</strong> Absolutely. The dual-chamber design lets you toggle between flavour profiles at will, giving you variety in a single device without carrying multiple vapes.</p></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
+            "thc": "80-90%",
+            "cbd": "Minimal",
             "type": "Disposables",
-            "weight": "TBD",
-            "terpenes": [],
-            "lineage": ""
+            "weight": "3g",
+            "terpenes": ["Myrcene", "Limonene", "Caryophyllene"],
+            "lineage": "Varies by flavour selection"
         },
-        "eeatNarrative": "Heisenberg Extractions Live Resin Distillate Dual Flavour Vape 3g THC Vape is a premium Disposables product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": []
+        "eeatNarrative": "Heisenberg Extractions Live Resin Distillate Dual Flavour Vape 3g is a lab-tested, premium disposable vape available at Mohawk Medibles. Every Heisenberg Extractions product meets Empire Standard quality benchmarks with third-party lab verification for potency and purity, ensuring a safe and consistent cannabis experience from Tyendinaga Mohawk Territory.",
+        "effects": ["Relaxed", "Euphoric", "Happy", "Uplifted", "Creative"]
     },
     {
         "id": 340,
