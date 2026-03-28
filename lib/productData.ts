@@ -12391,22 +12391,22 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2026/02/48-Hour-Gold-Ginseng-Bonbon.png",
             "https://mohawkmedibles.ca/wp-content/uploads/2026/02/48-Hour-Gold-Ginseng-Bonbon-back.png"
         ],
-        "altText": "48 Hour Gold Ginseng Bonbon Seker - Mohawk Medibles",
+        "altText": "48 Hour Gold Ginseng Bonbon Seker sexual enhancement candy with ginseng and honey available at Mohawk Medibles Canada",
         "sku": "48HOURGINSENG",
-        "metaDescription": "Buy 48 Hour Gold Ginseng Bonbon Seker online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy 48 Hour Gold Ginseng Bonbon Seker online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "metaDescription": "Buy 48 Hour Gold Ginseng Bonbon Seker in Canada. Ginseng-honey enhancement candy at Mohawk Medibles — fast Canada-wide shipping.",
+        "shortDescription": "Shop the 48 Hour Gold Ginseng Bonbon Seker — a ginseng and honey enhancement candy for natural energy and vitality. Buy now at Mohawk Medibles with fast, discreet Canada-wide delivery.",
+        "descriptionHTML": "<div class=\"product-description\"><p>Buy 48 Hour Gold Ginseng Bonbon Seker online in Canada at Mohawk Medibles. This popular ginseng-infused bonbon combines traditional herbal ingredients with sweet honey flavour for a natural approach to energy and vitality enhancement.</p><h2>Product Highlights</h2><ul><li><strong>Ginseng Formula:</strong> Traditional herbal ingredient known for energy and vitality</li><li><strong>48-Hour Effects:</strong> Long-lasting support from a single serving</li><li><strong>Bonbon Format:</strong> Easy, discreet candy-style consumption</li><li><strong>All-Natural:</strong> No prescription required</li></ul><h2>How to Use</h2><ol><li>Consume one bonbon approximately 30 minutes before desired effects</li><li>Take with water for optimal absorption</li><li>Do not exceed one bonbon per 48 hours</li><li>Store in a cool, dry place</li></ol><h2>Frequently Asked Questions</h2><h3>What is ginseng bonbon?</h3><p><strong>A:</strong> It is a candy-style supplement infused with ginseng and honey, designed to support natural energy, stamina, and vitality. The bonbon format makes it easy and pleasant to consume.</p><h3>How long do effects last?</h3><p><strong>A:</strong> Users report effects lasting up to 48 hours from a single serving, though individual results may vary based on metabolism and body weight.</p><h3>Does Mohawk Medibles ship across Canada?</h3><p><strong>A:</strong> Yes! Fast Canada-wide shipping with same-day processing before 2 PM EST. Discreet packaging from Tyendinaga Mohawk Territory.</p></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Enhancement Pills",
-            "weight": "TBD",
+            "thc": "N/A",
+            "cbd": "N/A",
+            "type": "Enhancement Supplement",
+            "weight": "Single bonbon",
             "terpenes": [],
-            "lineage": ""
+            "lineage": "N/A"
         },
-        "eeatNarrative": "48 Hour Gold Ginseng Bonbon Seker is a premium Enhancement Pills product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": []
+        "eeatNarrative": "48 Hour Gold Ginseng Bonbon Seker is a quality herbal enhancement product available at Mohawk Medibles. All enhancement products carried by Mohawk Medibles are sourced from reputable manufacturers and meet quality standards, ensuring a safe experience from Tyendinaga Mohawk Territory's trusted dispensary.",
+        "effects": ["Energetic", "Focused", "Uplifted"]
     },
     {
         "id": 308,
