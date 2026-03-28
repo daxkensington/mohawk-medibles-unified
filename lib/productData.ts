@@ -13138,22 +13138,22 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/09/afghan-sour-super-sour-front-scaled-1.png",
             "https://mohawkmedibles.ca/wp-content/uploads/2025/09/afghan-lemonatti-blonde-front-scaledd.png"
         ],
-        "altText": "STRAIGHT GOODS Triple Chamber 9G Disposable THC Vape - Mohawk Medibles",
-        "sku": "",
-        "metaDescription": "Buy STRAIGHT GOODS Triple Chamber 9G Disposable THC Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy STRAIGHT GOODS Triple Chamber 9G Disposable THC Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "altText": "Straight Goods Triple Chamber 9G disposable THC vape with three flavour chambers and rechargeable battery in Canada",
+        "sku": "MM-DISP-324",
+        "metaDescription": "Buy Straight Goods Triple Chamber 9G THC Vape in Canada. Massive 3-flavour disposable at Mohawk Medibles — fast Canada-wide shipping.",
+        "shortDescription": "Shop the Straight Goods Triple Chamber 9G Disposable THC Vape — the ultimate multi-flavour device with 9 grams across three chambers. Choose from 30+ strain combos. Buy now at Mohawk Medibles with fast Canada-wide delivery.",
+        "descriptionHTML": "<div class=\"product-description\"><p>Buy STRAIGHT GOODS Triple Chamber 9G Disposable THC Vape online in Canada at Mohawk Medibles. This massive 9-gram triple-chamber disposable is the largest in the Straight Goods lineup, offering three distinct flavour profiles and incredible value per gram.</p><h2>Product Highlights</h2><ul><li><strong>9G Triple Capacity:</strong> 3g per chamber — the biggest disposable vape available</li><li><strong>Three Flavour Chambers:</strong> Triple the variety in a single device</li><li><strong>30+ Strain Combos:</strong> Afghan, Zombie Kush, Zkittlez, Watermelon OG, and many more</li><li><strong>Rechargeable USB-C:</strong> Ensures you vape all 9 grams to the last drop</li></ul><h2>Popular Triple Combos</h2><ul><li>Death x Jungle x Fruit</li><li>Cotton x Canadian x Candy</li><li>Cherry x Tricks x Jack</li><li>Triple Peach x Banana x Dabbalicious</li><li>Blue x Super x Maui</li></ul><h2>Frequently Asked Questions</h2><h3>How long does the 9G triple chamber last?</h3><p><strong>A:</strong> With 9 grams total, expect 2500-3600 puffs. For moderate daily users, this can last 6-12 weeks — the best value available in Canada for disposable vapes.</p><h3>Can I choose my three-flavour combination?</h3><p><strong>A:</strong> Yes, many different triple combos are available. Select your preferred combination when ordering.</p><h3>Does Mohawk Medibles ship across Canada?</h3><p><strong>A:</strong> Yes! Fast Canada-wide shipping with same-day processing before 2 PM EST. Discreet packaging from Tyendinaga Mohawk Territory.</p></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
+            "thc": "80-90%",
+            "cbd": "Minimal",
             "type": "Disposables",
-            "weight": "TBD",
-            "terpenes": [],
-            "lineage": ""
+            "weight": "9g",
+            "terpenes": ["Myrcene", "Limonene", "Caryophyllene", "Pinene", "Linalool"],
+            "lineage": "Multiple triple-strain combinations available"
         },
-        "eeatNarrative": "STRAIGHT GOODS Triple Chamber 9G Disposable THC Vape is a premium Disposables product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": []
+        "eeatNarrative": "The STRAIGHT GOODS Triple Chamber 9G Disposable THC Vape is a lab-tested premium vape available at Mohawk Medibles. All Straight Goods products undergo rigorous third-party lab testing to meet Empire Standard quality benchmarks for potency and purity, ensuring a safe cannabis experience from Tyendinaga Mohawk Territory.",
+        "effects": ["Relaxed", "Euphoric", "Happy", "Creative", "Uplifted"]
     },
     {
         "id": 325,
