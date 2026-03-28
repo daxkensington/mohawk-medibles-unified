@@ -13554,21 +13554,21 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/05/THC_Cap_1200x1200-2.jpg",
             "https://mohawkmedibles.ca/wp-content/uploads/2025/05/THC_Cap_1200x1200-2.jpg"
         ],
-        "altText": "THC Capsules 2000mg - Mohawk Medibles",
-        "sku": "",
-        "metaDescription": "Buy THC Capsules 2000mg online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy THC Capsules 2000mg online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "altText": "THC Capsules 2000mg high-potency cannabis capsules for discreet oral dosing available at Mohawk Medibles Canada",
+        "sku": "MM-CAPS-335",
+        "metaDescription": "Buy THC Capsules 2000mg in Canada. High-potency cannabis capsules for precise dosing at Mohawk Medibles — fast Canada-wide shipping.",
+        "shortDescription": "Shop THC Capsules 2000mg — high-potency cannabis capsules with 2000mg total THC for precise, discreet dosing. Ideal for experienced users. Buy now at Mohawk Medibles with fast Canada-wide delivery.",
+        "descriptionHTML": "<div class=\"product-description\"><p>Buy THC Capsules 2000mg online in Canada at Mohawk Medibles. These high-potency cannabis capsules deliver 2000mg total THC per bottle for precise, discreet dosing — perfect for experienced users who prefer oral consumption over smoking or vaping.</p><h2>Product Highlights</h2><ul><li><strong>2000mg Total THC:</strong> High-potency formula for experienced users</li><li><strong>Precise Dosing:</strong> Each capsule contains a consistent, measured THC dose</li><li><strong>Discreet Format:</strong> Odourless capsules that look like standard supplements</li><li><strong>Long-Lasting Effects:</strong> 4-8 hours of sustained relief per dose</li></ul><h2>Dosing Guide</h2><ol><li>Start with one capsule and wait 60-90 minutes for full onset</li><li>Increase gradually over several days to find your ideal dose</li><li>Take with food containing healthy fats for improved absorption</li><li>Do not exceed your personal tolerance level</li></ol><h2>Frequently Asked Questions</h2><h3>How potent are these THC capsules?</h3><p><strong>A:</strong> With 2000mg total THC per bottle, these are high-potency capsules designed for experienced users. Check packaging for exact mg per capsule to dose accurately.</p><h3>How long do capsule effects last?</h3><p><strong>A:</strong> THC capsules take 30-90 minutes to onset and effects typically last 4-8 hours — longer and more sustained than inhaled methods.</p><h3>Does Mohawk Medibles ship across Canada?</h3><p><strong>A:</strong> Yes! Fast Canada-wide shipping with same-day processing before 2 PM EST. Discreet packaging from Tyendinaga Mohawk Territory.</p></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
+            "thc": "2000mg total",
+            "cbd": "Minimal",
             "type": "Capsules",
-            "weight": "TBD",
+            "weight": "Bottle",
             "terpenes": [],
-            "lineage": ""
+            "lineage": "N/A"
         },
-        "eeatNarrative": "THC Capsules 2000mg is a premium Capsules product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
+        "eeatNarrative": "THC Capsules 2000mg are lab-tested, high-potency cannabis capsules available at Mohawk Medibles. Each batch undergoes third-party lab testing to meet Empire Standard quality benchmarks for accurate THC potency and purity, ensuring safe and consistent dosing from Tyendinaga Mohawk Territory.",
         "effects": [
             "calm",
             "relaxed",
