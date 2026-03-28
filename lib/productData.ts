@@ -13169,22 +13169,22 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/09/Hello_Synix-done.jpg",
             "https://mohawkmedibles.ca/wp-content/uploads/2025/09/Hello_Synix-done.jpg"
         ],
-        "altText": "Hello Synix 5% Nicotine Vape - Mohawk Medibles",
-        "sku": "",
-        "metaDescription": "Buy Hello Synix 5% Nicotine Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy Hello Synix 5% Nicotine Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "altText": "Hello Synix 5% nicotine disposable vape with smooth draw and multiple flavours available at Mohawk Medibles Canada",
+        "sku": "MM-NIC-325",
+        "metaDescription": "Buy Hello Synix 5% Nicotine Vape in Canada. Smooth disposable nicotine vape at Mohawk Medibles — fast Canada-wide shipping.",
+        "shortDescription": "Shop the Hello Synix 5% Nicotine Vape — a smooth-hitting disposable nicotine device with satisfying throat hit and compact design. Buy now at Mohawk Medibles with fast Canada-wide delivery.",
+        "descriptionHTML": "<div class=\"product-description\"><p>Buy Hello Synix 5% Nicotine Vape online in Canada at Mohawk Medibles. This disposable nicotine vape delivers a smooth, satisfying 5% (50mg) nicotine hit in a compact, pocket-friendly design — perfect for adult smokers looking for a convenient alternative.</p><h2>Product Highlights</h2><ul><li><strong>5% Nicotine Strength:</strong> 50mg nicotine salt for satisfying throat hit</li><li><strong>Disposable Design:</strong> No charging, no refilling — use and recycle</li><li><strong>Compact Form Factor:</strong> Pocket-sized for discreet, on-the-go use</li><li><strong>Draw-Activated:</strong> Simply inhale for smooth vapour production</li></ul><h2>Who Is This For?</h2><p>The Hello Synix is designed for adult smokers and vapers seeking a convenient, no-fuss nicotine delivery system. The 5% nicotine salt formula provides a smooth experience without harshness, making it suitable for both transitioning smokers and experienced vapers.</p><h2>Frequently Asked Questions</h2><h3>How many puffs does the Hello Synix provide?</h3><p><strong>A:</strong> Puff count varies by model. Check the packaging for exact puff count. Most disposable nicotine vapes in this class provide 2000-6000 puffs.</p><h3>Is this a cannabis product?</h3><p><strong>A:</strong> No, this is a nicotine-only product. It contains no THC, CBD, or cannabis derivatives. Mohawk Medibles carries a selection of nicotine products alongside our cannabis offerings.</p><h3>Does Mohawk Medibles ship nicotine vapes across Canada?</h3><p><strong>A:</strong> Yes! Fast Canada-wide shipping with same-day processing before 2 PM EST. Discreet packaging from Tyendinaga Mohawk Territory.</p></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
+            "thc": "N/A",
+            "cbd": "N/A",
             "type": "Nicotine",
-            "weight": "TBD",
+            "weight": "Disposable",
             "terpenes": [],
-            "lineage": ""
+            "lineage": "N/A"
         },
-        "eeatNarrative": "Hello Synix 5% Nicotine Vape is a premium Nicotine product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": []
+        "eeatNarrative": "The Hello Synix 5% Nicotine Vape is a quality-tested nicotine product available at Mohawk Medibles. All nicotine products carried by Mohawk Medibles are sourced from reputable manufacturers and meet quality standards, ensuring a safe and satisfying experience from Tyendinaga Mohawk Territory's trusted smoke shop.",
+        "effects": ["Focused", "Relaxed"]
     },
     {
         "id": 326,
