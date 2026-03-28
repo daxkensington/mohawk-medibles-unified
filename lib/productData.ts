@@ -14268,22 +14268,22 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/05/zillionaire_buds_kit_1200x1200.jpg",
             "https://mohawkmedibles.ca/wp-content/uploads/2025/05/zillionaire_buds_kit_1200x1200.jpg"
         ],
-        "altText": "ZILLIONAIRE AirBuds Kit - Mohawk Medibles",
-        "sku": "",
-        "metaDescription": "Buy ZILLIONAIRE AirBuds Kit online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy ZILLIONAIRE AirBuds Kit online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "altText": "ZILLIONAIRE AirBuds Kit THC vape starter kit with earbud-style design available at Mohawk Medibles Canada",
+        "sku": "MM-ACCS-353",
+        "metaDescription": "Buy ZILLIONAIRE AirBuds Kit in Canada. Discreet earbud-style THC vape kit at Mohawk Medibles — fast Canada-wide shipping.",
+        "shortDescription": "Shop the ZILLIONAIRE AirBuds Kit — a discreet, earbud-inspired THC vape starter kit with sleek design and powerful hits. Buy now at Mohawk Medibles with fast Canada-wide delivery.",
+        "descriptionHTML": "<div class=\"product-description\"><p>Buy the ZILLIONAIRE AirBuds Kit online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary. This innovative vape kit disguises premium THC vaping in an ultra-discreet earbud-style design.</p><h2>Kit Includes</h2><ul><li><strong>AirBuds Device:</strong> Compact earbud-style vape pen for stealth use</li><li><strong>Charging Case:</strong> Doubles as a carrying case and battery charger</li><li><strong>Pre-loaded Cartridge:</strong> Ready-to-use THC concentrate</li><li><strong>USB-C Charger:</strong> Fast-charging cable included</li></ul><h2>Why Choose ZILLIONAIRE AirBuds?</h2><ul><li>Looks exactly like wireless earbuds — ultimate discretion</li><li>Compact and pocket-friendly for on-the-go sessions</li><li>Draw-activated with no buttons to fumble with</li><li>Smooth vapour with minimal odour</li></ul><h2>Frequently Asked Questions</h2><h3>How discreet is the ZILLIONAIRE AirBuds Kit?</h3><p><strong>A:</strong> Extremely discreet. The device is designed to look like wireless earbuds, making it virtually indistinguishable from standard audio earbuds. The charging case completes the disguise for truly stealth vaping.</p><h3>How long does the battery last?</h3><p><strong>A:</strong> The AirBuds device provides a full day of moderate use on a single charge. The carrying case holds additional charges so you can top up throughout the day without needing a wall outlet.</p><h3>Does Mohawk Medibles ship this kit across Canada?</h3><p><strong>A:</strong> Yes! We offer fast Canada-wide shipping with same-day processing on orders before 2 PM EST. All packages ship discreetly in plain packaging from Tyendinaga Mohawk Territory.</p><h3>Is this suitable for beginners?</h3><p><strong>A:</strong> Yes, the draw-activated design makes it extremely easy to use. Simply inhale from the mouthpiece — no buttons or settings to configure. Start with small puffs and wait a few minutes between draws.</p></div>",
         "featured": true,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
+            "thc": "Varies by cartridge",
+            "cbd": "N/A",
             "type": "Kits",
-            "weight": "TBD",
-            "terpenes": [],
-            "lineage": ""
+            "weight": "Kit",
+            "terpenes": ["Varies by cartridge"],
+            "lineage": "Varies by cartridge"
         },
-        "eeatNarrative": "ZILLIONAIRE AirBuds Kit is a premium Kits product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": []
+        "eeatNarrative": "The ZILLIONAIRE AirBuds Kit is a lab-tested THC vape starter kit available at Mohawk Medibles. All ZILLIONAIRE products undergo third-party lab testing to meet Empire Standard quality benchmarks, ensuring potency, purity, and safety for every customer at Tyendinaga Mohawk Territory's trusted dispensary.",
+        "effects": ["Relaxed", "Euphoric", "Happy", "Uplifted"]
     },
     {
         "id": 354,
