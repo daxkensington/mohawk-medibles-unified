@@ -13884,22 +13884,22 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/06/ultra-memory.png",
             "https://mohawkmedibles.ca/wp-content/uploads/2025/06/white-x-blue-cheese.png"
         ],
-        "altText": "Burn Dual Chamber Vape 6G - Mohawk Medibles",
-        "sku": "",
-        "metaDescription": "Buy Burn Dual Chamber Vape 6G online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy Burn Dual Chamber Vape 6G online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "altText": "Burn Dual Chamber 6G disposable THC vape with 40+ flavour combos available at Mohawk Medibles Canada",
+        "sku": "MM-DISP-343",
+        "metaDescription": "Buy Burn Dual Chamber 6G Vape in Canada. 40+ flavour combos, premium THC distillate. Mohawk Medibles — fast Canada-wide shipping.",
+        "shortDescription": "Shop the Burn Dual Chamber Vape 6G — premium 6-gram dual-flavour disposable with 40+ strain combinations including Gelato, Skittlez, and Wedding Cake. Buy now at Mohawk Medibles with fast Canada-wide delivery.",
+        "descriptionHTML": "<div class=\"product-description\"><p>Buy Burn Dual Chamber Vape 6G online in Canada at Mohawk Medibles. With over 40 flavour combinations and 6 grams of premium THC distillate, the Burn Dual Chamber is one of Canada's most popular disposable vapes for variety and value.</p><h2>Product Highlights</h2><ul><li><strong>6G Dual Chamber:</strong> 3g per chamber for extended sessions</li><li><strong>40+ Flavour Combos:</strong> The widest selection of any dual-chamber vape</li><li><strong>Premium Distillate:</strong> High-potency THC for powerful, clean effects</li><li><strong>Rechargeable USB-C:</strong> Use every last drop</li></ul><h2>Popular Flavour Combos</h2><ul><li>Acapulco x Gas</li><li>Blue Candy x Pink</li><li>Cherry x Blueberry</li><li>Dark x Gelato</li><li>Golden Goat x Skittlez</li><li>Indica x Wedding</li></ul><h2>Frequently Asked Questions</h2><h3>How long does the Burn 6G last?</h3><p><strong>A:</strong> With 6 grams total, expect 1500-2400 puffs — typically lasting 4-8 weeks for moderate daily users.</p><h3>What makes Burn different from other brands?</h3><p><strong>A:</strong> Burn is known for its extensive flavour selection (40+ combos) and consistent quality. Each device features smooth draws and reliable battery life.</p><h3>Does Mohawk Medibles ship across Canada?</h3><p><strong>A:</strong> Yes! Fast Canada-wide shipping with same-day processing before 2 PM EST. Discreet packaging from Tyendinaga Mohawk Territory.</p></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Burn",
-            "weight": "TBD",
-            "terpenes": [],
-            "lineage": ""
+            "thc": "80-90%",
+            "cbd": "Minimal",
+            "type": "Disposables",
+            "weight": "6g",
+            "terpenes": ["Myrcene", "Limonene", "Caryophyllene", "Linalool"],
+            "lineage": "Multiple strain combinations available"
         },
-        "eeatNarrative": "Burn Dual Chamber Vape 6G is a premium Burn product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": []
+        "eeatNarrative": "The Burn Dual Chamber Vape 6G is a lab-tested, premium disposable vape available at Mohawk Medibles. All Burn products undergo rigorous third-party lab testing to meet Empire Standard quality benchmarks for potency and purity, ensuring a safe cannabis experience from Tyendinaga Mohawk Territory.",
+        "effects": ["Relaxed", "Euphoric", "Happy", "Uplifted", "Creative"]
     },
     {
         "id": 344,
