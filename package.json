@@ -10,7 +10,10 @@
     "lint": "eslint",
     "db:push": "prisma db push",
     "db:migrate": "prisma migrate deploy",
-    "db:studio": "prisma studio"
+    "db:studio": "prisma studio",
+    "predeploy": "bash scripts/pre-deploy.sh",
+    "deploy": "npm run predeploy && vercel --prod",
+    "deploy:preview": "vercel"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.3.0",
