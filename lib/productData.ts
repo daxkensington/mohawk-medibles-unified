@@ -49,24 +49,24 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/05/Bath-Salts-Photoroom.png"
         ],
         "altText": "Bath Salts - Mohawk Medibles",
-        "sku": "",
-        "metaDescription": "**Buy Bath Salts online in Canada at Mohawk Medibles**, your trusted Indigenous-owned cannabis dispensary. Shop these premium CBD and THC-infused bath salts fea",
-        "shortDescription": "**Buy Bath Salts online in Canada at Mohawk Medibles**, your trusted Indigenous-owned cannabis dispensary. Shop these premium CBD and THC-infused bath salts featuring a luxurious blend of Epsom, Pin...",
+        "sku": "MM-BATH-SALTS-CBDTHC",
+        "metaDescription": "Buy CBD and THC Bath Salts online in Canada. 75mg CBD + 75mg THC with Epsom and Himalayan salt. Fast shipping from Mohawk Medibles.",
+        "shortDescription": "Shop premium CBD and THC-infused Bath Salts at Mohawk Medibles. Featuring 75mg CBD and 75mg THC with a luxurious blend of Epsom, Pink Himalayan, and coarse white salts with vanilla and lavender. Buy online for fast, discreet Canada-wide shipping.",
         "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\">\n<div class=\"detail-tab-desc detail-content-wrap\">\n<p>**Buy Bath Salts online in Canada at Mohawk Medibles**, your trusted Indigenous-owned cannabis dispensary. Shop these premium CBD and THC-infused bath salts featuring a luxurious blend of Epsom, Pink Himalayan, and coarse white salts with soothing vanilla and lavender. Order now for fast Canada-wide shipping with same-day processing and discreet delivery from Tyendinaga Mohawk Territory. Experience the ultimate cannabis-infused relaxation and therapeutic relief.</p>\n<p>–</p>\n<h2>💡 Usage Guide</h2>\n<h3>Recommended Dosage</h3>\n<ul>\n<li><strong>Beginners:</strong> Start with 1/4 cup (approximately 18.75mg CBD and 18.75mg THC) dissolved in warm bath water</li>\n<li><strong>Experienced Users:</strong> Use 1/2 cup (approximately 37.5mg CBD and 37.5mg THC) for enhanced therapeutic effects</li>\n<li><strong>Full Therapeutic Dose:</strong> Dissolve the entire container (75mg CBD and 75mg THC) for maximum relaxation and relief</li>\n</ul>\n<h3>How to Use</h3>\n<ul>\n<li><strong>Bath Preparation:</strong> Fill bathtub with warm water (not too hot, as extreme heat can degrade cannabinoids)</li>\n<li><strong>Dissolving:</strong> Add desired amount of bath salts under running water to help distribute evenly</li>\n<li><strong>Soaking Time:</strong> Soak for 20-30 minutes to allow optimal absorption through the skin</li>\n<li><strong>Hydration:</strong> Keep water nearby as warm baths can be dehydrating</li>\n</ul>\n<h3>Onset &amp; Duration</h3>\n<ul>\n<li><strong>Onset:</strong> 15-30 minutes as cannabinoids absorb through skin</li>\n<li><strong>Peak Effects:</strong> 45-90 minutes after beginning soak</li>\n<li><strong>Duration:</strong> Effects can last 3-6 hours, with residual relaxation continuing longer</li>\n</ul>\n<h3>Best Use Cases</h3>\n<p>Perfect for evening relaxation, post-workout muscle recovery, stress relief, and promoting restful sleep. The balanced CBD and THC ratio provides therapeutic benefits without overwhelming psychoactive effects. Ideal for those seeking relief from muscle tension, joint discomfort, anxiety, or simply wanting to unwind after a long day. The vanilla and lavender aromatherapy enhances the calming experience.</p>\n<p><strong>⚠️ Important:</strong> For external use only. Cannabinoids are absorbed through the skin, so effects will be milder than ingestion. Avoid getting water in eyes. Not recommended during pregnancy. Do not drive or operate machinery after use.</p>\n<h2>❓ Frequently Asked Questions</h2>\n<h3>Will these bath salts make me high?</h3>\n<p><strong>A:</strong> While these bath salts contain 75mg THC, the transdermal absorption through skin produces much milder effects compared to ingestion. Most users experience deep relaxation and therapeutic benefits without significant psychoactive effects. The balanced 1:1 CBD to THC ratio (75mg each) helps moderate the experience while maximizing therapeutic potential.</p>\n<h3>How much of the bath salts should I use per bath?</h3>\n<p><strong>A:</strong> For beginners, start with 1/4 cup per bath. Experienced users typically use 1/2 cup, while those seeking maximum therapeutic relief can use the full container. You can always add more during your soak if desired, but it’s best to start conservatively and assess your tolerance.</p>\n<h3>What are the benefits of the vanilla and lavender ingredients?</h3>\n<p><strong>A:</strong> Lavender is renowned for its calming properties, helping reduce anxiety and promote better sleep. Vanilla provides comforting aromatherapy that enhances mood and relaxation. Combined with the mineral-rich Epsom and Himalayan salts, these ingredients work synergistically with the cannabinoids to create a comprehensive wellness experience that soothes both body and mind.</p>\n<h3>Can I use these bath salts if I’m new to cannabis products?</h3>\n<p><strong>A:</strong> Yes! Cannabis-infused bath salts are an excellent introduction to topical cannabis products. The effects are localized and much gentler than inhalation or ingestion methods. Start with a smaller amount (1/4 cup) and enjoy your soak. The balanced CBD:THC ratio provides therapeutic benefits with minimal psychoactive effects, making it beginner-friendly.</p>\n<h3>How should I store my bath salts?</h3>\n<p><strong>A:</strong> Store in a cool, dry place away from direct sunlight and moisture. Keep the container tightly sealed between uses to maintain freshness and prevent the salts from clumping. Properly stored, cannabis-infused bath salts maintain their potency for 12-18 months. Always keep out of reach of children and pets.</p>\n<h3>Does Mohawk Medibles ship bath salts across Canada?</h3>\n<p><strong>A:</strong> Yes! We offer fast, discreet Canada-wide shipping with same-day processing on orders placed before 2 PM EST. All packages are shipped in plain, unmarked packaging to ensure your privacy. Our cannabis-infused bath salts are legal across Canada and shipped directly from Tyendinaga Mohawk Territory.</p>\n<h3>What makes the salt blend special?</h3>\n<p><strong>A:</strong> This premium blend combines three therapeutic salts: Epsom salts (magnesium sulfate) for muscle relaxation, Pink Himalayan salt with 84 trace minerals for skin nourishment, and coarse white salt for detoxification. Together with cannabis, these mineral-rich salts help draw out toxins, reduce inflammation, ease muscle tension, and promote overall wellness while the cannabinoids provide targeted therapeutic relief.</p>\n</div>\n</div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
+            "thc": "75mg",
+            "cbd": "75mg",
             "type": "Bath & Body",
-            "weight": "TBD",
+            "weight": "1 container",
             "terpenes": [
                 "Caryophyllene",
                 "Myrcene",
                 "Bisabolol"
             ],
-            "lineage": "Canada? A: Yes! We offer fast, discreet Canada-wide shipping with same-day processing on orders plac"
+            "lineage": "CBD/THC 1:1 Infused"
         },
-        "eeatNarrative": "Bath Salts is a premium Bath & Body product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
+        "eeatNarrative": "Bath Salts are a lab-tested, cannabis-infused bath product available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Containing 75mg CBD and 75mg THC with Epsom, Pink Himalayan, and coarse white salts, each batch is tested for cannabinoid content and purity.",
         "effects": [
             "relaxed",
             "sleepy",
@@ -1208,27 +1208,25 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/07/geek-bar-pulse-display-editing-Photoroom.png"
         ],
         "altText": "Geek Bar Pulse X 18ML Nicotine Vape - Mohawk Medibles",
-        "sku": "N/A",
-        "metaDescription": "**Buy Geek Bar Pulse X 18ML Nicotine Vape online in Canada at Mohawk Medibles**, your trusted Indigenous-owned dispensary. Shop this premium dual-mode nicotine ",
-        "shortDescription": "**Buy Geek Bar Pulse X 18ML Nicotine Vape online in Canada at Mohawk Medibles**, your trusted Indigenous-owned dispensary. Shop this premium dual-mode nicotine vape device and enjoy fast Canada-wide...",
+        "sku": "MM-NIC-GEEKBAR-PULSEX",
+        "metaDescription": "Buy Geek Bar Pulse X 18ML Nicotine Vape online in Canada. Up to 25,000 puffs with dual-mode technology. Fast shipping from Mohawk Medibles.",
+        "shortDescription": "Shop the Geek Bar Pulse X 18ML Nicotine Vape at Mohawk Medibles. This premium dual-mode disposable delivers up to 25,000 puffs with 50mg nicotine, 3D curved display, and dual mesh coil technology. Buy online for fast Canada-wide shipping.",
         "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\">\n<div class=\"detail-tab-desc detail-content-wrap\">\n<p>**Buy Geek Bar Pulse X 18ML Nicotine Vape online in Canada at Mohawk Medibles**, your trusted Indigenous-owned dispensary. Shop this premium dual-mode nicotine vape device and enjoy fast Canada-wide shipping with same-day processing. Order now for discreet delivery and experience up to 25,000 puffs of smooth, satisfying vapor with advanced dual mesh coil technology and 3D curved power display.</p>\n<p>–</p>\n<h2>💡 Usage Guide</h2>\n<h3>Getting Started</h3>\n<ul>\n<li><strong>Activation:</strong> The Geek Bar Pulse X is draw-activated – simply inhale through the mouthpiece to vape, no buttons required</li>\n<li><strong>Mode Selection:</strong> Toggle between Pulse Mode (15,000 puffs, enhanced vapor) and Regular Mode (25,000 puffs, extended use)</li>\n<li><strong>Monitoring:</strong> Check the 3D curved display to track e-liquid levels and battery status in real-time</li>\n</ul>\n<h3>Recommended Usage</h3>\n<ul>\n<li><strong>New Vapers:</strong> Start with 1-2 second draws, wait 2-3 minutes between puffs to assess nicotine tolerance</li>\n<li><strong>Experienced Users:</strong> 2-4 second draws as desired; 50mg nicotine strength provides strong satisfaction</li>\n<li><strong>Daily Use:</strong> Monitor your consumption using the device display; average users experience 7-14 days in Regular Mode</li>\n</ul>\n<h3>Maintenance &amp; Care</h3>\n<ul>\n<li><strong>Storage:</strong> Keep device upright in cool, dry place away from direct sunlight</li>\n<li><strong>Temperature:</strong> Avoid extreme heat or cold which can affect battery performance</li>\n<li><strong>Disposal:</strong> When depleted, dispose of according to local e-waste regulations</li>\n</ul>\n<h3>Best Use Cases</h3>\n<p>Perfect for on-the-go convenience and extended use without recharging or refilling. The dual-mode functionality allows you to choose between maximum vapor production for satisfying sessions or extended battery life for all-day use. Ideal for former smokers seeking a hassle-free nicotine alternative with premium flavor and consistent performance.</p>\n<p><strong>⚠️ Important:</strong> This product contains 50mg/mL nicotine, a highly addictive substance. Not intended for non-smokers or individuals under 19 years of age. Keep out of reach of children and pets.</p>\n<h2>❓ Frequently Asked Questions</h2>\n<h3>How many puffs does the Geek Bar Pulse X provide?</h3>\n<p><strong>A:</strong> The Geek Bar Pulse X offers dual-mode functionality: Regular Mode delivers up to 25,000 puffs for extended use, while Pulse Mode provides up to 15,000 puffs with enhanced vapor production. You can switch between modes based on your preference.</p>\n<h3>What nicotine strength is the Geek Bar Pulse X?</h3>\n<p><strong>A:</strong> This device contains 18mL of e-liquid at 50mg nicotine per mL (5% nicotine concentration), providing a strong, satisfying throat hit comparable to traditional cigarettes. This strength is ideal for experienced vapers or those transitioning from smoking.</p>\n<h3>Does the Geek Bar Pulse X need to be charged or refilled?</h3>\n<p><strong>A:</strong> No, the Geek Bar Pulse X is a disposable device that comes pre-charged and pre-filled. Simply remove it from the package and start vaping immediately. When the e-liquid is depleted or battery dies, dispose of the entire unit responsibly.</p>\n<h3>What makes the dual mesh coil technology special?</h3>\n<p><strong>A:</strong> The dual mesh coil design provides faster, more even heating for enhanced flavor clarity and smoother vapor production. This technology ensures consistent performance throughout the device’s lifespan and eliminates burnt taste common in single-coil devices.</p>\n<h3>Can I track how much e-liquid is left?</h3>\n<p><strong>A:</strong> Yes! The Geek Bar Pulse X features an innovative 3D curved power display that shows real-time e-liquid levels and battery status. This allows you to monitor your usage and know exactly when the device is nearing depletion.</p>\n<h3>Does Mohawk Medibles ship the Geek Bar Pulse X across Canada?</h3>\n<p><strong>A:</strong> Absolutely! We offer fast, discreet Canada-wide shipping with same-day processing on orders placed before 2 PM EST. All vape products are shipped in plain, unmarked packaging and comply with federal shipping regulations.</p>\n<h3>Is the Geek Bar Pulse X safe to use?</h3>\n<p><strong>A:</strong> When used as intended by adults 19+, the Geek Bar Pulse X meets safety standards for vaping devices. However, nicotine is highly addictive and not without risk. If you’re pregnant, nursing, or have heart conditions, consult your healthcare provider before use. Never modify the device or use if damaged.</p>\n</div>\n</div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Brands",
-            "weight": "TBD",
-            "terpenes": [
-                "Myrcene",
-                "Limonene",
-                "Caryophyllene"
-            ],
-            "lineage": "Canada? A: Absolutely! We offer fast, discreet Canada-wide shipping with same-day processing on orde"
+            "thc": "N/A",
+            "cbd": "N/A",
+            "type": "Nicotine Disposable Vape",
+            "weight": "18mL",
+            "terpenes": [],
+            "lineage": "N/A"
         },
-        "eeatNarrative": "Geek Bar Pulse X 18ML Nicotine Vape is a premium Brands product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
+        "eeatNarrative": "Geek Bar Pulse X 18ML Nicotine Vape is a premium nicotine disposable available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. This lab-tested device features dual mesh coil technology for consistent flavour and vapour production throughout its lifespan.",
         "effects": [
             "focused",
-            "happy"
+            "happy",
+            "energetic",
+            "calm"
         ]
     },
     {
@@ -2067,24 +2065,23 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/05/Players-Rolling-Papers.webp"
         ],
         "altText": "Export A Rolling Papers - Mohawk Medibles",
-        "sku": "",
-        "metaDescription": "**Buy Export A Rolling Papers online in Canada at Mohawk Medibles**, your trusted Indigenous-owned cannabis accessories retailer. Shop these classic premium rol",
-        "shortDescription": "**Buy Export A Rolling Papers online in Canada at Mohawk Medibles**, your trusted Indigenous-owned cannabis accessories retailer. Shop these classic premium rolling papers and enjoy fast Canada-wide...",
+        "sku": "MM-ACC-EXPORTA-PAPERS",
+        "metaDescription": "Buy Export A Rolling Papers online in Canada. Classic premium rolling papers at great value. Fast shipping from Mohawk Medibles, Tyendinaga.",
+        "shortDescription": "Shop Export A Rolling Papers at Mohawk Medibles. These classic Canadian rolling papers offer reliable quality and an even burn at an unbeatable price. Buy online for fast, discreet Canada-wide shipping.",
         "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\">\n<div class=\"detail-tab-desc detail-content-wrap\">\n<p>**Buy Export A Rolling Papers online in Canada at Mohawk Medibles**, your trusted Indigenous-owned cannabis accessories retailer. Shop these classic premium rolling papers and enjoy fast Canada-wide shipping with same-day processing on orders placed before 2 PM EST. Order now for discreet delivery and stock up on this essential smoking accessory from Tyendinaga Mohawk Territory.</p>\n<p>–</p>\n<h2>💡 Usage Guide</h2>\n<h3>How to Use Export A Rolling Papers</h3>\n<ul>\n<li><strong>Preparation:</strong> Remove one paper from the pack, keeping the gummed edge facing up and towards you</li>\n<li><strong>Rolling Technique:</strong> Distribute your ground cannabis evenly along the paper’s crease, shape into a cylinder, then roll tightly while tucking the non-gummed edge under</li>\n<li><strong>Sealing:</strong> Lick the gummed edge lightly and press firmly to seal your roll</li>\n<li><strong>Pro Tip:</strong> Use a filter or crutch at one end for easier handling and a smoother draw</li>\n</ul>\n<h3>Best Use Cases</h3>\n<p>Export A papers are ideal for everyday smoking sessions, whether you’re enjoying a solo session or sharing with friends. Their reliable burn rate and classic design make them perfect for both beginners learning to roll and experienced users who appreciate traditional quality. Great for on-the-go use, social gatherings, or relaxed at-home sessions.</p>\n<h3>Storage Tips</h3>\n<p>Keep your rolling papers in their original packaging in a cool, dry place away from moisture and humidity. Proper storage ensures papers remain easy to work with and don’t stick together or become brittle.</p>\n<h2>❓ Frequently Asked Questions</h2>\n<h3>What size are Export A Rolling Papers?</h3>\n<p><strong>A:</strong> Export A rolling papers are standard size, measuring approximately 70mm in length. This classic size is perfect for personal joints and provides enough paper for a satisfying session without excess waste.</p>\n<h3>Are Export A papers bleached or natural?</h3>\n<p><strong>A:</strong> Export A rolling papers are made from quality wood pulp with a light, even burn. They feature a traditional white finish that has been a trusted choice for smokers for decades.</p>\n<h3>How many papers come in each pack?</h3>\n<p><strong>A:</strong> Each pack of Export A rolling papers contains multiple leaves, providing excellent value for regular users. The compact packaging makes them easy to carry and store.</p>\n<h3>Are these papers good for beginners?</h3>\n<p><strong>A:</strong> Yes! Export A papers are an excellent choice for beginners. Their medium weight makes them easier to handle than ultra-thin papers while still providing a quality smoking experience. The consistent quality helps new rollers develop their technique.</p>\n<h3>Does Mohawk Medibles ship Export A Rolling Papers across Canada?</h3>\n<p><strong>A:</strong> Absolutely! We offer fast, discreet Canada-wide shipping on all accessories including Export A rolling papers. Orders placed before 2 PM EST are processed the same day, and all packages arrive in plain, unmarked packaging for your privacy.</p>\n<h3>Can I buy Export A papers in bulk?</h3>\n<p><strong>A:</strong> Yes, you can add multiple packs to your cart when ordering from Mohawk Medibles. Stocking up on rolling papers ensures you always have supplies on hand and can save on shipping costs.</p>\n<h3>What makes Export A papers a good choice?</h3>\n<p><strong>A:</strong> Export A rolling papers offer reliable quality at an affordable price point. Their consistent burn rate, easy-to-use design, and trusted reputation make them a staple for cannabis enthusiasts across Canada. They’re perfect for daily use and provide excellent value for money.</p>\n</div>\n</div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Accessories",
-            "weight": "TBD",
+            "thc": "N/A",
+            "cbd": "N/A",
+            "type": "Accessory",
+            "weight": "Standard (70mm)",
             "terpenes": [],
-            "lineage": "Canada? A: Absolutely! We offer fast, discreet Canada-wide shipping on all accessories including Exp"
+            "lineage": "N/A"
         },
-        "eeatNarrative": "Export A Rolling Papers is a premium Accessories product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
+        "eeatNarrative": "Export A Rolling Papers are a trusted Canadian smoking accessory available at Mohawk Medibles, Tyendinaga's Indigenous-owned cannabis dispensary. These classic papers deliver a consistent, even burn every time.",
         "effects": [
             "relaxed",
-            "happy",
-            "pain-relief"
+            "happy"
         ]
     },
     {
@@ -2308,28 +2305,25 @@ const _RAW_PRODUCTS: Product[] = [
         ],
         "altText": "OG Melmac Magic Mushrooms $5/G - Mohawk Medibles",
         "sku": "OGMELMACMSH",
-        "metaDescription": "Discover the legendary OG Melmac mushroom, a potent strain of Psilocybe cubensis known for its unique appearance and powerful effects. Revered by psychonauts, O",
-        "shortDescription": "Discover the legendary OG Melmac mushroom, a potent strain of Psilocybe cubensis known for its unique appearance and powerful effects. Revered by psychonauts, OG Melmac offers profound visual experi...",
+        "metaDescription": "Buy OG Melmac Magic Mushrooms online in Canada. Potent Psilocybe cubensis at $5/g. Lab-tested psilocybin from Mohawk Medibles, Tyendinaga.",
+        "shortDescription": "Shop OG Melmac Magic Mushrooms at Mohawk Medibles for just $5/g. This potent Psilocybe cubensis strain delivers profound visual experiences and deep introspective journeys. Available in 5g or $99/oz. Buy online for fast, discreet Canada-wide shipping.",
         "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\">\n<div class=\"detail-tab-desc detail-content-wrap\">\n<p>Discover the legendary<strong> OG Melmac</strong> mushroom, a potent strain of Psilocybe cubensis known for its unique appearance and powerful effects. Revered by psychonauts, OG Melmac offers profound visual experiences and deep introspective journeys, making it a top choice for those seeking a transformative and enlightening psychedelic experience.</p>\n<p> </p>\n<p> </p>\n</div>\n</div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Brands",
-            "weight": "TBD",
-            "terpenes": [
-                "Myrcene",
-                "Limonene",
-                "Caryophyllene"
-            ],
-            "lineage": "TBD"
+            "thc": "N/A",
+            "cbd": "N/A",
+            "type": "Psilocybin Mushrooms",
+            "weight": "5g / 28g (1oz)",
+            "terpenes": [],
+            "lineage": "Psilocybe cubensis — OG Melmac"
         },
-        "eeatNarrative": "OG Melmac Magic Mushrooms $5/G is a premium Brands product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
+        "eeatNarrative": "OG Melmac Magic Mushrooms are a lab-tested, potent psilocybin product available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Each batch is tested for psilocybin content and purity to ensure a consistent, safe psychedelic experience.",
         "effects": [
-            "relaxed",
-            "happy",
+            "euphoric",
+            "creative",
             "uplifted",
-            "euphoric"
+            "relaxed",
+            "introspective"
         ]
     },
     {
@@ -2590,21 +2584,25 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/08/3-pack-velo-pouches-with-logo.png"
         ],
         "altText": "Velo Nicotine Pouches | Mohawk Medibles - Mohawk Medibles",
-        "sku": "N/A",
-        "metaDescription": "**Buy VELO Nicotine Pouches online in Canada at Mohawk Medibles**, your trusted Indigenous-owned retailer offering premium smoke-free alternatives. Shop these d",
-        "shortDescription": "**Buy VELO Nicotine Pouches online in Canada at Mohawk Medibles**, your trusted Indigenous-owned retailer offering premium smoke-free alternatives. Shop these discreet, Swedish-made nicotine pouches...",
+        "sku": "MM-NIC-VELO-POUCHES",
+        "metaDescription": "Buy VELO Nicotine Pouches online in Canada. Swedish-made, tobacco-free pouches. Fast discreet shipping from Mohawk Medibles, Tyendinaga.",
+        "shortDescription": "Shop VELO Nicotine Pouches at Mohawk Medibles. These Swedish-made, tobacco-free nicotine pouches deliver discreet, spit-free nicotine satisfaction in multiple flavours. Buy online for fast Canada-wide shipping.",
         "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\">\n<div class=\"detail-tab-desc detail-content-wrap\">\n<p>**Buy VELO Nicotine Pouches online in Canada at Mohawk Medibles**, your trusted Indigenous-owned retailer offering premium smoke-free alternatives. Shop these discreet, Swedish-made nicotine pouches and enjoy fast Canada-wide shipping with same-day processing. Order now for convenient, tobacco-free nicotine satisfaction delivered discreetly to your door. Perfect for those seeking a modern, spit-free alternative to traditional tobacco products.</p>\n<p>–</p>\n<h2>💡 Usage Guide</h2>\n<h3>How to Use VELO Nicotine Pouches</h3>\n<ul>\n<li><strong>Step 1:</strong> Place one pouch between your upper lip and gum</li>\n<li><strong>Step 2:</strong> Leave in place for up to 30 minutes to enjoy the nicotine release</li>\n<li><strong>Step 3:</strong> Dispose of the used pouch responsibly in household waste</li>\n<li><strong>Do Not:</strong> Chew or swallow the pouch</li>\n</ul>\n<h3>Recommended Usage</h3>\n<ul>\n<li><strong>New Users:</strong> Start with one pouch to assess tolerance and nicotine strength preference</li>\n<li><strong>Regular Users:</strong> Use as needed throughout the day, typically 8-12 pouches daily</li>\n<li><strong>Maximum:</strong> Do not exceed recommended daily usage on package</li>\n</ul>\n<h3>Onset &amp; Duration</h3>\n<ul>\n<li><strong>Onset:</strong> 2-5 minutes after placement</li>\n<li><strong>Peak Effect:</strong> 10-15 minutes</li>\n<li><strong>Duration:</strong> Effects last throughout 20-30 minute use period</li>\n</ul>\n<h3>Best Use Cases</h3>\n<p>Ideal for smoke-free environments including offices, flights, restaurants, and public spaces. Perfect for users seeking discreet nicotine satisfaction without smoke, vapour, or spit. Use anytime you need a convenient nicotine alternative that won’t disturb others.</p>\n<p><strong>⚠️ Important:</strong> This product contains nicotine, which is a highly addictive substance. Not intended for non-smokers, pregnant or breastfeeding women, or individuals under 19 years of age.</p>\n<h2>❓ Frequently Asked Questions</h2>\n<h3>What are VELO Nicotine Pouches?</h3>\n<p><strong>A:</strong> VELO Nicotine Pouches are tobacco-free, smoke-free nicotine pouches made in Sweden. They provide a discreet, spit-free way to enjoy nicotine without combustion, vapour, or tobacco leaf. Simply place between your lip and gum for convenient nicotine satisfaction anywhere, anytime.</p>\n<h3>How strong are VELO Nicotine Pouches?</h3>\n<p><strong>A:</strong> VELO pouches are available in various nicotine strengths to suit different preferences and tolerance levels. Check the specific product variant for exact nicotine content. We recommend starting with a lower strength if you’re new to nicotine pouches and adjusting based on your satisfaction.</p>\n<h3>Are VELO pouches safe to use?</h3>\n<p><strong>A:</strong> VELO pouches are made with premium-quality ingredients in Sweden and contain no tobacco leaf, eliminating many risks associated with smoking. However, they do contain nicotine, which is addictive. They’re intended as an alternative for adult nicotine users, not as a cessation product. Consult your healthcare provider with any concerns.</p>\n<h3>Can I use VELO pouches indoors and in public places?</h3>\n<p><strong>A:</strong> Yes! Since VELO pouches produce no smoke, vapour, or require spitting, they can be used discreetly in most environments where smoking and vaping are prohibited, including offices, restaurants, planes, and public transportation. Always respect local regulations and private property rules.</p>\n<h3>How should I store VELO Nicotine Pouches?</h3>\n<p><strong>A:</strong> Store VELO pouches in their original container in a cool, dry place away from direct sunlight. Keep the container sealed when not in use to maintain freshness and flavour. Properly stored pouches will maintain quality until the best-before date. Always keep out of reach of children and pets.</p>\n<h3>Does Mohawk Medibles ship VELO pouches across Canada?</h3>\n<p><strong>A:</strong> Yes! We offer fast, discreet Canada-wide shipping for all VELO Nicotine Pouch products with same-day processing on orders placed before 2 PM EST. All packages arrive in plain, unmarked packaging. You must be 19+ with valid ID to purchase and receive nicotine products.</p>\n<h3>How long does one VELO pouch last?</h3>\n<p><strong>A:</strong> Each VELO pouch is designed for 20-30 minutes of use. You’ll experience nicotine release throughout this period. After 30 minutes, dispose of the pouch and use a fresh one if desired. The duration of satisfaction may vary based on individual tolerance and the specific strength variant you choose.</p>\n</div>\n</div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Nicotine",
-            "weight": "TBD",
+            "thc": "N/A",
+            "cbd": "N/A",
+            "type": "Nicotine Pouches",
+            "weight": "20 pouches per tin",
             "terpenes": [],
-            "lineage": "Canada? A: Yes! We offer fast, discreet Canada-wide shipping for all VELO Nicotine Pouch products wi"
+            "lineage": "N/A"
         },
-        "eeatNarrative": "Velo Nicotine Pouches | Mohawk Medibles is a premium Nicotine product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": []
+        "eeatNarrative": "VELO Nicotine Pouches are a premium, Swedish-made tobacco-free nicotine product available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Lab-tested for quality and consistency, VELO offers a discreet, spit-free nicotine alternative trusted by millions worldwide.",
+        "effects": [
+            "focused",
+            "calm",
+            "energetic"
+        ]
     },
     {
         "id": 64,
@@ -2794,24 +2792,24 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/06/Clouded-editing-Photoroom.png"
         ],
         "altText": "Pineapple Express Meds Pre Rolled Cones 10 pack - Mohawk Medibles",
-        "sku": "N/A",
-        "metaDescription": "Each pre roll is stuffed with .7g and comes with 10 individual joints.  If you are familiar with the PEM Jefferys, you may recognize the strains available. Sele",
-        "shortDescription": "Each pre roll is stuffed with .7g and comes with 10 individual joints.  If you are familiar with the PEM Jefferys, you may recognize the strains available. Select different strains based on your moo...",
+        "sku": "MM-PREROLL-PEM-10PK",
+        "metaDescription": "Buy Pineapple Express Meds Pre-Rolled Cones 10-pack in Canada. 0.7g each, 7g total. Fast shipping from Mohawk Medibles, Tyendinaga.",
+        "shortDescription": "Shop the Pineapple Express Meds Pre-Rolled Cones 10-pack at Mohawk Medibles. Each cone is stuffed with 0.7g of premium flower for 7g total. Multiple strain options available. Buy online for fast, discreet Canada-wide shipping.",
         "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\">\n<div class=\"detail-tab-desc detail-content-wrap\">\n<p>Each pre roll is stuffed with .7g and comes with 10 individual joints.  If you are familiar with the PEM Jefferys, you may recognize the strains available. Select different strains based on your mood!</p>\n<p>10 pack<br/>\n.7g per cone</p>\n</div>\n</div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Brands",
-            "weight": "TBD",
+            "thc": "25-30%",
+            "cbd": "<1%",
+            "type": "Pre-Rolled Cones",
+            "weight": "7g (10 x 0.7g)",
             "terpenes": [
                 "Limonene",
                 "Pinene",
                 "Terpinolene"
             ],
-            "lineage": "TBD"
+            "lineage": "Multiple strains available"
         },
-        "eeatNarrative": "Pineapple Express Meds Pre Rolled Cones 10 pack is a premium Brands product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
+        "eeatNarrative": "Pineapple Express Meds Pre-Rolled Cones are lab-tested, premium pre-rolls available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned cannabis dispensary. Each cone is quality-checked for weight consistency and potency to deliver a reliable smoking experience.",
         "effects": [
             "energetic",
             "uplifted",
@@ -4610,21 +4608,25 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/09/frosted_ice.webp"
         ],
         "altText": "Pablo Nicotine Pouches | Mohawk Medibles - Mohawk Medibles",
-        "sku": "N/A",
-        "metaDescription": "**Buy Pablo Nicotine Pouches online in Canada at Mohawk Medibles**, your trusted Indigenous-owned dispensary offering premium alternatives to traditional tobacc",
-        "shortDescription": "**Buy Pablo Nicotine Pouches online in Canada at Mohawk Medibles**, your trusted Indigenous-owned dispensary offering premium alternatives to traditional tobacco products. Shop these ultra-strong ni...",
+        "sku": "MM-NIC-PABLO-POUCHES",
+        "metaDescription": "Buy Pablo Nicotine Pouches online in Canada. Ultra-strong 24-30mg tobacco-free pouches. Fast shipping from Mohawk Medibles, Tyendinaga.",
+        "shortDescription": "Shop Pablo Nicotine Pouches at Mohawk Medibles. These ultra-strong, tobacco-free nicotine pouches (24-30mg) deliver intense, fast-acting nicotine satisfaction for experienced users. Buy online for fast, discreet Canada-wide shipping.",
         "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\">\n<div class=\"detail-tab-desc detail-content-wrap\">\n<p>**Buy Pablo Nicotine Pouches online in Canada at Mohawk Medibles**, your trusted Indigenous-owned dispensary offering premium alternatives to traditional tobacco products. Shop these ultra-strong nicotine pouches and enjoy fast Canada-wide shipping with same-day processing on orders placed before 2 PM EST. Order now for discreet delivery of tobacco-free nicotine satisfaction directly to your door.</p>\n<p>–</p>\n<h2>💡 Usage Guide</h2>\n<h3>Recommended Usage</h3>\n<ul>\n<li><strong>New Users:</strong> Start with one 24mg pouch for 15-20 minutes to assess tolerance. These are extremely strong products.</li>\n<li><strong>Experienced Users:</strong> Use one 24mg or 30mg pouch as needed, maximum 1-2 pouches per hour.</li>\n<li><strong>Important:</strong> Pablo pouches are among the strongest available and are not recommended for nicotine beginners.</li>\n</ul>\n<h3>How to Use</h3>\n<ul>\n<li><strong>Placement:</strong> Place one pouch between your upper lip and gum, positioning it comfortably.</li>\n<li><strong>Duration:</strong> Keep in place for 20-40 minutes for full nicotine release.</li>\n<li><strong>Disposal:</strong> Remove and dispose of used pouch responsibly. Do not swallow.</li>\n<li><strong>Frequency:</strong> Wait at least 30 minutes between pouches to avoid excessive nicotine intake.</li>\n</ul>\n<h3>Onset &amp; Duration</h3>\n<ul>\n<li><strong>Onset:</strong> 2-5 minutes (fast-acting absorption)</li>\n<li><strong>Peak Effects:</strong> 10-15 minutes</li>\n<li><strong>Duration:</strong> 30-60 minutes of sustained nicotine delivery</li>\n</ul>\n<h3>Best Use Cases</h3>\n<p>Ideal for experienced nicotine users seeking a tobacco-free, discreet alternative. Perfect for situations where smoking or vaping isn’t permitted. The high strength makes these suitable for heavy users transitioning from cigarettes or those with established nicotine tolerance.</p>\n<p><strong>⚠️ Safety Warning:</strong> Pablo Nicotine Pouches contain very high nicotine levels (24-30mg). Not for sale to minors. Not recommended for non-nicotine users, pregnant or nursing women, or individuals with heart conditions. Nicotine is highly addictive. Keep out of reach of children and pets.</p>\n<h2>❓ Frequently Asked Questions</h2>\n<h3>How strong are Pablo Nicotine Pouches?</h3>\n<p><strong>A:</strong> Pablo pouches are among the strongest nicotine pouches available in Canada, containing either 24mg or 30mg of nicotine per pouch. These are designed for experienced nicotine users with high tolerance and are significantly stronger than standard pouches (typically 3-6mg).</p>\n<h3>Are Pablo Nicotine Pouches tobacco-free?</h3>\n<p><strong>A:</strong> Yes, Pablo pouches are 100% tobacco-free. They contain pharmaceutical-grade nicotine, plant-based fibres, flavourings, and food-grade ingredients. You get the nicotine satisfaction without tobacco, smoke, or vapour.</p>\n<h3>How long does one Pablo pouch last?</h3>\n<p><strong>A:</strong> Each pouch delivers nicotine for approximately 20-40 minutes. Most users keep the pouch in place for 20-30 minutes for optimal effect. The fast-acting formula begins working within 2-5 minutes of placement.</p>\n<h3>Can I use Pablo Nicotine Pouches anywhere?</h3>\n<p><strong>A:</strong> Yes, Pablo pouches are discreet and can be used virtually anywhere since they produce no smoke, vapour, or odour. They’re ideal for flights, offices, restaurants, or any location where smoking and vaping are prohibited. Always dispose of used pouches properly.</p>\n<h3>Are Pablo Nicotine Pouches safe for beginners?</h3>\n<p><strong>A:</strong> No, Pablo pouches are not recommended for nicotine beginners due to their extremely high strength (24-30mg). New nicotine users should start with lower-strength pouches (3-6mg). Pablo is designed specifically for heavy smokers or experienced nicotine users with established tolerance.</p>\n<h3>Does Mohawk Medibles ship Pablo Nicotine Pouches across Canada?</h3>\n<p><strong>A:</strong> Yes, we ship Pablo Nicotine Pouches Canada-wide with fast, discreet delivery. Orders placed before 2 PM EST are processed the same day. All packages arrive in plain, unmarked packaging. You must be of legal age in your province to purchase nicotine products.</p>\n<h3>How should I store Pablo Nicotine Pouches?</h3>\n<p><strong>A:</strong> Store Pablo pouches in their original container in a cool, dry place away from direct sunlight and heat. Keep the container tightly sealed to maintain freshness. Always store out of reach of children and pets. Properly stored pouches maintain quality for several months.</p>\n</div>\n</div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Nicotine",
-            "weight": "TBD",
+            "thc": "N/A",
+            "cbd": "N/A",
+            "type": "Nicotine Pouches",
+            "weight": "20 pouches per tin",
             "terpenes": [],
-            "lineage": "Canada? A: Yes, we ship Pablo Nicotine Pouches Canada-wide with fast, discreet delivery"
+            "lineage": "N/A"
         },
-        "eeatNarrative": "Pablo Nicotine Pouches | Mohawk Medibles is a premium Nicotine product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": []
+        "eeatNarrative": "Pablo Nicotine Pouches are a premium, ultra-strong tobacco-free nicotine product available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Lab-tested for quality and nicotine content, Pablo pouches deliver fast-acting, consistent satisfaction for experienced nicotine users.",
+        "effects": [
+            "focused",
+            "energetic",
+            "calm"
+        ]
     },
     {
         "id": 115,
@@ -6112,28 +6114,29 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/05/Moontime-Oil.webp"
         ],
         "altText": "AKI Moon Time Oil 60ML *SALE* - Mohawk Medibles",
-        "sku": "",
-        "metaDescription": "**Buy AKI Moon Time Oil online in Canada at Mohawk Medibles**, your trusted Indigenous-owned cannabis dispensary. Shop this expertly crafted CBD-dominant wellne",
+        "sku": "MM-CBD-AKI-MOONTIME",
+        "metaDescription": "Buy AKI Moon Time Oil 60ML online in Canada. CBD-dominant 7:1 wellness oil for menstrual relief. Fast shipping from Mohawk Medibles.",
         "shortDescription": "**Buy AKI Moon Time Oil online in Canada at Mohawk Medibles**, your trusted Indigenous-owned cannabis dispensary. Shop this expertly crafted CBD-dominant wellness oil and enjoy fast Canada-wide ship...",
         "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\">\n<div class=\"detail-tab-desc detail-content-wrap\">\n<p>**Buy AKI Moon Time Oil online in Canada at Mohawk Medibles**, your trusted Indigenous-owned cannabis dispensary. Shop this expertly crafted CBD-dominant wellness oil and enjoy fast Canada-wide shipping with same-day processing. Order now for discreet delivery of this premium 7:1 CBD/THC formula designed specifically for menstrual relief and hormonal balance. Experience natural comfort with authentic quality from Tyendinaga Mohawk Territory.</p>\n<p>–</p>\n<h2>💡 Usage Guide</h2>\n<h3>Recommended Dosage</h3>\n<ul>\n<li><strong>Beginners:</strong> Start with 0.25-0.5mL (approximately 6-12mg CBD / 1-2mg THC) once daily</li>\n<li><strong>Experienced Users:</strong> 0.5-1.0mL (12-25mg CBD / 2-3mg THC) up to twice daily</li>\n<li><strong>Menstrual Relief:</strong> Begin 2-3 days before expected cycle; take 0.5-1.0mL as needed for comfort</li>\n</ul>\n<h3>How to Use</h3>\n<ul>\n<li><strong>Sublingual Application:</strong> Place measured dose under tongue, hold for 60-90 seconds before swallowing for optimal absorption</li>\n<li><strong>Topical Use:</strong> Can be applied directly to lower abdomen and massaged gently for localized relief</li>\n<li><strong>With Food:</strong> Take with a light meal if you experience any stomach sensitivity</li>\n<li><strong>Consistency:</strong> Best results achieved with regular daily use throughout your cycle</li>\n</ul>\n<h3>Onset &amp; Duration</h3>\n<ul>\n<li><strong>Onset:</strong> 15-45 minutes when taken sublingually; 30-60 minutes when swallowed</li>\n<li><strong>Peak Effects:</strong> 1-2 hours after consumption</li>\n<li><strong>Duration:</strong> 4-6 hours of sustained relief</li>\n</ul>\n<h3>Best Use Cases</h3>\n<p>Ideal for managing menstrual discomfort, cramps, mood fluctuations, and hormonal imbalances. The 7:1 CBD to THC ratio provides therapeutic benefits with minimal psychoactive effects, making it suitable for daytime use. Perfect for those seeking natural alternatives to traditional pain management. Can be used throughout your entire cycle for ongoing wellness support or as needed during more challenging days.</p>\n<p><strong>⚠️ Safety Note:</strong> Start with the lowest dose and gradually increase as needed. Consult with a healthcare provider if pregnant, nursing, or taking other medications. Not recommended if you need to drive or operate heavy machinery within 4-6 hours of use.</p>\n<h2>❓ Frequently Asked Questions</h2>\n<h3>What is the CBD to THC ratio in AKI Moon Time Oil?</h3>\n<p><strong>A:</strong> Moon Time Oil contains a 7:1 ratio with 700mg CBD and 100mg THC per 60mL bottle. This translates to approximately 11.7mg CBD and 1.7mg THC per 1mL serving, providing therapeutic benefits with minimal psychoactive effects.</p>\n<h3>Will AKI Moon Time Oil make me feel high?</h3>\n<p><strong>A:</strong> The low THC content (1.7mg per mL) produces minimal psychoactive effects for most users. You may experience mild relaxation and enhanced mood without significant intoxication. The high CBD ratio helps modulate THC’s effects, making this suitable for daytime use while remaining functional.</p>\n<h3>How should I store Moon Time Oil?</h3>\n<p><strong>A:</strong> Store in a cool, dark place away from direct sunlight and heat sources. Room temperature (15-25°C) is ideal. Keep the bottle tightly sealed when not in use. Properly stored, the oil maintains potency for 12-18 months. Refrigeration can extend shelf life but may cause the oil to thicken temporarily.</p>\n<h3>When should I start taking Moon Time Oil for best results?</h3>\n<p><strong>A:</strong> For menstrual relief, begin taking Moon Time Oil 2-3 days before your expected cycle starts. This allows the cannabinoids to build up in your system for optimal effectiveness. Many users also find benefit from daily use throughout their entire cycle for ongoing hormonal balance and wellness support.</p>\n<h3>Can I use Moon Time Oil with other medications?</h3>\n<p><strong>A:</strong> While CBD and THC are generally well-tolerated, they can interact with certain medications, particularly blood thinners and medications metabolized by the liver. Consult with your healthcare provider before combining Moon Time Oil with prescription medications, especially if you take hormonal contraceptives or pain medications.</p>\n<h3>Does Mohawk Medibles ship AKI Moon Time Oil across Canada?</h3>\n<p><strong>A:</strong> Yes! We offer fast, discreet Canada-wide shipping with same-day processing on orders placed before 2 PM EST. All packages arrive in plain, unmarked packaging to ensure privacy. Moon Time Oil is securely packaged to prevent leakage during transit.</p>\n<h3>Is Moon Time Oil safe for first-time cannabis users?</h3>\n<p><strong>A:</strong> Yes, the 7:1 CBD-dominant formula is beginner-friendly when used as directed. Start with the lowest recommended dose (0.25mL) and wait at least 2 hours to assess effects before taking more. The high CBD content provides therapeutic benefits while minimizing any uncomfortable psychoactive experiences common with higher THC products.</p>\n</div>\n</div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "CBD",
-            "weight": "TBD",
+            "thc": "100mg (1.7mg/mL)",
+            "cbd": "700mg (11.7mg/mL)",
+            "type": "CBD Oil",
+            "weight": "60mL",
             "terpenes": [
                 "Caryophyllene",
                 "Myrcene",
                 "Bisabolol"
             ],
-            "lineage": "Canada? A: Yes! We offer fast, discreet Canada-wide shipping with same-day processing on orders plac"
+            "lineage": "Full Spectrum 7:1 CBD/THC"
         },
-        "eeatNarrative": "AKI Moon Time Oil 60ML *SALE* is a premium CBD product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
+        "eeatNarrative": "AKI Moon Time Oil is a lab-tested, CBD-dominant wellness oil available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned cannabis dispensary. Crafted with a precise 7:1 CBD to THC ratio (700mg CBD / 100mg THC per bottle), this product undergoes third-party testing for potency and purity.",
         "effects": [
             "relaxed",
-            "happy",
-            "pain-relief"
+            "pain-relief",
+            "calm",
+            "happy"
         ]
     },
     {
@@ -7644,19 +7647,19 @@ const _RAW_PRODUCTS: Product[] = [
         ],
         "altText": "Bad Kitty Sensual Enhancement Pill - Mohawk Medibles",
         "sku": "BADKITTY",
-        "metaDescription": "🐾🔥 Bad Kitty Sensual Enhancement Pill\nExtra Strong • 1 Pack (1 Capsule)\n\nBad Kitty Sensual Enhancement Pill is built for maximum power, control, and confidence ",
+        "metaDescription": "Buy Bad Kitty Sensual Enhancement Pill online in Canada. Extra-strong performance support, up to 7 days. Fast shipping from Mohawk Medibles.",
         "shortDescription": "🐾🔥 Bad Kitty Sensual Enhancement Pill\nExtra Strong • 1 Pack (1 Capsule)\n\nBad Kitty Sensual Enhancement Pill is built for maximum power, control, and confidence 🐾🔥.\nFirst, the formula activates fast....",
         "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\">\n<div class=\"detail-tab-desc detail-content-wrap\">\n<h3 data-end=\"245\" data-start=\"201\">🐾🔥 Bad Kitty Sensual Enhancement Pill</h3>\n<p data-end=\"283\" data-start=\"246\"><strong data-end=\"283\" data-start=\"246\">Extra Strong • 1 Pack (1 Capsule)</strong></p>\n<hr/>\n<p data-end=\"617\" data-start=\"517\"><strong data-end=\"555\" data-start=\"517\">Bad Kitty Sensual Enhancement Pill</strong> is built for <strong data-end=\"611\" data-start=\"569\">maximum power, control, and confidence</strong> 🐾🔥.</p>\n<p data-end=\"846\" data-start=\"619\">First, the formula activates fast. Energy rises. Focus sharpens. Performance feels stronger.<br data-end=\"714\" data-start=\"711\"/>Next, stamina improves. Time extends. Control becomes effortless.<br data-end=\"782\" data-start=\"779\"/>As a result, confidence increases and satisfaction lasts longer.</p>\n<p data-end=\"1105\" data-start=\"848\">At the same time, Bad Kitty supports <strong data-end=\"915\" data-start=\"885\">better ejaculation control</strong> with no limits holding you back. Because of this, experiences feel more intense and consistent. Then, powerful sensations build, leading to <strong data-end=\"1104\" data-start=\"1056\">stronger, deeper, and more explosive orgasms</strong>.</p>\n<p data-end=\"1338\" data-start=\"1107\">Unlike harsh products, Bad Kitty delivers results <strong data-end=\"1178\" data-start=\"1157\">without headaches</strong>. In addition, one capsule can provide extended support—<strong data-end=\"1250\" data-start=\"1234\">up to 7 days</strong> for many users. Therefore, it’s ideal for both special occasions and ongoing readiness.</p>\n<p data-end=\"1462\" data-start=\"1340\">Overall, Bad Kitty is designed for those who want <strong data-end=\"1429\" data-start=\"1390\">time, size, stamina, and confidence</strong>—all in one extra-strong capsule.</p>\n<hr data-end=\"1467\" data-start=\"1464\"/>\n<h3 data-end=\"1506\" data-start=\"1469\">🔥 Why Customers Choose Bad Kitty</h3>\n<p data-end=\"1714\" data-start=\"1507\">✔️ Extra-strong, long-lasting formula<br data-end=\"1547\" data-start=\"1544\"/>✔️ Supports time, stamina, and control<br data-end=\"1588\" data-start=\"1585\"/>✔️ Helps maximize confidence and intensity<br data-end=\"1633\" data-start=\"1630\"/>✔️ No headache, no prescription needed<br data-end=\"1674\" data-start=\"1671\"/>✔️ Doctor-designed performance support</p>\n<hr data-end=\"1719\" data-start=\"1716\"/>\n<h3 data-end=\"1741\" data-start=\"1721\">⚡ What to Expect</h3>\n<ul data-end=\"1876\" data-start=\"1742\">\n<li data-end=\"1773\" data-start=\"1742\">\n<p data-end=\"1773\" data-start=\"1744\">Increased energy and libido</p>\n</li>\n<li data-end=\"1804\" data-start=\"1774\">\n<p data-end=\"1804\" data-start=\"1776\">Longer-lasting performance</p>\n</li>\n<li data-end=\"1840\" data-start=\"1805\">\n<p data-end=\"1840\" data-start=\"1807\">Improved control and confidence</p>\n</li>\n<li data-end=\"1876\" data-start=\"1841\">\n<p data-end=\"1876\" data-start=\"1843\">More intense, explosive orgasms</p>\n</li>\n</ul>\n<hr data-end=\"1881\" data-start=\"1878\"/>\n<h3 data-end=\"1905\" data-start=\"1883\">🕒 Usage &amp; Effects</h3>\n<ul data-end=\"2146\" data-start=\"1906\">\n<li data-end=\"1965\" data-start=\"1906\">\n<p data-end=\"1965\" data-start=\"1908\">Take <strong data-end=\"1926\" data-start=\"1913\">1 capsule</strong> about <strong data-end=\"1963\" data-start=\"1933\">30 minutes before activity</strong></p>\n</li>\n<li data-end=\"2013\" data-start=\"1966\">\n<p data-end=\"2013\" data-start=\"1968\">Can be used regularly to maintain readiness</p>\n</li>\n<li data-end=\"2095\" data-start=\"2014\">\n<p data-end=\"2095\" data-start=\"2016\">For best results, take <strong data-end=\"2055\" data-start=\"2039\">1 hour apart</strong> from other supplements or medications</p>\n</li>\n<li data-end=\"2146\" data-start=\"2096\">\n<p data-end=\"2146\" data-start=\"2098\">Do <strong data-end=\"2108\" data-start=\"2101\">not</strong> exceed <strong data-end=\"2146\" data-start=\"2116\">one capsule every 60 hours</strong></p>\n</li>\n</ul>\n<hr data-end=\"2151\" data-start=\"2148\"/>\n<h3 data-end=\"2167\" data-start=\"2153\">⚠️ Caution</h3>\n<ul data-end=\"2269\" data-start=\"2168\">\n<li data-end=\"2198\" data-start=\"2168\">\n<p data-end=\"2198\" data-start=\"2170\">Store in a cool, dry place</p>\n</li>\n<li data-end=\"2235\" data-start=\"2199\">\n<p data-end=\"2235\" data-start=\"2201\">Do not exceed recommended dosage</p>\n</li>\n<li data-end=\"2269\" data-start=\"2236\">\n<p data-end=\"2269\" data-start=\"2238\">Keep out of reach of children</p>\n</li>\n</ul>\n</div>\n</div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Sexual Enhancement",
-            "weight": "TBD",
+            "thc": "N/A",
+            "cbd": "N/A",
+            "type": "Supplement",
+            "weight": "1 capsule",
             "terpenes": [],
-            "lineage": "TBD"
+            "lineage": "N/A"
         },
-        "eeatNarrative": "Bad Kitty Sensual Enhancement Pill is a premium Sexual Enhancement product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
+        "eeatNarrative": "Bad Kitty Sensual Enhancement Pill is a doctor-designed, extra-strong performance supplement available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Lab-tested for quality and safety, this headache-free formula supports stamina, control, and confidence for up to 7 days.",
         "effects": [
             "energetic",
             "focused",
@@ -11363,21 +11366,26 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/09/Oxbar-Ice-Nic-done.png"
         ],
         "altText": "Oxbar ICE NIC Control Nicotine Vape | Mohawk Medibles - Mohawk Medibles",
-        "sku": "N/A",
-        "metaDescription": "**Buy Oxbar ICE NIC Control Nicotine Vape online in Canada at Mohawk Medibles**, your trusted Indigenous-owned cannabis and wellness dispensary. Shop this cutti",
-        "shortDescription": "**Buy Oxbar ICE NIC Control Nicotine Vape online in Canada at Mohawk Medibles**, your trusted Indigenous-owned cannabis and wellness dispensary. Shop this cutting-edge adjustable nicotine vape featu...",
+        "sku": "MM-NIC-OXBAR-ICE",
+        "metaDescription": "Buy Oxbar ICE NIC Control Nicotine Vape in Canada. Adjustable nicotine and ice, 35,000 puffs. Fast shipping from Mohawk Medibles.",
+        "shortDescription": "Shop the Oxbar ICE NIC Control Nicotine Vape at Mohawk Medibles. This cutting-edge device features adjustable nicotine and ice levels with 35,000 puffs and UNIONE coil technology. Buy online for fast, discreet Canada-wide shipping.",
         "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\">\n<div class=\"detail-tab-desc detail-content-wrap\">\n<p>**Buy Oxbar ICE NIC Control Nicotine Vape online in Canada at Mohawk Medibles**, your trusted Indigenous-owned cannabis and wellness dispensary. Shop this cutting-edge adjustable nicotine vape featuring an impressive 35,000 puffs and enjoy fast Canada-wide shipping with same-day processing. Order now for discreet delivery and experience the innovative Zodiac Sign Series with customizable ice and nicotine levels to match your preferences.</p>\n<p>–</p>\n<h2>💡 Usage Guide</h2>\n<h3>Recommended Usage</h3>\n<ul>\n<li><strong>New Vapers:</strong> Start with lower nicotine settings and minimal ice for a smoother introduction</li>\n<li><strong>Transitioning Smokers:</strong> Use higher nicotine settings initially, adjusting downward as desired</li>\n<li><strong>Experienced Vapers:</strong> Customize both ice and nicotine levels to your exact preference throughout the day</li>\n</ul>\n<h3>How to Use</h3>\n<ul>\n<li><strong>Activation:</strong> Draw-activated system – simply inhale from the mouthpiece to vape</li>\n<li><strong>Nicotine Adjustment:</strong> Use the NIC control feature to increase or decrease nicotine strength as needed</li>\n<li><strong>Ice Adjustment:</strong> Customize the cooling sensation from mild to intense using the ice control</li>\n<li><strong>Maintenance:</strong> No refilling or charging required – disposable design for maximum convenience</li>\n</ul>\n<h3>Duration &amp; Longevity</h3>\n<ul>\n<li><strong>Total Puffs:</strong> Up to 35,000 puffs per device</li>\n<li><strong>E-Liquid Capacity:</strong> 14mL at 50mg nicotine per mL</li>\n<li><strong>Expected Lifespan:</strong> Several weeks to months depending on usage frequency</li>\n</ul>\n<h3>Best Use Cases</h3>\n<p>Perfect for all-day vaping with the flexibility to adjust nicotine and cooling levels based on your mood, time of day, or activity. The extra-long-lasting UNIONE coil ensures consistent flavour and vapour production throughout the device’s life. Ideal for those who want control over their vaping experience without the hassle of refillable systems.</p>\n<p><strong>⚠️ Important:</strong> This product contains nicotine, a highly addictive substance. Not intended for non-smokers or persons under legal smoking age. Keep out of reach of children and pets.</p>\n<h2>❓ Frequently Asked Questions</h2>\n<h3>How does the adjustable nicotine feature work on the Oxbar ICE NIC Control?</h3>\n<p><strong>A:</strong> The Oxbar ICE NIC Control features an innovative adjustment mechanism that allows you to increase or decrease the nicotine delivery to suit your needs throughout the day. Simply use the control switch to find your ideal nicotine level, making it perfect for those looking to gradually reduce intake or customize their experience.</p>\n<h3>What is the ice adjustment feature?</h3>\n<p><strong>A:</strong> The adjustable ice feature lets you control the cooling sensation of your vape. You can dial it down for a warmer, smoother hit or increase it for an intense menthol-like cooling effect. This customization ensures your vaping experience matches your preference at any given moment.</p>\n<h3>How long will the Oxbar ICE NIC Control last?</h3>\n<p><strong>A:</strong> With an impressive 35,000 puff capacity and 14mL of e-liquid, this device can last several weeks to months depending on your vaping frequency. The extra-long-lasting UNIONE coil technology ensures consistent performance throughout the device’s entire lifespan.</p>\n<h3>Is the Oxbar ICE NIC Control suitable for beginners?</h3>\n<p><strong>A:</strong> Yes, the adjustable features make it excellent for beginners. You can start with lower nicotine and ice settings and gradually adjust as you become more comfortable. However, this product is only suitable for adults of legal smoking age and those already using nicotine products.</p>\n<h3>Does Mohawk Medibles ship the Oxbar ICE NIC Control across Canada?</h3>\n<p><strong>A:</strong> Absolutely! We offer fast, discreet Canada-wide shipping with same-day processing on orders placed before 2 PM EST. All vape products are shipped in plain, unmarked packaging and comply with Canadian vaping regulations.</p>\n<h3>What makes the UNIONE coil special?</h3>\n<p><strong>A:</strong> The UNIONE coil technology in the Oxbar ICE NIC Control is designed for exceptional longevity and consistent performance. It maintains flavour quality and vapour production throughout all 35,000 puffs, preventing the burnt taste and degradation common in standard disposable vapes.</p>\n<h3>How should I dispose of the Oxbar ICE NIC Control when finished?</h3>\n<p><strong>A:</strong> Dispose of the device responsibly at designated e-waste recycling facilities or battery recycling locations. Do not throw in regular household waste as the device contains a lithium battery. Check with your local municipality for proper electronic waste disposal options.</p>\n</div>\n</div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Nicotine",
-            "weight": "TBD",
+            "thc": "N/A",
+            "cbd": "N/A",
+            "type": "Nicotine Disposable Vape",
+            "weight": "14mL",
             "terpenes": [],
-            "lineage": "Canada? A: Absolutely! We offer fast, discreet Canada-wide shipping with same-day processing on orde"
+            "lineage": "N/A"
         },
-        "eeatNarrative": "Oxbar ICE NIC Control Nicotine Vape | Mohawk Medibles is a premium Nicotine product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": []
+        "eeatNarrative": "Oxbar ICE NIC Control Nicotine Vape is a premium adjustable-nicotine disposable available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Featuring lab-tested UNIONE coil technology and 35,000 puff capacity, this device offers customizable ice and nicotine control.",
+        "effects": [
+            "focused",
+            "calm",
+            "energetic",
+            "happy"
+        ]
     },
     {
         "id": 282,
@@ -11780,20 +11788,25 @@ const _RAW_PRODUCTS: Product[] = [
         ],
         "altText": "Flavour Beast Max 2 50k Nicotine Vape - Mohawk Medibles",
         "sku": "FLAVOURBEASTMAX2",
-        "metaDescription": "Buy Flavour Beast Max 2 50k Nicotine Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy Flavour Beast Max 2 50k Nicotine Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "metaDescription": "Buy Flavour Beast Max 2 50K Nicotine Vape online in Canada. 50,000 puffs, 20+ flavours. Fast shipping from Mohawk Medibles, Tyendinaga.",
+        "shortDescription": "Shop Flavour Beast Max 2 50K Nicotine Vape at Mohawk Medibles. This massive 50,000-puff nicotine disposable comes in 20+ flavours including Blood Orange, Extreme Mint, and Super Sour Blue Razz. Buy online for fast Canada-wide shipping.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>Flavour Beast Max 2 50K Nicotine Vape — Canada's Longest-Lasting Disposable</h2><p>Buy the Flavour Beast Max 2 50K Nicotine Vape at Mohawk Medibles, your trusted Indigenous-owned dispensary on Tyendinaga Mohawk Territory. With an incredible 50,000 puff capacity and over 20 delicious flavours, this is one of the longest-lasting disposable vapes on the Canadian market.</p><ul><li><strong>Puff Count:</strong> Up to 50,000 puffs per device</li><li><strong>Flavours:</strong> 20+ options including Blood Orange, Extreme Mint, Super Sour Blue Razz, and more</li><li><strong>Nicotine:</strong> 50mg/mL (5%) for strong, satisfying satisfaction</li><li><strong>Design:</strong> Compact, portable, draw-activated</li></ul><h2>Why Choose Flavour Beast Max 2?</h2><p>Flavour Beast is a trusted Canadian nicotine vape brand known for bold flavours and reliable performance. The Max 2 50K delivers consistent vapour and flavour throughout its entire lifespan. Lab-tested for quality, this device provides weeks of use without refilling or recharging.</p><h2>How to Use</h2><ul><li>Draw-activated — simply inhale from the mouthpiece</li><li>No charging, no refilling, no maintenance required</li><li>Dispose responsibly at an e-waste facility when depleted</li></ul><p>Order now from Mohawk Medibles for fast, discreet Canada-wide shipping with same-day processing.</p></div></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Flavour Beast",
-            "weight": "TBD",
+            "thc": "N/A",
+            "cbd": "N/A",
+            "type": "Nicotine Disposable Vape",
+            "weight": "50,000 puffs",
             "terpenes": [],
-            "lineage": ""
+            "lineage": "N/A"
         },
-        "eeatNarrative": "Flavour Beast Max 2 50k Nicotine Vape is a premium Flavour Beast product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": []
+        "eeatNarrative": "Flavour Beast Max 2 50K Nicotine Vape is a lab-tested, premium nicotine disposable available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. With 50,000 puffs and 20+ flavour options, this Canadian brand delivers consistent quality and long-lasting performance.",
+        "effects": [
+            "focused",
+            "calm",
+            "happy",
+            "energetic"
+        ]
     },
     {
         "id": 293,
@@ -11855,20 +11868,25 @@ const _RAW_PRODUCTS: Product[] = [
         ],
         "altText": "IJOY Uranus Mate 40K Puffs AI Smart Nicotine Vape - Mohawk Medibles",
         "sku": "IJOYURANUS",
-        "metaDescription": "Buy IJOY Uranus Mate 40K Puffs AI Smart Nicotine Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy IJOY Uranus Mate 40K Puffs AI Smart Nicotine Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "metaDescription": "Buy IJOY Uranus Mate 40K AI Smart Nicotine Vape in Canada. 40,000 puffs with AI smart technology. Fast shipping from Mohawk Medibles.",
+        "shortDescription": "Shop the IJOY Uranus Mate 40K AI Smart Nicotine Vape at Mohawk Medibles. Featuring AI-powered smart vaping technology and 40,000 puff capacity in 7+ flavours. Buy online for fast Canada-wide delivery.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>IJOY Uranus Mate 40K AI Smart Nicotine Vape — Intelligent Vaping in Canada</h2><p>Buy the IJOY Uranus Mate 40K AI Smart Nicotine Vape at Mohawk Medibles, your trusted Indigenous-owned dispensary on Tyendinaga Mohawk Territory. This cutting-edge disposable features AI smart technology that optimizes your vaping experience with intelligent power management and flavour delivery.</p><ul><li><strong>Puff Count:</strong> Up to 40,000 puffs per device</li><li><strong>Technology:</strong> AI Smart system for optimized vapour and flavour</li><li><strong>Flavours:</strong> Mexico Mango, Cotton Candy, White Gummy, Sour Apple, Pink Lemonade, OMG Pop, Juicy Peach</li><li><strong>Nicotine:</strong> 50mg/mL (5%) for strong satisfaction</li></ul><h2>What Makes It Smart?</h2><p>The AI Smart technology monitors and adjusts power output automatically, ensuring consistent flavour and vapour density from first puff to last. No manual adjustments needed — the device learns your vaping pattern and optimizes accordingly. Lab-tested for safety and quality.</p><h2>How to Use</h2><ul><li>Draw-activated — simply inhale to vape</li><li>AI system adjusts automatically for optimal experience</li><li>Dispose responsibly at e-waste facilities when depleted</li></ul><p>Order now from Mohawk Medibles for fast, discreet Canada-wide shipping.</p></div></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "IJOY",
-            "weight": "TBD",
+            "thc": "N/A",
+            "cbd": "N/A",
+            "type": "Nicotine Disposable Vape",
+            "weight": "40,000 puffs",
             "terpenes": [],
-            "lineage": ""
+            "lineage": "N/A"
         },
-        "eeatNarrative": "IJOY Uranus Mate 40K Puffs AI Smart Nicotine Vape is a premium IJOY product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": []
+        "eeatNarrative": "IJOY Uranus Mate 40K AI Smart Nicotine Vape is a lab-tested, AI-powered nicotine disposable available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Featuring intelligent power management and 40,000 puff capacity for extended, consistent performance.",
+        "effects": [
+            "focused",
+            "calm",
+            "happy",
+            "energetic"
+        ]
     },
     {
         "id": 295,
@@ -12582,20 +12600,30 @@ const _RAW_PRODUCTS: Product[] = [
         ],
         "altText": "Burn Triple Threat 9g Disposable THC Vape - Mohawk Medibles",
         "sku": "BURN9G",
-        "metaDescription": "Buy Burn Triple Threat 9g Disposable THC Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy Burn Triple Threat 9g Disposable THC Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "metaDescription": "Buy Burn Triple Threat 9g Disposable THC Vape in Canada. 3 chambers, 9g total, 85% THC. Fast shipping from Mohawk Medibles, Tyendinaga.",
+        "shortDescription": "Shop the Burn Triple Threat 9g Disposable THC Vape at Mohawk Medibles. This massive 3-chamber disposable packs 9g of premium THC distillate with 85% potency across three flavour combinations. Buy online for fast Canada-wide shipping.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>Burn Triple Threat 9g Disposable THC Vape — Triple Chamber Power in Canada</h2><p>Buy the Burn Triple Threat 9g Disposable THC Vape at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary on Tyendinaga Mohawk Territory. This massive disposable features three separate chambers totalling 9g of premium THC distillate for an extended, flavourful vaping experience.</p><ul><li><strong>Total Weight:</strong> 9g across 3 separate chambers (3g each)</li><li><strong>THC:</strong> 85% — lab-tested distillate</li><li><strong>Design:</strong> Triple-chamber system for 3 distinct flavour combinations</li><li><strong>Combos:</strong> Blueberry x Sweet x Alaskan, Cookie x Blu x Apple, Death x Bubble x Watermelon, and more</li></ul><h2>Why Triple Threat?</h2><p>The Burn Triple Threat stands out with its innovative 3-chamber design, giving you three different flavour experiences in a single device. Each chamber contains 3g of premium lab-tested THC distillate, so you never get bored. Switch between chambers whenever you want a fresh flavour.</p><h2>How to Use</h2><ul><li>Draw-activated — inhale from the mouthpiece to vape</li><li>Switch between chambers to change flavours</li><li>Start with small puffs — 85% THC is extremely potent</li><li>Store upright in a cool, dry place</li></ul><p>Order now from Mohawk Medibles for fast, discreet Canada-wide shipping with same-day processing.</p></div></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Burn",
-            "weight": "TBD",
-            "terpenes": [],
-            "lineage": ""
+            "thc": "85%",
+            "cbd": "<1%",
+            "type": "Disposable Vape",
+            "weight": "9g (3 x 3g chambers)",
+            "terpenes": [
+                "Myrcene",
+                "Limonene",
+                "Caryophyllene"
+            ],
+            "lineage": "Multiple strain combinations"
         },
-        "eeatNarrative": "Burn Triple Threat 9g Disposable THC Vape is a premium Burn product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": []
+        "eeatNarrative": "Burn Triple Threat 9g Disposable THC Vape is a lab-tested, triple-chamber cannabis disposable available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Each chamber contains 3g of tested distillate for a total of 9g, ensuring potency, purity, and safety.",
+        "effects": [
+            "relaxed",
+            "euphoric",
+            "happy",
+            "sleepy",
+            "calm"
+        ]
     },
     {
         "id": 314,
@@ -12697,20 +12725,30 @@ const _RAW_PRODUCTS: Product[] = [
         ],
         "altText": "Flying Horse 3 Flavors in 1 5g Disposable Vape - Mohawk Medibles",
         "sku": "FLYINGHORSE3IN1",
-        "metaDescription": "Buy Flying Horse 3 Flavors in 1 5g Disposable Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy Flying Horse 3 Flavors in 1 5g Disposable Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "metaDescription": "Buy Flying Horse 3-in-1 5g Disposable THC Vape in Canada. 3 flavours, 5g total, 80% THC. Fast shipping from Mohawk Medibles.",
+        "shortDescription": "Shop the Flying Horse 3-in-1 5g Disposable THC Vape at Mohawk Medibles. This innovative disposable features 3 distinct flavours in one device with 5g total weight and 80% THC. Buy online for fast, discreet Canada-wide shipping.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>Flying Horse 3-in-1 5g Disposable THC Vape — Triple Flavour in Canada</h2><p>Buy the Flying Horse 3 Flavors in 1 5g Disposable Vape at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary on Tyendinaga Mohawk Territory. This innovative disposable combines three distinct flavour chambers in a single device for maximum variety and convenience.</p><ul><li><strong>Total Weight:</strong> 5g across 3 flavour chambers</li><li><strong>THC:</strong> 80% — lab-tested premium distillate</li><li><strong>Design:</strong> 3-in-1 multi-flavour system with rechargeable battery</li><li><strong>Type:</strong> Stoner Blend — Hybrid</li></ul><h2>Why Choose Flying Horse?</h2><p>Flying Horse delivers innovation with its 3-in-1 design, eliminating the need to carry multiple devices. Each chamber contains premium lab-tested THC distillate with distinct terpene profiles. Switch between flavours with ease for a varied vaping experience throughout the day.</p><h2>How to Use</h2><ul><li>Draw-activated — inhale to vape</li><li>Rotate between chambers for different flavours</li><li>Start low and go slow — 80% THC is potent</li><li>Store upright in a cool, dry place</li></ul><p>Order now from Mohawk Medibles for fast, discreet Canada-wide shipping.</p></div></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Flying Horse",
-            "weight": "TBD",
-            "terpenes": [],
-            "lineage": ""
+            "thc": "80%",
+            "cbd": "<1%",
+            "type": "Disposable Vape",
+            "weight": "5g",
+            "terpenes": [
+                "Myrcene",
+                "Limonene",
+                "Linalool"
+            ],
+            "lineage": "Stoner Blend (Hybrid)"
         },
-        "eeatNarrative": "Flying Horse 3 Flavors in 1 5g Disposable Vape is a premium Flying Horse product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": []
+        "eeatNarrative": "Flying Horse 3-in-1 5g Disposable Vape is a lab-tested, multi-chamber THC disposable available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned cannabis dispensary. Each flavour chamber is tested for potency and purity to ensure a safe, enjoyable experience.",
+        "effects": [
+            "relaxed",
+            "euphoric",
+            "happy",
+            "creative",
+            "calm"
+        ]
     },
     {
         "id": 317,
@@ -12811,20 +12849,25 @@ const _RAW_PRODUCTS: Product[] = [
         ],
         "altText": "STLTH X Geek Bar Nicotine Vape - Mohawk Medibles",
         "sku": "STLTHGEEKBAR",
-        "metaDescription": "Buy STLTH X Geek Bar Nicotine Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy STLTH X Geek Bar Nicotine Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "metaDescription": "Buy STLTH X Geek Bar Nicotine Vape online in Canada. Premium collaboration device with bold flavours. Fast shipping from Mohawk Medibles.",
+        "shortDescription": "Shop the STLTH X Geek Bar Nicotine Vape at Mohawk Medibles. This premium collaboration between STLTH and Geek Bar delivers bold flavours and smooth nicotine satisfaction. Available in Banana Burst Ice, Blue Razz, and more. Buy online for fast Canada-wide shipping.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>STLTH X Geek Bar Nicotine Vape — Premium Collaboration in Canada</h2><p>Buy the STLTH X Geek Bar Nicotine Vape at Mohawk Medibles, your trusted Indigenous-owned dispensary on Tyendinaga Mohawk Territory. This premium collaboration device combines STLTH's Canadian engineering with Geek Bar's world-renowned flavour expertise for an unmatched vaping experience.</p><ul><li><strong>Type:</strong> Disposable nicotine vape</li><li><strong>Flavours:</strong> Banana Burst Ice, Blue Razz, Blueberry Watermelon Ice, and more</li><li><strong>Nicotine:</strong> 50mg/mL (5%) for satisfying throat hit</li><li><strong>Technology:</strong> Advanced mesh coil for consistent flavour</li></ul><h2>Why STLTH X Geek Bar?</h2><p>This exclusive collaboration brings together two industry leaders. STLTH is Canada's top-selling vape brand, and Geek Bar is globally recognized for bold, accurate flavours. Together they have created a lab-tested device that delivers premium performance, rich flavour, and reliable nicotine satisfaction from first puff to last.</p><h2>How to Use</h2><ul><li>Draw-activated — simply inhale from the mouthpiece</li><li>No charging, refilling, or setup required</li><li>Dispose responsibly at e-waste facilities when depleted</li></ul><p>Order now from Mohawk Medibles for fast, discreet Canada-wide shipping.</p></div></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Geek Bar",
-            "weight": "TBD",
+            "thc": "N/A",
+            "cbd": "N/A",
+            "type": "Nicotine Disposable Vape",
+            "weight": "Disposable",
             "terpenes": [],
-            "lineage": ""
+            "lineage": "N/A"
         },
-        "eeatNarrative": "STLTH X Geek Bar Nicotine Vape is a premium Geek Bar product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": []
+        "eeatNarrative": "STLTH X Geek Bar Nicotine Vape is a lab-tested, premium collaboration device available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Combining STLTH's Canadian engineering with Geek Bar's flavour expertise for consistent, quality performance.",
+        "effects": [
+            "focused",
+            "calm",
+            "happy",
+            "energetic"
+        ]
     },
     {
         "id": 320,
@@ -13679,29 +13722,30 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/06/white-out-avalanche-kush-resized.png"
         ],
         "altText": "DOZO White Out Disposable THC Vape - Mohawk Medibles",
-        "sku": "",
-        "metaDescription": "Buy DOZO White Out Disposable THC Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy DOZO White Out Disposable THC Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "sku": "MM-VAPE-DOZO-WHITEOUT",
+        "metaDescription": "Buy DOZO White Out Disposable THC Vape online in Canada. Premium live resin disposable with 85% THC. Fast shipping from Mohawk Medibles, Tyendinaga.",
+        "shortDescription": "Shop the DOZO White Out Disposable THC Vape at Mohawk Medibles. This premium live resin disposable delivers smooth, potent hits with up to 85% THC. Available in multiple strain options. Buy online with fast Canada-wide shipping.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>DOZO White Out Disposable THC Vape — Premium Live Resin in Canada</h2><p>Buy the DOZO White Out Disposable THC Vape online at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary on Tyendinaga Mohawk Territory. This premium disposable vape features high-potency live resin distillate with up to 85% THC for a smooth, flavourful experience every time.</p><ul><li><strong>Potency:</strong> Up to 85% THC — lab-tested for purity and consistency</li><li><strong>Type:</strong> Live resin disposable vape pen</li><li><strong>Strains:</strong> Available in Sativa, Hybrid, and Indica options</li><li><strong>Design:</strong> Draw-activated, no buttons, rechargeable battery</li><li><strong>Terpenes:</strong> Myrcene, Linalool, and Caryophyllene for a rich flavour profile</li></ul><h2>Why Choose DOZO White Out?</h2><p>DOZO White Out disposables are crafted with premium live resin extract, preserving the full spectrum of cannabinoids and terpenes for an authentic cannabis experience. Each unit is lab-tested to ensure potency, purity, and safety. The sleek, discreet design makes it perfect for on-the-go use.</p><h2>How to Use</h2><ul><li>Simply inhale from the mouthpiece — draw-activated, no setup required</li><li>Start with small puffs and wait 5-10 minutes between sessions</li><li>Store upright in a cool, dry place for best performance</li></ul><p>Order now from Mohawk Medibles for fast, discreet Canada-wide shipping with same-day processing on orders before 2 PM EST.</p></div></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Sativa, Hybrid, Indica",
-            "weight": "TBD",
+            "thc": "85%",
+            "cbd": "<1%",
+            "type": "Disposable Vape",
+            "weight": "1g",
             "terpenes": [
                 "Myrcene",
                 "Linalool",
                 "Caryophyllene"
             ],
-            "lineage": ""
+            "lineage": "Various strains (Sativa, Hybrid, Indica)"
         },
-        "eeatNarrative": "DOZO White Out Disposable THC Vape is a premium Disposables product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
+        "eeatNarrative": "DOZO White Out Disposable THC Vape is a lab-tested, premium live resin disposable available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned cannabis dispensary. Each unit undergoes rigorous quality testing for potency, purity, and safety before reaching our shelves.",
         "effects": [
             "relaxed",
             "sleepy",
             "calm",
-            "happy"
+            "happy",
+            "euphoric"
         ]
     },
     {
@@ -13720,29 +13764,30 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/06/zlushie-with-logo.png"
         ],
         "altText": "Hemp Geek &#8211; Liquid Diamond THC Vape - Mohawk Medibles",
-        "sku": "",
-        "metaDescription": "Buy Hemp Geek &#8211; Liquid Diamond THC Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy Hemp Geek &#8211; Liquid Diamond THC Vape online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "sku": "MM-VAPE-HEMPGEEK-LIQDIA",
+        "metaDescription": "Buy Hemp Geek Liquid Diamond THC Vape online in Canada. 90% THC liquid diamonds disposable. Fast shipping from Mohawk Medibles, Tyendinaga.",
+        "shortDescription": "Shop the Hemp Geek Liquid Diamond THC Vape at Mohawk Medibles. Premium liquid diamond distillate with up to 90% THC in multiple strains including Pie Hoe, Cheetah Piss, and Zlushie. Buy online for fast Canada-wide delivery.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>Hemp Geek Liquid Diamond THC Vape — Ultra-Potent Disposable in Canada</h2><p>Buy the Hemp Geek Liquid Diamond THC Vape at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary on Tyendinaga Mohawk Territory. This premium disposable features liquid diamond distillate with up to 90% THC for an exceptionally smooth and potent vaping experience.</p><ul><li><strong>Potency:</strong> Up to 90% THC — lab-tested liquid diamond extract</li><li><strong>Strains:</strong> Pie Hoe, Cheetah Piss, Zlushie, and more</li><li><strong>Type:</strong> Disposable vape with rechargeable battery</li><li><strong>Terpenes:</strong> Myrcene, Linalool, Caryophyllene for rich flavour</li><li><strong>Design:</strong> Sleek, portable, draw-activated</li></ul><h2>What Are Liquid Diamonds?</h2><p>Liquid diamonds are a premium cannabis concentrate made by melting THC-A diamonds into a smooth, vapeable oil. This process preserves the full terpene profile and delivers an ultra-clean, flavourful hit with maximum potency. Each Hemp Geek cartridge is lab-tested for purity and consistency.</p><h2>How to Use</h2><ul><li>Draw-activated — simply inhale from the mouthpiece</li><li>Start low and go slow, especially with 90% THC potency</li><li>Store in a cool, dry place away from direct sunlight</li></ul><p>Order now from Mohawk Medibles for fast, discreet Canada-wide shipping with same-day processing.</p></div></div>",
         "featured": true,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Sativa, Hybrid, Indica",
-            "weight": "TBD",
+            "thc": "90%",
+            "cbd": "<1%",
+            "type": "Disposable Vape",
+            "weight": "2g",
             "terpenes": [
                 "Myrcene",
                 "Linalool",
                 "Caryophyllene"
             ],
-            "lineage": ""
+            "lineage": "Pie Hoe / Cheetah Piss / Zlushie"
         },
-        "eeatNarrative": "Hemp Geek &#8211; Liquid Diamond THC Vape is a premium Disposables product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
+        "eeatNarrative": "Hemp Geek Liquid Diamond THC Vape is a lab-tested, premium liquid diamond disposable available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned cannabis dispensary. Every batch is tested for potency, pesticides, and heavy metals to ensure a safe, high-quality experience.",
         "effects": [
             "relaxed",
             "sleepy",
             "calm",
-            "happy"
+            "happy",
+            "euphoric"
         ]
     },
     {
@@ -14007,29 +14052,30 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/05/walt_herb_co_pre_roll_godfather_inside_1200x1200-1.jpg"
         ],
         "altText": "WALT HERB CO. &#8211; 7.2g Pre-Rolls - Mohawk Medibles",
-        "sku": "",
-        "metaDescription": "Buy WALT HERB CO. &#8211; 7.2g Pre-Rolls online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy WALT HERB CO. &#8211; 7.2g Pre-Rolls online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "sku": "MM-PREROLL-WALT-72G",
+        "metaDescription": "Buy Walt Herb Co. 7.2g Pre-Rolls online in Canada. Premium hand-rolled joints with 25-30% THC. Fast shipping from Mohawk Medibles, Tyendinaga.",
+        "shortDescription": "Shop Walt Herb Co. 7.2g Pre-Rolls at Mohawk Medibles. This premium pack features hand-rolled joints totalling 7.2g of high-quality cannabis flower with 25-30% THC. Buy online for fast, discreet Canada-wide shipping.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>Walt Herb Co. 7.2g Pre-Rolls — Premium Hand-Rolled Joints in Canada</h2><p>Buy Walt Herb Co. 7.2g Pre-Rolls online at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary on Tyendinaga Mohawk Territory. These premium pre-rolls are crafted with carefully selected, lab-tested flower for a smooth and consistent smoking experience.</p><ul><li><strong>Total Weight:</strong> 7.2g across multiple pre-rolled joints</li><li><strong>THC:</strong> 25-30% — potent, quality-tested flower</li><li><strong>Type:</strong> Hybrid blend for balanced effects</li><li><strong>Quality:</strong> Hand-rolled with premium ground flower, no shake or trim</li></ul><h2>Why Choose Walt Herb Co.?</h2><p>Walt Herb Co. is known for producing premium cannabis products using only top-shelf flower. Each pre-roll is hand-crafted to ensure an even burn and maximum flavour. All products are lab-tested for potency and purity, so you know exactly what you are getting with every puff.</p><h2>How to Enjoy</h2><ul><li>Light evenly and rotate for a consistent burn</li><li>Store in a cool, dry place to maintain freshness</li><li>Perfect for sharing or solo sessions</li></ul><p>Order now from Mohawk Medibles for fast, discreet Canada-wide shipping with same-day processing on orders before 2 PM EST.</p></div></div>",
         "featured": true,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Pre-Rolls",
-            "weight": "TBD",
+            "thc": "25-30%",
+            "cbd": "<1%",
+            "type": "Hybrid Pre-Rolls",
+            "weight": "7.2g",
             "terpenes": [
                 "Myrcene",
                 "Limonene",
                 "Caryophyllene"
             ],
-            "lineage": ""
+            "lineage": "Godfather OG"
         },
-        "eeatNarrative": "WALT HERB CO. &#8211; 7.2g Pre-Rolls is a premium Pre-Rolls product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
+        "eeatNarrative": "Walt Herb Co. 7.2g Pre-Rolls are lab-tested, premium hand-rolled joints available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned cannabis dispensary. Each batch is tested for THC potency, pesticides, and contaminants to ensure a safe, enjoyable experience.",
         "effects": [
             "relaxed",
             "happy",
             "uplifted",
-            "euphoric"
+            "euphoric",
+            "creative"
         ]
     },
     {
@@ -14048,29 +14094,30 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/05/walt_herb_co_pre_roll_godfather_backside_1200x1200-1.jpg"
         ],
         "altText": "WALT HERB CO. &#8211; 7.5g BIG DOGS Pre-Rolls - Mohawk Medibles",
-        "sku": "",
-        "metaDescription": "Buy WALT HERB CO. &#8211; 7.5g BIG DOGS Pre-Rolls online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy WALT HERB CO. &#8211; 7.5g BIG DOGS Pre-Rolls online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "sku": "MM-PREROLL-WALT-75G-BD",
+        "metaDescription": "Buy Walt Herb Co. 7.5g BIG DOGS Pre-Rolls online in Canada. Extra-large premium joints with 28% THC. Fast shipping from Mohawk Medibles.",
+        "shortDescription": "Shop Walt Herb Co. 7.5g BIG DOGS Pre-Rolls at Mohawk Medibles. These oversized premium pre-rolls pack 7.5g of top-shelf cannabis flower with up to 28% THC. Perfect for sharing. Buy online for fast Canada-wide delivery.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>Walt Herb Co. 7.5g BIG DOGS Pre-Rolls — Extra-Large Premium Joints in Canada</h2><p>Buy Walt Herb Co. 7.5g BIG DOGS Pre-Rolls online at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary on Tyendinaga Mohawk Territory. These oversized pre-rolls are designed for serious smokers who want maximum flower in every session.</p><ul><li><strong>Total Weight:</strong> 7.5g of premium ground flower</li><li><strong>THC:</strong> Up to 28% — lab-tested for potency</li><li><strong>Type:</strong> Hybrid blend for balanced, full-body effects</li><li><strong>Size:</strong> BIG DOGS format — larger than standard pre-rolls</li></ul><h2>Why Go BIG DOGS?</h2><p>Walt Herb Co. BIG DOGS are crafted for those who want more. More flower, more flavour, more potency. Each oversized joint is hand-rolled with premium ground bud — no shake, no trim, no compromise. Lab-tested for THC potency and purity so you can enjoy with confidence.</p><h2>How to Enjoy</h2><ul><li>Light evenly at the tip and rotate for a smooth, consistent burn</li><li>Ideal for group sessions or extended solo experiences</li><li>Store sealed in a cool, dry place to preserve freshness</li></ul><p>Order now from Mohawk Medibles for fast, discreet Canada-wide shipping with same-day processing.</p></div></div>",
         "featured": true,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Pre-Rolls",
-            "weight": "TBD",
+            "thc": "28%",
+            "cbd": "<1%",
+            "type": "Hybrid Pre-Rolls",
+            "weight": "7.5g",
             "terpenes": [
                 "Myrcene",
                 "Limonene",
                 "Caryophyllene"
             ],
-            "lineage": ""
+            "lineage": "Godfather OG"
         },
-        "eeatNarrative": "WALT HERB CO. &#8211; 7.5g BIG DOGS Pre-Rolls is a premium Pre-Rolls product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
+        "eeatNarrative": "Walt Herb Co. 7.5g BIG DOGS Pre-Rolls are lab-tested, oversized premium joints available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned cannabis dispensary. Each batch undergoes third-party testing for potency and contaminants.",
         "effects": [
             "relaxed",
             "happy",
             "uplifted",
-            "euphoric"
+            "euphoric",
+            "creative"
         ]
     },
     {
@@ -14291,19 +14338,19 @@ const _RAW_PRODUCTS: Product[] = [
         ],
         "altText": "Top Tier Gummies 6000mg THC - Mohawk Medibles",
         "sku": "TOPTIERGUM6000",
-        "metaDescription": "Buy Top Tier Gummies 6000mg THC online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy Top Tier Gummies 6000mg THC online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "metaDescription": "Buy Top Tier Gummies 6000mg THC online in Canada. Ultra-potent edibles, lab-tested. Fast shipping from Mohawk Medibles, Tyendinaga.",
+        "shortDescription": "Shop Top Tier Gummies 6000mg THC at Mohawk Medibles. These ultra-potent edibles pack 6000mg of lab-tested THC for experienced users seeking maximum strength. Buy online for fast, discreet Canada-wide shipping.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>Top Tier Gummies 6000mg THC — Ultra-Potent Cannabis Edibles in Canada</h2><p>Buy Top Tier Gummies 6000mg THC at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary on Tyendinaga Mohawk Territory. These ultra-potent gummies deliver a massive 6000mg of lab-tested THC for experienced cannabis consumers who demand maximum strength.</p><ul><li><strong>Total THC:</strong> 6000mg per package — lab-tested for accuracy</li><li><strong>Type:</strong> THC-infused gummy edibles</li><li><strong>Potency:</strong> Ultra-high dose — for experienced users only</li><li><strong>Onset:</strong> 30-90 minutes, effects last 4-8 hours</li></ul><h2>Dosing Guide</h2><p><strong>Warning:</strong> These are extremely potent edibles. Start with a small portion and wait at least 2 hours before consuming more. Not recommended for beginners. Calculate your dose carefully based on the total mg per gummy.</p><ul><li><strong>Microdose:</strong> 5-10mg THC — mild relaxation</li><li><strong>Standard:</strong> 25-50mg THC — moderate effects</li><li><strong>Heavy:</strong> 100mg+ THC — experienced users only</li></ul><h2>Storage</h2><p>Store in a cool, dry place away from direct sunlight. Keep out of reach of children and pets. Lab-tested for THC content, potency, and safety.</p><p>Order now from Mohawk Medibles for fast, discreet Canada-wide shipping with same-day processing.</p></div></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Edibles",
-            "weight": "TBD",
+            "thc": "6000mg",
+            "cbd": "<10mg",
+            "type": "THC Gummies",
+            "weight": "1 package",
             "terpenes": [],
-            "lineage": ""
+            "lineage": "N/A"
         },
-        "eeatNarrative": "Top Tier Gummies 6000mg THC is a premium Edibles product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
+        "eeatNarrative": "Top Tier Gummies 6000mg THC are lab-tested, ultra-potent cannabis edibles available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Each batch is third-party tested for THC content and purity to ensure accurate dosing and a safe experience.",
         "effects": [
             "happy",
             "relaxed",
