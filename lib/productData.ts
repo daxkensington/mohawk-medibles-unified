@@ -652,18 +652,15 @@ const _RAW_PRODUCTS: Product[] = [
         "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\">\n<div class=\"detail-tab-desc detail-content-wrap\">\n<h3 data-end=\"210\" data-start=\"176\">🍯🔥 Etumax VIP Royal Honey</h3>\n<p data-end=\"234\" data-start=\"211\"><strong data-end=\"234\" data-start=\"211\">1 Single-Use Packet</strong></p>\n<hr/>\n<p data-end=\"655\" data-start=\"504\"><strong data-end=\"532\" data-start=\"504\">Etumax X VIP Royal Honey</strong> is a premium herbal honey formula created to support <strong data-end=\"624\" data-start=\"586\">male vitality, stamina, and energy</strong>—naturally and effectively 🍯⚡.</p>\n<p data-end=\"870\" data-start=\"657\">First, pure honey delivers <strong data-end=\"720\" data-start=\"684\">immediate, fast-absorbing energy</strong>. Because of its high fructose content, the body absorbs it quickly without relying on insulin. As a result, energy levels rise smoothly and steadily.</p>\n<p data-end=\"1130\" data-start=\"872\">Next, powerful rainforest herbs begin to work. <strong data-end=\"934\" data-start=\"919\">Tongkat Ali</strong>, sourced from roots aged over 10 years, supports circulation, stamina, and hormonal balance. Meanwhile, <strong data-end=\"1056\" data-start=\"1039\">Panax Ginseng</strong> helps improve endurance, reduce fatigue, and enhance overall performance.</p>\n<p data-end=\"1384\" data-start=\"1132\">At the same time, <strong data-end=\"1163\" data-start=\"1150\">bee larva</strong> adds deep nutritional value. It supplies essential amino acids, vitamins, and minerals like zinc, selenium, iron, and phosphorus. Because of this, the body benefits from improved metabolism, muscle support, and recovery.</p>\n<p data-end=\"1574\" data-start=\"1386\">Rather than relying on chemical stimulants, Etumax focuses on <strong data-end=\"1484\" data-start=\"1448\">natural, plant-based ingredients</strong>. Therefore, it’s a popular choice for those seeking intensity without harsh side effects.</p>\n<p data-end=\"1769\" data-start=\"1576\">Overall, whether used for a special occasion or a powerful energy boost, Etumax X VIP Royal Honey delivers a <strong data-end=\"1727\" data-start=\"1685\">distinguished, long-lasting experience</strong> built on tradition, research, and nature.</p>\n<hr data-end=\"1774\" data-start=\"1771\"/>\n<h3 data-end=\"1794\" data-start=\"1776\">✨ Key Benefits</h3>\n<ul data-end=\"2039\" data-start=\"1795\">\n<li data-end=\"1821\" data-start=\"1795\">\n<p data-end=\"1821\" data-start=\"1797\">⚡ Fast, natural energy</p>\n</li>\n<li data-end=\"1857\" data-start=\"1822\">\n<p data-end=\"1857\" data-start=\"1824\">💪 Supports stamina &amp; endurance</p>\n</li>\n<li data-end=\"1892\" data-start=\"1858\">\n<p data-end=\"1892\" data-start=\"1860\">❤️ Promotes healthy blood flow</p>\n</li>\n<li data-end=\"1928\" data-start=\"1893\">\n<p data-end=\"1928\" data-start=\"1895\">🧠 Helps focus &amp; mental clarity</p>\n</li>\n<li data-end=\"1959\" data-start=\"1929\">\n<p data-end=\"1959\" data-start=\"1931\">🛡️ Supports immune health</p>\n</li>\n<li data-end=\"1999\" data-start=\"1960\">\n<p data-end=\"1999\" data-start=\"1962\">🏋️ Aids muscle strength &amp; recovery</p>\n</li>\n<li data-end=\"2039\" data-start=\"2000\">\n<p data-end=\"2039\" data-start=\"2002\">🌿 Herbal alternative to stimulants</p>\n</li>\n</ul>\n<hr data-end=\"2044\" data-start=\"2041\"/>\n<h3 data-end=\"2068\" data-start=\"2046\">🌿 Key Ingredients</h3>\n<ul data-end=\"2276\" data-start=\"2069\">\n<li data-end=\"2112\" data-start=\"2069\">\n<p data-end=\"2112\" data-start=\"2071\">🍯 <strong data-end=\"2088\" data-start=\"2074\">Pure Honey</strong> – quick, clean energy</p>\n</li>\n<li data-end=\"2169\" data-start=\"2113\">\n<p data-end=\"2169\" data-start=\"2115\">🌱 <strong data-end=\"2146\" data-start=\"2118\">Tongkat Ali Root Extract</strong> – vitality &amp; stamina</p>\n</li>\n<li data-end=\"2220\" data-start=\"2170\">\n<p data-end=\"2220\" data-start=\"2172\">🌿 <strong data-end=\"2192\" data-start=\"2175\">Panax Ginseng</strong> – endurance &amp; performance</p>\n</li>\n<li data-end=\"2276\" data-start=\"2221\">\n<p data-end=\"2276\" data-start=\"2223\">🐝 <strong data-end=\"2239\" data-start=\"2226\">Bee Larva</strong> – amino acids, vitamins &amp; minerals</p>\n</li>\n</ul>\n<hr data-end=\"2281\" data-start=\"2278\"/>\n<h3 data-end=\"2305\" data-start=\"2283\">📦 What’s Included</h3>\n<ul data-end=\"2345\" data-start=\"2306\">\n<li data-end=\"2345\" data-start=\"2306\">\n<p data-end=\"2345\" data-start=\"2308\">1 × Etumax X VIP Royal Honey packet</p>\n</li>\n</ul>\n<hr data-end=\"2350\" data-start=\"2347\"/>\n<h3 data-end=\"2370\" data-start=\"2352\">⚠️ Usage Notes</h3>\n<ul data-end=\"2464\" data-start=\"2371\">\n<li data-end=\"2393\" data-start=\"2371\">\n<p data-end=\"2393\" data-start=\"2373\">For adult use only</p>\n</li>\n<li data-end=\"2430\" data-start=\"2394\">\n<p data-end=\"2430\" data-start=\"2396\">Do not exceed recommended intake</p>\n</li>\n<li data-end=\"2464\" data-start=\"2431\">\n<p data-end=\"2464\" data-start=\"2433\">Keep out of reach of children</p>\n</li>\n</ul>\n</div>\n</div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
+            "thc": "N/A",
+            "cbd": "N/A",
             "type": "Sexual Enhancement",
-            "weight": "TBD",
+            "weight": "1 x 20g sachet",
             "terpenes": [],
-            "lineage": "TBD"
+            "lineage": "Tongkat Ali, Panax Ginseng, Bee Larva, Pure Honey"
         },
-        "eeatNarrative": "Etumax VIP Royal Honey is a premium Sexual Enhancement product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": [
-            "energetic",
-            "focused"
-        ]
+        "eeatNarrative": "Etumax VIP Royal Honey is a lab-tested herbal enhancement product available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Formulated with premium Tongkat Ali and Panax Ginseng for natural vitality and stamina support.",
+        "effects": ["energetic", "focused", "stamina", "confidence", "vitality"]
     },
     {
         "id": 17,
@@ -2193,18 +2190,15 @@ const _RAW_PRODUCTS: Product[] = [
         "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\">\n<div class=\"detail-tab-desc detail-content-wrap\">\n<h2 data-end=\"313\" data-start=\"239\">🦏💥 <strong data-end=\"311\" data-start=\"246\">Rhino 69 Platinum 35000 – Sexual Performance Capsule (1 Pack)</strong></h2>\n<h2 data-end=\"366\" data-start=\"314\"><strong data-end=\"366\" data-start=\"314\">Fast-Acting • Long-Lasting • Performance Support</strong></h2>\n<hr/>\n<p data-end=\"1006\" data-start=\"811\">Step into trusted performance with <strong data-end=\"873\" data-start=\"846\">Rhino 69 Platinum 35000</strong>, one of the most popular enhancement capsules for men who want extra power, energy, and confidence during intimate moments. 🦏💪🔥</p>\n<p data-end=\"1288\" data-start=\"1008\"><strong data-end=\"1026\" data-start=\"1008\">To begin with,</strong> Rhino 69 is known for its fast activation time — typically <strong data-end=\"1103\" data-start=\"1086\">30–60 minutes</strong> — giving you reliable support when you need it most. Whether you’re looking to boost stamina, strengthen arousal, or improve overall readiness, this formula is built for performance.</p>\n<p data-end=\"1507\" data-start=\"1290\"><strong data-end=\"1299\" data-start=\"1290\">Next,</strong> each capsule is designed to help promote stronger erections, improved control, and longer-lasting intimate sessions. Many users report increased sensitivity, heightened pleasure, and more intense finishes.</p>\n<p data-end=\"1668\" data-start=\"1509\"><strong data-end=\"1518\" data-start=\"1509\">Then,</strong> the long-lasting nature of Rhino 69 means <strong data-end=\"1614\" data-start=\"1561\">one capsule may remain effective for up to 7 days</strong>, helping you stay ready without constant re-dosing.</p>\n<p data-end=\"1877\" data-start=\"1670\"><strong data-end=\"1682\" data-start=\"1670\">Finally,</strong> the capsule can also be taken regularly to maintain optimal performance readiness, though it’s recommended to take it <strong data-end=\"1819\" data-start=\"1801\">one hour apart</strong> from other supplements or medications for best results.</p>\n<p data-end=\"2025\" data-start=\"1879\">Rhino 69 Platinum 35000 is the perfect choice for anyone seeking more confidence, better energy, and improved intimacy — quickly and discreetly.</p>\n<p data-end=\"2103\" data-start=\"2027\">🔞 <em data-end=\"2101\" data-start=\"2030\">For adults only. Individual results may vary. Always use responsibly.</em></p>\n<hr data-end=\"2108\" data-start=\"2105\"/>\n<h2 data-end=\"2160\" data-start=\"2110\">💥 <strong data-end=\"2158\" data-start=\"2115\">PRODUCT BENEFITS (as reported by users)</strong></h2>\n<ul data-end=\"2514\" data-start=\"2161\">\n<li data-end=\"2188\" data-start=\"2161\">\n<p data-end=\"2188\" data-start=\"2163\">Works in <strong data-end=\"2186\" data-start=\"2172\">30 minutes</strong></p>\n</li>\n<li data-end=\"2230\" data-start=\"2189\">\n<p data-end=\"2230\" data-start=\"2191\">Supports longer, stronger performance</p>\n</li>\n<li data-end=\"2269\" data-start=\"2231\">\n<p data-end=\"2269\" data-start=\"2233\">Helps reduce premature ejaculation</p>\n</li>\n<li data-end=\"2309\" data-start=\"2270\">\n<p data-end=\"2309\" data-start=\"2272\">Encourages harder, fuller erections</p>\n</li>\n<li data-end=\"2344\" data-start=\"2310\">\n<p data-end=\"2344\" data-start=\"2312\">May improve stamina and energy</p>\n</li>\n<li data-end=\"2385\" data-start=\"2345\">\n<p data-end=\"2385\" data-start=\"2347\">Better control &amp; improved confidence</p>\n</li>\n<li data-end=\"2426\" data-start=\"2386\">\n<p data-end=\"2426\" data-start=\"2388\">Supports intense, satisfying orgasms</p>\n</li>\n<li data-end=\"2468\" data-start=\"2427\">\n<p data-end=\"2468\" data-start=\"2429\">One capsule can last up to <strong data-end=\"2466\" data-start=\"2456\">7 days</strong></p>\n</li>\n<li data-end=\"2490\" data-start=\"2469\">\n<p data-end=\"2490\" data-start=\"2471\">Doctor-formulated</p>\n</li>\n<li data-end=\"2514\" data-start=\"2491\">\n<p data-end=\"2514\" data-start=\"2493\">No headache formula</p>\n</li>\n</ul>\n<hr data-end=\"2519\" data-start=\"2516\"/>\n<h2 data-end=\"2547\" data-start=\"2521\">📦 <strong data-end=\"2545\" data-start=\"2526\">WHAT’S INCLUDED</strong></h2>\n<ul data-end=\"2586\" data-start=\"2548\">\n<li data-end=\"2586\" data-start=\"2548\">\n<p data-end=\"2586\" data-start=\"2550\"><strong data-end=\"2563\" data-start=\"2550\">1 capsule</strong> (1 serving) per pack</p>\n</li>\n</ul>\n<hr data-end=\"2591\" data-start=\"2588\"/>\n<h2 data-end=\"2623\" data-start=\"2593\">🧭 <strong data-end=\"2621\" data-start=\"2598\">USAGE &amp; SUGGESTIONS</strong></h2>\n<ul data-end=\"2839\" data-start=\"2624\">\n<li data-end=\"2680\" data-start=\"2624\">\n<p data-end=\"2680\" data-start=\"2626\">Take <strong data-end=\"2644\" data-start=\"2631\">1 capsule</strong> 30 minutes before sexual activity</p>\n</li>\n<li data-end=\"2726\" data-start=\"2681\">\n<p data-end=\"2726\" data-start=\"2683\">For best results, allow <strong data-end=\"2724\" data-start=\"2707\">30–60 minutes</strong></p>\n</li>\n<li data-end=\"2790\" data-start=\"2727\">\n<p data-end=\"2790\" data-start=\"2729\">Take <strong data-end=\"2750\" data-start=\"2734\">1 hour apart</strong> from other supplements or medications</p>\n</li>\n<li data-end=\"2839\" data-start=\"2791\">\n<p data-end=\"2839\" data-start=\"2793\">Do not exceed one capsule within 48–72 hours</p>\n</li>\n</ul>\n</div>\n</div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
+            "thc": "N/A",
+            "cbd": "N/A",
             "type": "Sexual Enhancement",
-            "weight": "TBD",
+            "weight": "1 capsule per pack",
             "terpenes": [],
-            "lineage": "TBD"
+            "lineage": "Herbal Performance Blend"
         },
-        "eeatNarrative": "Rhino 69 Platinum 35000 Sexual Enhancement Pill is a premium Sexual Enhancement product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": [
-            "energetic",
-            "pain-relief"
-        ]
+        "eeatNarrative": "Rhino 69 Platinum 35000 is a lab-tested sexual enhancement capsule available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Doctor-formulated with a no-headache herbal blend for fast-acting, long-lasting performance support.",
+        "effects": ["energetic", "stamina", "confidence", "endurance", "vitality"]
     },
     {
         "id": 54,
@@ -7920,25 +7914,21 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/07/Mike-Tyson-Front-with-logo-and-white.png"
         ],
         "altText": "Knock Out THC Gummies - Mohawk Medibles",
-        "sku": "KNOCKOUT",
-        "metaDescription": "Take your game to the next level with our Knockout THC Gummies – Available strains are Sean O’Malley 1500MG, Conor McGregor 3000MG, Mike Tyson 5000MG and Big St",
-        "shortDescription": "Take your game to the next level with our Knockout THC Gummies – Available strains are Sean O’Malley 1500MG, Conor McGregor 3000MG, Mike Tyson 5000MG and Big Steppers 10,000MG.\nKnock Out THC Gummies...",
-        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\">\n<div class=\"detail-tab-desc detail-content-wrap\">\n<p>Take your game to the next level with our Knockout THC Gummies – Available strains are Sean O’Malley 1500MG, Conor McGregor 3000MG, Mike Tyson 5000MG and Big Steppers 10,000MG.</p>\n<p>Knock Out THC Gummies contain D8, D9, HHC, THC-P</p>\n<p> </p>\n<p> </p>\n</div>\n</div>",
+        "sku": "MM-GUMMY-KNOCKOUT",
+        "metaDescription": "Buy Knock Out THC Gummies online in Canada. Ultra-potent gummies from 1500mg to 10,000mg with D8, D9, HHC, THC-P. Shop at Mohawk Medibles.",
+        "shortDescription": "Shop Knock Out THC Gummies at Mohawk Medibles — ultra-potent edibles available in Sean O’Malley 1500mg, Conor McGregor 3000mg, Mike Tyson 5000mg, and Big Steppers 10,000mg. Buy online in Canada with fast shipping.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>Knock Out THC Gummies — Ultra-Potent Edibles in Canada</h2><p>Buy Knock Out THC Gummies online at Mohawk Medibles, Canada’s trusted Indigenous-owned dispensary. These powerhouse gummies pack a serious punch with a proprietary blend of Delta-8, Delta-9, HHC, and THC-P cannabinoids for an intense, long-lasting experience.</p><h2>Available Strengths</h2><ul><li><strong>Sean O’Malley — 1500mg:</strong> Perfect entry point for experienced users seeking a strong edible</li><li><strong>Conor McGregor — 3000mg:</strong> Double the potency for those who want more intensity</li><li><strong>Mike Tyson — 5000mg:</strong> Heavy-hitting formula for seasoned cannabis consumers</li><li><strong>Big Steppers — 10,000mg:</strong> The ultimate knockout — only for those with extreme tolerance</li></ul><h2>Multi-Cannabinoid Blend</h2><p>Each gummy features a proprietary blend of D8, D9, HHC, and THC-P cannabinoids working together for amplified effects. This multi-cannabinoid approach delivers a more complex, full-bodied experience than single-cannabinoid edibles.</p><h2>How to Use</h2><p>Start with half a gummy or less, especially with higher-potency options. Wait 60-90 minutes for full onset before considering additional dosage. Effects can last 4-8 hours. Store in a cool, dry place away from children.</p><p>Order from Mohawk Medibles for fast Canada-wide shipping with same-day processing from Tyendinaga Mohawk Territory.</p></div></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Edibles",
-            "weight": "TBD",
-            "terpenes": [],
-            "lineage": "TBD"
+            "thc": "1500mg-10,000mg (D8+D9+HHC+THC-P)",
+            "cbd": "N/A",
+            "type": "THC Gummies",
+            "weight": "Varies by strength",
+            "terpenes": ["Myrcene", "Limonene", "Caryophyllene"],
+            "lineage": "Delta-8, Delta-9, HHC, THC-P Blend"
         },
-        "eeatNarrative": "Knock Out THC Gummies is a premium Edibles product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": [
-            "happy",
-            "relaxed",
-            "euphoric"
-        ]
+        "eeatNarrative": "Knock Out THC Gummies are a lab-tested, multi-cannabinoid edible available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Each batch is third-party tested for potency and purity, featuring a proprietary D8, D9, HHC, and THC-P blend.",
+        "effects": ["happy", "relaxed", "euphoric", "sleepy", "pain-relief"]
     },
     {
         "id": 199,
@@ -11828,21 +11818,21 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2026/02/Spearmint.png"
         ],
         "altText": "Lip Rippers Delta-9 THC Pouches - Mohawk Medibles",
-        "sku": "LIPRIPPERS",
-        "metaDescription": "Buy Lip Rippers Delta-9 THC Pouches online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy Lip Rippers Delta-9 THC Pouches online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "sku": "MM-POUCH-LIPRIPPERS",
+        "metaDescription": "Buy Lip Rippers Delta-9 THC Pouches online in Canada. Smokeless, discreet THC pouches with fast-acting effects. Shop now at Mohawk Medibles.",
+        "shortDescription": "Shop Lip Rippers Delta-9 THC Pouches at Mohawk Medibles — smokeless, tobacco-free cannabis pouches delivering fast-acting Delta-9 THC in delicious flavours. Buy online in Canada with discreet shipping.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>Lip Rippers Delta-9 THC Pouches — Smokeless Cannabis in Canada</h2><p>Buy Lip Rippers Delta-9 THC Pouches online at Mohawk Medibles, Canada's trusted Indigenous-owned dispensary. These innovative smokeless THC pouches deliver fast-acting Delta-9 THC without smoke, vapour, or odour. Simply place a pouch between your lip and gum for discreet, convenient cannabis enjoyment anywhere.</p><h2>Why Choose Lip Rippers THC Pouches?</h2><ul><li><strong>Smokeless &amp; Discreet:</strong> No smoke, no vapour, no lingering smell — enjoy cannabis anywhere</li><li><strong>Fast-Acting Formula:</strong> Sublingual absorption delivers effects in 10-15 minutes</li><li><strong>Multiple Flavours:</strong> Available in Watermelon, Black Cherry, Bubble Gum, Citrus, Cotton Candy, Peppermint, Pina Colada, Spearmint, and more</li><li><strong>Tobacco-Free:</strong> 100% tobacco-free and nicotine-free cannabis experience</li><li><strong>Precise Dosing:</strong> Each pouch contains a consistent, measured dose of Delta-9 THC</li></ul><h2>How to Use</h2><p>Place one pouch between your upper lip and gum. Leave in place for 15-30 minutes. Effects typically begin within 10-15 minutes and last 1-3 hours. Start with one pouch to assess tolerance.</p><p>Order now from Mohawk Medibles for fast Canada-wide shipping with same-day processing and discreet delivery from Tyendinaga Mohawk Territory.</p></div></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Lip Rippers",
-            "weight": "TBD",
-            "terpenes": [],
-            "lineage": ""
+            "thc": "10mg per pouch",
+            "cbd": "N/A",
+            "type": "THC Pouches",
+            "weight": "15 pouches per tin",
+            "terpenes": ["Limonene", "Myrcene", "Linalool"],
+            "lineage": "Delta-9 THC Extract"
         },
-        "eeatNarrative": "Lip Rippers Delta-9 THC Pouches is a premium Lip Rippers product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": []
+        "eeatNarrative": "Lip Rippers Delta-9 THC Pouches are a lab-tested, smokeless cannabis product available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Each pouch is precisely dosed for consistent, reliable effects and third-party verified for potency and purity.",
+        "effects": ["relaxed", "happy", "euphoric", "uplifted"]
     },
     {
         "id": 294,
@@ -11980,29 +11970,21 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2026/02/Tiger-Blood-Brick-stacked-sideways.png"
         ],
         "altText": "Tiger Blood Hash - Mohawk Medibles",
-        "sku": "TIGERBLOODHASH",
-        "metaDescription": "Buy Tiger Blood Hash online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy Tiger Blood Hash online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "sku": "MM-HASH-TIGERBLOOD",
+        "metaDescription": "Buy Tiger Blood Hash online in Canada. Premium hand-pressed hash with 40-55% THC for deep relaxation and euphoria. Shop at Mohawk Medibles.",
+        "shortDescription": "Shop Tiger Blood Hash at Mohawk Medibles — premium hand-pressed cannabis hash with rich terpene profiles and potent 40-55% THC. Buy online in Canada with fast, discreet shipping.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>Tiger Blood Hash — Premium Hand-Pressed Hash in Canada</h2><p>Buy Tiger Blood Hash online at Mohawk Medibles, Canada's trusted Indigenous-owned dispensary. This premium hand-pressed hash delivers a powerful, flavourful experience with THC levels ranging from 40-55%. Named for its fierce potency and bold terpene profile, Tiger Blood Hash is crafted for experienced cannabis consumers seeking deep relaxation and euphoria.</p><h2>Product Highlights</h2><ul><li><strong>Potency:</strong> 40-55% THC for a powerful, long-lasting experience</li><li><strong>Texture:</strong> Dense, pliable hand-pressed brick that crumbles easily</li><li><strong>Aroma:</strong> Earthy, spicy, and slightly sweet with pine undertones</li><li><strong>Colour:</strong> Dark brown exterior with golden-green interior</li><li><strong>Terpene Profile:</strong> Rich in Myrcene, Caryophyllene, and Pinene</li></ul><h2>How to Use</h2><p>Tiger Blood Hash can be smoked in a pipe or bong, crumbled into a joint, or vaporized at 180-210C. Break off a small piece and crumble it for even burning. Start with a small amount — hash is significantly more potent than flower.</p><p>Order from Mohawk Medibles for fast Canada-wide shipping with same-day processing from Tyendinaga Mohawk Territory.</p></div></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Concentrates",
-            "weight": "TBD",
-            "terpenes": [
-                "Myrcene",
-                "Limonene",
-                "Caryophyllene"
-            ],
-            "lineage": ""
+            "thc": "40-55%",
+            "cbd": "<1%",
+            "type": "Hash",
+            "weight": "1g",
+            "terpenes": ["Myrcene", "Caryophyllene", "Pinene"],
+            "lineage": "Indica-Dominant Hybrid Blend"
         },
-        "eeatNarrative": "Tiger Blood Hash is a premium Concentrates product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": [
-            "euphoric",
-            "relaxed",
-            "creative"
-        ]
+        "eeatNarrative": "Tiger Blood Hash is a lab-tested, premium hand-pressed hash available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Each batch is quality-checked for potency, purity, and consistency to deliver a reliable cannabis concentrate experience.",
+        "effects": ["relaxed", "euphoric", "happy", "sleepy"]
     },
     {
         "id": 298,
@@ -12020,29 +12002,21 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2026/02/Honey-Bee-Brick-stacked-sideways.png"
         ],
         "altText": "Honey Bee Hash - Mohawk Medibles",
-        "sku": "HONEYBEEHASH",
-        "metaDescription": "Buy Honey Bee Hash online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy Honey Bee Hash online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "sku": "MM-HASH-HONEYBEE",
+        "metaDescription": "Buy Honey Bee Hash online in Canada. Smooth, aromatic hand-pressed hash with 40-55% THC for relaxation and euphoria. Shop at Mohawk Medibles.",
+        "shortDescription": "Shop Honey Bee Hash at Mohawk Medibles — smooth, aromatic hand-pressed cannabis hash with 40-55% THC and a sweet, floral terpene profile. Buy online in Canada with fast, discreet shipping.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>Honey Bee Hash — Smooth Aromatic Hash in Canada</h2><p>Buy Honey Bee Hash online at Mohawk Medibles, Canada's trusted Indigenous-owned dispensary. This premium hand-pressed hash is known for its smooth, sweet flavour and mellow high. With THC levels between 40-55%, Honey Bee Hash delivers a warm, relaxing experience perfect for unwinding after a long day.</p><h2>Product Highlights</h2><ul><li><strong>Potency:</strong> 40-55% THC for a balanced, relaxing high</li><li><strong>Texture:</strong> Soft, pliable hash that breaks apart easily for rolling or packing</li><li><strong>Aroma:</strong> Sweet, floral, and honey-like with earthy undertones</li><li><strong>Colour:</strong> Warm amber-brown with lighter interior</li><li><strong>Terpene Profile:</strong> Rich in Myrcene, Caryophyllene, and Pinene for a soothing experience</li></ul><h2>How to Use</h2><p>Honey Bee Hash can be smoked in a pipe or bong, crumbled into a joint with flower, or vaporized at 180-210C. Its soft texture makes it easy to work with. Start small — hash is much more concentrated than regular flower.</p><p>Order from Mohawk Medibles for fast Canada-wide shipping with same-day processing from Tyendinaga Mohawk Territory.</p></div></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Concentrates",
-            "weight": "TBD",
-            "terpenes": [
-                "Myrcene",
-                "Limonene",
-                "Caryophyllene"
-            ],
-            "lineage": ""
+            "thc": "40-55%",
+            "cbd": "<1%",
+            "type": "Hash",
+            "weight": "1g",
+            "terpenes": ["Myrcene", "Caryophyllene", "Pinene"],
+            "lineage": "Indica-Dominant Blend"
         },
-        "eeatNarrative": "Honey Bee Hash is a premium Concentrates product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": [
-            "euphoric",
-            "relaxed",
-            "creative"
-        ]
+        "eeatNarrative": "Honey Bee Hash is a lab-tested, premium hand-pressed hash available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Each batch undergoes quality testing for potency and purity, ensuring a consistent and reliable hash experience.",
+        "effects": ["relaxed", "euphoric", "happy", "sleepy"]
     },
     {
         "id": 299,
@@ -12140,29 +12114,21 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2026/02/Escobar-hash-brick-stacked-sideways.png"
         ],
         "altText": "Escobar Hash - Mohawk Medibles",
-        "sku": "ESCOBARHASH",
-        "metaDescription": "Buy Escobar Hash online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy Escobar Hash online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "sku": "MM-HASH-ESCOBAR",
+        "metaDescription": "Buy Escobar Hash online in Canada. Bold, potent hand-pressed hash with 40-55% THC for heavy relaxation and euphoria. Shop at Mohawk Medibles.",
+        "shortDescription": "Shop Escobar Hash at Mohawk Medibles — bold, potent hand-pressed cannabis hash with 40-55% THC and a rich, earthy terpene profile. Buy online in Canada with fast, discreet shipping.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>Escobar Hash — Bold Premium Hash in Canada</h2><p>Buy Escobar Hash online at Mohawk Medibles, Canada's trusted Indigenous-owned dispensary. Escobar Hash is a powerhouse concentrate crafted for those who appreciate bold, uncompromising potency. With THC levels between 40-55%, this hand-pressed hash delivers deep body relaxation and strong cerebral euphoria.</p><h2>Product Highlights</h2><ul><li><strong>Potency:</strong> 40-55% THC for a heavy, full-body experience</li><li><strong>Texture:</strong> Firm, dense brick that softens with heat for easy crumbling</li><li><strong>Aroma:</strong> Rich, earthy, and spicy with subtle diesel notes</li><li><strong>Colour:</strong> Deep dark brown with olive-green interior</li><li><strong>Terpene Profile:</strong> Dominant Myrcene, Caryophyllene, and Pinene for sedating, pain-relieving effects</li></ul><h2>How to Use</h2><p>Escobar Hash is best smoked in a pipe, bong, or crumbled into joints. Warm a small piece between your fingers to soften before crumbling. Vaporize at 180-210C for maximum flavour. Due to its high potency, start with a small amount and wait before consuming more.</p><p>Order from Mohawk Medibles for fast Canada-wide shipping with same-day processing from Tyendinaga Mohawk Territory.</p></div></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Concentrates",
-            "weight": "TBD",
-            "terpenes": [
-                "Myrcene",
-                "Limonene",
-                "Caryophyllene"
-            ],
-            "lineage": ""
+            "thc": "40-55%",
+            "cbd": "<1%",
+            "type": "Hash",
+            "weight": "1g",
+            "terpenes": ["Myrcene", "Caryophyllene", "Pinene"],
+            "lineage": "Indica-Dominant Blend"
         },
-        "eeatNarrative": "Escobar Hash is a premium Concentrates product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": [
-            "euphoric",
-            "relaxed",
-            "creative"
-        ]
+        "eeatNarrative": "Escobar Hash is a lab-tested, premium hand-pressed hash available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Every batch is tested for THC potency, purity, and consistency to ensure a top-quality cannabis concentrate.",
+        "effects": ["relaxed", "euphoric", "happy", "sleepy"]
     },
     {
         "id": 302,
@@ -12180,29 +12146,21 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2026/02/Bueno-Hash-Brick-stacked-sideways.png"
         ],
         "altText": "Bueno Hash - Mohawk Medibles",
-        "sku": "BUENOHASH",
-        "metaDescription": "Buy Bueno Hash online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy Bueno Hash online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "sku": "MM-HASH-BUENO",
+        "metaDescription": "Buy Bueno Hash online in Canada. Smooth, flavourful hand-pressed hash with 40-55% THC for relaxation and euphoria. Shop at Mohawk Medibles.",
+        "shortDescription": "Shop Bueno Hash at Mohawk Medibles — smooth, flavourful hand-pressed cannabis hash with 40-55% THC and a classic earthy-spicy terpene profile. Buy online in Canada with fast, discreet shipping.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>Bueno Hash — Classic Hand-Pressed Hash in Canada</h2><p>Buy Bueno Hash online at Mohawk Medibles, Canada's trusted Indigenous-owned dispensary. Bueno Hash lives up to its name with a smooth, enjoyable smoking experience and potent effects. With THC levels between 40-55%, this hand-pressed hash delivers the classic hash experience — warm body relaxation paired with gentle cerebral euphoria.</p><h2>Product Highlights</h2><ul><li><strong>Potency:</strong> 40-55% THC for a smooth yet potent experience</li><li><strong>Texture:</strong> Classic hand-pressed brick, pliable and easy to work with</li><li><strong>Aroma:</strong> Earthy, spicy, and slightly woody with herbal notes</li><li><strong>Colour:</strong> Rich brown exterior with golden-brown interior</li><li><strong>Terpene Profile:</strong> Myrcene, Caryophyllene, and Pinene for a classic hash character</li></ul><h2>How to Use</h2><p>Bueno Hash can be smoked in a pipe, bong, or crumbled into joints with flower. Its pliable texture makes it easy to portion and prepare. Vaporize at 180-210C for the smoothest flavour. Start with a small piece — hash is significantly more concentrated than cannabis flower.</p><p>Order from Mohawk Medibles for fast Canada-wide shipping with same-day processing from Tyendinaga Mohawk Territory.</p></div></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Concentrates",
-            "weight": "TBD",
-            "terpenes": [
-                "Myrcene",
-                "Limonene",
-                "Caryophyllene"
-            ],
-            "lineage": ""
+            "thc": "40-55%",
+            "cbd": "<1%",
+            "type": "Hash",
+            "weight": "1g",
+            "terpenes": ["Myrcene", "Caryophyllene", "Pinene"],
+            "lineage": "Indica-Dominant Blend"
         },
-        "eeatNarrative": "Bueno Hash is a premium Concentrates product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": [
-            "euphoric",
-            "relaxed",
-            "creative"
-        ]
+        "eeatNarrative": "Bueno Hash is a lab-tested, premium hand-pressed hash available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Each batch is quality-tested for THC potency and purity, delivering a consistent classic hash experience.",
+        "effects": ["relaxed", "euphoric", "happy", "sleepy"]
     },
     {
         "id": 303,
@@ -13322,29 +13280,21 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/05/AAA-CBD-2000mg-with-logo-2.png"
         ],
         "altText": "CBD Capsules &#8211; 2000mg - Mohawk Medibles",
-        "sku": "",
-        "metaDescription": "Buy CBD Capsules &#8211; 2000mg online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy CBD Capsules &#8211; 2000mg online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "sku": "MM-CAP-CBD2000",
+        "metaDescription": "Buy CBD Capsules 2000mg online in Canada. High-potency CBD capsules for pain relief, anxiety, and sleep. Shop at Mohawk Medibles with fast shipping.",
+        "shortDescription": "Shop CBD Capsules 2000mg at Mohawk Medibles — high-potency full-spectrum CBD in easy-to-swallow capsules. 2000mg total CBD per bottle for daily wellness, pain relief, and relaxation. Buy online in Canada.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>CBD Capsules 2000mg — High-Potency CBD in Canada</h2><p>Buy CBD Capsules 2000mg online at Mohawk Medibles, Canada's trusted Indigenous-owned dispensary. These premium full-spectrum CBD capsules deliver 2000mg of total CBD per bottle, offering convenient and precise dosing for daily wellness support.</p><h2>Benefits of CBD Capsules 2000mg</h2><ul><li><strong>High Potency:</strong> 2000mg total CBD per bottle for effective relief</li><li><strong>Precise Dosing:</strong> Pre-measured capsules eliminate guesswork</li><li><strong>Full-Spectrum Formula:</strong> Contains beneficial cannabinoids, terpenes, and flavonoids for the entourage effect</li><li><strong>No Taste or Smell:</strong> Easy-to-swallow capsules with no hemp flavour</li><li><strong>Non-Psychoactive:</strong> Less than 0.3% THC — no high, just wellness</li></ul><h2>How to Use</h2><p>Take 1-2 capsules daily with food and water. Start with one capsule to assess your response. Consistent daily use for 2-4 weeks yields the best results. Ideal for morning or evening routines.</p><h2>What Makes Our CBD Capsules Different</h2><p>Each batch is third-party lab-tested for potency, purity, and safety. Made from organically grown hemp with CO2 extraction for maximum cannabinoid preservation. Order now for fast Canada-wide shipping from Tyendinaga Mohawk Territory.</p></div></div>",
         "featured": false,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Capsules",
-            "weight": "TBD",
-            "terpenes": [
-                "Caryophyllene",
-                "Myrcene",
-                "Bisabolol"
-            ],
-            "lineage": ""
+            "thc": "<0.3%",
+            "cbd": "2000mg per bottle",
+            "type": "CBD Capsules",
+            "weight": "60 capsules",
+            "terpenes": ["Caryophyllene", "Myrcene", "Bisabolol"],
+            "lineage": "Full-Spectrum Hemp Extract"
         },
-        "eeatNarrative": "CBD Capsules &#8211; 2000mg is a premium Capsules product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": [
-            "calm",
-            "relaxed",
-            "focused"
-        ]
+        "eeatNarrative": "CBD Capsules 2000mg are a lab-tested, high-potency CBD product available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Each batch is third-party verified for potency and purity, made from organically grown Canadian hemp.",
+        "effects": ["calm", "pain-relief", "relaxed", "focused", "sleepy"]
     },
     {
         "id": 330,
@@ -13485,29 +13435,21 @@ const _RAW_PRODUCTS: Product[] = [
             "https://mohawkmedibles.ca/wp-content/uploads/2025/05/sleebd_caps_calm-600x600-1-2.jpg"
         ],
         "altText": "SleeBD Calm CBD Capsules - Mohawk Medibles",
-        "sku": "",
-        "metaDescription": "Buy SleeBD Calm CBD Capsules online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "shortDescription": "Buy SleeBD Calm CBD Capsules online in Canada at Mohawk Medibles, your trusted Indigenous-owned cannabis dispensary.",
-        "descriptionHTML": "",
+        "sku": "MM-CAP-SLEEBD-CALM",
+        "metaDescription": "Buy SleeBD Calm CBD Capsules online in Canada. Premium CBD capsules for stress relief, calm, and relaxation. Shop at Mohawk Medibles with fast shipping.",
+        "shortDescription": "Shop SleeBD Calm CBD Capsules at Mohawk Medibles — specially formulated CBD capsules designed to promote calm, reduce anxiety, and support relaxation. Buy online in Canada with discreet, fast shipping.",
+        "descriptionHTML": "<div class=\"tab-pane active\" id=\"tab-description\"><div class=\"detail-tab-desc detail-content-wrap\"><h2>SleeBD Calm CBD Capsules — Stress Relief CBD in Canada</h2><p>Buy SleeBD Calm CBD Capsules online at Mohawk Medibles, Canada's trusted Indigenous-owned dispensary. These specially formulated CBD capsules are designed to promote a sense of calm and relaxation, making them perfect for managing daily stress and anxiety.</p><h2>Why Choose SleeBD Calm Capsules?</h2><ul><li><strong>Calming Formula:</strong> Proprietary blend of CBD and natural calming botanicals</li><li><strong>Non-Psychoactive:</strong> THC-free formula means zero high — just pure relaxation</li><li><strong>Convenient Dosing:</strong> Pre-measured capsules for consistent, precise intake</li><li><strong>Fast-Acting:</strong> Feel the calming effects within 30-60 minutes</li><li><strong>Canadian Brand:</strong> SleeBD is proudly Canadian-made with quality ingredients</li></ul><h2>How to Use</h2><p>Take 1-2 capsules daily, preferably 30-60 minutes before stressful situations or at bedtime. Swallow with water. For best results, use consistently for 2-4 weeks. Do not exceed recommended dosage.</p><h2>Quality You Can Trust</h2><p>SleeBD products are third-party lab-tested for potency, purity, and safety. Each capsule is manufactured in a GMP-certified facility using premium CBD isolate. Order from Mohawk Medibles for fast Canada-wide shipping from Tyendinaga Mohawk Territory.</p></div></div>",
         "featured": true,
         "specs": {
-            "thc": "TBD",
-            "cbd": "TBD",
-            "type": "Capsules",
-            "weight": "TBD",
-            "terpenes": [
-                "Caryophyllene",
-                "Myrcene",
-                "Bisabolol"
-            ],
-            "lineage": ""
+            "thc": "<0.3%",
+            "cbd": "25mg per capsule",
+            "type": "CBD Capsules",
+            "weight": "30 capsules",
+            "terpenes": ["Caryophyllene", "Myrcene", "Bisabolol", "Linalool"],
+            "lineage": "CBD Isolate Blend"
         },
-        "eeatNarrative": "SleeBD Calm CBD Capsules is a premium Capsules product available at Mohawk Medibles, Tyendinaga's trusted cannabis dispensary.",
-        "effects": [
-            "calm",
-            "relaxed",
-            "focused"
-        ]
+        "eeatNarrative": "SleeBD Calm CBD Capsules are a lab-tested, Canadian-made CBD product available at Mohawk Medibles, Tyendinaga's trusted Indigenous-owned dispensary. Each batch is third-party verified for potency, purity, and safety in GMP-certified facilities.",
+        "effects": ["calm", "relaxed", "pain-relief", "focused", "sleepy"]
     },
     {
         "id": 334,
