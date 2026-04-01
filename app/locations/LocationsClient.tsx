@@ -207,43 +207,33 @@ export default function LocationsClient() {
                     </motion.div>
 
                     <div className="grid md:grid-cols-2 gap-4">
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
-                            className="relative aspect-[4/3] rounded-xl overflow-hidden group"
-                        >
-                            <Image
-                                src="/assets/store/exterior-night.jpg"
-                                alt="Mohawk Medibles storefront at night with illuminated MEDIBLES sign in Deseronto, Ontario"
-                                fill
-                                sizes="(max-width: 768px) 100vw, 50vw"
-                                className="object-cover group-hover:scale-105 transition-transform duration-500"
-                            />
-                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                                <p className="text-white font-bold text-sm">Storefront — Tyendinaga Mohawk Territory</p>
-                                <p className="text-white/70 text-xs">Open daily 9 AM – 9 PM</p>
-                            </div>
-                        </motion.div>
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.1 }}
-                            className="relative aspect-[4/3] rounded-xl overflow-hidden group"
-                        >
-                            <Image
-                                src="/assets/store/interior.jpg"
-                                alt="Inside Mohawk Medibles — full product selection of cannabis flower, edibles, vapes, and accessories"
-                                fill
-                                sizes="(max-width: 768px) 100vw, 50vw"
-                                className="object-cover group-hover:scale-105 transition-transform duration-500"
-                            />
-                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                                <p className="text-white font-bold text-sm">Inside — 344+ Products</p>
-                                <p className="text-white/70 text-xs">Flower, edibles, concentrates, vapes &amp; more</p>
-                            </div>
-                        </motion.div>
+                        {[
+                            { src: "/assets/store/aerial-territory.jpg", alt: "Aerial drone view of Tyendinaga Mohawk Territory in Deseronto, Ontario — home of Mohawk Medibles cannabis dispensary", title: "Aerial View — Tyendinaga Territory", subtitle: "Drone footage from above Deseronto" },
+                            { src: "/assets/store/exterior-night.jpg", alt: "Mohawk Medibles storefront at night with illuminated MEDIBLES sign in Deseronto, Ontario", title: "Storefront — Tyendinaga Mohawk Territory", subtitle: "Open daily 9 AM – 9 PM" },
+                            { src: "/assets/store/interior.jpg", alt: "Inside Mohawk Medibles — full product selection of cannabis flower, edibles, vapes, and accessories", title: "Inside — 344+ Products", subtitle: "Flower, edibles, concentrates, vapes & more" },
+                            { src: "/assets/store/aerial-river-sunset.jpg", alt: "Aerial sunset drone shot over Mohawk Territory river near Deseronto, Ontario — Mohawk Medibles territory", title: "Mohawk Territory — Sunset", subtitle: "Indigenous land, Indigenous business" },
+                        ].map((photo, i) => (
+                            <motion.div
+                                key={photo.src}
+                                initial={{ opacity: 0, scale: 0.95 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.1 }}
+                                className="relative aspect-[4/3] rounded-xl overflow-hidden group"
+                            >
+                                <Image
+                                    src={photo.src}
+                                    alt={photo.alt}
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                                    <p className="text-white font-bold text-sm">{photo.title}</p>
+                                    <p className="text-white/70 text-xs">{photo.subtitle}</p>
+                                </div>
+                            </motion.div>
+                        ))}
                     </div>
                 </section>
 
