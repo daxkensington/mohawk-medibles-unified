@@ -4,7 +4,10 @@
  * Environment-aware structured logging with PII redaction.
  * - Development: human-readable colored output
  * - Production: structured JSON (Sentry/Vercel compatible), PII stripped
+ * - Errors in production are forwarded to Sentry via captureMessage
  */
+
+import * as Sentry from "@sentry/nextjs";
 
 const IS_PROD = process.env.NODE_ENV === "production";
 
@@ -54,6 +57,18 @@ function formatMessage(level: string, context: string, message: string, data?: R
         };
         if (level === "error") {
             console.error(JSON.stringify(entry));
+            Sentry.withScope((scope) => {
+                scope.setTag("logger.context", context);
+                scope.setLevel("error");
+                if (safe) scope.setExtras(safe);
+                const cause = safe?.error;
+                if (cause instanceof Error) {
+                    Sentry.captureException(cause, { tags: { logger_message: message } });
+                } else {
+                    const detail = typeof cause === "string" && cause.length > 0 ? `: ${cause}` : "";
+                    Sentry.captureMessage(`[${context}] ${message}${detail}`, "error");
+                }
+            });
         } else if (level === "warn") {
             console.warn(JSON.stringify(entry));
         } else {
