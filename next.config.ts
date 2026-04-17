@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { withSentryConfig } from "@sentry/nextjs";
 
 const nextConfig: NextConfig = {
   // ─── Security Headers (merged from .cc + existing) ──────
@@ -144,4 +145,9 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withSentryConfig(nextConfig, {
+  org: "vakaygo",
+  project: "mohawk-medibles-unified",
+  silent: !process.env.CI,
+  tunnelRoute: "/monitoring",
+});
